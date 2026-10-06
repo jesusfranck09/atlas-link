@@ -1,180 +1,122 @@
 .sculpture {
-  position: relative;
   min-width: 0;
   margin: 0;
-  color: #353143;
+  color: var(--color-text-primary);
   font-family: inherit;
   font-variant-numeric: tabular-nums;
 }
 
 .stage {
   position: relative;
-  height: 340px;
-  width: 100%;
+  display: grid;
+  grid-template: minmax(0, 1fr) / minmax(0, 1fr);
+  place-items: stretch;
+  height: 220px;
+  min-width: 0;
   overflow: hidden;
-  isolation: isolate;
 }
 
-.compact .stage { height: 220px; }
-.pieSummary { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 5px 8px 0; }
-.pieSummary > div { display: flex; align-items: baseline; gap: 13px; }
-.pieSummary > div > span { color: #716979; font-size: 11px; }
-.pieSummary strong { order: -1; font-size: 32px; font-weight: 540; letter-spacing: -.065em; line-height: 1; color: #302638; }
-.pieSummary > span { display: flex; align-items: center; gap: 8px; color: #716979; font-size: 10px; }
-.pieSummary > span > span { font-size: 16px; color: #7358ca; }
-.sculpture[data-analytics-sculpture="pie"] .stage { background: radial-gradient(ellipse at 50% 67%, #cfc1ed12, transparent 60%); }
-.host, .fallback { position: absolute; inset: 0; }
-.canvas, .fallbackSvg { display: block; width: 100%; height: 100%; }
-.canvas { cursor: pointer; touch-action: pan-y; }
-.host[data-visible="false"], .fallback[data-visible="false"] { visibility: hidden; }
-.fallback { pointer-events: none; }
-.fallbackSvg { overflow: visible; }
+.chartSvg { display: block; width: 100%; height: 100%; min-width: 0; min-height: 0; overflow: hidden; }
+.gridLine { stroke: var(--color-border); stroke-width: 1; }
+.axisLabel { fill: var(--color-text-muted); font: 11px var(--font-sans); }
+.bar { transition: opacity 180ms ease, filter 180ms ease; }
+.selectedColumn { fill: var(--color-surface-muted); }
+.ringTrack, .emptyCircle { fill: none; stroke: var(--color-surface-muted); stroke-width: 20; }
+.ringSegment { transition: stroke-width 180ms ease; }
+.pieSideWall { pointer-events: none; }
+.pieSegment { transition: stroke 180ms ease; }
+.sculpture[data-analytics-sculpture="pie"] .chartSvg {
+  transform: perspective(520px) rotateX(17deg);
+  transform-origin: 50% 57%;
+  filter: drop-shadow(0 13px 7px rgb(39 43 58 / 19%));
+}
 
 .center {
   position: absolute;
   left: 50%;
-  top: 45%;
-  transform: translate(-50%, -50%);
+  top: 49%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4px;
+  transform: translate(-50%, -50%);
   pointer-events: none;
   white-space: nowrap;
 }
+.center span { color: var(--color-text-muted); font-size: 11px; }
+.center strong { color: var(--color-text-primary); font-size: 24px; font-weight: 550; letter-spacing: -.035em; }
+.compact .center strong { font-size: 21px; }
 
-.center span { font-size: 10px; font-weight: 500; letter-spacing: .06em; color: #756e83; }
-.center strong { font-size: clamp(22px, 3vw, 35px); font-weight: 550; line-height: 1.05; letter-spacing: -.045em; color: #393149; }
-.compact .center strong { font-size: 28px; }
-/* Keep the landing total inside the clear opening of the glass ring. */
-.sculpture[data-analytics-sculpture="ring"].minimal .center { transform: translate(-50%, calc(-50% + 6px)); }
-.sculpture[data-analytics-sculpture="ring"].minimal .center span { color: #62596f; }
-.stageMeta { position: absolute; inset: auto 0 7px; display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 10px; font-weight: 450; color: #7b748b; pointer-events: none; }
-.metaDot { width: 4px; height: 4px; border-radius: 50%; background: #8775dc; }
-.minimal .stageMeta { display: none; }
+.pieSummary { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 4px 6px 0; }
+.pieSummary > div { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; }
+.pieSummary strong { color: var(--color-text-primary); font-size: 26px; font-weight: 550; letter-spacing: -.04em; }
+.pieSummary span { color: var(--color-text-secondary); font-size: 12px; }
 
-.selection {
-  min-height: 49px;
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  padding: 12px 2px;
-  border-bottom: 1px solid #eeebf4;
-  font-size: 12px;
-}
-.selectedDot { flex: 0 0 7px; height: 7px; border-radius: 50%; }
-.selectedLabel { flex: 1; color: #696175; line-height: 1.4; }
-.selection > strong { font-size: 17px; font-weight: 550; letter-spacing: -.035em; color: #393149; }
-.percentage { padding: 5px 9px; background: #f3f0f8; border-radius: 99px; font-size: 10px; color: #6e5a98; }
+.selection { min-height: 44px; display: flex; align-items: center; gap: 9px; padding: 9px 2px; border-bottom: 1px solid var(--color-border); font-size: 12px; }
+.selectedDot { flex: 0 0 8px; height: 8px; border-radius: var(--radius-full); }
+.selectedLabel { flex: 1; min-width: 0; color: var(--color-text-secondary); line-height: 1.4; }
+.selection > strong { color: var(--color-text-primary); font-size: 15px; font-weight: 550; }
+.percentage { padding: 4px 8px; background: var(--color-accent-soft); border-radius: var(--radius-full); color: var(--color-primary); font-size: 11px; }
 .percentage small { margin-left: 1px; font-size: inherit; }
 
-.legend { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-top: 12px; }
+.legend { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; margin-top: 10px; }
 .legendItem {
   appearance: none;
   display: grid;
-  grid-template-columns: 7px minmax(0, 1fr);
+  grid-template-columns: 8px minmax(0, 1fr);
   align-content: start;
   align-items: center;
-  gap: 5px 6px;
+  gap: 5px 7px;
   width: 100%;
   min-width: 0;
+  min-height: 44px;
+  padding: 8px;
   border: 1px solid transparent;
-  border-radius: 9px;
+  border-radius: var(--radius-md);
   background: transparent;
-  padding: 10px 8px;
-  color: #686173;
+  color: var(--color-text-secondary);
   font: inherit;
   cursor: pointer;
   text-align: left;
-  transition: border-color 160ms ease, background-color 160ms ease;
+  transition: background-color 160ms ease, border-color 160ms ease;
 }
-.legendItem:hover { background: #f8f6fc; }
-.legendItem[aria-pressed="true"] { background: #f6f3fb; border-color: #e9e2f6; }
-.legendItem:focus-visible { outline: 2px solid #7761be; outline-offset: 2px; }
-.legendDot { width: 6px; height: 6px; border-radius: 50%; background: var(--sculpture-color); }
-.legendLabel { font-size: 11px; line-height: 1.4; overflow-wrap: anywhere; }
-.legendItem strong { grid-column: 2; font-size: 14px; font-weight: 550; color: #443b55; letter-spacing: -.025em; overflow-wrap: anywhere; }
+.legendItem:hover { background: var(--color-surface-muted); }
+.legendItem[aria-pressed="true"] { border-color: var(--color-border); background: var(--color-accent-soft); }
+.legendItem:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+.legendDot { width: 7px; height: 7px; border-radius: var(--radius-full); background: var(--sculpture-color); }
+.legendLabel { min-width: 0; color: var(--color-text-secondary); font-size: 11px; line-height: 1.4; overflow-wrap: anywhere; }
+.legendItem strong { grid-column: 2; color: var(--color-text-primary); font-size: 14px; font-weight: 550; letter-spacing: -.025em; overflow-wrap: anywhere; }
 .minimal .legend { margin-top: 4px; }
-.compact .legendItem { min-height: 44px; padding: 7px; gap: 3px 6px; }
+.compact .legendItem { padding: 7px; }
 .compact .legendItem strong { font-size: 13px; }
-.sculpture[data-analytics-sculpture="pie"] .legend { gap: 8px; }
-.sculpture[data-analytics-sculpture="pie"] .legendItem { border-radius: 19px; padding: 13px 12px; border-color: #eee9f4; background: #ffffff80; transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease; }
-.sculpture[data-analytics-sculpture="pie"] .legendItem:hover { transform: translateY(-2px); background: #faf7ff; }
-.sculpture[data-analytics-sculpture="pie"] .legendItem[aria-pressed="true"] { border-color: #d9cbed; background: #f2edf9; }
-.sculpture[data-analytics-sculpture="pie"] .legendDot { width: 7px; height: 7px; }
-.sculpture[data-analytics-sculpture="pie"] .legendLabel { color: #696173; }
-.sculpture[data-analytics-sculpture="pie"] .legendItem strong { font-size: 20px; font-weight: 500; }
-.caption { margin: 13px 0 0; font-size: 10px; line-height: 1.55; color: #786f83; }
+.sculpture[data-analytics-sculpture="pie"] .legend { gap: 7px; }
+.sculpture[data-analytics-sculpture="pie"] .legendItem { grid-template-columns: 8px minmax(0, 1fr) max-content; align-items: center; padding: 10px; }
+.sculpture[data-analytics-sculpture="pie"] .legendItem strong { grid-column: auto; font-size: 14px; }
+.pieLegendMetrics { display: inline-flex; grid-column: 3; align-items: baseline; gap: 7px; white-space: nowrap; }
+.pieLegendMetrics strong { color: var(--color-text-primary); }
+.pieLegendShare { color: var(--color-text-muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+
+.sculpture[data-density="compact"] .stage { height: 190px; }
+.sculpture[data-density="compact"] .legend { grid-template-columns: minmax(0, 1fr); gap: 2px; margin-top: 4px; }
+.sculpture[data-density="compact"] .legendItem { grid-template-columns: 8px minmax(0, 1fr) max-content; align-content: center; gap: 8px; min-height: 38px; padding: 6px 9px; }
+.sculpture[data-density="compact"] .legendItem strong { grid-column: 3; font-size: 13px; text-align: right; }
+.sculpture[data-density="compact"] .legendLabel { font-size: 12px; }
+.sculpture[data-density="compact"] .selection { min-height: 36px; gap: 7px; padding: 7px 2px; }
+.sculpture[data-density="compact"] .selection > strong { font-size: 14px; }
+.sculpture[data-density="compact"] .pieSummary strong { font-size: 23px; }
+
+.caption { margin: 10px 0 0; color: var(--color-text-muted); font-size: 11px; line-height: 1.5; }
 .srOnly { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
 
-/* Operational panels use the same renderer in a smaller viewport. The default
-   and historic .compact presentation above remain unchanged for the landing. */
-.sculpture[data-density="compact"] .stage { height: 200px; }
-.sculpture[data-density="compact"] .legend { grid-template-columns: minmax(0, 1fr); gap: 3px; margin-top: 3px; }
-.sculpture[data-density="compact"] .legendItem {
-  grid-template-columns: 7px minmax(0, 1fr) minmax(2ch, max-content);
-  align-content: center;
-  gap: 8px;
-  min-height: 36px;
-  padding: 7px 10px;
-  border: 1px solid transparent;
-  border-radius: 8px;
-  background: transparent;
-  transition: border-color 160ms ease, background-color 160ms ease;
-}
-.sculpture[data-density="compact"] .legendItem:hover { transform: none; background: #f8f6fc; }
-.sculpture[data-density="compact"] .legendItem[aria-pressed="true"] { border-color: #e8e0f5; background: #f3eefb; }
-.sculpture[data-density="compact"] .legendLabel { font-size: 12px; line-height: 1.4; color: #635b70; }
-.sculpture[data-density="compact"] .legendItem strong { grid-column: 3; font-size: 13px; line-height: 1.35; font-weight: 560; text-align: right; color: #40374e; }
-.sculpture[data-density="compact"] .legendDot { width: 7px; height: 7px; }
-.sculpture[data-density="compact"] .selection { min-height: 36px; gap: 7px; padding: 8px 2px; }
-.sculpture[data-density="compact"] .selection > strong { font-size: 14px; }
-.sculpture[data-density="compact"] .percentage { padding: 3px 6px; }
-.sculpture[data-density="compact"] .caption { margin-top: 9px; font-size: 11px; }
-.sculpture[data-density="compact"] .pieSummary { padding: 2px 2px 0; }
-.sculpture[data-density="compact"] .pieSummary strong { font-size: 24px; }
-.sculpture[data-density="compact"] .pieSummary > div > span { font-size: 12px; }
-.sculpture[data-density="compact"] .pieSummary > span { max-width: 104px; font-size: 11px; line-height: 1.4; }
-.sculpture[data-finish="glass"] .stage { border-radius: 16px; background: radial-gradient(ellipse at 26% 62%, #d9d3ff48, transparent 55%), radial-gradient(ellipse at 76% 58%, #cfeff43d, transparent 53%); }
-.sculpture[data-finish="glass"][data-density="compact"] .stage { height: 220px; background: transparent; }
-.sculpture[data-finish="glass"] .legendItem { border-color: #ffffffb3; background: #ffffff40; }
-.sculpture[data-finish="glass"] .legendItem:hover { border-color: #ffffff; background: #ffffffb3; }
-.sculpture[data-finish="glass"] .legendItem[aria-pressed="true"] { border-color: #cfc7ee; background: linear-gradient(110deg, #eeebffb3, #ffffffa6); box-shadow: inset 0 1px 0 #ffffff; }
-.sculpture[data-finish="glass"] .legendDot { box-shadow: inset 0 1px 1px #ffffffaa, 0 0 0 2px #ffffffbd; }
-
-/* Keep the compact portal surface quiet; the rendered data supplies the color. */
-.sculpture[data-finish="glass"][data-density="compact"] .legendItem { border-color: transparent; background: transparent; box-shadow: none; }
-.sculpture[data-finish="glass"][data-density="compact"] .legendItem:hover { border-color: transparent; background: #f8f8fa; }
-.sculpture[data-finish="glass"][data-density="compact"] .legendItem[aria-pressed="true"] { border-color: #e5e3ed; background: #f4f3f8; box-shadow: none; }
-.sculpture[data-finish="glass"][data-density="compact"] .legendDot { box-shadow: none; }
-.sculpture[data-finish="glass"][data-density="compact"] .legendLabel { color: #565966; }
-.sculpture[data-finish="glass"][data-density="compact"] .legendItem strong { color: #353842; }
-
-@media (max-width: 480px) {
-  .stage { height: 300px; }
-  .compact .stage { height: 200px; }
-  .legend { gap: 3px; }
-  .legendItem { padding: 10px 5px; gap: 5px; }
+@media (max-width: 600px) {
+  .stage { height: 190px; }
+  .legend { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 3px; }
+  .legendItem { padding: 7px; }
   .selection { flex-wrap: wrap; }
-  .percentage { max-width: 100%; overflow-wrap: anywhere; }
-  .pieSummary { padding-inline: 2px; gap: 8px; }
-  .pieSummary > div { gap: 8px; }
-  .pieSummary > span { max-width: 104px; line-height: 1.5; }
-  .sculpture[data-analytics-sculpture="pie"] .legend { gap: 5px; }
-  .sculpture[data-analytics-sculpture="pie"] .legendItem { padding: 11px 8px; border-radius: 16px; }
-  .sculpture[data-density="compact"] .stage { height: 210px; }
-  .sculpture[data-finish="glass"][data-density="compact"] .stage { height: 210px; }
-  .sculpture[data-density="compact"] .legend { gap: 3px; }
-  .sculpture[data-density="compact"] .legendItem { min-height: 44px; padding: 9px 10px; border-radius: 8px; }
-}
-
-@media (pointer: coarse) {
+  .sculpture[data-density="compact"] .stage { height: 176px; }
   .sculpture[data-density="compact"] .legendItem { min-height: 44px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .legendItem { transition: none; }
-  .sculpture[data-analytics-sculpture="pie"] .legendItem { transition: none; }
-  .sculpture[data-analytics-sculpture="pie"] .legendItem:hover { transform: none; }
-  .sculpture[data-density="compact"] .legendItem { transition: none; }
+  .bar, .ringSegment, .pieSegment, .legendItem { transition: none; }
 }

@@ -1,0 +1,121 @@
+.page {
+  display: grid;
+  min-height: 100svh;
+  align-items: center;
+  padding: 40px 24px;
+  background:
+    radial-gradient(ellipse at 78% 16%, rgb(224 216 248 / 34%), transparent 29rem),
+    linear-gradient(150deg, #fbfaff 0%, #f7f6fa 56%, #fafafa 100%);
+}
+
+.shell {
+  width: min(760px, 100%);
+  margin-inline: auto;
+}
+
+.header {
+  margin-bottom: 28px;
+}
+
+.panel {
+  padding: clamp(26px, 6vw, 54px);
+  border: 1px solid rgb(216 212 230 / 84%);
+  border-radius: 30px;
+  background: linear-gradient(145deg, rgb(255 255 255 / 90%), rgb(248 247 252 / 76%));
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 94%), 0 22px 58px rgb(55 48 78 / 7%);
+  backdrop-filter: blur(18px) saturate(1.08);
+  -webkit-backdrop-filter: blur(18px) saturate(1.08);
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #685990;
+  font-size: 11px;
+  font-weight: 570;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.eyebrow > span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #8e7cbd;
+  box-shadow: 0 0 0 4px rgb(199 184 246 / 26%);
+}
+
+.title {
+  max-width: 14ch;
+  margin-top: 18px;
+  font-size: clamp(2rem, 5.5vw, 3.25rem);
+  font-weight: 540;
+  letter-spacing: -.055em;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+.description {
+  margin-top: 14px;
+  color: var(--color-text-secondary);
+  font-size: var(--text-body);
+  line-height: 1.7;
+}
+
+.action {
+  margin-top: 26px;
+}
+
+.errorPanel :global(.error-state) {
+  align-items: center;
+  margin-block: 26px 0;
+  padding: 18px;
+  border-color: rgb(226 199 203 / 82%);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgb(255 255 255 / 82%), rgb(251 245 246 / 78%));
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 92%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.errorPanel :global(.error-state > .icon) {
+  color: var(--color-danger);
+}
+
+.errorPanel :global(.error-state p) {
+  color: var(--color-text-secondary);
+}
+
+.page :is(a, button):focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 4px;
+  box-shadow: 0 0 0 5px rgb(204 193 236 / 48%);
+}
+
+@media (max-width: 520px) {
+  .page { padding: 24px 16px; }
+  .header { margin-bottom: 20px; }
+  .panel { padding: 24px 20px; border-radius: 24px; }
+  .errorPanel :global(.error-state) { align-items: flex-start; flex-wrap: wrap; padding: 15px; }
+  .errorPanel :global(.error-state > div) { flex-basis: calc(100% - 42px); }
+  .errorPanel :global(.error-state > button) { margin-left: 31px; }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .panel,
+  .errorPanel :global(.error-state) { background: #fff; backdrop-filter: none; -webkit-backdrop-filter: none; }
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .panel,
+  .errorPanel :global(.error-state) { background: #fff; }
+}
+
+@media (forced-colors: active) {
+  .panel,
+  .errorPanel :global(.error-state) { border: 1px solid CanvasText; background: Canvas; box-shadow: none; backdrop-filter: none; }
+  .eyebrow,
+  .description,
+  .errorPanel :global(.error-state p) { color: CanvasText; }
+}

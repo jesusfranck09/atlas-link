@@ -42,6 +42,8 @@ python3 scripts/dev.py start --build
 
 El script crea un clúster PostgreSQL exclusivo dentro de `.local/postgres`, provisiona contraseñas aleatorias y roles separados, compila y arranca los procesos. No modifica otras bases. Los datos y secretos de desarrollo viven en `.local/`, excluido de Git. Los logs por servicio están en esa misma carpeta.
 
+En una base vacía, Identity, Control y Hospital ejecutan automáticamente sus migraciones Flyway al arrancar; cada servicio incluye solo sus propios SQL versionados. El arranque local activa las semillas sintéticas de demostración. No hace falta importar un dump de base de datos.
+
 - Producto: <http://localhost:4300>
 - Hospital: <http://localhost:4300/login>
 - Consola empresa: <http://localhost:4300/admin/login>

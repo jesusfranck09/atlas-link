@@ -1,5 +1,6 @@
-// Operational charts: quiet categorical colors, distinct semantic states.
-export const comparisonPalette = ['#9184bb', '#b5bac7', '#717b91', '#c7bed8', '#a3a6b4'];
+// Operational comparisons share one quiet violet family. Semantic lane colors
+// remain separate so the meaning of each preaudit state is preserved.
+export const comparisonPalette = ['#765599', '#987fb1', '#b7a5ca', '#d0c4dc', '#857292'];
 
 export const lanePalette = {
   GREEN: '#86a299',

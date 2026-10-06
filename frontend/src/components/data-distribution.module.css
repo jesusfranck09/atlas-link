@@ -1,0 +1,46 @@
+.analysisAccess {
+  display: flex;
+  min-width: 0;
+  min-height: 38px;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-text-secondary);
+  font-size: 11px;
+}
+
+.analysisName { overflow: hidden; color: var(--color-text-primary); font-weight: 540; text-overflow: ellipsis; white-space: nowrap; }
+.analysisScope { color: var(--color-text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.analysisButton { min-height: 34px; margin-left: auto; padding-inline: 11px; border-radius: var(--radius-full); color: var(--workspace-accent, var(--color-primary)); white-space: nowrap; }
+.analysisButton svg { color: currentColor; }
+.analysisEmpty { margin-left: auto; color: var(--color-text-muted); }
+
+.modalChart {
+  max-width: 760px;
+  margin-inline: auto;
+  padding: 0;
+  background: transparent;
+}
+
+.modalChart :global(figure[data-analytics-sculpture]) {
+  display: grid;
+  grid-template-columns: minmax(200px, .9fr) minmax(0, 1.1fr);
+  align-items: center;
+  gap: 10px 22px;
+}
+
+.modalChart :global(figure[data-analytics-sculpture] > div:first-of-type) { grid-column: 1; grid-row: 1 / span 2; min-height: 300px; }
+.modalChart :global(figure[data-analytics-sculpture] > div:nth-of-type(3)) { grid-column: 2; grid-row: 1 / span 2; grid-template-columns: minmax(0, 1fr); margin: 0; }
+.modalChart :global(figure[data-analytics-sculpture] > div:nth-of-type(3) button) { min-height: 43px; }
+.modalChart :global(figure[data-analytics-sculpture] figcaption) { grid-column: 1 / -1; }
+.empty { margin: 18px 0 12px; color: var(--color-text-secondary); font-size: 12px; }
+
+@media (max-width: 600px) {
+  .analysisAccess { gap: 7px; }
+  .analysisName { max-width: 40%; }
+  .analysisScope { font-size: 10px; }
+  .analysisButton { min-height: 36px; padding-inline: 9px; font-size: 11px; }
+  .modalChart { padding: 0; }
+  .modalChart :global(figure[data-analytics-sculpture]) { grid-template-columns: minmax(0, 1fr); }
+  .modalChart :global(figure[data-analytics-sculpture] > div:first-of-type) { grid-column: 1; grid-row: auto; min-height: 220px; }
+  .modalChart :global(figure[data-analytics-sculpture] > div:nth-of-type(3)) { grid-column: 1; grid-row: auto; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

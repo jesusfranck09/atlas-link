@@ -52,7 +52,7 @@ El formulario público puede insertar un lead con consentimiento, pero no consul
 
 ## Migraciones y demostración
 
-Ubicaciones: `backend/src/main/resources/db/migration/identity`, `control` y `hospital`. Cada una contiene `V1__schema.sql` y `V2__demo_data.sql`. Los procesos empaquetan exclusivamente su ubicación. V2 requiere el placeholder Flyway `demoEnabled`; con `false` no inserta datos. Activarlo posteriormente no vuelve a ejecutar V2: un entorno de demostración debe provisionarse expresamente desde el comienzo.
+Ubicaciones: `backend/src/main/resources/db/migration/identity`, `control` y `hospital`. Identity y Control tienen `V1__schema.sql` y `V2__demo_data.sql`; Hospital tiene además `V3__evaluation_evidence.sql`, que incorpora evidencia requerida a las evaluaciones nuevas sin reconstruir datos históricos que no se pueden recuperar. Cada servicio empaqueta exclusivamente su directorio. V2 requiere el placeholder Flyway `demoEnabled`; con `false` no inserta datos. Activarlo posteriormente no vuelve a ejecutar V2: un entorno de demostración debe provisionarse expresamente desde el comienzo.
 
 Los datos incluyen dos hospitales ficticios, seis perfiles principales, un perfil del segundo hospital y una cuenta desactivada; tres aseguradoras ficticias; cuatro versiones de convenio; veinte cuentas, sesenta y tres líneas y veinte evaluaciones. Hay ejemplos de exceso de tabulador, exclusión, póliza incompleta, código sin homologar, cobertura agotada y falta de convenio. Todos los precios y parámetros son demostrativos, sin prescripción ni afirmaciones clínicas. La contraseña compartida `AtlasDemo2026!` usa BCrypt coste 12 y existe solo para la demostración.
 
