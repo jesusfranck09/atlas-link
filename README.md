@@ -29,14 +29,31 @@ docker compose --env-file .local/compose.env ps
 
 Los seis contenedores tienen red y volumen propios; solo la web publica un puerto en este equipo. Esta base conserva los datos de presentación separados de las pruebas nativas. Para detener: `docker compose --env-file .local/compose.env down` (conserva datos).
 
+## Workspace y repositorios
+
+`atlas-link` es el workspace que integra los repositorios públicos de cada microservicio y de la interfaz. Clónalo con sus submódulos para compilar y arrancar el conjunto:
+
+```sh
+git clone --branch dev --recurse-submodules https://github.com/jesusfranck09/atlas-link.git
+cd atlas-link
+```
+
+Repositorios de componentes:
+
+- Backend: `ntx-msa-identity-service`, `ntx-msa-control-service`, `ntx-msa-hospital-service` y `ntx-msa-gateway`.
+- Frontend: `nxt-ui-atlas-link` (incluye los portales del hospital, administración y aseguradora).
+- `common` permanece como biblioteca compartida del workspace; no es un servicio desplegable.
+
+Cada componente conserva sus propias ramas `dev` y `prod`. El workspace fija los commits de los submódulos; después de cambiar un componente, actualiza y sube también el commit del workspace para registrar la versión integrada.
+
 ## Desarrollo nativo
 
 Requisitos: Java21, Maven, Node24/npm, Python3 y PostgreSQL15+ en PATH (el script también detecta Homebrew PostgreSQL15). Desde esta carpeta:
 
 ```sh
-cd frontend
+cd frontend/nxt-ui-atlas-link
 npm ci
-cd ..
+cd ../..
 python3 scripts/dev.py start --build
 ```
 
@@ -62,9 +79,9 @@ python3 scripts/dev.py stop --database
 ```sh
 cd backend
 mvn test
-cd ../frontend
+cd ../frontend/nxt-ui-atlas-link
 npm run build
-cd ..
+cd ../..
 python3 scripts/verify-api.py
 ```
 

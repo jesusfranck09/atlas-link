@@ -63,7 +63,7 @@ La diferencia no se consigue intercambiando solo el color del rail. Cambian el o
 
 ## COLOR DIRECTION
 
-Reutilizar los roles definidos en `frontend/src/app/globals.css`: fondo `#fafafa`, superficies blancas, superficie atenuada `#f5f5f6`, texto grafito `#2e2e36`, secundarios `#666671` / `#898994`, violeta de acción `#7969a7`, violeta suave `#f0ecfa`, bordes tenues y colores semánticos suaves. Para identificar cada sistema, conservar jade `#729e91`, lavanda `#8980bd` y vino grisáceo `#997f89` con sus variantes suaves actuales.
+Reutilizar los roles definidos en `frontend/nxt-ui-atlas-link/src/app/globals.css`: fondo `#fafafa`, superficies blancas, superficie atenuada `#f5f5f6`, texto grafito `#2e2e36`, secundarios `#666671` / `#898994`, violeta de acción `#7969a7`, violeta suave `#f0ecfa`, bordes tenues y colores semánticos suaves. Para identificar cada sistema, conservar jade `#729e91`, lavanda `#8980bd` y vino grisáceo `#997f89` con sus variantes suaves actuales.
 
 El acento del sistema aparece en selección de navegación, marcadores y visualizaciones pertinentes. Las acciones primarias continúan usando el color de acción compartido. Rojo, ámbar y verde conservan significado semántico actual; no se usan como marca ni se reinterpretan. No introducir nuevas familias ni valores hardcodeados.
 
@@ -189,7 +189,7 @@ Formalizar el rail como variante del sistema de navegación vigente: lado derech
 
 ## DESIGN SYSTEM HANDOFF
 
-Tomar tokens de `frontend/src/app/globals.css`, incluidos colores por sistema, estados, radios, superficies, sombras, escala `--space-*`, sans actual y transiciones. Si el shell necesita nuevos tokens semánticos (por ejemplo, ancho del rail o fondo del margen), agregarlos una sola vez a la fundación compartida; no crear colores hex/radios/espacios locales equivalentes ni forks por sistema. El acceso autenticado debe compartir `workspace.tsx`; el modo insurer deriva del rol existente.
+Tomar tokens de `frontend/nxt-ui-atlas-link/src/app/globals.css`, incluidos colores por sistema, estados, radios, superficies, sombras, escala `--space-*`, sans actual y transiciones. Si el shell necesita nuevos tokens semánticos (por ejemplo, ancho del rail o fondo del margen), agregarlos una sola vez a la fundación compartida; no crear colores hex/radios/espacios locales equivalentes ni forks por sistema. El acceso autenticado debe compartir `workspace.tsx`; el modo insurer deriva del rol existente.
 
 ## MOTION / 3D HANDOFF
 
@@ -229,20 +229,20 @@ Las vistas existentes son el mapa de comportamiento. El resultado debe conservar
 ### Fundamento compartido
 
 - `docs/global-visual-redesign-blueprint.md`
-- `frontend/src/components/workspace.tsx`
-- `frontend/src/components/portal.module.css`
-- `frontend/src/components/dashboard.tsx`
-- `frontend/src/app/globals.css`
-- `frontend/src/components/operations.module.css`
-- `frontend/src/components/platform.module.css`
-- `frontend/src/components/platform.tsx`
-- `frontend/src/components/accounts.tsx`
-- `frontend/src/components/account-detail.tsx`
-- `frontend/src/components/agreements.tsx`
-- `frontend/src/components/import-account.tsx`
-- `frontend/src/components/reports.tsx`
-- `frontend/src/components/users.tsx`
-- `frontend/src/components/audit.tsx`
+- `frontend/nxt-ui-atlas-link/src/components/workspace.tsx`
+- `frontend/nxt-ui-atlas-link/src/components/portal.module.css`
+- `frontend/nxt-ui-atlas-link/src/components/dashboard.tsx`
+- `frontend/nxt-ui-atlas-link/src/app/globals.css`
+- `frontend/nxt-ui-atlas-link/src/components/operations.module.css`
+- `frontend/nxt-ui-atlas-link/src/components/platform.module.css`
+- `frontend/nxt-ui-atlas-link/src/components/platform.tsx`
+- `frontend/nxt-ui-atlas-link/src/components/accounts.tsx`
+- `frontend/nxt-ui-atlas-link/src/components/account-detail.tsx`
+- `frontend/nxt-ui-atlas-link/src/components/agreements.tsx`
+- `frontend/nxt-ui-atlas-link/src/components/import-account.tsx`
+- `frontend/nxt-ui-atlas-link/src/components/reports.tsx`
+- `frontend/nxt-ui-atlas-link/src/components/users.tsx`
+- `frontend/nxt-ui-atlas-link/src/components/audit.tsx`
 
 ### Rutas internas verificadas en el árbol App Router
 

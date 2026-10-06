@@ -1,8 +1,8 @@
 FROM node:24-alpine AS build
 WORKDIR /app
-COPY frontend/package.json frontend/package-lock.json ./
+COPY frontend/nxt-ui-atlas-link/package.json frontend/nxt-ui-atlas-link/package-lock.json ./
 RUN --mount=type=cache,id=atlas-link-npm,target=/root/.npm npm ci --prefer-offline --no-audit --no-fund
-COPY frontend ./
+COPY frontend/nxt-ui-atlas-link ./
 ARG API_URL=http://gateway:8095
 ENV API_URL=$API_URL
 ARG NEXT_PUBLIC_SITE_URL=http://127.0.0.1:4430

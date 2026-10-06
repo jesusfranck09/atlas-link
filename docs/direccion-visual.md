@@ -36,7 +36,7 @@ Chrome sobre macOS con viewport móvil es emulación; no equivale a pruebas en W
 
 ## Refinamiento implementado y revisión renderizada
 
-El equipo frontend cedió la edición de un bloque final de `frontend/src/app/globals.css` para esta revisión. Se conservó la base original y se añadieron correcciones concretas:
+El equipo frontend cedió la edición de un bloque final de `frontend/nxt-ui-atlas-link/src/app/globals.css` para esta revisión. Se conservó la base original y se añadieron correcciones concretas:
 
 - Escala tipográfica legible: texto operativo de 14 px, campos de 16 px, información secundaria de 12 px y excepciones deliberadas de 10–11 px para rótulos editoriales. Botones principales e iconos interactivos con objetivo táctil de 44 px. Se oscurecieron colores de texto conservando los fondos claros y tonos semánticos.
 - El hero móvil ya no corta titulares ni llamadas a la acción: el grid usa `minmax(0,1fr)` para evitar que el ancho intrínseco de la escena 3D ensanche su columna. La escena conserva su escala y composición propias.

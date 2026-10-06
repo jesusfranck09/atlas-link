@@ -37,7 +37,7 @@ services:
     build:
       context: .
       dockerfile: infra/Dockerfile.backend
-      args: { SERVICE: identity-service }
+      args: { SERVICE: identity-service, SERVICE_DIR: ntx-msa-identity-service }
     environment:
       <<: *service-env
       DB_USER: atlas_identity
@@ -58,7 +58,7 @@ services:
     build:
       context: .
       dockerfile: infra/Dockerfile.backend
-      args: { SERVICE: control-service }
+      args: { SERVICE: control-service, SERVICE_DIR: ntx-msa-control-service }
     environment:
       <<: *service-env
       DB_USER: atlas_control
@@ -80,7 +80,7 @@ services:
     build:
       context: .
       dockerfile: infra/Dockerfile.backend
-      args: { SERVICE: hospital-service }
+      args: { SERVICE: hospital-service, SERVICE_DIR: ntx-msa-hospital-service }
     environment:
       <<: *service-env
       PORT: '8097'
@@ -102,7 +102,7 @@ services:
     build:
       context: .
       dockerfile: infra/Dockerfile.backend
-      args: { SERVICE: gateway }
+      args: { SERVICE: gateway, SERVICE_DIR: ntx-msa-gateway }
     environment:
       SERVER_ADDRESS: 0.0.0.0
       IDENTITY_URL: http://identity:8091

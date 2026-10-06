@@ -18,7 +18,7 @@ Tres experiencias comparten marca y controles, con composiciones diferenciadas:
 
 ## Contrato y responsables
 
-La fuente única de tokens es `frontend/src/app/globals.css`. El agente de dirección posee ese archivo y `components/ui.tsx`. La landing posee `landing.tsx` y su CSS Module; portal posee login, shell, dashboard, tabla de cuentas, plataforma y su CSS Module. No añadir una nueva capa de overrides al final de globals: corregir la regla que define el elemento. Las consultas al backend, permisos, estados y autofill no se sustituyen por mockups.
+La fuente única de tokens es `frontend/nxt-ui-atlas-link/src/app/globals.css`. El agente de dirección posee ese archivo y `components/ui.tsx`. La landing posee `landing.tsx` y su CSS Module; portal posee login, shell, dashboard, tabla de cuentas, plataforma y su CSS Module. No añadir una nueva capa de overrides al final de globals: corregir la regla que define el elemento. Las consultas al backend, permisos, estados y autofill no se sustituyen por mockups.
 
 ## Tokens
 

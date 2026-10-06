@@ -19,6 +19,7 @@ PGDATA = LOCAL / 'postgres'
 SOCKET = LOCAL / 'socket'
 PORT = 5440
 SERVICES = {'identity-service': 18491, 'control-service': 18492, 'hospital-service': 18493, 'gateway': 8095}
+SERVICE_DIRS = {'identity-service': 'ntx-msa-identity-service', 'control-service': 'ntx-msa-control-service', 'hospital-service': 'ntx-msa-hospital-service', 'gateway': 'ntx-msa-gateway'}
 
 
 def run(args, **kw):
@@ -152,7 +153,7 @@ def write_configs():
 
 
 def runtime_jar(service):
-    source = ROOT / 'backend' / service / 'target' / (service + '-0.1.0.jar')
+    source = ROOT / 'backend' / SERVICE_DIRS[service] / 'target' / (service + '-0.1.0.jar')
     if not source.exists():
         raise SystemExit(f'Compila primero {service}.')
     digest = hashlib.sha256(source.read_bytes()).hexdigest()[:16]
@@ -165,7 +166,7 @@ def runtime_jar(service):
 
 
 def runtime_web():
-    frontend = ROOT / 'frontend'
+    frontend = ROOT / 'frontend' / 'nxt-ui-atlas-link'
     build_id = frontend / '.next/BUILD_ID'
     standalone = frontend / '.next/standalone'
     if not build_id.exists() or not standalone.exists():
@@ -188,7 +189,7 @@ def start(build=False, backend_only=False):
     if build:
         run(['mvn', '-q', 'package', '-DskipTests'], cwd=ROOT / 'backend')
         if not backend_only:
-            run(['npm', 'run', 'build'], cwd=ROOT / 'frontend')
+            run(['npm', 'run', 'build'], cwd=ROOT / 'frontend' / 'nxt-ui-atlas-link')
     for service, port in SERVICES.items():
         jar = runtime_jar(service)
         start_process(service, ['java', '-jar', jar], ROOT, env_for(service))

@@ -9,10 +9,15 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from dev import pg, SOCKET, PORT
 
+migrations = {
+    'identity': ROOT / 'backend/ntx-msa-identity-service/src/main/resources/db/migration',
+    'control': ROOT / 'backend/ntx-msa-control-service/src/main/resources/db/migration',
+    'hospital': ROOT / 'backend/ntx-msa-hospital-service/src/main/resources/db/migration',
+}
 parts = ['BEGIN;']
 for service in ('identity', 'control', 'hospital'):
     parts.append('SET LOCAL ROLE atlas_' + service + '_owner;')
-    for path in sorted((ROOT / 'backend/src/main/resources/db/migration' / service).glob('*.sql')):
+    for path in sorted(migrations[service].glob('*.sql')):
         parts.append(path.read_text().replace('${demoEnabled}', 'true'))
     parts.append('RESET ROLE;')
 parts.append("""

@@ -33,7 +33,7 @@ Un único sistema de producto gobierna la tipografía, spacing, contraste, estad
 
 ## Foundation
 
-`frontend/src/app/globals.css` es la fuente de tokens globales de superficie, texto, marca, foco, estados, radios, sombras, spacing, tipografía y transiciones. Cada módulo debe reutilizar esos tokens y los componentes en `frontend/src/components/ui.tsx`; los estilos de `portal.module.css`, `operations.module.css`, `platform.module.css` y `login.module.css` componen la interfaz según su contexto.
+`frontend/nxt-ui-atlas-link/src/app/globals.css` es la fuente de tokens globales de superficie, texto, marca, foco, estados, radios, sombras, spacing, tipografía y transiciones. Cada módulo debe reutilizar esos tokens y los componentes en `frontend/nxt-ui-atlas-link/src/components/ui.tsx`; los estilos de `portal.module.css`, `operations.module.css`, `platform.module.css` y `login.module.css` componen la interfaz según su contexto.
 
 Los controles deben mantener labels, contraste, estados disabled/error/loading, foco visible, teclado y movimiento reducido. Tablas y formularios conservan su densidad y comportamiento por rol. En móvil se recompone la tarea y no se escala en pequeño el escritorio.
 

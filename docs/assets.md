@@ -5,12 +5,12 @@ No se utilizan imágenes generadas por IA. Los gráficos de producto se construy
 ## Marca y tipografía
 
 - Marca vectorial original: `brand/atlas-link-mark.svg`, `brand/atlas-link-wordmark.svg`, `brand/favicon.svg`. Geometría de una A con tres planos enlazados; no contiene imagen raster ni arte generado por IA.
-- Fuentes locales Inter y Manrope mediante Fontsource Variable; licencia OFL-1.1 incluida en los paquetes. Versiones fijadas en `frontend/package-lock.json`. No se realizan solicitudes a Google Fonts desde el navegador.
+- Fuentes locales Inter y Manrope mediante Fontsource Variable; licencia OFL-1.1 incluida en los paquetes. Versiones fijadas en `frontend/nxt-ui-atlas-link/package-lock.json`. No se realizan solicitudes a Google Fonts desde el navegador.
 - Los textos y datos de la demostración no representan clientes, recomendaciones ni resultados comerciales reales.
 
 ## Fotografía de hospital
 
-- Archivo: `frontend/public/images/hospital.jpg`.
+- Archivo: `frontend/nxt-ui-atlas-link/public/images/hospital.jpg`.
 - Autora: Tasha Kostyuk.
 - Fotografía: [Empty hospital corridor with benches and doors](https://unsplash.com/photos/empty-hospital-corridor-with-benches-and-doors-Pk-KuizxQv8).
 - Fuente: Unsplash, fotografía publicada el 27 de abril de 2026; cámara Apple iPhone 16 según la ficha.
@@ -20,7 +20,7 @@ No se utilizan imágenes generadas por IA. Los gráficos de producto se construy
 
 ## Fotografía de equipo y recepción — rediseño
 
-- Archivo: `frontend/public/images/clinical-team.jpg`, 1800×1085, aproximadamente 111 KB.
+- Archivo: `frontend/nxt-ui-atlas-link/public/images/clinical-team.jpg`, 1800×1085, aproximadamente 111 KB.
 - Fotógrafo: Cedric Fauntleroy.
 - Original: [Medical staff members at a modern clinic reception](https://www.pexels.com/photo/a-receptionist-and-a-practitioner-at-the-reception-4269274/).
 - La ficha identifica cámara Nikon D850, toma del 7 de marzo de 2020 y publicación del 29 de abril de 2020. Fotografía real inspeccionada visualmente; no imagen generada por IA.

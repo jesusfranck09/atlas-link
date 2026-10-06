@@ -1,6 +1,6 @@
 # Contratos versionados
 
-El esquema de entrada v1 se publica en `/contracts/account-v1.schema.json`, desde [su fuente](../../frontend/public/contracts/account-v1.schema.json). Usa JSON Schema2020-12 y describe el comportamiento implementado de `POST /api/accounts`.
+El esquema de entrada v1 se publica en `/contracts/account-v1.schema.json`, desde [su fuente](../../frontend/nxt-ui-atlas-link/public/contracts/account-v1.schema.json). Usa JSON Schema2020-12 y describe el comportamiento implementado de `POST /api/accounts`.
 
 [El ejemplo](account-v1.example.json) contiene únicamente datos sintéticos. Antes de enviarlo, reemplazar insurerId con un ID de `GET /api/insurers`, códigos con los del convenio y folio con uno único. Enviar bearer válido e `Idempotency-Key` único; repetir esa misma clave con el mismo cuerpo recupera la cuenta existente.
 

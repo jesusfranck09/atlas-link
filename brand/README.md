@@ -9,9 +9,9 @@ Activos vectoriales originales hechos con SVG, sin imágenes generadas por IA y 
 | `favicon.svg` | Isotipo para la pestaña del navegador. |
 | `contrast.json` | Contrastes calculados de los tokens principales. |
 
-La geometría coincide con `Brand` en `frontend/src/components/ui.tsx`: viewBox 48 × 44. El wordmark usa fuentes del sistema; su tipografía puede variar ligeramente según la instalación. La interfaz aloja localmente Inter y Manrope.
+La geometría coincide con `Brand` en `frontend/nxt-ui-atlas-link/src/components/ui.tsx`: viewBox 48 × 44. El wordmark usa fuentes del sistema; su tipografía puede variar ligeramente según la instalación. La interfaz aloja localmente Inter y Manrope.
 
-Conservar margen libre alrededor del isotipo, sin deformarlo ni alterar su proporción. Interfaces claras por decisión del usuario. Paleta: cobalto `#3156ED`, tinta `#101E36`, perla `#F4F6FA`, blanco `#FFFFFF`. Los SVG de este directorio se distribuyen también en `frontend/public/brand` y `frontend/public/favicon.svg`.
+Conservar margen libre alrededor del isotipo, sin deformarlo ni alterar su proporción. Interfaces claras por decisión del usuario. Paleta: cobalto `#3156ED`, tinta `#101E36`, perla `#F4F6FA`, blanco `#FFFFFF`. Los SVG de este directorio se distribuyen también en `frontend/nxt-ui-atlas-link/public/brand` y `frontend/nxt-ui-atlas-link/public/favicon.svg`.
 
 `preview.png` corresponde a la propuesta anterior y no se utiliza en la aplicación. La referencia vigente está en los SVG y en `docs/redisenio-visual.md`.
 

@@ -98,12 +98,12 @@ function collectSample() {
 const median = values => [...values].sort((a, b) => a - b)[Math.floor(values.length / 2)];
 let browser;
 try {
-  const manifest = JSON.parse(await readFile(path.join(root, 'frontend/package.json'), 'utf8'));
-  const css = await readFile(path.join(root, 'frontend/src/app/globals.css'), 'utf8');
+  const manifest = JSON.parse(await readFile(path.join(root, 'frontend/nxt-ui-atlas-link/package.json'), 'utf8'));
+  const css = await readFile(path.join(root, 'frontend/nxt-ui-atlas-link/src/app/globals.css'), 'utf8');
   report.staticInspection = {
     dependencies: manifest.dependencies,
     cssSourceBytes: Buffer.byteLength(css),
-    heroPhotoBytes: (await stat(path.join(root, 'frontend/public/images/hospital-architecture.jpg'))).size,
+    heroPhotoBytes: (await stat(path.join(root, 'frontend/nxt-ui-atlas-link/public/images/hospital-architecture.jpg'))).size,
     scene: 'Three.js loaded on intersection; on-demand rendering and SVG fallback; actual canvas count recorded in each sample',
     reducedMotionRulePresent: /prefers-reduced-motion\s*:\s*reduce/.test(css),
     reducedMotionImplementation: 'Runtime animation state and scroll behavior verified below',

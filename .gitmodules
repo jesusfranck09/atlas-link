@@ -1,0 +1,20 @@
+[submodule "backend/ntx-msa-identity-service"]
+	path = backend/ntx-msa-identity-service
+	url = https://github.com/jesusfranck09/ntx-msa-identity-service.git
+	branch = dev
+[submodule "backend/ntx-msa-control-service"]
+	path = backend/ntx-msa-control-service
+	url = https://github.com/jesusfranck09/ntx-msa-control-service.git
+	branch = dev
+[submodule "backend/ntx-msa-hospital-service"]
+	path = backend/ntx-msa-hospital-service
+	url = https://github.com/jesusfranck09/ntx-msa-hospital-service.git
+	branch = dev
+[submodule "backend/ntx-msa-gateway"]
+	path = backend/ntx-msa-gateway
+	url = https://github.com/jesusfranck09/ntx-msa-gateway.git
+	branch = dev
+[submodule "frontend/nxt-ui-atlas-link"]
+	path = frontend/nxt-ui-atlas-link
+	url = https://github.com/jesusfranck09/nxt-ui-atlas-link.git
+	branch = dev
