@@ -15,7 +15,7 @@ const report = {
   commit: execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim(),
   build: 'Current working tree, development server unless QA_BASE_URL points to production',
   platform: `${os.type()} ${os.release()} ${os.arch()}`, cpu: os.cpus()[0]?.model,
-  three: JSON.parse(await readFile(path.join(root, 'frontend/node_modules/three/package.json'), 'utf8')).version,
+  three: JSON.parse(await readFile(path.join(root, 'frontend/nxt-ui-atlas-link/node_modules/three/package.json'), 'utf8')).version,
   scope: 'Real browser WebGL glass material, DOM controls and exact dataset; mobile emulation. Single-category input is an explicitly intercepted QA fixture, never persisted.',
   limits: 'Renderer call counters are not FPS or GPU timing. No battery, VRAM, physical-mobile, Windows or Safari claims. Single shared half-resolution transmission buffer; no postprocessing.',
   beforeScreenshot: 'evidence/density-v5/desktop-compact-pie.png', checks: [], errors: [],

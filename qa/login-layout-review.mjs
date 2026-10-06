@@ -36,7 +36,7 @@ const report = {
   revision: execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim(),
   workingTree: execFileSync('git', ['status', '--short'], { cwd: root, encoding: 'utf8' }).trim().split('\n').filter(Boolean),
   environment: { node: process.version, platform: `${os.type()} ${os.release()} ${os.arch()}` },
-  sources: ['docs/review-login-v7.md', 'AGENTS.md', 'qa/tests/journeys.spec.ts', 'backend/identity-service/src/main/java/mx/atlaslink/auth/IdentityService.java', 'frontend/src/components/workspace.tsx'],
+  sources: ['docs/review-login-v7.md', 'AGENTS.md', 'qa/tests/journeys.spec.ts', 'backend/ntx-msa-identity-service/src/main/java/mx/atlaslink/auth/IdentityService.java', 'frontend/nxt-ui-atlas-link/src/components/workspace.tsx'],
   scope: 'Both real login UIs, demo-profile API, credential submission and logout through the local gateway and identity service. No API interception or fabricated sessions. Existing synthetic demo users only. Initial layout and axe at four viewport sizes per login.',
   exclusions: 'No production deployment, external messages, payment effects, data edits, full portal regression, persistence write/recovery test, physical mobile, Safari or Windows validation. A green run does not establish aesthetic acceptance or comprehensive accessibility/security.',
   checks: [], views: [], runtimeErrors: [], consoleErrors: [], httpFailures: [],

@@ -17,7 +17,7 @@ Las esculturas son decorativas y no implican nuevas capacidades de IA. Cada sist
 
 `PrismaticText` conserva el texto una sola vez en el DOM y hereda tipografía y tamaño. Su entrada termina en 1.2 segundos; el reflejo responde al puntero. El contenido sigue visible sin JavaScript y con movimiento reducido. El carrusel no tiene reproducción automática; las caras inactivas usan `inert` y `aria-hidden`. No se añaden modelos de IA ni imágenes generadas.
 
-React Bits queda registrado en `frontend/package.json`. MCP para Claude se preparó mediante el comando solicitado; la consulta del catálogo por protocolo se verificó con un cliente local temporal. Detalles en [react-bits-mcp.md](react-bits-mcp.md). No se instaló True Focus. La dependencia de desarrollo de shadcn no se importa en los componentes de la web.
+React Bits queda registrado en `frontend/nxt-ui-atlas-link/package.json`. MCP para Claude se preparó mediante el comando solicitado; la consulta del catálogo por protocolo se verificó con un cliente local temporal. Detalles en [react-bits-mcp.md](react-bits-mcp.md). No se instaló True Focus. La dependencia de desarrollo de shadcn no se importa en los componentes de la web.
 
 Root integra landing, accesos, herramientas y entrega; `intent_visual_v12` delimita alcance, `ui_map_v12` verifica rutas y contratos, `platform_experience_v12` construye las identidades, `sunrays_v11` crea esculturas y tipografía, `visual_qa_v12` valida recorridos. Los archivos tienen responsables delimitados.
 

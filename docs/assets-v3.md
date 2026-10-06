@@ -4,7 +4,7 @@ Selección y verificación: 24 de septiembre de 2026. Las tres fotografías son 
 
 ## Arquitectura hospitalaria — lucernarios circulares
 
-- Archivo utilizado por la landing: `frontend/public/images/hospital-architecture.jpg`. Es una copia idéntica de `frontend/public/images/hospital-interior.jpg`, conservada para reemplazar la URL anterior en la caché de imágenes durante el desarrollo. Ambos nombres corresponden a esta misma fotografía y a la misma licencia; no son dos fotografías distintas.
+- Archivo utilizado por la landing: `frontend/nxt-ui-atlas-link/public/images/hospital-architecture.jpg`. Es una copia idéntica de `frontend/nxt-ui-atlas-link/public/images/hospital-interior.jpg`, conservada para reemplazar la URL anterior en la caché de imágenes durante el desarrollo. Ambos nombres corresponden a esta misma fotografía y a la misma licencia; no son dos fotografías distintas.
 - Fotógrafo: **Joel Filipe**.
 - [Ficha original — Gray concrete building at daytime](https://unsplash.com/photos/gray-concrete-building-at-daytime-XMFC31EZPKI).
 - Identificador exacto de fotografía: **XMFC31EZPKI**; identificador del archivo CDN: **photo-1476889833843-503f40e367a0**.
@@ -18,7 +18,7 @@ Selección y verificación: 24 de septiembre de 2026. Las tres fotografías son 
 
 ## Fachada blanca — alternativa para acceso
 
-- Archivo: `frontend/public/images/hospital-facade.jpg`.
+- Archivo: `frontend/nxt-ui-atlas-link/public/images/hospital-facade.jpg`.
 - Fotógrafo: **Joel Filipe**.
 - [Ficha original — Minimalist photography of high-rise building](https://unsplash.com/photos/minimalist-photography-of-high-rise-building-J3eemrdvV_U).
 - Identificador exacto de fotografía: **J3eemrdvV_U**; identificador CDN: **photo-1481114536533-b80e3d4eb1d4**.
@@ -32,7 +32,7 @@ Selección y verificación: 24 de septiembre de 2026. Las tres fotografías son 
 
 ## Profesionales y tecnología
 
-- Archivo: `frontend/public/images/healthcare-editorial.jpg`.
+- Archivo: `frontend/nxt-ui-atlas-link/public/images/healthcare-editorial.jpg`.
 - Fotógrafo: **Thirdman**.
 - [Ficha original — Medical Professionals Looking at the Screen of the Tablet while Sitting Next to Each Other](https://www.pexels.com/photo/medical-professionals-looking-at-the-screen-of-the-tablet-while-sitting-next-to-each-other-5327655/).
 - [Descarga utilizada](https://images.pexels.com/photos/5327655/pexels-photo-5327655.jpeg?auto=compress&cs=tinysrgb&w=1800).

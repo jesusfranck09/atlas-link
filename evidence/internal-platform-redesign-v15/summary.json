@@ -1,0 +1,232 @@
+{
+  "snapshots": [
+    {
+      "route": "/hospital",
+      "title": "Operación del hospital",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "rail": {
+        "left": 1162,
+        "right": 1440,
+        "width": 278,
+        "visibility": "visible"
+      }
+    },
+    {
+      "route": "/hospital/accounts",
+      "title": "Cuentas hospitalarias",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "rail": {
+        "left": 1162,
+        "right": 1440,
+        "width": 278,
+        "visibility": "visible"
+      }
+    },
+    {
+      "route": "/hospital/review",
+      "title": "Bandeja de revisión",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "rail": {
+        "left": 1162,
+        "right": 1440,
+        "width": 278,
+        "visibility": "visible"
+      }
+    },
+    {
+      "route": "/hospital/import",
+      "title": "Cargar cuentas",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "rail": {
+        "left": 1162,
+        "right": 1440,
+        "width": 278,
+        "visibility": "visible"
+      }
+    },
+    {
+      "route": "/hospital/agreements",
+      "title": "Convenios y tabuladores",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "rail": {
+        "left": 1162,
+        "right": 1440,
+        "width": 278,
+        "visibility": "visible"
+      }
+    },
+    {
+      "route": "/hospital/reports",
+      "title": "Reportes",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "rail": {
+        "left": 1162,
+        "right": 1440,
+        "width": 278,
+        "visibility": "visible"
+      }
+    },
+    {
+      "route": "/hospital/users",
+      "title": "Equipo y accesos",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "rail": {
+        "left": 1162,
+        "right": 1440,
+        "width": 278,
+        "visibility": "visible"
+      }
+    },
+    {
+      "route": "/hospital/audit",
+      "title": "Bitácora",
+      "viewport": 1440,
+      "documentWidth": 1440,
+      "rail": {
+        "left": 1162,
+        "right": 1440,
+        "width": 278,
+        "visibility": "visible"
+      }
+    },
+    {
+      "route": "/hospital @390",
+      "drawer": {
+        "left": 22,
+        "right": 382,
+        "width": 360,
+        "visibility": "visible",
+        "modal": "true"
+      },
+      "documentWidth": 390
+    },
+    {
+      "route": "/admin",
+      "title": "Capacidad hospitalaria,vista de conjunto.",
+      "documentWidth": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "/admin/tenants",
+      "title": "Hospitales",
+      "documentWidth": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "/admin/licenses",
+      "title": "Licencias y capacidad",
+      "documentWidth": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "/admin/leads",
+      "title": "Solicitudes comerciales",
+      "documentWidth": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "/admin/users",
+      "title": "Equipo Atlas",
+      "documentWidth": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "/admin/audit",
+      "title": "Bitácora",
+      "documentWidth": 1440,
+      "viewport": 1440
+    },
+    {
+      "route": "/hospital as insurer",
+      "documentWidth": 1440,
+      "insurerLinks": [
+        "Vista general",
+        "Cuentas hospitalarias"
+      ]
+    },
+    {
+      "route": "/admin @390",
+      "title": "Capacidad hospitalaria, vista de conjunto.",
+      "viewport": 390,
+      "documentWidth": 390,
+      "drawer": {
+        "visible": true,
+        "modal": true
+      },
+      "screenshot": "atlas-mobile.png",
+      "drawerScreenshot": "atlas-drawer-mobile.png"
+    },
+    {
+      "route": "/hospital as insurer @390",
+      "title": "Libro de evidencia",
+      "viewport": 390,
+      "documentWidth": 390,
+      "drawer": {
+        "visible": true,
+        "modal": true
+      },
+      "screenshot": "insurer-mobile.png",
+      "drawerScreenshot": "insurer-drawer-mobile.png"
+    },
+    {
+      "route": "/hospital/accounts/[id]",
+      "title": "Detalle del expediente",
+      "viewport": 1440,
+      "documentWidth": 1425
+    },
+    {
+      "route": "/hospital/accounts/[id] @390",
+      "title": "Detalle del expediente",
+      "viewport": 390,
+      "documentWidth": 390,
+      "summaryColumns": "single column"
+    },
+    {
+      "route": "/hospital/accounts · perfil aseguradora",
+      "title": "Consulta de cuentas",
+      "viewport": 1440,
+      "documentWidth": 1425
+    },
+    {
+      "route": "/hospital/accounts · perfil aseguradora @390",
+      "title": "Consulta de cuentas",
+      "viewport": 390,
+      "documentWidth": 390
+    },
+    {
+      "route": "/hospital/accounts/[id] · perfil aseguradora",
+      "title": "Detalle del expediente en consulta",
+      "viewport": 1440,
+      "documentWidth": 1425
+    }
+  ],
+  "issues": [],
+  "visualScreenshots": {
+    "desktop": [
+      "hospital-home-desktop.png",
+      "hospital-accounts.png",
+      "hospital-account-detail-desktop.png",
+      "atlas-home-desktop.png",
+      "insurer-home-desktop.png",
+      "insurer-accounts-desktop.png",
+      "insurer-account-detail-desktop.png"
+    ],
+    "mobile": [
+      "hospital-mobile.png",
+      "hospital-accounts-mobile.png",
+      "hospital-account-detail-mobile.png",
+      "atlas-mobile.png",
+      "insurer-mobile.png",
+      "insurer-accounts-mobile.png",
+      "atlas-drawer-mobile.png",
+      "insurer-drawer-mobile.png"
+    ]
+  }
+}

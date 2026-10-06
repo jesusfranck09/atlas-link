@@ -42,6 +42,15 @@ async function noOverflow(page: Page) {
   const metrics = await page.evaluate(() => ({ width: document.documentElement.clientWidth, scrollWidth: document.documentElement.scrollWidth }));
   expect(metrics.scrollWidth, 'Document must fit the viewport; tables may scroll internally').toBeLessThanOrEqual(metrics.width + 1);
 }
+async function revealLanding(page: Page) {
+  const sections = page.locator('main [data-reveal]');
+  for (let index = 0; index < await sections.count(); index++) {
+    const section = sections.nth(index);
+    await section.scrollIntoViewIfNeeded();
+    await expect(section, `Landing section ${index + 1} becomes visible after scrolling`).toHaveAttribute('data-reveal-state', 'visible');
+  }
+  await page.evaluate(() => scrollTo(0, 0));
+}
 async function a11y(page: Page, info: TestInfo, name: string) {
   const results = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze();
   await info.attach(`${name}-axe.json`, { body: JSON.stringify({ url: new URL(page.url()).pathname, violations: results.violations, incomplete: results.incomplete, passes: results.passes.map(p => p.id) }, null, 2), contentType: 'application/json' });
@@ -77,28 +86,59 @@ async function openMenuIfMobile(page: Page) {
   if (await menu.isVisible()) await menu.click();
 }
 
-test('landing, real photography, responsive layout and commercial request persistence', async ({ page }, info) => {
+test('public landing presents a labeled demo, real photography and responsive routes', async ({ page }, info) => {
   await page.goto('/');
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText(/Cada cuenta,\s*en perspectiva\./);
-  await noOverflow(page);
-  await screenshot(page, info, 'landing');
-  await a11y(page, info, 'landing');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText(/Claridad antes\s*de cada envío\./);
+  const donut = page.locator('figure[data-landing-donut]');
+  await expect(donut).toHaveAttribute('aria-label', 'Distribución ilustrativa de cuentas');
+  await expect(donut.getByText('Datos sintéticos de demostración.')).toBeVisible();
+  await expect(donut.locator('svg')).toHaveCount(1);
+  for (const [label, percentage] of [['Preparadas', '60 %'], ['En revisión', '25 %'], ['Por resolver', '15 %']]) {
+    await expect(donut.getByText(label, { exact: true })).toBeVisible();
+    await expect(donut.getByText(percentage, { exact: true })).toBeVisible();
+  }
+  const photograph = page.getByRole('img', { name: 'Dos profesionales de salud revisan información en una tablet y una computadora' });
+  await photograph.scrollIntoViewIfNeeded();
+  await expect.poll(() => photograph.evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth >= 300), { message: 'The professional photograph must load at the appropriate responsive resolution' }).toBe(true);
+  for (const width of info.project.name === 'chrome-desktop' ? [1440, 390, 320] : [390]) {
+    await page.setViewportSize({ width, height: width < 600 ? 844 : 1000 });
+    await revealLanding(page);
+    await noOverflow(page);
+    await screenshot(page, info, `landing-${width}`);
+    if (width !== 320) await a11y(page, info, `landing-${width}`);
+  }
+  await expect(page.getByRole('contentinfo').getByRole('link', { name: /consola atlas/i })).toHaveAttribute('href', '/admin/login');
+  await expect(page.getByRole('contentinfo').getByRole('link', { name: /aseguradora demo/i })).toHaveAttribute('href', '/insurer/login');
+  const contactLink = page.locator('a[href="#contacto"]:visible').first();
+  await contactLink.click();
+  await expect(page).toHaveURL(/#contacto$/);
+  await expect(page.locator('#contacto form')).toBeVisible();
+  await page.getByRole('link', { name: 'Acceder', exact: true }).click();
+  await expect(page).toHaveURL(/\/login$/);
+  await expect(page.getByLabel('Correo institucional')).toBeVisible();
+});
+
+test('public landing keeps a static chart when motion is reduced', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
-  await expect(page.locator('[data-analytics-sculpture]').first()).toBeVisible();
+  await page.goto('/');
+  const donut = page.locator('figure[data-landing-donut]');
+  await donut.scrollIntoViewIfNeeded();
+  await expect(donut.locator('svg')).toBeVisible();
+  await expect(donut.locator('canvas')).toHaveCount(0);
   const loops = await page.evaluate(() => document.getAnimations().filter(animation => animation.playState === 'running' && animation.effect?.getComputedTiming().iterations === Infinity).length);
   expect(loops, 'Reduced motion removes perpetual decorative animation').toBe(0);
-  await page.emulateMedia({ reducedMotion: 'no-preference' });
-  const hospitalImage = page.getByRole('img', { name: 'Profesionales sanitarios colaboran en un entorno hospitalario' });
-  await hospitalImage.scrollIntoViewIfNeeded();
-  await expect.poll(() => hospitalImage.evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0)).toBe(true);
+});
+
+test('commercial request is persisted and visible to the platform operator', async ({ page }) => {
+  await page.goto('/');
   const email = `${unique('LEAD').toLowerCase()}@example.com`;
   await page.getByLabel('Nombre completo').fill('Persona sintética QA');
   await page.getByLabel('Correo de trabajo').fill(email);
   await page.getByLabel('Hospital u organización').fill('Hospital sintético QA');
   await page.getByLabel('¿Qué te gustaría resolver?').fill('Validación de recorrido comercial con datos sintéticos.');
   await page.getByRole('checkbox').check();
-  await page.getByRole('button', { name: 'Solicitar una conversación' }).click();
-  await expect(page.getByRole('heading', { name: 'Ya dimos el primer paso.' })).toBeVisible();
+  await page.locator('#contacto form').getByRole('button', { name: 'Enviar solicitud' }).click();
+  await expect(page.locator('#contacto [role="status"]')).toBeVisible();
   await login(page, 'atlas@demo.atlaslink.mx');
   await page.goto('/admin/leads');
   await page.getByRole('textbox', { name: 'Buscar solicitudes' }).fill(email);
