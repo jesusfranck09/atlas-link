@@ -1,0 +1,97 @@
+{
+  "startedAt": "2026-09-24T22:14:50.582Z",
+  "mode": "baseline",
+  "baseURL": "http://127.0.0.1:4430",
+  "revision": "815cb3e70bc31720af9bfb94ef092a583acce7db",
+  "workingTree": [
+    "?? qa/identity-review.mjs"
+  ],
+  "environment": "Local Docker Next.js production build, actual Java/Spring APIs and PostgreSQL demo data; Chrome on macOS via CDP. 390/320 and tablet dimensions are emulated, not physical mobile devices.",
+  "mutations": "Authentication/session audit only. No business-data writes, commercial forms, email, payments or API mocks.",
+  "scope": "Fresh V11 landing and three authenticated shells at 14:00 local time, for V12 comparison.",
+  "checks": [
+    {
+      "name": "landing-desktop",
+      "status": "pass",
+      "dimensions": {
+        "viewport": 1425,
+        "document": 1425
+      },
+      "screenshot": "evidence/identity-v12/before/landing-desktop.png"
+    },
+    {
+      "name": "hospital-desktop",
+      "status": "pass",
+      "route": "/hospital",
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "screenshot": "evidence/identity-v12/before/hospital-desktop.png"
+    },
+    {
+      "name": "control-desktop",
+      "status": "pass",
+      "route": "/admin",
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "screenshot": "evidence/identity-v12/before/control-desktop.png"
+    },
+    {
+      "name": "insurer-desktop",
+      "status": "pass",
+      "route": "/hospital",
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "screenshot": "evidence/identity-v12/before/insurer-desktop.png"
+    },
+    {
+      "name": "landing-mobile-390",
+      "status": "pass",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/before/landing-mobile-390.png"
+    },
+    {
+      "name": "hospital-mobile-390",
+      "status": "pass",
+      "route": "/hospital",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/before/hospital-mobile-390.png"
+    },
+    {
+      "name": "control-mobile-390",
+      "status": "pass",
+      "route": "/admin",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/before/control-mobile-390.png"
+    },
+    {
+      "name": "insurer-mobile-390",
+      "status": "pass",
+      "route": "/hospital",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/before/insurer-mobile-390.png"
+    }
+  ],
+  "errors": [],
+  "browser": "153.0.8010.53",
+  "finishedAt": "2026-09-24T22:15:04.934Z",
+  "planned": 8,
+  "passed": true
+}

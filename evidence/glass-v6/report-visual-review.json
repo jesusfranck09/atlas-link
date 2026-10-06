@@ -1,0 +1,453 @@
+{
+  "startedAt": "2026-09-24T17:58:19.457Z",
+  "baseURL": "http://127.0.0.1:4430",
+  "scope": "Hospital reports with real local API responses and synthetic data; desktop and emulated mobile. Authentication and read-only filtering; no business-data writes or downloads.",
+  "checks": [
+    {
+      "name": "desktop-demo-login",
+      "passed": true,
+      "role": "HOSPITAL_ADMIN",
+      "dataset": "Synthetic demonstration"
+    },
+    {
+      "name": "desktop-reports-pie-bars-and-metric-spacing",
+      "passed": true,
+      "totalAccounts": 18,
+      "insurerCategories": 3,
+      "dimensions": {
+        "documentWidth": 1425,
+        "clientWidth": 1425,
+        "innerWidth": 1440
+      },
+      "renderers": [
+        {
+          "type": "pie",
+          "renderer": "webgl"
+        },
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ]
+    },
+    {
+      "name": "desktop-single-insurer-matches-api",
+      "passed": true,
+      "insurerId": "c0000000-0000-0000-0000-000000000002",
+      "countFromApi": 8,
+      "dimensions": {
+        "documentWidth": 1440,
+        "clientWidth": 1440,
+        "innerWidth": 1440
+      },
+      "renderers": [
+        {
+          "type": "pie",
+          "renderer": "webgl"
+        },
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ]
+    },
+    {
+      "name": "desktop-future-period-empty-state",
+      "passed": true,
+      "totalAccounts": 0,
+      "downloadDisabled": true,
+      "dimensions": {
+        "documentWidth": 1440,
+        "clientWidth": 1440,
+        "innerWidth": 1440
+      },
+      "renderers": [
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ]
+    },
+    {
+      "name": "desktop-clear-restores-original-report",
+      "passed": true,
+      "originalAccountCount": 18,
+      "restoredAccountCount": 18
+    },
+    {
+      "name": "mobile-demo-login",
+      "passed": true,
+      "role": "HOSPITAL_ADMIN",
+      "dataset": "Synthetic demonstration"
+    },
+    {
+      "name": "mobile-reports-pie-bars-and-metric-spacing",
+      "passed": true,
+      "totalAccounts": 18,
+      "insurerCategories": 3,
+      "dimensions": {
+        "documentWidth": 390,
+        "clientWidth": 390,
+        "innerWidth": 390
+      },
+      "renderers": [
+        {
+          "type": "pie",
+          "renderer": "webgl"
+        },
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ]
+    },
+    {
+      "name": "mobile-single-insurer-matches-api",
+      "passed": true,
+      "insurerId": "c0000000-0000-0000-0000-000000000002",
+      "countFromApi": 8,
+      "dimensions": {
+        "documentWidth": 390,
+        "clientWidth": 390,
+        "innerWidth": 390
+      },
+      "renderers": [
+        {
+          "type": "pie",
+          "renderer": "webgl"
+        },
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ]
+    },
+    {
+      "name": "mobile-future-period-empty-state",
+      "passed": true,
+      "totalAccounts": 0,
+      "downloadDisabled": true,
+      "dimensions": {
+        "documentWidth": 390,
+        "clientWidth": 390,
+        "innerWidth": 390
+      },
+      "renderers": [
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ]
+    },
+    {
+      "name": "mobile-clear-restores-original-report",
+      "passed": true,
+      "originalAccountCount": 18,
+      "restoredAccountCount": 18
+    }
+  ],
+  "errors": [],
+  "views": [
+    {
+      "name": "report-desktop",
+      "dimensions": {
+        "documentWidth": 1425,
+        "clientWidth": 1425,
+        "innerWidth": 1440
+      },
+      "metrics": {
+        "columnGap": "16px",
+        "rowGap": "16px",
+        "cards": [
+          {
+            "x": 32,
+            "y": 341.625,
+            "width": 328.25,
+            "height": 75
+          },
+          {
+            "x": 376.25,
+            "y": 341.625,
+            "width": 328.25,
+            "height": 75
+          },
+          {
+            "x": 720.5,
+            "y": 341.625,
+            "width": 328.25,
+            "height": 75
+          },
+          {
+            "x": 1064.75,
+            "y": 341.625,
+            "width": 328.25,
+            "height": 75
+          }
+        ]
+      },
+      "renderers": [
+        {
+          "type": "pie",
+          "renderer": "webgl"
+        },
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ],
+      "screenshot": "evidence/glass-v6/report-desktop.png",
+      "violations": [],
+      "incompleteAxeChecks": 1
+    },
+    {
+      "name": "report-desktop-single-insurer",
+      "dimensions": {
+        "documentWidth": 1440,
+        "clientWidth": 1440,
+        "innerWidth": 1440
+      },
+      "metrics": {
+        "columnGap": "16px",
+        "rowGap": "16px",
+        "cards": [
+          {
+            "x": 32,
+            "y": 341.625,
+            "width": 332,
+            "height": 58.046875
+          },
+          {
+            "x": 380,
+            "y": 341.625,
+            "width": 332,
+            "height": 58.046875
+          },
+          {
+            "x": 728,
+            "y": 341.625,
+            "width": 332,
+            "height": 58.046875
+          },
+          {
+            "x": 1076,
+            "y": 341.625,
+            "width": 332,
+            "height": 58.046875
+          }
+        ]
+      },
+      "renderers": [
+        {
+          "type": "pie",
+          "renderer": "webgl"
+        },
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ],
+      "screenshot": "evidence/glass-v6/report-desktop-single-insurer.png",
+      "violations": [],
+      "incompleteAxeChecks": 1
+    },
+    {
+      "name": "report-desktop-empty",
+      "dimensions": {
+        "documentWidth": 1440,
+        "clientWidth": 1440,
+        "innerWidth": 1440
+      },
+      "metrics": {
+        "columnGap": "16px",
+        "rowGap": "16px",
+        "cards": [
+          {
+            "x": 32,
+            "y": 341.625,
+            "width": 332,
+            "height": 58.046875
+          },
+          {
+            "x": 380,
+            "y": 341.625,
+            "width": 332,
+            "height": 58.046875
+          },
+          {
+            "x": 728,
+            "y": 341.625,
+            "width": 332,
+            "height": 58.046875
+          },
+          {
+            "x": 1076,
+            "y": 341.625,
+            "width": 332,
+            "height": 58.046875
+          }
+        ]
+      },
+      "renderers": [
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ],
+      "screenshot": "evidence/glass-v6/report-desktop-empty.png",
+      "violations": [],
+      "incompleteAxeChecks": 2
+    },
+    {
+      "name": "report-mobile",
+      "dimensions": {
+        "documentWidth": 390,
+        "clientWidth": 390,
+        "innerWidth": 390
+      },
+      "metrics": {
+        "columnGap": "12px",
+        "rowGap": "12px",
+        "cards": [
+          {
+            "x": 16,
+            "y": 481.078125,
+            "width": 173,
+            "height": 100.890625
+          },
+          {
+            "x": 201,
+            "y": 481.078125,
+            "width": 173,
+            "height": 100.890625
+          },
+          {
+            "x": 16,
+            "y": 593.96875,
+            "width": 173,
+            "height": 100.890625
+          },
+          {
+            "x": 201,
+            "y": 593.96875,
+            "width": 173,
+            "height": 100.890625
+          }
+        ]
+      },
+      "renderers": [
+        {
+          "type": "pie",
+          "renderer": "webgl"
+        },
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ],
+      "screenshot": "evidence/glass-v6/report-mobile.png",
+      "violations": [],
+      "incompleteAxeChecks": 1
+    },
+    {
+      "name": "report-mobile-single-insurer",
+      "dimensions": {
+        "documentWidth": 390,
+        "clientWidth": 390,
+        "innerWidth": 390
+      },
+      "metrics": {
+        "columnGap": "12px",
+        "rowGap": "12px",
+        "cards": [
+          {
+            "x": 16,
+            "y": 481.078125,
+            "width": 173,
+            "height": 100.890625
+          },
+          {
+            "x": 201,
+            "y": 481.078125,
+            "width": 173,
+            "height": 100.890625
+          },
+          {
+            "x": 16,
+            "y": 593.96875,
+            "width": 173,
+            "height": 100.890625
+          },
+          {
+            "x": 201,
+            "y": 593.96875,
+            "width": 173,
+            "height": 100.890625
+          }
+        ]
+      },
+      "renderers": [
+        {
+          "type": "pie",
+          "renderer": "webgl"
+        },
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ],
+      "screenshot": "evidence/glass-v6/report-mobile-single-insurer.png",
+      "violations": [],
+      "incompleteAxeChecks": 1
+    },
+    {
+      "name": "report-mobile-empty",
+      "dimensions": {
+        "documentWidth": 390,
+        "clientWidth": 390,
+        "innerWidth": 390
+      },
+      "metrics": {
+        "columnGap": "12px",
+        "rowGap": "12px",
+        "cards": [
+          {
+            "x": 16,
+            "y": 481.078125,
+            "width": 173,
+            "height": 100.890625
+          },
+          {
+            "x": 201,
+            "y": 481.078125,
+            "width": 173,
+            "height": 100.890625
+          },
+          {
+            "x": 16,
+            "y": 593.96875,
+            "width": 173,
+            "height": 100.890625
+          },
+          {
+            "x": 201,
+            "y": 593.96875,
+            "width": 173,
+            "height": 100.890625
+          }
+        ]
+      },
+      "renderers": [
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ],
+      "screenshot": "evidence/glass-v6/report-mobile-empty.png",
+      "violations": [],
+      "incompleteAxeChecks": 2
+    }
+  ],
+  "browserVersion": "153.0.8010.53",
+  "finishedAt": "2026-09-24T17:58:29.183Z",
+  "passed": true
+}

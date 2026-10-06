@@ -1,0 +1,146 @@
+{
+  "environment": "Native localhost services PostgreSQL15; installed Chrome153.0.8010.53 on macOS; viewport emulation only",
+  "stats": {
+    "startTime": "2026-09-24T06:29:41.608Z",
+    "duration": 61328.143,
+    "expected": 25,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "runs": [
+    {
+      "project": "chrome-desktop",
+      "name": "admission date selects agreement; frozen evidence remains reproducible after correction",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-desktop",
+      "name": "landing, real photography, responsive layout and commercial request persistence",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-desktop",
+      "name": "both login surfaces autocomplete every embedded demo profile and reject disabled account",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-desktop",
+      "name": "hospital role admin: real authentication, dashboard and navigation permissions",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-desktop",
+      "name": "hospital role caja: real authentication, dashboard and navigation permissions",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-desktop",
+      "name": "hospital role auditor: real authentication, dashboard and navigation permissions",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-desktop",
+      "name": "hospital role direccion: real authentication, dashboard and navigation permissions",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-desktop",
+      "name": "hospital role aseguradora: real authentication, dashboard and navigation permissions",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-desktop",
+      "name": "manual intake, correction, reevaluation, real export and recorded insurer outcome",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-desktop",
+      "name": "download template and import Excel through the browser persists a unique account",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-desktop",
+      "name": "platform onboarding, persisted license capacity and new hospital login",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-desktop",
+      "name": "read-only role route gate and revoked session redirect",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-desktop",
+      "name": "agreement Excel preview rejects invalid rows, then imports and publishes an isolated draft",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-mobile-emulated",
+      "name": "landing, real photography, responsive layout and commercial request persistence",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-mobile-emulated",
+      "name": "both login surfaces autocomplete every embedded demo profile and reject disabled account",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-mobile-emulated",
+      "name": "hospital role admin: real authentication, dashboard and navigation permissions",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-mobile-emulated",
+      "name": "hospital role caja: real authentication, dashboard and navigation permissions",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-mobile-emulated",
+      "name": "hospital role auditor: real authentication, dashboard and navigation permissions",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-mobile-emulated",
+      "name": "hospital role direccion: real authentication, dashboard and navigation permissions",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-mobile-emulated",
+      "name": "hospital role aseguradora: real authentication, dashboard and navigation permissions",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-mobile-emulated",
+      "name": "manual intake, correction, reevaluation, real export and recorded insurer outcome",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-mobile-emulated",
+      "name": "download template and import Excel through the browser persists a unique account",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-mobile-emulated",
+      "name": "platform onboarding, persisted license capacity and new hospital login",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-mobile-emulated",
+      "name": "read-only role route gate and revoked session redirect",
+      "status": "passed"
+    },
+    {
+      "project": "chrome-mobile-emulated",
+      "name": "agreement Excel preview rejects invalid rows, then imports and publishes an isolated draft",
+      "status": "passed"
+    }
+  ],
+  "axeScans": 18,
+  "axeViolations": 0,
+  "axeIncompleteResults": 16,
+  "uncaughtErrors": 0,
+  "server5xx": 0,
+  "consoleErrors": {
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)": 4
+  }
+}

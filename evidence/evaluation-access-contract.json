@@ -1,0 +1,12 @@
+{
+  "otherHospital": {
+    "historyStatus": 404,
+    "snapshotStatus": 404
+  },
+  "platform": {
+    "historyStatus": 403
+  },
+  "anonymous": {
+    "historyStatus": 401
+  }
+}

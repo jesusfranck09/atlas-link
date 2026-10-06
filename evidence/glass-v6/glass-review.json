@@ -1,0 +1,207 @@
+{
+  "startedAt": "2026-09-24T17:55:02.803Z",
+  "baseURL": "http://127.0.0.1:4300",
+  "browser": "153.0.8010.53",
+  "commit": "31dcee7906f1dcb3a1691892e7f45f113875ed52",
+  "build": "Current working tree, development server unless QA_BASE_URL points to production",
+  "platform": "Darwin 25.6.0 arm64",
+  "cpu": "Apple M3",
+  "three": "0.186.1",
+  "scope": "Real browser WebGL glass material, DOM controls and exact dataset; mobile emulation. Single-category input is an explicitly intercepted QA fixture, never persisted.",
+  "limits": "Renderer call counters are not FPS or GPU timing. No battery, VRAM, physical-mobile, Windows or Safari claims. Single shared half-resolution transmission buffer; no postprocessing.",
+  "beforeScreenshot": "evidence/density-v5/desktop-compact-pie.png",
+  "checks": [
+    {
+      "name": "desktop-landing-standard-preserved",
+      "passed": true,
+      "finish": "standard",
+      "legacyFraming": true
+    },
+    {
+      "name": "desktop-glass-pie-values-and-selection",
+      "passed": true,
+      "source": [
+        3,
+        6,
+        9
+      ],
+      "values": [
+        3,
+        6,
+        9
+      ],
+      "stats": {
+        "sculptureHost": "true",
+        "visible": "true",
+        "motion": "full",
+        "frames": "21",
+        "drawCalls": "8",
+        "triangles": "27988",
+        "geometries": "5",
+        "textures": "6",
+        "pixelRatio": "1",
+        "transmissionScale": "0.5",
+        "cssWidth": 368,
+        "cssHeight": 220,
+        "canvasWidth": 368,
+        "canvasHeight": 220,
+        "adapter": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3, Unspecified Version)"
+      },
+      "input": "Arrow keys"
+    },
+    {
+      "name": "desktop-glass-idle",
+      "passed": true,
+      "before": 21,
+      "after": 21,
+      "idleMilliseconds": 1000
+    },
+    {
+      "name": "glass-context-loss-restoration",
+      "passed": true,
+      "selectionRetained": true,
+      "rendererRecovered": true
+    },
+    {
+      "name": "desktop-glass-bars",
+      "passed": true,
+      "values": [
+        "2026-09202,800"
+      ],
+      "stats": {
+        "sculptureHost": "true",
+        "visible": "true",
+        "motion": "full",
+        "frames": "2",
+        "drawCalls": "8",
+        "triangles": "156",
+        "geometries": "7",
+        "textures": "6",
+        "pixelRatio": "1",
+        "transmissionScale": "0.5",
+        "cssWidth": 372,
+        "cssHeight": 220,
+        "canvasWidth": 372,
+        "canvasHeight": 220,
+        "adapter": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3, Unspecified Version)"
+      }
+    },
+    {
+      "name": "single-category-full-glass-disk",
+      "passed": true,
+      "fixture": "Existing total temporarily allocated to one category by response interception; no DB mutation",
+      "values": [
+        "18",
+        "0",
+        "0"
+      ],
+      "closedDiskWithoutRadialSeam": true,
+      "stats": {
+        "sculptureHost": "true",
+        "visible": "true",
+        "motion": "full",
+        "frames": "2",
+        "drawCalls": "4",
+        "triangles": "9212",
+        "geometries": "3",
+        "textures": "6",
+        "pixelRatio": "1",
+        "transmissionScale": "0.5",
+        "cssWidth": 368,
+        "cssHeight": 220,
+        "canvasWidth": 368,
+        "canvasHeight": 220,
+        "adapter": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3, Unspecified Version)"
+      }
+    },
+    {
+      "name": "mobile-emulated-landing-standard-preserved",
+      "passed": true,
+      "finish": "standard",
+      "legacyFraming": true
+    },
+    {
+      "name": "mobile-emulated-glass-pie-values-and-selection",
+      "passed": true,
+      "source": [
+        3,
+        6,
+        9
+      ],
+      "values": [
+        3,
+        6,
+        9
+      ],
+      "stats": {
+        "sculptureHost": "true",
+        "visible": "true",
+        "motion": "full",
+        "frames": "21",
+        "drawCalls": "8",
+        "triangles": "27988",
+        "geometries": "5",
+        "textures": "6",
+        "pixelRatio": "1.5",
+        "transmissionScale": "0.5",
+        "cssWidth": 324,
+        "cssHeight": 210,
+        "canvasWidth": 486,
+        "canvasHeight": 315,
+        "adapter": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3, Unspecified Version)"
+      },
+      "input": "Touch"
+    },
+    {
+      "name": "mobile-emulated-glass-idle",
+      "passed": true,
+      "before": 22,
+      "after": 22,
+      "idleMilliseconds": 1000
+    },
+    {
+      "name": "mobile-emulated-glass-bars",
+      "passed": true,
+      "values": [
+        "2026-09202,800"
+      ],
+      "stats": {
+        "sculptureHost": "true",
+        "visible": "true",
+        "motion": "full",
+        "frames": "2",
+        "drawCalls": "8",
+        "triangles": "156",
+        "geometries": "7",
+        "textures": "6",
+        "pixelRatio": "1.5",
+        "transmissionScale": "0.5",
+        "cssWidth": 324,
+        "cssHeight": 210,
+        "canvasWidth": 486,
+        "canvasHeight": 315,
+        "adapter": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3, Unspecified Version)"
+      }
+    },
+    {
+      "name": "glass-reduced-motion",
+      "passed": true,
+      "selectionFrames": 1,
+      "pointerFrames": 0
+    },
+    {
+      "name": "glass-initialization-unavailable-svg",
+      "passed": true,
+      "values": [
+        "Sin alertas3",
+        "Revisión requerida6",
+        "Atención prioritaria9"
+      ],
+      "selectionWithoutWebGL": true,
+      "failure": "WebGL unavailable before app initialization"
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-09-24T17:55:23.292Z",
+  "passed": true
+}

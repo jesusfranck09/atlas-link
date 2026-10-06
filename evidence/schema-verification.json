@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": [
+    "owner migrations",
+    "demo seeds",
+    "exact money reconciliation",
+    "RLS empty context",
+    "RLS main tenant",
+    "RLS secondary tenant",
+    "platform cannot bypass RLS",
+    "no cross-service grant"
+  ],
+  "committed": false
+}

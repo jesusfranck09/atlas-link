@@ -1,0 +1,44 @@
+{
+  "date": "2026-09-24T20:45:07.649Z",
+  "scope": "Final mobile lunar source adjustment after 19/19 V9 scenarios; real Chrome, mobile emulation.",
+  "results": [
+    {
+      "width": 320,
+      "status": "pass",
+      "moonTop": 81.1875,
+      "moonBottom": 106.8125,
+      "headerBottom": 74,
+      "announcementTop": 110,
+      "headingTop": 162.1875,
+      "viewport": 320,
+      "document": 320,
+      "screenshot": "landing-night-320-polish.png"
+    },
+    {
+      "width": 390,
+      "status": "pass",
+      "moonTop": 81.1875,
+      "moonBottom": 106.8125,
+      "headerBottom": 74,
+      "announcementTop": 110,
+      "headingTop": 162.1875,
+      "viewport": 390,
+      "document": 390,
+      "screenshot": "landing-night-mobile-emulated.png"
+    },
+    {
+      "width": 760,
+      "status": "pass",
+      "moonTop": 81.1875,
+      "moonBottom": 106.8125,
+      "headerBottom": 74,
+      "announcementTop": 110,
+      "headingTop": 162.1875,
+      "viewport": 760,
+      "document": 760,
+      "screenshot": "landing-night-760-polish.png"
+    }
+  ],
+  "errors": [],
+  "passed": true
+}

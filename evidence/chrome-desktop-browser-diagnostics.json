@@ -1,0 +1,8 @@
+{
+  "browser": "installed Google Chrome / Chromium engine",
+  "platform": "darwin",
+  "emulation": "chrome-desktop",
+  "consoleErrors": [],
+  "pageErrors": [],
+  "serverErrors": []
+}

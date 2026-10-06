@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-24",
+  "passed": true,
+  "environment": "Docker PostgreSQL15 isolated demo; all migrations through hospital V3",
+  "sourceDatabase": "atlas_link",
+  "temporaryDatabase": "atlas_link_restore_validation",
+  "method": "pg_dump custom format -> createdb -> pg_restore --exit-on-error -> SQL validation -> drop temporary validation database",
+  "counts": {
+    "accounts": 20,
+    "lines": 63,
+    "evaluations": 20,
+    "users": 8,
+    "tenants": 2
+  },
+  "financialReconciliation": true,
+  "runtimeOwnsHospitalTables": false,
+  "restoredRls": {
+    "mainTenant": 18,
+    "secondaryTenant": 2
+  },
+  "sourceDatabaseModified": false,
+  "temporaryDatabaseRemoved": true,
+  "limitations": [
+    "Synthetic data only",
+    "Same local database server and existing roles",
+    "Does not validate encrypted offsite backup, disaster recovery or recovery time"
+  ],
+  "timestamp": "2026-09-24T06:33:27.027552+00:00",
+  "hospitalMigration": 3,
+  "restoredEvidenceTrigger": true
+}

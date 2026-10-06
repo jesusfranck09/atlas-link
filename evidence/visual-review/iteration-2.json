@@ -1,0 +1,186 @@
+[
+  {
+    "name": "landing-desktop-v2",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "height": 5316,
+    "outside": [],
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".teal-bg"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.41 (foreground color: #187d70, background color: #eaf3ee, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".amber-bg"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #996824, background color: #fbf4e6, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".blue-bg"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.32 (foreground color: #4f6bc7, background color: #edf0fa, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "#como-funciona > .container > .section-heading > div > .eyebrow"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #187d70, background color: #f0f4e9, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".contact-copy > .eyebrow"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #187d70, background color: #ecf2e4, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".text-link[href$=\"login\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #187d70, background color: #ecf2e4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "landing-mobile-v2",
+    "width": 390,
+    "scrollWidth": 390,
+    "height": 7930,
+    "outside": [
+      {
+        "tag": "DIV",
+        "cls": "scene-orbit orbit-two",
+        "x": -0.34511566162109375,
+        "width": 429.37188720703125
+      }
+    ],
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              "#como-funciona > .container > .section-heading > div > .eyebrow"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #187d70, background color: #f0f4e9, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".contact-copy > .eyebrow"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #187d70, background color: #ecf2e4, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".text-link[href$=\"login\"]"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.37 (foreground color: #187d70, background color: #ecf2e4, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "login-desktop-v2",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "height": 1148,
+    "outside": [],
+    "violations": []
+  },
+  {
+    "name": "login-mobile-v2",
+    "width": 390,
+    "scrollWidth": 390,
+    "height": 1467,
+    "outside": [],
+    "violations": []
+  },
+  {
+    "name": "dashboard-desktop-v2",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "height": 1557,
+    "outside": [],
+    "violations": []
+  },
+  {
+    "name": "dashboard-mobile-v2",
+    "width": 390,
+    "scrollWidth": 651,
+    "height": 2677,
+    "outside": [
+      {
+        "tag": "TABLE",
+        "cls": "data-table accounts-table",
+        "x": 17,
+        "width": 680
+      },
+      {
+        "tag": "THEAD",
+        "cls": "",
+        "x": 17,
+        "width": 680
+      },
+      {
+        "tag": "TR",
+        "cls": "",
+        "x": 17,
+        "width": 680
+      },
+      {
+        "tag": "TH",
+        "cls": "",
+        "x": 289.5,
+        "width": 143.015625
+      },
+      {
+        "tag": "TH",
+        "cls": "",
+        "x": 432.515625,
+        "width": 95.71875
+      },
+      {
+        "tag": "TH",
+        "cls": "",
+        "x": 528.234375,
+        "width": 109.765625
+      },
+      {
+        "tag": "TH",
+        "cls": "",
+        "x": 638,
+        "width": 59
+      },
+      {
+        "tag": "SPAN",
+        "cls": "sr-only",
+        "x": 650,
+        "width": 1
+      },
+      {
+        "tag": "TBODY",
+        "cls": "",
+        "x": 17,
+        "width": 680
+      },
+      {
+        "tag": "TR",
+        "cls": "",
+        "x": 17,
+        "width": 680
+      }
+    ],
+    "violations": []
+  }
+]

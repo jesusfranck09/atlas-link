@@ -1,0 +1,25 @@
+{
+  "capturedAt": "2026-09-24T21:22:25.222Z",
+  "renderer": "webgl",
+  "finish": "glass",
+  "label": {
+    "text": "Total",
+    "color": "rgb(98, 89, 111)",
+    "fontSize": "10px",
+    "bounds": {
+      "x": 1090.5625,
+      "y": 731.6953125,
+      "width": 25.859375,
+      "height": 16
+    }
+  },
+  "contrastViolations": [],
+  "contrastIncomplete": [
+    {
+      "id": "color-contrast",
+      "nodeCount": 8
+    }
+  ],
+  "errors": [],
+  "scope": "Final V10 glass ring and repositioned Total caption in real Chrome WebGL. Automated contrast may leave canvas/background cases incomplete; screenshots retained for manual visual review."
+}

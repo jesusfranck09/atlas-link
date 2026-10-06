@@ -1,0 +1,163 @@
+{
+  "startedAt": "2026-09-24T17:31:52.507Z",
+  "baseURL": "http://127.0.0.1:4430",
+  "browser": "153.0.8010.53",
+  "scope": "Compact chart layout and existing interactions on desktop and emulated touch viewport; no physical-mobile or FPS claims.",
+  "checks": [
+    {
+      "name": "desktop-landing-framing-unchanged",
+      "passed": true,
+      "stageHeight": 220
+    },
+    {
+      "name": "desktop-compact-pie",
+      "passed": true,
+      "sizes": {
+        "chartWidth": 316,
+        "stageHeight": 200,
+        "stageWidth": 316,
+        "rows": [
+          {
+            "height": 36,
+            "text": "Sin alertas3",
+            "labelSize": "12px",
+            "valueOnSameRow": true
+          },
+          {
+            "height": 36,
+            "text": "Revisión requerida6",
+            "labelSize": "12px",
+            "valueOnSameRow": true
+          },
+          {
+            "height": 36,
+            "text": "Atención prioritaria9",
+            "labelSize": "12px",
+            "valueOnSameRow": true
+          }
+        ]
+      },
+      "values": [
+        "Sin alertas3",
+        "Revisión requerida6",
+        "Atención prioritaria9"
+      ],
+      "interaction": "Keyboard",
+      "idleRenderCalls": 0,
+      "idleMilliseconds": 700
+    },
+    {
+      "name": "desktop-compact-bars",
+      "passed": true,
+      "sizes": {
+        "chartWidth": 316,
+        "stageHeight": 200,
+        "stageWidth": 316,
+        "rows": [
+          {
+            "height": 36,
+            "text": "2026-09202,800",
+            "labelSize": "12px",
+            "valueOnSameRow": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-emulated-landing-framing-unchanged",
+      "passed": true,
+      "stageHeight": 200
+    },
+    {
+      "name": "mobile-emulated-compact-pie",
+      "passed": true,
+      "sizes": {
+        "chartWidth": 324,
+        "stageHeight": 210,
+        "stageWidth": 324,
+        "rows": [
+          {
+            "height": 44,
+            "text": "Sin alertas3",
+            "labelSize": "12px",
+            "valueOnSameRow": true
+          },
+          {
+            "height": 44,
+            "text": "Revisión requerida6",
+            "labelSize": "12px",
+            "valueOnSameRow": true
+          },
+          {
+            "height": 44,
+            "text": "Atención prioritaria9",
+            "labelSize": "12px",
+            "valueOnSameRow": true
+          }
+        ]
+      },
+      "values": [
+        "Sin alertas3",
+        "Revisión requerida6",
+        "Atención prioritaria9"
+      ],
+      "interaction": "Touch",
+      "idleRenderCalls": 0,
+      "idleMilliseconds": 700
+    },
+    {
+      "name": "mobile-emulated-compact-bars",
+      "passed": true,
+      "sizes": {
+        "chartWidth": 324,
+        "stageHeight": 210,
+        "stageWidth": 324,
+        "rows": [
+          {
+            "height": 44,
+            "text": "2026-09202,800",
+            "labelSize": "12px",
+            "valueOnSameRow": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "compact-svg-fallback",
+      "passed": true,
+      "sizes": {
+        "chartWidth": 324,
+        "stageHeight": 210,
+        "stageWidth": 324,
+        "rows": [
+          {
+            "height": 44,
+            "text": "Sin alertas3",
+            "labelSize": "12px",
+            "valueOnSameRow": true
+          },
+          {
+            "height": 44,
+            "text": "Revisión requerida6",
+            "labelSize": "12px",
+            "valueOnSameRow": true
+          },
+          {
+            "height": 44,
+            "text": "Atención prioritaria9",
+            "labelSize": "12px",
+            "valueOnSameRow": true
+          }
+        ]
+      },
+      "values": [
+        "Sin alertas3",
+        "Revisión requerida6",
+        "Atención prioritaria9"
+      ]
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-09-24T17:32:04.087Z",
+  "passed": true
+}

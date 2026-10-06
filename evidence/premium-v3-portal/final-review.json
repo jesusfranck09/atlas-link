@@ -1,0 +1,178 @@
+[
+  {
+    "role": "admin",
+    "width": 1440,
+    "view": "login",
+    "violations": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              "button[data-testid=\"demo-hospital_admin\"] > .portal-module__0SF6zG__demoAvatar"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.78 (foreground color: #8a6ca9, background color: #f1edf6, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "button[data-testid=\"demo-billing\"] > .portal-module__0SF6zG__demoAvatar"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.12 (foreground color: #597c6e, background color: #edf3f0, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "button[data-testid=\"demo-reviewer\"] > .portal-module__0SF6zG__demoAvatar"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.42 (foreground color: #9d7b50, background color: #f7efe7, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "button[data-testid=\"demo-director\"] > .portal-module__0SF6zG__demoAvatar"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.12 (foreground color: #597c6e, background color: #edf3f0, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "button[data-testid=\"demo-insurer_demo\"] > .portal-module__0SF6zG__demoAvatar"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.78 (foreground color: #8a6ca9, background color: #f1edf6, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "button[data-testid=\"demo-disabled\"] > .portal-module__0SF6zG__demoAvatar"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.42 (foreground color: #9d7b50, background color: #f7efe7, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "width": 1440,
+    "view": "dashboard",
+    "errors": [],
+    "geometry": {
+      "width": 1425,
+      "innerWidth": 1440
+    },
+    "violations": []
+  },
+  {
+    "role": "atlas",
+    "width": 1440,
+    "view": "login",
+    "violations": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".portal-module__0SF6zG__demoAvatar"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.78 (foreground color: #8a6ca9, background color: #f1edf6, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "role": "atlas",
+    "width": 1440,
+    "view": "dashboard",
+    "errors": [],
+    "geometry": {
+      "width": 1425,
+      "innerWidth": 1440
+    },
+    "violations": []
+  },
+  {
+    "role": "admin",
+    "width": 390,
+    "view": "login",
+    "violations": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              "button[data-testid=\"demo-hospital_admin\"] > .portal-module__0SF6zG__demoAvatar"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.78 (foreground color: #8a6ca9, background color: #f1edf6, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "button[data-testid=\"demo-billing\"] > .portal-module__0SF6zG__demoAvatar"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.12 (foreground color: #597c6e, background color: #edf3f0, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "button[data-testid=\"demo-reviewer\"] > .portal-module__0SF6zG__demoAvatar"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.42 (foreground color: #9d7b50, background color: #f7efe7, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "button[data-testid=\"demo-director\"] > .portal-module__0SF6zG__demoAvatar"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.12 (foreground color: #597c6e, background color: #edf3f0, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "button[data-testid=\"demo-insurer_demo\"] > .portal-module__0SF6zG__demoAvatar"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.78 (foreground color: #8a6ca9, background color: #f1edf6, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "button[data-testid=\"demo-disabled\"] > .portal-module__0SF6zG__demoAvatar"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.42 (foreground color: #9d7b50, background color: #f7efe7, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "width": 390,
+    "view": "dashboard",
+    "errors": [],
+    "geometry": {
+      "width": 375,
+      "innerWidth": 390
+    },
+    "violations": []
+  },
+  {
+    "role": "atlas",
+    "width": 390,
+    "view": "login",
+    "violations": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".portal-module__0SF6zG__demoAvatar"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.78 (foreground color: #8a6ca9, background color: #f1edf6, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "role": "atlas",
+    "width": 390,
+    "view": "dashboard",
+    "errors": [],
+    "geometry": {
+      "width": 375,
+      "innerWidth": 390
+    },
+    "violations": []
+  }
+]

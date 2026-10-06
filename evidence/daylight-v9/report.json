@@ -1,0 +1,445 @@
+{
+  "startedAt": "2026-09-24T20:40:59.402Z",
+  "baseURL": "http://127.0.0.1:4430",
+  "revision": "f980f6a3892e88ffb9ef1f4fa19e8e6e80cbccdc",
+  "workingTree": [
+    "M AGENTS.md",
+    " M frontend/src/components/landing.module.css",
+    " M frontend/src/components/landing.tsx",
+    " M frontend/src/components/portal.module.css",
+    " M frontend/src/components/workspace.tsx",
+    "?? docs/review-daylight-v9.md",
+    "?? evidence/daylight-v9/",
+    "?? frontend/src/components/daylight.module.css",
+    "?? frontend/src/components/daylight.tsx",
+    "?? qa/daylight-review.mjs"
+  ],
+  "environment": {
+    "node": "v24.14.0",
+    "os": "Darwin 25.6.0 arm64",
+    "timezone": "America/Mexico_City unless specified",
+    "browser": "153.0.8010.53"
+  },
+  "scope": "V9 decorative lighting on real local landing, hospital and Atlas console. Playwright clock controls browser time only. Auth uses real demo UI/API, no intercepted responses or invented sessions. No commercial-form submission or business-data changes.",
+  "limits": "Mobile is Chrome touch emulation, not physical Android/iOS. Focus/visibility resync is exercised with DOM event dispatch. Axe color contrast is automated coverage, not a complete accessibility audit. No production, FPS, battery, Safari or Windows claims.",
+  "checks": [
+    {
+      "name": "landing-morning-desktop",
+      "status": "pass",
+      "phase": "morning",
+      "height": 900,
+      "opacity": "1",
+      "pointerEvents": "none",
+      "viewportWidth": 1440,
+      "documentWidth": 1425,
+      "animations": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "localHour": 6,
+      "timeZone": "America/Mexico_City",
+      "controlsReachable": true,
+      "screenshot": "evidence/daylight-v9/landing-morning-desktop.png",
+      "axeContrast": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodeCount": 38
+          }
+        ]
+      }
+    },
+    {
+      "name": "landing-day-desktop",
+      "status": "pass",
+      "phase": "day",
+      "height": 900,
+      "opacity": "1",
+      "pointerEvents": "none",
+      "viewportWidth": 1440,
+      "documentWidth": 1425,
+      "animations": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "localHour": 11,
+      "timeZone": "America/Mexico_City",
+      "controlsReachable": true,
+      "screenshot": "evidence/daylight-v9/landing-day-desktop.png"
+    },
+    {
+      "name": "landing-sunset-desktop",
+      "status": "pass",
+      "phase": "sunset",
+      "height": 900,
+      "opacity": "1",
+      "pointerEvents": "none",
+      "viewportWidth": 1440,
+      "documentWidth": 1425,
+      "animations": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "localHour": 16,
+      "timeZone": "America/Mexico_City",
+      "controlsReachable": true,
+      "screenshot": "evidence/daylight-v9/landing-sunset-desktop.png",
+      "axeContrast": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodeCount": 38
+          }
+        ]
+      }
+    },
+    {
+      "name": "landing-night-desktop",
+      "status": "pass",
+      "phase": "night",
+      "height": 900,
+      "opacity": "1",
+      "pointerEvents": "none",
+      "viewportWidth": 1440,
+      "documentWidth": 1425,
+      "animations": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "localHour": 19,
+      "timeZone": "America/Mexico_City",
+      "controlsReachable": true,
+      "screenshot": "evidence/daylight-v9/landing-night-desktop.png"
+    },
+    {
+      "name": "landing-morning-mobile-emulated",
+      "status": "pass",
+      "phase": "morning",
+      "height": 844,
+      "opacity": "0.88",
+      "pointerEvents": "none",
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "animations": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "localHour": 6,
+      "timeZone": "America/Mexico_City",
+      "controlsReachable": true,
+      "screenshot": "evidence/daylight-v9/landing-morning-mobile-emulated.png"
+    },
+    {
+      "name": "landing-day-mobile-emulated",
+      "status": "pass",
+      "phase": "day",
+      "height": 844,
+      "opacity": "0.88",
+      "pointerEvents": "none",
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "animations": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "localHour": 11,
+      "timeZone": "America/Mexico_City",
+      "controlsReachable": true,
+      "screenshot": "evidence/daylight-v9/landing-day-mobile-emulated.png"
+    },
+    {
+      "name": "landing-sunset-mobile-emulated",
+      "status": "pass",
+      "phase": "sunset",
+      "height": 844,
+      "opacity": "0.88",
+      "pointerEvents": "none",
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "animations": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "localHour": 16,
+      "timeZone": "America/Mexico_City",
+      "controlsReachable": true,
+      "screenshot": "evidence/daylight-v9/landing-sunset-mobile-emulated.png"
+    },
+    {
+      "name": "landing-night-mobile-emulated",
+      "status": "pass",
+      "phase": "night",
+      "height": 844,
+      "opacity": "0.88",
+      "pointerEvents": "none",
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "animations": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "localHour": 19,
+      "timeZone": "America/Mexico_City",
+      "controlsReachable": true,
+      "screenshot": "evidence/daylight-v9/landing-night-mobile-emulated.png",
+      "axeContrast": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodeCount": 30
+          }
+        ]
+      }
+    },
+    {
+      "name": "same-instant-America/Mexico_City",
+      "status": "pass",
+      "instant": "2026-09-24T17:00:00.000Z",
+      "phase": "day",
+      "height": 900,
+      "opacity": "1",
+      "pointerEvents": "none",
+      "viewportWidth": 1440,
+      "documentWidth": 1425,
+      "animations": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "localHour": 11,
+      "timeZone": "America/Mexico_City"
+    },
+    {
+      "name": "same-instant-Asia/Tokyo",
+      "status": "pass",
+      "instant": "2026-09-24T17:00:00.000Z",
+      "phase": "night",
+      "height": 900,
+      "opacity": "1",
+      "pointerEvents": "none",
+      "viewportWidth": 1440,
+      "documentWidth": 1425,
+      "animations": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "localHour": 2,
+      "timeZone": "Asia/Tokyo"
+    },
+    {
+      "name": "automatic-minute-boundary-without-navigation",
+      "status": "pass",
+      "before": "10:59:59 morning",
+      "after": "11:00:00 day",
+      "initialNavigationEvents": 2,
+      "additionalNavigationEvents": 0,
+      "clock": "install + pauseAt + runFor"
+    },
+    {
+      "name": "focus-and-visibility-resynchronization",
+      "status": "pass",
+      "mechanism": "DOM event dispatch following clock change",
+      "focus": "sunset",
+      "visibilitychange": "night"
+    },
+    {
+      "name": "server-render-with-javascript-disabled",
+      "status": "pass",
+      "lightVisible": false,
+      "ready": false,
+      "serverHTMLHasNeutralInitialState": true,
+      "contentReadable": true
+    },
+    {
+      "name": "reduced-motion-no-light-transitions",
+      "status": "pass",
+      "transitionProperties": [
+        "none"
+      ],
+      "computedDurations": [
+        "0s",
+        "1e-05s"
+      ],
+      "drawnElementsAndPseudoElements": 11,
+      "runningAnimations": 0
+    },
+    {
+      "name": "forced-colors-hides-decoration",
+      "status": "pass",
+      "forcedColors": "active",
+      "lightDisplay": "none"
+    },
+    {
+      "name": "hospital-desktop",
+      "status": "pass",
+      "phase": "sunset",
+      "height": 320,
+      "opacity": "0.58",
+      "pointerEvents": "none",
+      "viewportWidth": 1440,
+      "documentWidth": 1425,
+      "animations": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "localHour": 17,
+      "timeZone": "America/Mexico_City",
+      "authHTTP": 200,
+      "menusReachable": true,
+      "loggedOut": true,
+      "screenshot": "evidence/daylight-v9/hospital-sunset-desktop.png",
+      "axeContrast": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodeCount": 11
+          }
+        ]
+      }
+    },
+    {
+      "name": "hospital-mobile-emulated",
+      "status": "pass",
+      "phase": "sunset",
+      "height": 320,
+      "opacity": "0.48",
+      "pointerEvents": "none",
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "animations": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "localHour": 17,
+      "timeZone": "America/Mexico_City",
+      "authHTTP": 200,
+      "menusReachable": true,
+      "loggedOut": true,
+      "screenshot": "evidence/daylight-v9/hospital-sunset-mobile-emulated.png"
+    },
+    {
+      "name": "atlas-desktop",
+      "status": "pass",
+      "phase": "sunset",
+      "height": 320,
+      "opacity": "0.58",
+      "pointerEvents": "none",
+      "viewportWidth": 1440,
+      "documentWidth": 1440,
+      "animations": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "localHour": 17,
+      "timeZone": "America/Mexico_City",
+      "authHTTP": 200,
+      "menusReachable": true,
+      "loggedOut": true,
+      "screenshot": "evidence/daylight-v9/atlas-sunset-desktop.png",
+      "axeContrast": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodeCount": 10
+          }
+        ]
+      }
+    },
+    {
+      "name": "atlas-mobile-emulated",
+      "status": "pass",
+      "phase": "sunset",
+      "height": 320,
+      "opacity": "0.48",
+      "pointerEvents": "none",
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "animations": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "localHour": 17,
+      "timeZone": "America/Mexico_City",
+      "authHTTP": 200,
+      "menusReachable": true,
+      "loggedOut": true,
+      "screenshot": "evidence/daylight-v9/atlas-sunset-mobile-emulated.png"
+    }
+  ],
+  "browserErrors": [],
+  "initialAttempt": {
+    "startedAt": "2026-09-24T20:37:53.347Z",
+    "finishedAt": "2026-09-24T20:38:22.728Z",
+    "totals": {
+      "pass": 17,
+      "fail": 2,
+      "block": 0
+    },
+    "failedChecks": [
+      {
+        "name": "automatic-minute-boundary-without-navigation",
+        "status": "fail",
+        "message": "expect(received).toBe(expected) // Object.is equality\n\nExpected: 1\nReceived: 2"
+      },
+      {
+        "name": "reduced-motion-no-light-transitions",
+        "status": "fail",
+        "message": "expect(received).toBe(expected) // Object.is equality\n\nExpected: true\nReceived: false"
+      }
+    ],
+    "diagnosis": "Both initial failures were test expectations: initial Next navigation events were counted as reloads, and nonzero global duration was checked instead of disabled transition-property on drawn light layers."
+  },
+  "finishedAt": "2026-09-24T20:41:29.933Z",
+  "totals": {
+    "pass": 19,
+    "fail": 0,
+    "block": 0
+  },
+  "passed": true
+}

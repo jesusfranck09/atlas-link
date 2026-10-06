@@ -1,0 +1,26 @@
+[
+  {
+    "route": "/login",
+    "width": 1440,
+    "violations": [],
+    "warnings": []
+  },
+  {
+    "route": "/admin/login",
+    "width": 1440,
+    "violations": [],
+    "warnings": []
+  },
+  {
+    "route": "/login",
+    "width": 390,
+    "violations": [],
+    "warnings": []
+  },
+  {
+    "route": "/admin/login",
+    "width": 390,
+    "violations": [],
+    "warnings": []
+  }
+]

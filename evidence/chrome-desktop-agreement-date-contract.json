@@ -1,0 +1,10 @@
+{
+  "tenantId": "e72b203a-5d2b-44e2-8772-f684188d2340",
+  "accountId": "e1b3c339-caa5-4ab0-bf27-ed54726068df",
+  "admission": "2026-08-31",
+  "discharge": "2026-09-01",
+  "expectedAgreementId": "ed95f293-6fed-4d36-85e5-019f480e81dd",
+  "observedAgreementId": "ed95f293-6fed-4d36-85e5-019f480e81dd",
+  "expectedAdjustment": 50,
+  "observedAdjustment": 50
+}

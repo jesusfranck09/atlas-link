@@ -1,0 +1,18 @@
+{
+  "folio": "EJEMPLO-ERP-001",
+  "patientReference": "PAC-SINTETICO-001",
+  "insurerId": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+  "admissionDate": "2026-09-01",
+  "dischargeDate": "2026-09-03",
+  "policyNumber": "POLIZA-DEMO-001",
+  "diagnosis": "DEMO",
+  "policy": {
+    "deductible": 1000,
+    "coinsuranceRate": 0.1,
+    "coinsuranceCap": 3000,
+    "coverageAvailable": 100000
+  },
+  "lines": [
+    {"code": "ESTANCIA", "description": "Concepto sintético; reemplazar por catálogo del convenio", "category": "ESTANCIA", "quantity": 2, "unitPrice": 1500}
+  ]
+}

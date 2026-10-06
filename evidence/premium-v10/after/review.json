@@ -1,0 +1,1380 @@
+{
+  "startedAt": "2026-09-24T21:20:36.916Z",
+  "baseURL": "http://127.0.0.1:4430",
+  "revision": "4e870df679691351d8d8d87e15af4c0d7d895b4f",
+  "workingTree": [
+    "M AGENTS.md",
+    " M frontend/src/app/globals.css",
+    " M frontend/src/components/accounts-table.tsx",
+    " M frontend/src/components/analytics-sculpture.module.css",
+    " M frontend/src/components/daylight.module.css",
+    " M frontend/src/components/daylight.tsx",
+    " M frontend/src/components/landing.module.css",
+    " M frontend/src/components/landing.tsx",
+    " M frontend/src/components/portal.module.css",
+    " M frontend/src/components/workspace.tsx",
+    "?? docs/review-premium-v10.md",
+    "?? evidence/premium-v10/",
+    "?? qa/premium-finish-review.mjs"
+  ],
+  "scope": "V10 solar/lunar sources, shared component CSS and read-only UI interactions on the real local production build. Browser clock controlled in America/Mexico_City. Actual demo authentication/API; no request mocks, commercial submission or business-data writes.",
+  "limits": "Chrome on macOS; 390/320 widths are mobile/touch emulation. Screenshots and computed geometry do not certify aesthetic acceptance. Broader route/accessibility checks are reported separately by production-smoke.mjs extended.",
+  "reusedEvidence": "Clock timezone interpretation and neutral SSR were validated in evidence/daylight-v9/report.json; those unchanged internals are not retested here.",
+  "checks": [
+    {
+      "name": "landing-morning-desktop",
+      "status": "pass",
+      "phase": "morning",
+      "disk": {
+        "left": 1245.468725,
+        "top": 129.2656,
+        "width": 61.4688,
+        "height": 61.4688,
+        "right": 1306.937525,
+        "bottom": 190.7344
+      },
+      "source": {
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "bottom": 900,
+        "width": 1425,
+        "height": 900
+      },
+      "sourceOpacity": "1",
+      "sourcePointerEvents": "none",
+      "pseudoOpacity": "1",
+      "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+      "pseudoContent": "\"\"",
+      "overlaps": [],
+      "viewportWidth": 1425,
+      "documentWidth": 1425,
+      "header": null,
+      "screenshot": "evidence/premium-v10/after/landing-morning-desktop.png"
+    },
+    {
+      "name": "landing-day-desktop",
+      "status": "pass",
+      "phase": "day",
+      "disk": {
+        "left": 1245.468725,
+        "top": 117.2656,
+        "width": 61.4688,
+        "height": 61.4688,
+        "right": 1306.937525,
+        "bottom": 178.7344
+      },
+      "source": {
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "bottom": 900,
+        "width": 1425,
+        "height": 900
+      },
+      "sourceOpacity": "1",
+      "sourcePointerEvents": "none",
+      "pseudoOpacity": "1",
+      "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+      "pseudoContent": "\"\"",
+      "overlaps": [],
+      "viewportWidth": 1425,
+      "documentWidth": 1425,
+      "header": null,
+      "screenshot": "evidence/premium-v10/after/landing-day.png",
+      "componentScreenshot": "evidence/premium-v10/after/landing-components.png",
+      "preferences": {
+        "drawnLayers": 11,
+        "runningLightAnimations": 0,
+        "forcedColorsHidden": true
+      }
+    },
+    {
+      "name": "landing-sunset-desktop",
+      "status": "pass",
+      "phase": "sunset",
+      "disk": {
+        "left": 1303.0687005859374,
+        "top": 255.2656,
+        "width": 61.4688,
+        "height": 61.4688,
+        "right": 1364.5375005859376,
+        "bottom": 316.7344
+      },
+      "source": {
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "bottom": 900,
+        "width": 1425,
+        "height": 900
+      },
+      "sourceOpacity": "1",
+      "sourcePointerEvents": "none",
+      "pseudoOpacity": "1",
+      "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+      "pseudoContent": "\"\"",
+      "overlaps": [],
+      "viewportWidth": 1425,
+      "documentWidth": 1425,
+      "header": null,
+      "screenshot": "evidence/premium-v10/after/landing-sunset-desktop.png"
+    },
+    {
+      "name": "landing-night-desktop",
+      "status": "pass",
+      "phase": "night",
+      "disk": {
+        "left": 1245.468725,
+        "top": 153.2656,
+        "width": 61.4688,
+        "height": 61.4688,
+        "right": 1306.937525,
+        "bottom": 214.7344
+      },
+      "source": {
+        "left": 0,
+        "right": 1425,
+        "top": 0,
+        "bottom": 900,
+        "width": 1425,
+        "height": 900
+      },
+      "sourceOpacity": "1",
+      "sourcePointerEvents": "none",
+      "pseudoOpacity": "1",
+      "pseudoBackground": "radial-gradient(circle at 28% 24%, rgb(248, 251, 255) 0px, rgb(220, 231, 248) 33%, rgb(180, 202, 232) 73%, rgb(143, 169, 204) 100%)",
+      "pseudoContent": "\"\"",
+      "overlaps": [],
+      "viewportWidth": 1425,
+      "documentWidth": 1425,
+      "header": null,
+      "screenshot": "evidence/premium-v10/after/landing-night-desktop.png"
+    },
+    {
+      "name": "landing-morning-mobile-390",
+      "status": "pass",
+      "phase": "morning",
+      "disk": {
+        "left": 338,
+        "top": 80,
+        "width": 28,
+        "height": 28,
+        "right": 366,
+        "bottom": 108
+      },
+      "source": {
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "bottom": 844,
+        "width": 390,
+        "height": 844
+      },
+      "sourceOpacity": "0.88",
+      "sourcePointerEvents": "none",
+      "pseudoOpacity": "1",
+      "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+      "pseudoContent": "\"\"",
+      "overlaps": [],
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "header": null,
+      "screenshot": "evidence/premium-v10/after/landing-morning-mobile-390.png"
+    },
+    {
+      "name": "landing-day-mobile-390",
+      "status": "pass",
+      "phase": "day",
+      "disk": {
+        "left": 338,
+        "top": 80,
+        "width": 28,
+        "height": 28,
+        "right": 366,
+        "bottom": 108
+      },
+      "source": {
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "bottom": 844,
+        "width": 390,
+        "height": 844
+      },
+      "sourceOpacity": "0.88",
+      "sourcePointerEvents": "none",
+      "pseudoOpacity": "1",
+      "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+      "pseudoContent": "\"\"",
+      "overlaps": [],
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "header": null,
+      "screenshot": "evidence/premium-v10/after/landing-day-mobile-390.png"
+    },
+    {
+      "name": "landing-sunset-mobile-390",
+      "status": "pass",
+      "phase": "sunset",
+      "disk": {
+        "left": 338,
+        "top": 80,
+        "width": 28,
+        "height": 28,
+        "right": 366,
+        "bottom": 108
+      },
+      "source": {
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "bottom": 844,
+        "width": 390,
+        "height": 844
+      },
+      "sourceOpacity": "0.88",
+      "sourcePointerEvents": "none",
+      "pseudoOpacity": "1",
+      "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+      "pseudoContent": "\"\"",
+      "overlaps": [],
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "header": null,
+      "screenshot": "evidence/premium-v10/after/landing-sunset-mobile-390.png"
+    },
+    {
+      "name": "landing-night-mobile-390",
+      "status": "pass",
+      "phase": "night",
+      "disk": {
+        "left": 338,
+        "top": 80,
+        "width": 28,
+        "height": 28,
+        "right": 366,
+        "bottom": 108
+      },
+      "source": {
+        "left": 0,
+        "right": 390,
+        "top": 0,
+        "bottom": 844,
+        "width": 390,
+        "height": 844
+      },
+      "sourceOpacity": "0.88",
+      "sourcePointerEvents": "none",
+      "pseudoOpacity": "1",
+      "pseudoBackground": "radial-gradient(circle at 28% 24%, rgb(248, 251, 255) 0px, rgb(220, 231, 248) 33%, rgb(180, 202, 232) 73%, rgb(143, 169, 204) 100%)",
+      "pseudoContent": "\"\"",
+      "overlaps": [],
+      "viewportWidth": 390,
+      "documentWidth": 390,
+      "header": null,
+      "screenshot": "evidence/premium-v10/after/landing-night-mobile-390.png"
+    },
+    {
+      "name": "landing-morning-mobile-320",
+      "status": "pass",
+      "phase": "morning",
+      "disk": {
+        "left": 268,
+        "top": 80,
+        "width": 28,
+        "height": 28,
+        "right": 296,
+        "bottom": 108
+      },
+      "source": {
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "bottom": 740,
+        "width": 320,
+        "height": 740
+      },
+      "sourceOpacity": "0.88",
+      "sourcePointerEvents": "none",
+      "pseudoOpacity": "1",
+      "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+      "pseudoContent": "\"\"",
+      "overlaps": [],
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "header": null,
+      "screenshot": "evidence/premium-v10/after/landing-morning-mobile-320.png"
+    },
+    {
+      "name": "landing-day-mobile-320",
+      "status": "pass",
+      "phase": "day",
+      "disk": {
+        "left": 268,
+        "top": 80,
+        "width": 28,
+        "height": 28,
+        "right": 296,
+        "bottom": 108
+      },
+      "source": {
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "bottom": 740,
+        "width": 320,
+        "height": 740
+      },
+      "sourceOpacity": "0.88",
+      "sourcePointerEvents": "none",
+      "pseudoOpacity": "1",
+      "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+      "pseudoContent": "\"\"",
+      "overlaps": [],
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "header": null,
+      "screenshot": "evidence/premium-v10/after/landing-day-mobile-320.png"
+    },
+    {
+      "name": "landing-sunset-mobile-320",
+      "status": "pass",
+      "phase": "sunset",
+      "disk": {
+        "left": 268,
+        "top": 80,
+        "width": 28,
+        "height": 28,
+        "right": 296,
+        "bottom": 108
+      },
+      "source": {
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "bottom": 740,
+        "width": 320,
+        "height": 740
+      },
+      "sourceOpacity": "0.88",
+      "sourcePointerEvents": "none",
+      "pseudoOpacity": "1",
+      "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+      "pseudoContent": "\"\"",
+      "overlaps": [],
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "header": null,
+      "screenshot": "evidence/premium-v10/after/landing-sunset-mobile-320.png"
+    },
+    {
+      "name": "landing-night-mobile-320",
+      "status": "pass",
+      "phase": "night",
+      "disk": {
+        "left": 268,
+        "top": 80,
+        "width": 28,
+        "height": 28,
+        "right": 296,
+        "bottom": 108
+      },
+      "source": {
+        "left": 0,
+        "right": 320,
+        "top": 0,
+        "bottom": 740,
+        "width": 320,
+        "height": 740
+      },
+      "sourceOpacity": "0.88",
+      "sourcePointerEvents": "none",
+      "pseudoOpacity": "1",
+      "pseudoBackground": "radial-gradient(circle at 28% 24%, rgb(248, 251, 255) 0px, rgb(220, 231, 248) 33%, rgb(180, 202, 232) 73%, rgb(143, 169, 204) 100%)",
+      "pseudoContent": "\"\"",
+      "overlaps": [],
+      "viewportWidth": 320,
+      "documentWidth": 320,
+      "header": null,
+      "screenshot": "evidence/premium-v10/after/landing-night-mobile-320.png"
+    },
+    {
+      "name": "hospital-desktop",
+      "status": "pass",
+      "screenshot": "evidence/premium-v10/after/hospital-day.png",
+      "sourcePhases": [
+        {
+          "phase": "morning",
+          "disk": {
+            "left": 391.218745,
+            "top": 11.39062,
+            "width": 35.2188,
+            "height": 35.2188,
+            "right": 426.437545,
+            "bottom": 46.60942
+          },
+          "source": {
+            "left": 386.828125,
+            "right": 430.828125,
+            "top": 7,
+            "bottom": 51,
+            "width": 44,
+            "height": 44
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "1",
+          "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 1440,
+          "documentWidth": 1440,
+          "header": {
+            "left": 0,
+            "right": 1440,
+            "top": 0,
+            "bottom": 59,
+            "width": 1440,
+            "height": 59
+          }
+        },
+        {
+          "phase": "day",
+          "disk": {
+            "left": 391.218745,
+            "top": 11.39062,
+            "width": 35.2188,
+            "height": 35.2188,
+            "right": 426.437545,
+            "bottom": 46.60942
+          },
+          "source": {
+            "left": 386.828125,
+            "right": 430.828125,
+            "top": 7,
+            "bottom": 51,
+            "width": 44,
+            "height": 44
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "1",
+          "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 1440,
+          "documentWidth": 1440,
+          "header": {
+            "left": 0,
+            "right": 1440,
+            "top": 0,
+            "bottom": 59,
+            "width": 1440,
+            "height": 59
+          }
+        },
+        {
+          "phase": "sunset",
+          "disk": {
+            "left": 391.218745,
+            "top": 11.39062,
+            "width": 35.2188,
+            "height": 35.2188,
+            "right": 426.437545,
+            "bottom": 46.60942
+          },
+          "source": {
+            "left": 386.828125,
+            "right": 430.828125,
+            "top": 7,
+            "bottom": 51,
+            "width": 44,
+            "height": 44
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "1",
+          "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 1440,
+          "documentWidth": 1440,
+          "header": {
+            "left": 0,
+            "right": 1440,
+            "top": 0,
+            "bottom": 59,
+            "width": 1440,
+            "height": 59
+          }
+        },
+        {
+          "phase": "night",
+          "disk": {
+            "left": 391.218745,
+            "top": 11.39062,
+            "width": 35.2188,
+            "height": 35.2188,
+            "right": 426.437545,
+            "bottom": 46.60942
+          },
+          "source": {
+            "left": 386.828125,
+            "right": 430.828125,
+            "top": 7,
+            "bottom": 51,
+            "width": 44,
+            "height": 44
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "0.070836",
+          "pseudoBackground": "radial-gradient(circle at 28% 24%, rgb(248, 251, 255) 0px, rgb(220, 231, 248) 33%, rgb(180, 202, 232) 73%, rgb(143, 169, 204) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 1440,
+          "documentWidth": 1440,
+          "header": {
+            "left": 0,
+            "right": 1440,
+            "top": 0,
+            "bottom": 59,
+            "width": 1440,
+            "height": 59
+          }
+        }
+      ],
+      "modalOpenAndEscapeClose": true,
+      "filtersReachable": true,
+      "preferences": {
+        "drawnLayers": 15,
+        "runningLightAnimations": 0,
+        "forcedColorsHidden": true
+      },
+      "table": {
+        "screenshot": "evidence/premium-v10/after/hospital-accounts.png",
+        "laneFilter": "YELLOW",
+        "searchMatchesAPI": true,
+        "accountDetailOpened": true,
+        "region": {
+          "client": 1374,
+          "scroll": 1374,
+          "observedScrollLeft": 0
+        }
+      }
+    },
+    {
+      "name": "hospital-mobile-390",
+      "status": "pass",
+      "screenshot": "evidence/premium-v10/after/hospital-day-mobile-390.png",
+      "sourcePhases": [
+        {
+          "phase": "morning",
+          "disk": {
+            "left": 148.0625,
+            "top": 15.59375,
+            "width": 28.8125,
+            "height": 28.8125,
+            "right": 176.875,
+            "bottom": 44.40625
+          },
+          "source": {
+            "left": 144.46875,
+            "right": 180.46875,
+            "top": 12,
+            "bottom": 48,
+            "width": 36,
+            "height": 36
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "1",
+          "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 390,
+          "documentWidth": 390,
+          "header": {
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 61,
+            "width": 390,
+            "height": 61
+          }
+        },
+        {
+          "phase": "day",
+          "disk": {
+            "left": 148.0625,
+            "top": 15.59375,
+            "width": 28.8125,
+            "height": 28.8125,
+            "right": 176.875,
+            "bottom": 44.40625
+          },
+          "source": {
+            "left": 144.46875,
+            "right": 180.46875,
+            "top": 12,
+            "bottom": 48,
+            "width": 36,
+            "height": 36
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "1",
+          "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 390,
+          "documentWidth": 390,
+          "header": {
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 61,
+            "width": 390,
+            "height": 61
+          }
+        },
+        {
+          "phase": "sunset",
+          "disk": {
+            "left": 148.0625,
+            "top": 15.59375,
+            "width": 28.8125,
+            "height": 28.8125,
+            "right": 176.875,
+            "bottom": 44.40625
+          },
+          "source": {
+            "left": 144.46875,
+            "right": 180.46875,
+            "top": 12,
+            "bottom": 48,
+            "width": 36,
+            "height": 36
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "1",
+          "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 390,
+          "documentWidth": 390,
+          "header": {
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 61,
+            "width": 390,
+            "height": 61
+          }
+        },
+        {
+          "phase": "night",
+          "disk": {
+            "left": 148.0625,
+            "top": 15.59375,
+            "width": 28.8125,
+            "height": 28.8125,
+            "right": 176.875,
+            "bottom": 44.40625
+          },
+          "source": {
+            "left": 144.46875,
+            "right": 180.46875,
+            "top": 12,
+            "bottom": 48,
+            "width": 36,
+            "height": 36
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "0.0906372",
+          "pseudoBackground": "radial-gradient(circle at 28% 24%, rgb(248, 251, 255) 0px, rgb(220, 231, 248) 33%, rgb(180, 202, 232) 73%, rgb(143, 169, 204) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 390,
+          "documentWidth": 390,
+          "header": {
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 61,
+            "width": 390,
+            "height": 61
+          }
+        }
+      ],
+      "modalOpenAndEscapeClose": true,
+      "filtersReachable": true,
+      "table": {
+        "screenshot": "evidence/premium-v10/after/hospital-accounts-mobile-390.png",
+        "laneFilter": "YELLOW",
+        "searchMatchesAPI": true,
+        "accountDetailOpened": true,
+        "region": {
+          "client": 356,
+          "scroll": 793,
+          "observedScrollLeft": 35
+        }
+      },
+      "mobileMenu": {
+        "clientHeight": 844,
+        "scrollHeight": 844,
+        "reopenedAndClosed": true
+      }
+    },
+    {
+      "name": "hospital-mobile-320",
+      "status": "pass",
+      "screenshot": "evidence/premium-v10/after/hospital-day-mobile-320.png",
+      "sourcePhases": [
+        {
+          "phase": "morning",
+          "disk": {
+            "left": 148.0625,
+            "top": 15.59375,
+            "width": 28.8125,
+            "height": 28.8125,
+            "right": 176.875,
+            "bottom": 44.40625
+          },
+          "source": {
+            "left": 144.46875,
+            "right": 180.46875,
+            "top": 12,
+            "bottom": 48,
+            "width": 36,
+            "height": 36
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "1",
+          "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 320,
+          "documentWidth": 320,
+          "header": {
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "bottom": 61,
+            "width": 320,
+            "height": 61
+          }
+        },
+        {
+          "phase": "day",
+          "disk": {
+            "left": 148.0625,
+            "top": 15.59375,
+            "width": 28.8125,
+            "height": 28.8125,
+            "right": 176.875,
+            "bottom": 44.40625
+          },
+          "source": {
+            "left": 144.46875,
+            "right": 180.46875,
+            "top": 12,
+            "bottom": 48,
+            "width": 36,
+            "height": 36
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "1",
+          "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 320,
+          "documentWidth": 320,
+          "header": {
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "bottom": 61,
+            "width": 320,
+            "height": 61
+          }
+        },
+        {
+          "phase": "sunset",
+          "disk": {
+            "left": 148.0625,
+            "top": 15.59375,
+            "width": 28.8125,
+            "height": 28.8125,
+            "right": 176.875,
+            "bottom": 44.40625
+          },
+          "source": {
+            "left": 144.46875,
+            "right": 180.46875,
+            "top": 12,
+            "bottom": 48,
+            "width": 36,
+            "height": 36
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "1",
+          "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 320,
+          "documentWidth": 320,
+          "header": {
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "bottom": 61,
+            "width": 320,
+            "height": 61
+          }
+        },
+        {
+          "phase": "night",
+          "disk": {
+            "left": 148.0625,
+            "top": 15.59375,
+            "width": 28.8125,
+            "height": 28.8125,
+            "right": 176.875,
+            "bottom": 44.40625
+          },
+          "source": {
+            "left": 144.46875,
+            "right": 180.46875,
+            "top": 12,
+            "bottom": 48,
+            "width": 36,
+            "height": 36
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "0.0905506",
+          "pseudoBackground": "radial-gradient(circle at 28% 24%, rgb(248, 251, 255) 0px, rgb(220, 231, 248) 33%, rgb(180, 202, 232) 73%, rgb(143, 169, 204) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 320,
+          "documentWidth": 320,
+          "header": {
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "bottom": 61,
+            "width": 320,
+            "height": 61
+          }
+        }
+      ],
+      "modalOpenAndEscapeClose": true,
+      "filtersReachable": true,
+      "table": {
+        "screenshot": "evidence/premium-v10/after/hospital-accounts-mobile-320.png",
+        "laneFilter": "YELLOW",
+        "searchMatchesAPI": true,
+        "accountDetailOpened": true,
+        "region": {
+          "client": 286,
+          "scroll": 793,
+          "observedScrollLeft": 36
+        }
+      },
+      "mobileMenu": {
+        "clientHeight": 740,
+        "scrollHeight": 839,
+        "screenshot": "evidence/premium-v10/after/hospital-menu-mobile-320.png",
+        "reopenedAndClosed": true
+      }
+    },
+    {
+      "name": "atlas-desktop",
+      "status": "pass",
+      "screenshot": "evidence/premium-v10/after/atlas-day-desktop.png",
+      "sourcePhases": [
+        {
+          "phase": "morning",
+          "disk": {
+            "left": 335.093745,
+            "top": 11.39062,
+            "width": 35.2188,
+            "height": 35.2188,
+            "right": 370.312545,
+            "bottom": 46.60942
+          },
+          "source": {
+            "left": 330.703125,
+            "right": 374.703125,
+            "top": 7,
+            "bottom": 51,
+            "width": 44,
+            "height": 44
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "1",
+          "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 1440,
+          "documentWidth": 1440,
+          "header": {
+            "left": 0,
+            "right": 1440,
+            "top": 0,
+            "bottom": 59,
+            "width": 1440,
+            "height": 59
+          }
+        },
+        {
+          "phase": "day",
+          "disk": {
+            "left": 335.093745,
+            "top": 11.39062,
+            "width": 35.2188,
+            "height": 35.2188,
+            "right": 370.312545,
+            "bottom": 46.60942
+          },
+          "source": {
+            "left": 330.703125,
+            "right": 374.703125,
+            "top": 7,
+            "bottom": 51,
+            "width": 44,
+            "height": 44
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "1",
+          "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 1440,
+          "documentWidth": 1440,
+          "header": {
+            "left": 0,
+            "right": 1440,
+            "top": 0,
+            "bottom": 59,
+            "width": 1440,
+            "height": 59
+          }
+        },
+        {
+          "phase": "sunset",
+          "disk": {
+            "left": 335.093745,
+            "top": 11.39062,
+            "width": 35.2188,
+            "height": 35.2188,
+            "right": 370.312545,
+            "bottom": 46.60942
+          },
+          "source": {
+            "left": 330.703125,
+            "right": 374.703125,
+            "top": 7,
+            "bottom": 51,
+            "width": 44,
+            "height": 44
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "1",
+          "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 1440,
+          "documentWidth": 1440,
+          "header": {
+            "left": 0,
+            "right": 1440,
+            "top": 0,
+            "bottom": 59,
+            "width": 1440,
+            "height": 59
+          }
+        },
+        {
+          "phase": "night",
+          "disk": {
+            "left": 335.093745,
+            "top": 11.39062,
+            "width": 35.2188,
+            "height": 35.2188,
+            "right": 370.312545,
+            "bottom": 46.60942
+          },
+          "source": {
+            "left": 330.703125,
+            "right": 374.703125,
+            "top": 7,
+            "bottom": 51,
+            "width": 44,
+            "height": 44
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "0.0708338",
+          "pseudoBackground": "radial-gradient(circle at 28% 24%, rgb(248, 251, 255) 0px, rgb(220, 231, 248) 33%, rgb(180, 202, 232) 73%, rgb(143, 169, 204) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 1440,
+          "documentWidth": 1440,
+          "header": {
+            "left": 0,
+            "right": 1440,
+            "top": 0,
+            "bottom": 59,
+            "width": 1440,
+            "height": 59
+          }
+        }
+      ],
+      "modalOpenAndEscapeClose": true,
+      "filtersReachable": true,
+      "preferences": {
+        "drawnLayers": 15,
+        "runningLightAnimations": 0,
+        "forcedColorsHidden": true
+      }
+    },
+    {
+      "name": "atlas-mobile-390",
+      "status": "pass",
+      "screenshot": "evidence/premium-v10/after/atlas-day-mobile-390.png",
+      "sourcePhases": [
+        {
+          "phase": "morning",
+          "disk": {
+            "left": 148.0625,
+            "top": 15.59375,
+            "width": 28.8125,
+            "height": 28.8125,
+            "right": 176.875,
+            "bottom": 44.40625
+          },
+          "source": {
+            "left": 144.46875,
+            "right": 180.46875,
+            "top": 12,
+            "bottom": 48,
+            "width": 36,
+            "height": 36
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "1",
+          "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 390,
+          "documentWidth": 390,
+          "header": {
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 61,
+            "width": 390,
+            "height": 61
+          }
+        },
+        {
+          "phase": "day",
+          "disk": {
+            "left": 148.0625,
+            "top": 15.59375,
+            "width": 28.8125,
+            "height": 28.8125,
+            "right": 176.875,
+            "bottom": 44.40625
+          },
+          "source": {
+            "left": 144.46875,
+            "right": 180.46875,
+            "top": 12,
+            "bottom": 48,
+            "width": 36,
+            "height": 36
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "1",
+          "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 390,
+          "documentWidth": 390,
+          "header": {
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 61,
+            "width": 390,
+            "height": 61
+          }
+        },
+        {
+          "phase": "sunset",
+          "disk": {
+            "left": 148.0625,
+            "top": 15.59375,
+            "width": 28.8125,
+            "height": 28.8125,
+            "right": 176.875,
+            "bottom": 44.40625
+          },
+          "source": {
+            "left": 144.46875,
+            "right": 180.46875,
+            "top": 12,
+            "bottom": 48,
+            "width": 36,
+            "height": 36
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "1",
+          "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 390,
+          "documentWidth": 390,
+          "header": {
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 61,
+            "width": 390,
+            "height": 61
+          }
+        },
+        {
+          "phase": "night",
+          "disk": {
+            "left": 148.0625,
+            "top": 15.59375,
+            "width": 28.8125,
+            "height": 28.8125,
+            "right": 176.875,
+            "bottom": 44.40625
+          },
+          "source": {
+            "left": 144.46875,
+            "right": 180.46875,
+            "top": 12,
+            "bottom": 48,
+            "width": 36,
+            "height": 36
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "0.0905367",
+          "pseudoBackground": "radial-gradient(circle at 28% 24%, rgb(248, 251, 255) 0px, rgb(220, 231, 248) 33%, rgb(180, 202, 232) 73%, rgb(143, 169, 204) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 390,
+          "documentWidth": 390,
+          "header": {
+            "left": 0,
+            "right": 390,
+            "top": 0,
+            "bottom": 61,
+            "width": 390,
+            "height": 61
+          }
+        }
+      ],
+      "modalOpenAndEscapeClose": true,
+      "filtersReachable": true,
+      "mobileMenu": {
+        "clientHeight": 844,
+        "scrollHeight": 844,
+        "reopenedAndClosed": true
+      }
+    },
+    {
+      "name": "atlas-mobile-320",
+      "status": "pass",
+      "screenshot": "evidence/premium-v10/after/atlas-day-mobile-320.png",
+      "sourcePhases": [
+        {
+          "phase": "morning",
+          "disk": {
+            "left": 148.0625,
+            "top": 15.59375,
+            "width": 28.8125,
+            "height": 28.8125,
+            "right": 176.875,
+            "bottom": 44.40625
+          },
+          "source": {
+            "left": 144.46875,
+            "right": 180.46875,
+            "top": 12,
+            "bottom": 48,
+            "width": 36,
+            "height": 36
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "1",
+          "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 320,
+          "documentWidth": 320,
+          "header": {
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "bottom": 61,
+            "width": 320,
+            "height": 61
+          }
+        },
+        {
+          "phase": "day",
+          "disk": {
+            "left": 148.0625,
+            "top": 15.59375,
+            "width": 28.8125,
+            "height": 28.8125,
+            "right": 176.875,
+            "bottom": 44.40625
+          },
+          "source": {
+            "left": 144.46875,
+            "right": 180.46875,
+            "top": 12,
+            "bottom": 48,
+            "width": 36,
+            "height": 36
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "1",
+          "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 320,
+          "documentWidth": 320,
+          "header": {
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "bottom": 61,
+            "width": 320,
+            "height": 61
+          }
+        },
+        {
+          "phase": "sunset",
+          "disk": {
+            "left": 148.0625,
+            "top": 15.59375,
+            "width": 28.8125,
+            "height": 28.8125,
+            "right": 176.875,
+            "bottom": 44.40625
+          },
+          "source": {
+            "left": 144.46875,
+            "right": 180.46875,
+            "top": 12,
+            "bottom": 48,
+            "width": 36,
+            "height": 36
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "1",
+          "pseudoBackground": "radial-gradient(circle at 34% 29%, rgb(255, 249, 215) 0px, rgb(255, 233, 161) 28%, rgb(249, 203, 103) 63%, rgb(236, 174, 73) 88%, rgb(217, 148, 56) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 320,
+          "documentWidth": 320,
+          "header": {
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "bottom": 61,
+            "width": 320,
+            "height": 61
+          }
+        },
+        {
+          "phase": "night",
+          "disk": {
+            "left": 148.0625,
+            "top": 15.59375,
+            "width": 28.8125,
+            "height": 28.8125,
+            "right": 176.875,
+            "bottom": 44.40625
+          },
+          "source": {
+            "left": 144.46875,
+            "right": 180.46875,
+            "top": 12,
+            "bottom": 48,
+            "width": 36,
+            "height": 36
+          },
+          "sourceOpacity": "1",
+          "sourcePointerEvents": "none",
+          "pseudoOpacity": "0.0904627",
+          "pseudoBackground": "radial-gradient(circle at 28% 24%, rgb(248, 251, 255) 0px, rgb(220, 231, 248) 33%, rgb(180, 202, 232) 73%, rgb(143, 169, 204) 100%)",
+          "pseudoContent": "\"\"",
+          "overlaps": [],
+          "viewportWidth": 320,
+          "documentWidth": 320,
+          "header": {
+            "left": 0,
+            "right": 320,
+            "top": 0,
+            "bottom": 61,
+            "width": 320,
+            "height": 61
+          }
+        }
+      ],
+      "modalOpenAndEscapeClose": true,
+      "filtersReachable": true,
+      "mobileMenu": {
+        "clientHeight": 740,
+        "scrollHeight": 790,
+        "screenshot": "evidence/premium-v10/after/atlas-menu-mobile-320.png",
+        "reopenedAndClosed": true
+      }
+    },
+    {
+      "name": "automatic-light-change-without-reload",
+      "status": "pass",
+      "before": "18:59:59 sunset",
+      "after": "19:00:00 night",
+      "additionalNavigations": 0
+    }
+  ],
+  "errors": [],
+  "browser": "153.0.8010.53",
+  "finishedAt": "2026-09-24T21:20:59.259Z",
+  "totals": {
+    "pass": 19,
+    "fail": 0,
+    "block": 0
+  },
+  "filter": null,
+  "plannedChecks": 19,
+  "passed": true
+}

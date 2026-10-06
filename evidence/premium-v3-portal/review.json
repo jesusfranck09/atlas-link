@@ -1,0 +1,124 @@
+[
+  {
+    "role": "admin",
+    "viewport": 1440,
+    "errors": [],
+    "geometry": {
+      "width": 1440,
+      "innerWidth": 1440
+    },
+    "axe": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              "footer > span:nth-child(1) > span"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #77717f, background color: #f7f7f8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "role": "atlas",
+    "viewport": 1440,
+    "errors": [],
+    "geometry": {
+      "width": 1440,
+      "innerWidth": 1440
+    },
+    "axe": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              ".portal-module__0SF6zG__liveStatus"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.39 (foreground color: #7f748c, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "tr:nth-child(1) > td:nth-child(1) > .portal-module__0SF6zG__portfolioTenant[href$=\"tenants\"] > span"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.95 (foreground color: #877099, background color: #f6f2fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "tr:nth-child(2) > td:nth-child(1) > .portal-module__0SF6zG__portfolioTenant[href$=\"tenants\"] > span"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.95 (foreground color: #877099, background color: #f6f2fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "span:nth-child(1) > span"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #77717f, background color: #f7f7f8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "viewport": 390,
+    "errors": [],
+    "geometry": {
+      "width": 390,
+      "innerWidth": 390
+    },
+    "axe": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              "footer > span:nth-child(1) > span"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #77717f, background color: #f7f7f8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "role": "atlas",
+    "viewport": 390,
+    "errors": [],
+    "geometry": {
+      "width": 390,
+      "innerWidth": 390
+    },
+    "axe": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+          {
+            "target": [
+              "tr:nth-child(1) > td:nth-child(1) > .portal-module__0SF6zG__portfolioTenant[href$=\"tenants\"] > span"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.95 (foreground color: #877099, background color: #f6f2fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "tr:nth-child(2) > td:nth-child(1) > .portal-module__0SF6zG__portfolioTenant[href$=\"tenants\"] > span"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.95 (foreground color: #877099, background color: #f6f2fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "span:nth-child(1) > span"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #77717f, background color: #f7f7f8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,98 @@
+{
+  "hit": {
+    "x": 550.103125,
+    "y": 549.96875,
+    "tag": "SPAN",
+    "className": "prismatic-text-module__ooB89W__text",
+    "text": "Más claridad para avanzar.",
+    "isPrismatic": true,
+    "hidden": false,
+    "reduced": false,
+    "forcedColors": false
+  },
+  "state": {
+    "motion": "full",
+    "state": "idle",
+    "engaged": "true",
+    "position": "71.59999675259071%",
+    "fontSize": "47.52px",
+    "box": {
+      "x": 441.84375,
+      "y": 522.890625,
+      "width": 541.296875,
+      "height": 54.15625,
+      "top": 522.890625,
+      "right": 983.140625,
+      "bottom": 577.046875,
+      "left": 441.84375
+    }
+  },
+  "events": [
+    {
+      "name": "pointerenter",
+      "time": 8832,
+      "pointer": "mouse",
+      "x": 122.7562484741211,
+      "y": 237.796875,
+      "text": "en perspectiva.",
+      "motion": "full",
+      "state": "idle",
+      "engaged": "true"
+    },
+    {
+      "name": "pointermove",
+      "time": 8832,
+      "pointer": "mouse",
+      "x": 122.7562484741211,
+      "y": 237.796875,
+      "text": "en perspectiva.",
+      "motion": "full",
+      "state": "idle",
+      "engaged": "true"
+    },
+    {
+      "name": "pointermove",
+      "time": 8931,
+      "pointer": "mouse",
+      "x": 333.5249938964844,
+      "y": 237.796875,
+      "text": "en perspectiva.",
+      "motion": "full",
+      "state": "idle",
+      "engaged": "true"
+    },
+    {
+      "name": "pointerleave",
+      "time": 8981,
+      "pointer": "mouse",
+      "x": 1,
+      "y": 1,
+      "text": "en perspectiva.",
+      "motion": "full",
+      "state": "idle",
+      "engaged": "false"
+    },
+    {
+      "name": "pointerenter",
+      "time": 10806,
+      "pointer": "mouse",
+      "x": 550.1031494140625,
+      "y": 549.96875,
+      "text": "Más claridad para avanzar.",
+      "motion": "full",
+      "state": "idle",
+      "engaged": "true"
+    },
+    {
+      "name": "pointermove",
+      "time": 10806,
+      "pointer": "mouse",
+      "x": 550.1031494140625,
+      "y": 549.96875,
+      "text": "Más claridad para avanzar.",
+      "motion": "full",
+      "state": "idle",
+      "engaged": "true"
+    }
+  ]
+}

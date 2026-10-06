@@ -1,0 +1,337 @@
+{
+  "createdAt": "2026-09-24T23:09:57.872545+00:00",
+  "result": "All 20 distinct scoped scenarios have passing evidence across three revisions. Only three focused scenarios reran on the final deployment; this is an evidence index, not a single 20-scenario run.",
+  "finalDeploymentImage": "sha256:82f06c4467bbe3e3f4db8fd08e5524e41898f195151e0f8a4989a7dc8b0e445d",
+  "verifiedScenarioCount": 20,
+  "latestSelectedScenarioFailures": 0,
+  "verifiedRouteViews": {
+    "count": 52,
+    "report": "after/integrated-review.json",
+    "executedImage": "sha256:72152157ac39e7500e05d9d3946d6cad3b5e9cc7bc0335379821cd22481b7101",
+    "meaning": "Successful module/detail views across the declared role and viewport scenarios; not 52 unique URLs."
+  },
+  "environment": {
+    "baseURL": "http://127.0.0.1:4430",
+    "browser": "153.0.8010.53",
+    "hostOS": "macOS",
+    "backend": "Local Docker Next production build with actual Java/Spring APIs and PostgreSQL demo data; no API interception or mocks.",
+    "clock": "2026-09-24 14:00 America/Mexico_City, browser fixed time",
+    "viewports": [
+      "1440x1000 desktop",
+      "1440x900 hospital density",
+      "1024x900 tablet emulation",
+      "390x844 mobile emulation",
+      "320x740 mobile emulation"
+    ],
+    "mutationBoundary": "Authentication/session audit only. No business-data writes, commercial forms, email, payments or API mocks.",
+    "ownedContextsClosed": true
+  },
+  "runs": [
+    {
+      "run": "initial",
+      "report": "initial-run/review.json",
+      "startedAt": "2026-09-24T22:44:27.966Z",
+      "finishedAt": "2026-09-24T22:47:13.673Z",
+      "executedImage": "sha256:3a5d95f035b2aeae4a17b4d7ab16f2f0395fa22b472c6a2d16bb7c6f60710f1a",
+      "recordedDeploymentImage": "sha256:3a5d95f035b2aeae4a17b4d7ab16f2f0395fa22b472c6a2d16bb7c6f60710f1a",
+      "imageNote": null,
+      "executed": 19,
+      "passed": 9,
+      "failed": 10,
+      "verifiedRouteViews": 50,
+      "browserErrors": 0
+    },
+    {
+      "run": "integrated",
+      "report": "after/integrated-review.json",
+      "startedAt": "2026-09-24T22:55:43.004Z",
+      "finishedAt": "2026-09-24T22:57:31.171Z",
+      "executedImage": "sha256:72152157ac39e7500e05d9d3946d6cad3b5e9cc7bc0335379821cd22481b7101",
+      "recordedDeploymentImage": "sha256:502cc29a241ef4d7d2af90fb5ac36ec68a624e97c20d8d75450ea0fdaad2fa96",
+      "imageNote": "Original report recorded the build config digest in deploymentImage; running manifest digest confirmed by root via docker inspect .Image is the executedImage above.",
+      "executed": 16,
+      "passed": 14,
+      "failed": 2,
+      "verifiedRouteViews": 52,
+      "browserErrors": 0
+    },
+    {
+      "run": "final",
+      "report": "final-focused/review.json",
+      "startedAt": "2026-09-24T23:05:32.839Z",
+      "finishedAt": "2026-09-24T23:05:57.841Z",
+      "executedImage": "sha256:82f06c4467bbe3e3f4db8fd08e5524e41898f195151e0f8a4989a7dc8b0e445d",
+      "recordedDeploymentImage": "sha256:82f06c4467bbe3e3f4db8fd08e5524e41898f195151e0f8a4989a7dc8b0e445d",
+      "imageNote": null,
+      "executed": 3,
+      "passed": 3,
+      "failed": 0,
+      "verifiedRouteViews": 0,
+      "browserErrors": 0
+    }
+  ],
+  "selectedCoverage": [
+    {
+      "scenario": "hospital-effects-desktop",
+      "status": "pass",
+      "report": "initial-run/review.json",
+      "executedImage": "sha256:3a5d95f035b2aeae4a17b4d7ab16f2f0395fa22b472c6a2d16bb7c6f60710f1a",
+      "executedAt": "2026-09-24T22:44:27.966Z",
+      "reusedAfterFinalLocalizedFix": true,
+      "reuseReason": "SystemSculpture lifecycle unchanged; later insurer material/lighting appearance validated in integrated shell scenarios."
+    },
+    {
+      "scenario": "control-effects-desktop",
+      "status": "pass",
+      "report": "initial-run/review.json",
+      "executedImage": "sha256:3a5d95f035b2aeae4a17b4d7ab16f2f0395fa22b472c6a2d16bb7c6f60710f1a",
+      "executedAt": "2026-09-24T22:44:27.966Z",
+      "reusedAfterFinalLocalizedFix": true,
+      "reuseReason": "SystemSculpture lifecycle unchanged; later insurer material/lighting appearance validated in integrated shell scenarios."
+    },
+    {
+      "scenario": "insurer-effects-desktop",
+      "status": "pass",
+      "report": "initial-run/review.json",
+      "executedImage": "sha256:3a5d95f035b2aeae4a17b4d7ab16f2f0395fa22b472c6a2d16bb7c6f60710f1a",
+      "executedAt": "2026-09-24T22:44:27.966Z",
+      "reusedAfterFinalLocalizedFix": true,
+      "reuseReason": "SystemSculpture lifecycle unchanged; later insurer material/lighting appearance validated in integrated shell scenarios."
+    },
+    {
+      "scenario": "landing-tablet-1024",
+      "status": "pass",
+      "report": "after/integrated-review.json",
+      "executedImage": "sha256:72152157ac39e7500e05d9d3946d6cad3b5e9cc7bc0335379821cd22481b7101",
+      "executedAt": "2026-09-24T22:55:43.004Z",
+      "reusedAfterFinalLocalizedFix": true,
+      "reuseReason": "Final change only repairs PrismaticText pointer/IntersectionObserver ordering; platform shell, navigation, account controls, responsive CSS and other viewport layouts unchanged."
+    },
+    {
+      "scenario": "landing-mobile-320",
+      "status": "pass",
+      "report": "after/integrated-review.json",
+      "executedImage": "sha256:72152157ac39e7500e05d9d3946d6cad3b5e9cc7bc0335379821cd22481b7101",
+      "executedAt": "2026-09-24T22:55:43.004Z",
+      "reusedAfterFinalLocalizedFix": true,
+      "reuseReason": "Final change only repairs PrismaticText pointer/IntersectionObserver ordering; platform shell, navigation, account controls, responsive CSS and other viewport layouts unchanged."
+    },
+    {
+      "scenario": "hospital-desktop",
+      "status": "pass",
+      "report": "after/integrated-review.json",
+      "executedImage": "sha256:72152157ac39e7500e05d9d3946d6cad3b5e9cc7bc0335379821cd22481b7101",
+      "executedAt": "2026-09-24T22:55:43.004Z",
+      "reusedAfterFinalLocalizedFix": true,
+      "reuseReason": "Final change only repairs PrismaticText pointer/IntersectionObserver ordering; platform shell, navigation, account controls, responsive CSS and other viewport layouts unchanged."
+    },
+    {
+      "scenario": "control-desktop",
+      "status": "pass",
+      "report": "after/integrated-review.json",
+      "executedImage": "sha256:72152157ac39e7500e05d9d3946d6cad3b5e9cc7bc0335379821cd22481b7101",
+      "executedAt": "2026-09-24T22:55:43.004Z",
+      "reusedAfterFinalLocalizedFix": true,
+      "reuseReason": "Final change only repairs PrismaticText pointer/IntersectionObserver ordering; platform shell, navigation, account controls, responsive CSS and other viewport layouts unchanged."
+    },
+    {
+      "scenario": "insurer-desktop",
+      "status": "pass",
+      "report": "after/integrated-review.json",
+      "executedImage": "sha256:72152157ac39e7500e05d9d3946d6cad3b5e9cc7bc0335379821cd22481b7101",
+      "executedAt": "2026-09-24T22:55:43.004Z",
+      "reusedAfterFinalLocalizedFix": true,
+      "reuseReason": "Final change only repairs PrismaticText pointer/IntersectionObserver ordering; platform shell, navigation, account controls, responsive CSS and other viewport layouts unchanged."
+    },
+    {
+      "scenario": "hospital-mobile-390",
+      "status": "pass",
+      "report": "after/integrated-review.json",
+      "executedImage": "sha256:72152157ac39e7500e05d9d3946d6cad3b5e9cc7bc0335379821cd22481b7101",
+      "executedAt": "2026-09-24T22:55:43.004Z",
+      "reusedAfterFinalLocalizedFix": true,
+      "reuseReason": "Final change only repairs PrismaticText pointer/IntersectionObserver ordering; platform shell, navigation, account controls, responsive CSS and other viewport layouts unchanged."
+    },
+    {
+      "scenario": "control-mobile-390",
+      "status": "pass",
+      "report": "after/integrated-review.json",
+      "executedImage": "sha256:72152157ac39e7500e05d9d3946d6cad3b5e9cc7bc0335379821cd22481b7101",
+      "executedAt": "2026-09-24T22:55:43.004Z",
+      "reusedAfterFinalLocalizedFix": true,
+      "reuseReason": "Final change only repairs PrismaticText pointer/IntersectionObserver ordering; platform shell, navigation, account controls, responsive CSS and other viewport layouts unchanged."
+    },
+    {
+      "scenario": "insurer-mobile-390",
+      "status": "pass",
+      "report": "after/integrated-review.json",
+      "executedImage": "sha256:72152157ac39e7500e05d9d3946d6cad3b5e9cc7bc0335379821cd22481b7101",
+      "executedAt": "2026-09-24T22:55:43.004Z",
+      "reusedAfterFinalLocalizedFix": true,
+      "reuseReason": "Final change only repairs PrismaticText pointer/IntersectionObserver ordering; platform shell, navigation, account controls, responsive CSS and other viewport layouts unchanged."
+    },
+    {
+      "scenario": "hospital-tablet-1024",
+      "status": "pass",
+      "report": "after/integrated-review.json",
+      "executedImage": "sha256:72152157ac39e7500e05d9d3946d6cad3b5e9cc7bc0335379821cd22481b7101",
+      "executedAt": "2026-09-24T22:55:43.004Z",
+      "reusedAfterFinalLocalizedFix": true,
+      "reuseReason": "Final change only repairs PrismaticText pointer/IntersectionObserver ordering; platform shell, navigation, account controls, responsive CSS and other viewport layouts unchanged."
+    },
+    {
+      "scenario": "control-tablet-1024",
+      "status": "pass",
+      "report": "after/integrated-review.json",
+      "executedImage": "sha256:72152157ac39e7500e05d9d3946d6cad3b5e9cc7bc0335379821cd22481b7101",
+      "executedAt": "2026-09-24T22:55:43.004Z",
+      "reusedAfterFinalLocalizedFix": true,
+      "reuseReason": "Final change only repairs PrismaticText pointer/IntersectionObserver ordering; platform shell, navigation, account controls, responsive CSS and other viewport layouts unchanged."
+    },
+    {
+      "scenario": "insurer-tablet-1024",
+      "status": "pass",
+      "report": "after/integrated-review.json",
+      "executedImage": "sha256:72152157ac39e7500e05d9d3946d6cad3b5e9cc7bc0335379821cd22481b7101",
+      "executedAt": "2026-09-24T22:55:43.004Z",
+      "reusedAfterFinalLocalizedFix": true,
+      "reuseReason": "Final change only repairs PrismaticText pointer/IntersectionObserver ordering; platform shell, navigation, account controls, responsive CSS and other viewport layouts unchanged."
+    },
+    {
+      "scenario": "hospital-mobile-320",
+      "status": "pass",
+      "report": "after/integrated-review.json",
+      "executedImage": "sha256:72152157ac39e7500e05d9d3946d6cad3b5e9cc7bc0335379821cd22481b7101",
+      "executedAt": "2026-09-24T22:55:43.004Z",
+      "reusedAfterFinalLocalizedFix": true,
+      "reuseReason": "Final change only repairs PrismaticText pointer/IntersectionObserver ordering; platform shell, navigation, account controls, responsive CSS and other viewport layouts unchanged."
+    },
+    {
+      "scenario": "control-mobile-320",
+      "status": "pass",
+      "report": "after/integrated-review.json",
+      "executedImage": "sha256:72152157ac39e7500e05d9d3946d6cad3b5e9cc7bc0335379821cd22481b7101",
+      "executedAt": "2026-09-24T22:55:43.004Z",
+      "reusedAfterFinalLocalizedFix": true,
+      "reuseReason": "Final change only repairs PrismaticText pointer/IntersectionObserver ordering; platform shell, navigation, account controls, responsive CSS and other viewport layouts unchanged."
+    },
+    {
+      "scenario": "insurer-mobile-320",
+      "status": "pass",
+      "report": "after/integrated-review.json",
+      "executedImage": "sha256:72152157ac39e7500e05d9d3946d6cad3b5e9cc7bc0335379821cd22481b7101",
+      "executedAt": "2026-09-24T22:55:43.004Z",
+      "reusedAfterFinalLocalizedFix": true,
+      "reuseReason": "Final change only repairs PrismaticText pointer/IntersectionObserver ordering; platform shell, navigation, account controls, responsive CSS and other viewport layouts unchanged."
+    },
+    {
+      "scenario": "landing-desktop",
+      "status": "pass",
+      "report": "final-focused/review.json",
+      "executedImage": "sha256:82f06c4467bbe3e3f4db8fd08e5524e41898f195151e0f8a4989a7dc8b0e445d",
+      "executedAt": "2026-09-24T23:05:32.839Z",
+      "reusedAfterFinalLocalizedFix": false,
+      "reuseReason": null
+    },
+    {
+      "scenario": "landing-mobile-390",
+      "status": "pass",
+      "report": "final-focused/review.json",
+      "executedImage": "sha256:82f06c4467bbe3e3f4db8fd08e5524e41898f195151e0f8a4989a7dc8b0e445d",
+      "executedAt": "2026-09-24T23:05:32.839Z",
+      "reusedAfterFinalLocalizedFix": false,
+      "reuseReason": null
+    },
+    {
+      "scenario": "prismatic-reentry-desktop",
+      "status": "pass",
+      "report": "final-focused/review.json",
+      "executedImage": "sha256:82f06c4467bbe3e3f4db8fd08e5524e41898f195151e0f8a4989a7dc8b0e445d",
+      "executedAt": "2026-09-24T23:05:32.839Z",
+      "reusedAfterFinalLocalizedFix": false,
+      "reuseReason": null
+    }
+  ],
+  "verifiedOutcomes": [
+    "Three distinct system identities and system/organization/module breadcrumbs, including account detail.",
+    "Demo accounts autofill without autosubmit; explicit real login/logout returns to the corresponding system.",
+    "All 12 role/viewport shell scenarios passed; no document overflow at declared widths; scoped Axe checks and functional drawer keyboard behavior passed.",
+    "Hospital overview shows six complete account rows at 1440x900; last row bottom 883.796875px.",
+    "Account search/filter data agree with actual API responses; insurer mutation controls absent and three forbidden read probes return HTTP 403.",
+    "Manual landing carousel, keyboard flip controls, inert hidden faces and snap-to-first position verified with real user controls.",
+    "WebGL renders on eligible desktop, SVG serves coarse/mobile; pointer settling, offscreen pause, reduced motion and forced-colors fallback checked. Control context loss/restoration checked.",
+    "Final Prismatic native scroll/pointer race regression passed three cycles, preference recovery via pointermove, finite idle motion and readable reduced/forced-colors output."
+  ],
+  "closedFindings": [
+    {
+      "id": "showcase-footnote-contrast",
+      "type": "product",
+      "initialReport": "initial-run/review.json",
+      "confirmationReports": [
+        "after/integrated-review.json",
+        "final-focused/review.json"
+      ]
+    },
+    {
+      "id": "drawer-initial-focus",
+      "type": "product",
+      "initialReport": "initial-run/focus-diagnostic.json",
+      "confirmationReports": [
+        "after/integrated-review.json"
+      ]
+    },
+    {
+      "id": "insurer-scroll-table-focus",
+      "type": "product",
+      "initialReport": "initial-run/review.json",
+      "confirmationReports": [
+        "after/integrated-review.json"
+      ]
+    },
+    {
+      "id": "hospital-density-six-rows",
+      "type": "usability",
+      "initialReport": "initial-run/review.json",
+      "confirmationReports": [
+        "after/integrated-review.json"
+      ]
+    },
+    {
+      "id": "prismatic-pointer-before-intersection",
+      "type": "product",
+      "initialReport": "diagnostic-native/prismatic-timing.json",
+      "confirmationReports": [
+        "final-focused/review.json"
+      ]
+    }
+  ],
+  "runnerCorrections": [
+    "Carousel screenshot previously captured intermediate smooth-scroll position; now waits stable snap, first position and disabled previous button. No forced instantaneous screenshot alignment.",
+    "Global reveal assertion incorrectly expected any visible pixel to satisfy an 8% IntersectionObserver/rootMargin threshold; contractual showcase elements are now each scrolled into sufficient view before asserting visible.",
+    "Additional diagnostic protocol round trips masked the Prismatic event-order race in one diagnostic pass. A separate minimal native reproduction captured the failure; final regression preserves immediate scroll-to-pointer ordering."
+  ],
+  "limitations": [
+    "Not every scenario reran on final image. Unchanged scope reuses identified prior-run evidence.",
+    "Chrome CDP did not expose document.hidden=true when another owned tab was brought forward. Actual background-tab pause remains unverified; offscreen and idle pause are verified.",
+    "Mobile/tablet runs are Chrome emulation on macOS, not physical Android/iOS devices, Safari or Windows.",
+    "Axe excludes full aesthetic approval and cannot resolve every gradient/transparency/canvas contrast case; incomplete results remain in raw reports.",
+    "No FPS, battery, production load, full security audit, native-platform certification or production release approval is inferred.",
+    "No business-data creation/update, commercial-form submission, email delivery or payments were performed; authentication/session audit is the only expected mutation."
+  ],
+  "screenshots": {
+    "hospitalDesktop": "after/hospital-hospital-desktop.png",
+    "hospitalSixRows": "after/hospital-overview-1440x900.png",
+    "insurerDesktop": "after/insurer-hospital-desktop.png",
+    "controlDesktop": "after/control-admin-desktop.png",
+    "landingDesktop": "final-focused/landing-hero-desktop.png",
+    "showcaseDesktop": "final-focused/landing-showcase-desktop.png",
+    "landingMobile": "final-focused/landing-hero-mobile-390.png",
+    "showcaseMobile": "final-focused/landing-showcase-mobile-390.png"
+  },
+  "entryURLs": {
+    "landing": "http://localhost:4430/",
+    "hospital": "http://localhost:4430/login",
+    "control": "http://localhost:4430/admin/login",
+    "insurer": "http://localhost:4430/insurer/login"
+  }
+}

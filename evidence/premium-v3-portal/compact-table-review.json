@@ -1,0 +1,81 @@
+{
+  "geometry": {
+    "width": 339,
+    "scrollWidth": 339,
+    "rows": [
+      [
+        {
+          "text": "DEMO-00001PAC-SINT-0001 · 22 sep 2026",
+          "right": 189.421875
+        },
+        {
+          "text": "$11,900.00",
+          "right": 307
+        },
+        {
+          "text": "Revisión requerida1 hallazgo",
+          "right": 307
+        },
+        {
+          "text": "",
+          "right": 340
+        }
+      ],
+      [
+        {
+          "text": "DEMO-00002PAC-SINT-0002 · 21 sep 2026",
+          "right": 186.703125
+        },
+        {
+          "text": "$12,100.00",
+          "right": 307
+        },
+        {
+          "text": "Atención prioritaria1 hallazgo",
+          "right": 307
+        },
+        {
+          "text": "",
+          "right": 340
+        }
+      ],
+      [
+        {
+          "text": "DEMO-00003PAC-SINT-0003 · 20 sep 2026",
+          "right": 189.421875
+        },
+        {
+          "text": "$10,900.00",
+          "right": 307
+        },
+        {
+          "text": "Revisión requerida1 hallazgo",
+          "right": 307
+        },
+        {
+          "text": "",
+          "right": 340
+        }
+      ],
+      [
+        {
+          "text": "DEMO-00004PAC-SINT-0004 · 19 sep 2026",
+          "right": 186.703125
+        },
+        {
+          "text": "$10,900.00",
+          "right": 307
+        },
+        {
+          "text": "Atención prioritaria1 hallazgo",
+          "right": 307
+        },
+        {
+          "text": "",
+          "right": 340
+        }
+      ]
+    ]
+  },
+  "violations": []
+}

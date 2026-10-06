@@ -1,0 +1,148 @@
+{
+  "views": [
+    {
+      "name": "desktop-hospital",
+      "dimensions": {
+        "width": 1440,
+        "scroll": 1425,
+        "height": 1133
+      },
+      "violations": []
+    },
+    {
+      "name": "desktop-company",
+      "dimensions": {
+        "width": 1440,
+        "scroll": 1425,
+        "height": 1029
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #766c81, background color: #f5f0ff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #776d81, background color: #f5f0ff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tablet-hospital",
+      "dimensions": {
+        "width": 820,
+        "scroll": 805,
+        "height": 1241
+      },
+      "violations": []
+    },
+    {
+      "name": "tablet-company",
+      "dimensions": {
+        "width": 820,
+        "scroll": 805,
+        "height": 1033
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #766c81, background color: #f5f0ff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #776d81, background color: #f5f0ff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-hospital",
+      "dimensions": {
+        "width": 390,
+        "scroll": 390,
+        "height": 1555
+      },
+      "violations": []
+    },
+    {
+      "name": "mobile-company",
+      "dimensions": {
+        "width": 390,
+        "scroll": 390,
+        "height": 1045
+      },
+      "violations": []
+    },
+    {
+      "name": "narrow-hospital",
+      "dimensions": {
+        "width": 320,
+        "scroll": 320,
+        "height": 1655
+      },
+      "violations": []
+    },
+    {
+      "name": "narrow-company",
+      "dimensions": {
+        "width": 320,
+        "scroll": 320,
+        "height": 1108
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "nodes": [
+            "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #766c81, background color: #f5f0ff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #776d81, background color: #f5f0ff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "desktop-hospital:profiles-autofill-and-password-toggle",
+      "passed": true
+    },
+    {
+      "name": "disabled-account-refused",
+      "passed": true
+    },
+    {
+      "name": "desktop-hospital:real-authentication",
+      "passed": true
+    },
+    {
+      "name": "desktop-company:profiles-autofill-and-password-toggle",
+      "passed": true
+    },
+    {
+      "name": "desktop-company:real-authentication",
+      "passed": true
+    },
+    {
+      "name": "tablet-hospital:profiles-autofill-and-password-toggle",
+      "passed": true
+    },
+    {
+      "name": "tablet-company:profiles-autofill-and-password-toggle",
+      "passed": true
+    },
+    {
+      "name": "mobile-hospital:profiles-autofill-and-password-toggle",
+      "passed": true
+    },
+    {
+      "name": "mobile-company:profiles-autofill-and-password-toggle",
+      "passed": true
+    },
+    {
+      "name": "narrow-hospital:profiles-autofill-and-password-toggle",
+      "passed": true
+    },
+    {
+      "name": "narrow-company:profiles-autofill-and-password-toggle",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "baseURL": "http://127.0.0.1:4300"
+}

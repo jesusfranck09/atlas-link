@@ -1,0 +1,12 @@
+{
+  "accountId": "e1b3c339-caa5-4ab0-bf27-ed54726068df",
+  "originalEvaluationId": "4839a551-f67b-46dd-8d44-21d017966e94",
+  "revisedEvaluationId": "998bfb2f-b0f0-4222-95af-39272b8f40ab",
+  "replayAccountId": "90f2477f-8664-46c9-a831-c9e71ed6f6e6",
+  "engineArtifactSha256": "f9c35104a187de9f875e10bcc0842c4e9eda718dac504f07eec14a6fc77c26b7",
+  "originalAdjustment": 50,
+  "currentAdjustment": 80,
+  "reconstructedAdjustment": 50,
+  "replayAdjustment": 50,
+  "persistedSnapshotsUnchanged": true
+}

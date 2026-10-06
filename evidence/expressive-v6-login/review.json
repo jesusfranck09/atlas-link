@@ -1,0 +1,111 @@
+{
+  "baseURL": "http://127.0.0.1:4300",
+  "views": [
+    {
+      "name": "desktop-hospital",
+      "dimensions": {
+        "width": 1440,
+        "scroll": 1440,
+        "height": 1054,
+        "minProfileFont": 12,
+        "inputFont": "16px"
+      },
+      "violations": []
+    },
+    {
+      "name": "desktop-company",
+      "dimensions": {
+        "width": 1440,
+        "scroll": 1440,
+        "height": 936,
+        "minProfileFont": 12,
+        "inputFont": "16px"
+      },
+      "violations": []
+    },
+    {
+      "name": "mobile-hospital",
+      "dimensions": {
+        "width": 390,
+        "scroll": 390,
+        "height": 1781,
+        "minProfileFont": 12,
+        "inputFont": "16px"
+      },
+      "violations": []
+    },
+    {
+      "name": "mobile-company",
+      "dimensions": {
+        "width": 390,
+        "scroll": 390,
+        "height": 1406,
+        "minProfileFont": 12,
+        "inputFont": "16px"
+      },
+      "violations": []
+    },
+    {
+      "name": "narrow-hospital",
+      "dimensions": {
+        "width": 320,
+        "scroll": 320,
+        "height": 1849,
+        "minProfileFont": 12,
+        "inputFont": "16px"
+      },
+      "violations": []
+    },
+    {
+      "name": "narrow-company",
+      "dimensions": {
+        "width": 320,
+        "scroll": 320,
+        "height": 1474,
+        "minProfileFont": 12,
+        "inputFont": "16px"
+      },
+      "violations": []
+    }
+  ],
+  "checks": [
+    {
+      "name": "desktop-hospital:all-demo-profiles-fill-and-password-toggle",
+      "passed": true
+    },
+    {
+      "name": "disabled-account-refused",
+      "passed": true
+    },
+    {
+      "name": "desktop-hospital:real-authentication",
+      "passed": true
+    },
+    {
+      "name": "desktop-company:all-demo-profiles-fill-and-password-toggle",
+      "passed": true
+    },
+    {
+      "name": "desktop-company:real-authentication",
+      "passed": true
+    },
+    {
+      "name": "mobile-hospital:all-demo-profiles-fill-and-password-toggle",
+      "passed": true
+    },
+    {
+      "name": "mobile-company:all-demo-profiles-fill-and-password-toggle",
+      "passed": true
+    },
+    {
+      "name": "narrow-hospital:all-demo-profiles-fill-and-password-toggle",
+      "passed": true
+    },
+    {
+      "name": "narrow-company:all-demo-profiles-fill-and-password-toggle",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "finalSizing": "All demo roles, names and emails >=12px; inputs16px"
+}

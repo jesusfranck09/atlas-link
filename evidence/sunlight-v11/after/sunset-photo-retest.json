@@ -1,0 +1,76 @@
+{
+  "startedAt": "2026-09-24T21:45:01.545Z",
+  "baseURL": "http://127.0.0.1:4430",
+  "revision": "6a37e87c8ecf56c015bc3a7fb773928b11543f2d",
+  "workingTree": [
+    "M AGENTS.md",
+    " M frontend/src/components/daylight.module.css",
+    " M frontend/src/components/daylight.tsx",
+    " M frontend/src/components/landing.module.css",
+    " M frontend/src/components/landing.tsx",
+    " M qa/daylight-review.mjs",
+    " M qa/premium-finish-review.mjs",
+    " M qa/production-smoke.mjs",
+    " M qa/tests/journeys.spec.ts",
+    "?? docs/review-sunlight-v11.md",
+    "?? evidence/sunlight-v11/",
+    "?? qa/sunlight-review.mjs"
+  ],
+  "scope": "New fixed V11 illumination and compact landing hero. Actual local demo authentication and read-only accounts/reports. Checks scroll, visible compositing on opaque content, text selection, input/click access, menu/dialog stacking and accessibility preferences.",
+  "reusedEvidence": [
+    "evidence/premium-v10/after/review.json",
+    "evidence/premium-v10/after/smoke/report.json"
+  ],
+  "limits": "Chrome on macOS with emulated mobile/tablet dimensions. No physical mobile, other browser, FPS or battery claims. Axe has limits on gradients/canvas; visual screenshots and pixel comparisons complement it. Business data, lead submissions and production are excluded.",
+  "checks": [
+    {
+      "name": "sunset-hero-geometry-desktop",
+      "status": "pass",
+      "disk": {
+        "x": 1303.0687005859374,
+        "y": 211.2656,
+        "width": 61.4688,
+        "height": 61.4688,
+        "right": 1364.5375005859376,
+        "bottom": 272.7344
+      },
+      "collisions": [],
+      "opacity": "1",
+      "photoTop": 298.5625,
+      "photoClearance": 25.828100000000006,
+      "viewportWidth": 1440,
+      "checked": "Eyebrow, actual heading/paragraph text lines, both CTA rectangles, and desktop disk clearance above photograph",
+      "screenshot": "evidence/sunlight-v11/after/landing-sunset-desktop.png"
+    },
+    {
+      "name": "sunset-hero-geometry-tablet-1024",
+      "status": "pass",
+      "disk": {
+        "x": 881.562525,
+        "y": 98.2344,
+        "width": 43.5312,
+        "height": 43.5312,
+        "right": 925.0937250000001,
+        "bottom": 141.7656
+      },
+      "collisions": [],
+      "opacity": "1",
+      "photoTop": 280.296875,
+      "photoClearance": 138.531275,
+      "viewportWidth": 1024,
+      "checked": "Eyebrow, actual heading/paragraph text lines, both CTA rectangles, and desktop disk clearance above photograph",
+      "screenshot": "evidence/sunlight-v11/after/landing-sunset-tablet-1024.png"
+    }
+  ],
+  "errors": [],
+  "browser": "153.0.8010.53",
+  "finishedAt": "2026-09-24T21:45:03.057Z",
+  "filter": "^sunset-hero-geometry-",
+  "plannedChecks": 2,
+  "totals": {
+    "pass": 2,
+    "fail": 0,
+    "block": 0
+  },
+  "passed": true
+}

@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-09-24T22:57:27.031Z",
+  "launcher": {
+    "command": "npx",
+    "args": [
+      "shadcn@latest",
+      "mcp"
+    ]
+  },
+  "cwd": "frontend",
+  "client": "Temporary SDK client using exact configured launcher, not Claude UI",
+  "registry": {
+    "content": [
+      {
+        "type": "text",
+        "text": "The following registries are configured in the current project:\n\n- @react-bits\n\nYou can view the items in a registry by running:\n`npx shadcn@latest view @name-of-registry`\n\nFor example: `npx shadcn@latest view @shadcn` or `npx shadcn@latest view @shadcn @acme` to view multiple registries."
+      }
+    ]
+  },
+  "stderr": ""
+}

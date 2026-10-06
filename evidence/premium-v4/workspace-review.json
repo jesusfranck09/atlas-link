@@ -1,0 +1,308 @@
+[
+  {
+    "role": "admin",
+    "viewport": {
+      "width": 1440,
+      "height": 1100
+    },
+    "dimensions": {
+      "width": 1440,
+      "viewport": 1440
+    },
+    "violations": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".portal-module__0SF6zG__analyticsPanel > .portal-module__0SF6zG__panelHead > div:nth-child(1) > .portal-module__0SF6zG__sectionKicker"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #83718f, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__chartToggle > button:nth-child(2)"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #766b83, background color: #f4f1f8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__periodBadge"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #796c8b, background color: #f4f0fa, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "th[role=\"columnheader\"][scope=\"col\"]:nth-child(1)"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.02 (foreground color: #83768e, background color: #faf8fc, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "th[role=\"columnheader\"][scope=\"col\"]:nth-child(2)"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.02 (foreground color: #83768e, background color: #faf8fc, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "th[role=\"columnheader\"][scope=\"col\"]:nth-child(3)"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.02 (foreground color: #83768e, background color: #faf8fc, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "th[role=\"columnheader\"][scope=\"col\"]:nth-child(4)"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.02 (foreground color: #83768e, background color: #faf8fc, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__activityPanel > .portal-module__0SF6zG__panelHead > div > .portal-module__0SF6zG__sectionKicker"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #83718f, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__activityItem:nth-child(1) > div > time"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #807389, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__activityItem:nth-child(2) > div > time"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #807389, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__activityItem:nth-child(3) > div > time"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #807389, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__activityItem:nth-child(4) > div > time"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #807389, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "role": "atlas",
+    "viewport": {
+      "width": 1440,
+      "height": 1100
+    },
+    "dimensions": {
+      "width": 1440,
+      "viewport": 1440
+    },
+    "violations": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".portal-module__0SF6zG__analyticsPanel > .portal-module__0SF6zG__panelHead > div:nth-child(1) > .portal-module__0SF6zG__sectionKicker"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #83718f, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__chartToggle > button:nth-child(2)"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #766b83, background color: #f4f1f8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__periodBadge"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #796c8b, background color: #f4f0fa, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__portfolioTable > thead > tr > th[scope=\"col\"]:nth-child(1)"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.02 (foreground color: #83768e, background color: #faf8fc, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__portfolioTable > thead > tr > th[scope=\"col\"]:nth-child(2)"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.02 (foreground color: #83768e, background color: #faf8fc, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "th[scope=\"col\"]:nth-child(3)"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.02 (foreground color: #83768e, background color: #faf8fc, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "th[scope=\"col\"]:nth-child(4)"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.02 (foreground color: #83768e, background color: #faf8fc, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "th[scope=\"col\"]:nth-child(5)"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.02 (foreground color: #83768e, background color: #faf8fc, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "tr:nth-child(1) > td:nth-child(1) > .portal-module__0SF6zG__portfolioTenant[href$=\"tenants\"] > span"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.97 (foreground color: #8a65a3, background color: #f1e9fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "tr:nth-child(2) > td:nth-child(1) > .portal-module__0SF6zG__portfolioTenant[href$=\"tenants\"] > span"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.97 (foreground color: #8a65a3, background color: #f1e9fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__activityPanel > .portal-module__0SF6zG__panelHead > div > .portal-module__0SF6zG__sectionKicker"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #83718f, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dimensions": {
+      "width": 390,
+      "viewport": 390
+    },
+    "violations": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".portal-module__0SF6zG__analyticsPanel > .portal-module__0SF6zG__panelHead > div:nth-child(1) > .portal-module__0SF6zG__sectionKicker"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #83718f, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__chartToggle > button:nth-child(2)"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #766b83, background color: #f4f1f8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__periodBadge"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #796c8b, background color: #f4f0fa, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__activityPanel > .portal-module__0SF6zG__panelHead > div > .portal-module__0SF6zG__sectionKicker"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #83718f, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__activityItem:nth-child(1) > div > time"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #807389, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__activityItem:nth-child(2) > div > time"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #807389, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__activityItem:nth-child(3) > div > time"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #807389, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__activityItem:nth-child(4) > div > time"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.43 (foreground color: #807389, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "role": "atlas",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dimensions": {
+      "width": 390,
+      "viewport": 390
+    },
+    "violations": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".portal-module__0SF6zG__analyticsPanel > .portal-module__0SF6zG__panelHead > div:nth-child(1) > .portal-module__0SF6zG__sectionKicker"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #83718f, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__chartToggle > button:nth-child(2)"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #766b83, background color: #f4f1f8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__periodBadge"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.31 (foreground color: #796c8b, background color: #f4f0fa, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__portfolioTable > thead > tr > th[scope=\"col\"]:nth-child(1)"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.02 (foreground color: #83768e, background color: #faf8fc, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__portfolioTable > thead > tr > th[scope=\"col\"]:nth-child(2)"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.02 (foreground color: #83768e, background color: #faf8fc, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "tr:nth-child(1) > td:nth-child(1) > .portal-module__0SF6zG__portfolioTenant[href$=\"tenants\"] > span"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.97 (foreground color: #8a65a3, background color: #f1e9fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "tr:nth-child(2) > td:nth-child(1) > .portal-module__0SF6zG__portfolioTenant[href$=\"tenants\"] > span"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.97 (foreground color: #8a65a3, background color: #f1e9fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              ".portal-module__0SF6zG__activityPanel > .portal-module__0SF6zG__panelHead > div > .portal-module__0SF6zG__sectionKicker"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #83718f, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  }
+]

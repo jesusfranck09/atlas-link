@@ -1,0 +1,56 @@
+{
+  "button": {
+    "x": 18,
+    "y": 607,
+    "width": 251,
+    "height": 44
+  },
+  "hit": "<a class=\"portal-module__0SF6zG__navLink \" aria-label=\"Equipo y accesos\" href=\"/hospital/users\"><svg class=\"icon \" width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.65\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2m20 0v-2a4 4 0 0 0-3-3.87M9 3a4 4 0 1 0 0 8 4 4 0 0 0 0-8m7 .13a4 4 0 0 1 0 7.75\"></path></svg><span>Equipo</span></a>",
+  "menu": [
+    {
+      "tag": "DIV",
+      "class": "portal-module__0SF6zG__mobileNavHeader",
+      "shrink": "1",
+      "height": 44,
+      "scrollHeight": 44,
+      "top": 18
+    },
+    {
+      "tag": "DIV",
+      "class": "portal-module__0SF6zG__mobileOrganization",
+      "shrink": "1",
+      "height": 64.578125,
+      "scrollHeight": 64,
+      "top": 83
+    },
+    {
+      "tag": "FORM",
+      "class": "portal-module__0SF6zG__search portal-module__0SF6zG__mobileSearch",
+      "shrink": "1",
+      "height": 46,
+      "scrollHeight": 44,
+      "top": 165.578125
+    },
+    {
+      "tag": "NAV",
+      "class": "portal-module__0SF6zG__navigation",
+      "shrink": "1",
+      "height": 374.421875,
+      "scrollHeight": 457,
+      "top": 220.578125
+    },
+    {
+      "tag": "DIV",
+      "class": "portal-module__0SF6zG__mobileNavFooter",
+      "shrink": "1",
+      "height": 127,
+      "scrollHeight": 127,
+      "top": 595
+    }
+  ],
+  "scroll": {
+    "clientHeight": 740,
+    "scrollHeight": 740,
+    "scrollTop": 0
+  }
+}

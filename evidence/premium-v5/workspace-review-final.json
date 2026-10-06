@@ -1,0 +1,247 @@
+{
+  "baseline": [
+    {
+      "version": "V4 production before V5 build",
+      "geometry": {
+        "documentWidth": 1425,
+        "viewportWidth": 1440,
+        "pageHeight": 2102,
+        "workTable": {
+          "top": 1313,
+          "bottom": 1732,
+          "height": 419,
+          "width": 1135
+        },
+        "firstAccountRow": {
+          "top": 1361,
+          "bottom": 1454,
+          "height": 93,
+          "width": 1135
+        },
+        "visibleBusinessRows": 0,
+        "totalBusinessRows": 4,
+        "pie": {
+          "top": 584,
+          "bottom": 1008,
+          "height": 424,
+          "width": 699
+        },
+        "metrics": {
+          "top": 267,
+          "bottom": 420,
+          "height": 154,
+          "width": 1137
+        }
+      }
+    }
+  ],
+  "views": [
+    {
+      "role": "admin",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "geometry": {
+        "documentWidth": 1425,
+        "viewportWidth": 1440,
+        "pageHeight": 1186,
+        "workTable": {
+          "top": 405,
+          "bottom": 836,
+          "height": 431,
+          "width": 987
+        },
+        "firstAccountRow": {
+          "top": 446,
+          "bottom": 512,
+          "height": 66,
+          "width": 987
+        },
+        "visibleBusinessRows": 6,
+        "totalBusinessRows": 6,
+        "pie": {
+          "top": 412,
+          "bottom": 729,
+          "height": 317,
+          "width": 316
+        },
+        "metrics": {
+          "top": 198,
+          "bottom": 280,
+          "height": 83,
+          "width": 1361
+        }
+      },
+      "violations": []
+    },
+    {
+      "role": "atlas",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "geometry": {
+        "documentWidth": 1425,
+        "viewportWidth": 1440,
+        "pageHeight": 921,
+        "workTable": {
+          "top": 421,
+          "bottom": 606,
+          "height": 184,
+          "width": 987
+        },
+        "firstAccountRow": {
+          "top": 462,
+          "bottom": 534,
+          "height": 72,
+          "width": 987
+        },
+        "visibleBusinessRows": 2,
+        "totalBusinessRows": 2,
+        "pie": {
+          "top": 412,
+          "bottom": 690,
+          "height": 278,
+          "width": 316
+        },
+        "metrics": {
+          "top": 198,
+          "bottom": 280,
+          "height": 83,
+          "width": 1361
+        }
+      },
+      "violations": []
+    },
+    {
+      "role": "admin",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "geometry": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "pageHeight": 2219,
+        "workTable": {
+          "top": 507,
+          "bottom": 1110,
+          "height": 602,
+          "width": 356
+        },
+        "firstAccountRow": {
+          "top": 507,
+          "bottom": 610,
+          "height": 102,
+          "width": 356
+        },
+        "visibleBusinessRows": 3,
+        "totalBusinessRows": 6,
+        "pie": {
+          "top": 1401,
+          "bottom": 1752,
+          "height": 351,
+          "width": 324
+        },
+        "metrics": {
+          "top": 209,
+          "bottom": 378,
+          "height": 169,
+          "width": 358
+        }
+      },
+      "violations": []
+    },
+    {
+      "role": "atlas",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "geometry": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "pageHeight": 1571,
+        "workTable": {
+          "top": 521,
+          "bottom": 705,
+          "height": 184,
+          "width": 720
+        },
+        "firstAccountRow": {
+          "top": 561,
+          "bottom": 633,
+          "height": 72,
+          "width": 720
+        },
+        "visibleBusinessRows": 2,
+        "totalBusinessRows": 2,
+        "pie": {
+          "top": 1045,
+          "bottom": 1349,
+          "height": 304,
+          "width": 324
+        },
+        "metrics": {
+          "top": 209,
+          "bottom": 353,
+          "height": 144,
+          "width": 358
+        }
+      },
+      "violations": []
+    }
+  ],
+  "checks": [
+    {
+      "role": "admin",
+      "viewport": 1440,
+      "name": "recent-filters-and-chart-toggle",
+      "passed": true
+    },
+    {
+      "role": "admin",
+      "viewport": 1440,
+      "name": "help-and-mobile-escape",
+      "passed": true
+    },
+    {
+      "role": "atlas",
+      "viewport": 1440,
+      "name": "hospital-local-search",
+      "passed": true
+    },
+    {
+      "role": "atlas",
+      "viewport": 1440,
+      "name": "help-and-mobile-escape",
+      "passed": true
+    },
+    {
+      "role": "admin",
+      "viewport": 390,
+      "name": "recent-filters-and-chart-toggle",
+      "passed": true
+    },
+    {
+      "role": "admin",
+      "viewport": 390,
+      "name": "help-and-mobile-escape",
+      "passed": true
+    },
+    {
+      "role": "atlas",
+      "viewport": 390,
+      "name": "hospital-local-search",
+      "passed": true
+    },
+    {
+      "role": "atlas",
+      "viewport": 390,
+      "name": "help-and-mobile-escape",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

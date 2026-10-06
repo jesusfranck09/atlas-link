@@ -1,0 +1,223 @@
+{
+  "views": [
+    {
+      "role": "admin",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "geometry": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "pageHeight": 1189,
+        "firstRow": {
+          "top": 463,
+          "bottom": 527,
+          "height": 64,
+          "width": 946
+        },
+        "visibleBusinessRows": 6,
+        "totalBusinessRows": 6,
+        "pie": {
+          "top": 430,
+          "bottom": 767,
+          "height": 337,
+          "width": 368
+        },
+        "metrics": {
+          "top": 220,
+          "bottom": 298,
+          "height": 78,
+          "width": 1376
+        },
+        "photo": {
+          "top": 132,
+          "bottom": 204,
+          "height": 72,
+          "width": 260
+        },
+        "navBackdrop": "blur(16px) saturate(1.3)",
+        "photoLoaded": true,
+        "finish": "glass"
+      },
+      "violations": []
+    },
+    {
+      "role": "atlas",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "geometry": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "pageHeight": 957,
+        "firstRow": {
+          "top": 474,
+          "bottom": 546,
+          "height": 72,
+          "width": 946
+        },
+        "visibleBusinessRows": 2,
+        "totalBusinessRows": 2,
+        "pie": {
+          "top": 430,
+          "bottom": 728,
+          "height": 298,
+          "width": 368
+        },
+        "metrics": {
+          "top": 220,
+          "bottom": 298,
+          "height": 78,
+          "width": 1376
+        },
+        "photo": {
+          "top": 132,
+          "bottom": 204,
+          "height": 72,
+          "width": 260
+        },
+        "navBackdrop": "blur(16px) saturate(1.3)",
+        "photoLoaded": true,
+        "finish": "glass"
+      },
+      "violations": []
+    },
+    {
+      "role": "admin",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "geometry": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "pageHeight": 2258,
+        "firstRow": {
+          "top": 544,
+          "bottom": 646,
+          "height": 102,
+          "width": 356
+        },
+        "visibleBusinessRows": 2,
+        "totalBusinessRows": 6,
+        "pie": {
+          "top": 1440,
+          "bottom": 1791,
+          "height": 351,
+          "width": 324
+        },
+        "metrics": {
+          "top": 228,
+          "bottom": 407,
+          "height": 179,
+          "width": 358
+        },
+        "photo": {
+          "top": 81,
+          "bottom": 156,
+          "height": 75,
+          "width": 110
+        },
+        "navBackdrop": "none",
+        "photoLoaded": true,
+        "finish": "glass"
+      },
+      "violations": []
+    },
+    {
+      "role": "atlas",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "geometry": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "pageHeight": 1617,
+        "firstRow": {
+          "top": 604,
+          "bottom": 676,
+          "height": 72,
+          "width": 720
+        },
+        "visibleBusinessRows": 2,
+        "totalBusinessRows": 2,
+        "pie": {
+          "top": 1091,
+          "bottom": 1395,
+          "height": 304,
+          "width": 324
+        },
+        "metrics": {
+          "top": 228,
+          "bottom": 396,
+          "height": 168,
+          "width": 358
+        },
+        "photo": {
+          "top": 81,
+          "bottom": 156,
+          "height": 75,
+          "width": 110
+        },
+        "navBackdrop": "none",
+        "photoLoaded": true,
+        "finish": "glass"
+      },
+      "violations": []
+    }
+  ],
+  "checks": [
+    {
+      "role": "admin",
+      "viewport": 1440,
+      "name": "recent-filters-and-chart-toggle",
+      "passed": true
+    },
+    {
+      "role": "admin",
+      "viewport": 1440,
+      "name": "help-and-mobile-escape",
+      "passed": true
+    },
+    {
+      "role": "atlas",
+      "viewport": 1440,
+      "name": "hospital-local-search",
+      "passed": true
+    },
+    {
+      "role": "atlas",
+      "viewport": 1440,
+      "name": "help-and-mobile-escape",
+      "passed": true
+    },
+    {
+      "role": "admin",
+      "viewport": 390,
+      "name": "recent-filters-and-chart-toggle",
+      "passed": true
+    },
+    {
+      "role": "admin",
+      "viewport": 390,
+      "name": "help-and-mobile-escape",
+      "passed": true
+    },
+    {
+      "role": "atlas",
+      "viewport": 390,
+      "name": "hospital-local-search",
+      "passed": true
+    },
+    {
+      "role": "atlas",
+      "viewport": 390,
+      "name": "help-and-mobile-escape",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

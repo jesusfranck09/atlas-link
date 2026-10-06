@@ -1,0 +1,2496 @@
+{
+  "startedAt": "2026-09-24T22:55:43.004Z",
+  "mode": "after",
+  "baseURL": "http://127.0.0.1:4430",
+  "outputLabel": "after",
+  "filter": "^(landing|hospital|control|insurer)-(desktop|mobile-390|mobile-320|tablet-1024)$",
+  "deploymentImage": "sha256:502cc29a241ef4d7d2af90fb5ac36ec68a624e97c20d8d75450ea0fdaad2fa96",
+  "revision": "815cb3e70bc31720af9bfb94ef092a583acce7db",
+  "workingTree": [
+    "M AGENTS.md",
+    " M frontend/package-lock.json",
+    " M frontend/package.json",
+    " M frontend/src/components/account-detail.tsx",
+    " M frontend/src/components/dashboard.tsx",
+    " M frontend/src/components/landing.module.css",
+    " M frontend/src/components/landing.tsx",
+    " M frontend/src/components/login.module.css",
+    " M frontend/src/components/login.tsx",
+    " M frontend/src/components/portal.module.css",
+    " M frontend/src/components/workspace.tsx",
+    " M infra/Dockerfile.frontend",
+    " M qa/helpers/inspect-mobile-overflow.mjs",
+    " M qa/premium-capture.mjs",
+    " M qa/premium-finish-review.mjs",
+    " M qa/production-smoke.mjs",
+    " M qa/redesign-review.mjs",
+    " M qa/report-visual-review.mjs",
+    " M qa/sunlight-review.mjs",
+    " M qa/tests/journeys.spec.ts",
+    "?? docs/react-bits-mcp.md",
+    "?? docs/review-identity-v12.md",
+    "?? evidence/identity-v12/",
+    "?? evidence/tooling/",
+    "?? frontend/.mcp.json",
+    "?? frontend/src/app/insurer/",
+    "?? frontend/src/components/prismatic-text.module.css",
+    "?? frontend/src/components/prismatic-text.tsx",
+    "?? frontend/src/components/system-sculpture.module.css",
+    "?? frontend/src/components/system-sculpture.tsx",
+    "?? frontend/src/components/system-showcase.module.css",
+    "?? frontend/src/components/system-showcase.tsx",
+    "?? frontend/src/components/use-scroll-reveal.ts",
+    "?? qa/identity-review.mjs"
+  ],
+  "environment": "Local Docker Next.js production build, actual Java/Spring APIs and PostgreSQL demo data; Chrome on macOS via CDP. 390/320 and tablet dimensions are emulated, not physical mobile devices.",
+  "mutations": "Authentication/session audit only. No business-data writes, commercial forms, email, payments or API mocks.",
+  "scope": "Distinct shell identity/context on every module; real demo autofill/authentication; navigation, read-only insurer, bounded 3D/fallback and landing interactions.",
+  "checks": [
+    {
+      "name": "landing-desktop",
+      "status": "fail",
+      "route": "/",
+      "message": "expect(locator).toHaveAttribute(expected) failed\n\nLocator:  locator('[data-prismatic-text]').first()\nExpected: \"true\"\nReceived: \"false\"\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toHaveAttribute\" locator('[data-prismatic-text]').first() with timeout 5000ms\n  - waiting for locator('[data-prismatic-text]').first()\n    14 × locator resolved to <span data-motion=\"full\" data-engaged=\"false\" data-prism-state=\"idle\" data-prismatic-text=\"iris\" class=\"prismatic-text-module__ooB89W__text\">en perspectiva.</span>\n       - unexpected value \"false\"\n",
+      "stack": "Error: expect(locator).toHaveAttribute(expected) failed\n\nLocator:  locator('[data-prismatic-text]').first()\nExpected: \"true\"\nReceived: \"false\"\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toHaveAttribute\" locator('[data-prismatic-text]').first() with timeout 5000ms\n  - waiting for locator('[data-prismatic-text]').first()\n    14 × locator resolved to <span data-motion=\"full\" data-engaged=\"false\" data-prism-state=\"idle\" data-prismatic-text=\"iris\" class=\"prismatic-text-module__ooB89W__text\">en perspectiva.</span>\n       - unexpected value \"false\"\n\n    at captureRawStack (/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/node_modules/playwright-core/lib/coreBundle.js:8588:17)\n    at callMatcherAsStep (/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/node_modules/playwright/lib/matchers/expect.js:13310:57)\n    at Object.toHaveAttribute (/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/node_modules/playwright/lib/matchers/expect.js:13302:23)\n    at prismaticText (/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/identity-review.mjs:477:26)\n    at async file:///Users/jesusfranciscofrancisco/Documents/atlas-link/qa/identity-review.mjs:531:52\n    at async scenario (/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/identity-review.mjs:77:51)\n    at async file:///Users/jesusfranciscofrancisco/Documents/atlas-link/qa/identity-review.mjs:528:31",
+      "screenshot": "landing-desktop-failure.png"
+    },
+    {
+      "name": "landing-mobile-390",
+      "status": "fail",
+      "route": "/",
+      "message": "expect(received).toBe(expected) // Object.is equality\n\nExpected: true\nReceived: false",
+      "stack": "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: true\nReceived: false\n    at captureRawStack (/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/node_modules/playwright-core/lib/coreBundle.js:8588:17)\n    at callMatcherAsStep (/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/node_modules/playwright/lib/matchers/expect.js:13310:57)\n    at Object.toBe (/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/node_modules/playwright/lib/matchers/expect.js:13302:23)\n    at landingInteractions (/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/identity-review.mjs:329:93)\n    at async file:///Users/jesusfranciscofrancisco/Documents/atlas-link/qa/identity-review.mjs:529:28\n    at async scenario (/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/identity-review.mjs:77:51)\n    at async file:///Users/jesusfranciscofrancisco/Documents/atlas-link/qa/identity-review.mjs:528:31",
+      "screenshot": "landing-mobile-390-failure.png"
+    },
+    {
+      "name": "landing-tablet-1024",
+      "status": "pass",
+      "hero": "evidence/identity-v12/after/landing-hero-tablet-1024.png",
+      "cardScreenshot": "evidence/identity-v12/after/landing-showcase-tablet-1024.png",
+      "flips": [
+        {
+          "system": "hospital",
+          "keyboardToggle": true,
+          "inactiveFaceExcluded": true,
+          "destinationAlwaysAvailable": true,
+          "destination": "/login"
+        },
+        {
+          "system": "control",
+          "keyboardToggle": true,
+          "inactiveFaceExcluded": true,
+          "destinationAlwaysAvailable": true,
+          "destination": "/admin/login"
+        },
+        {
+          "system": "insurer",
+          "keyboardToggle": true,
+          "inactiveFaceExcluded": true,
+          "destinationAlwaysAvailable": true,
+          "destination": "/insurer/login"
+        }
+      ],
+      "scrollChecks": [
+        {
+          "action": "ArrowRight",
+          "scrollLeft": 472
+        },
+        {
+          "action": "Next button",
+          "scrollLeft": 472
+        },
+        {
+          "action": "Previous button to first card",
+          "scrollLeft": 0,
+          "previousDisabled": true
+        }
+      ],
+      "reveal": [
+        {
+          "tag": "DIV",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "SECTION",
+          "state": "visible",
+          "inView": true
+        },
+        {
+          "tag": "DIV",
+          "state": "visible",
+          "inView": true
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "visible",
+          "inView": true
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "visible",
+          "inView": true
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "visible",
+          "inView": true
+        },
+        {
+          "tag": "DIV",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "SECTION",
+          "state": "pending",
+          "inView": false
+        }
+      ],
+      "dimensions": {
+        "viewport": 1009,
+        "document": 1009
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 24
+          }
+        ]
+      }
+    },
+    {
+      "name": "landing-mobile-320",
+      "status": "pass",
+      "hero": "evidence/identity-v12/after/landing-hero-mobile-320.png",
+      "cardScreenshot": "evidence/identity-v12/after/landing-showcase-mobile-320.png",
+      "flips": [
+        {
+          "system": "hospital",
+          "keyboardToggle": true,
+          "inactiveFaceExcluded": true,
+          "destinationAlwaysAvailable": true,
+          "destination": "/login"
+        },
+        {
+          "system": "control",
+          "keyboardToggle": true,
+          "inactiveFaceExcluded": true,
+          "destinationAlwaysAvailable": true,
+          "destination": "/admin/login"
+        },
+        {
+          "system": "insurer",
+          "keyboardToggle": true,
+          "inactiveFaceExcluded": true,
+          "destinationAlwaysAvailable": true,
+          "destination": "/insurer/login"
+        }
+      ],
+      "scrollChecks": [
+        {
+          "action": "ArrowRight",
+          "scrollLeft": 280
+        },
+        {
+          "action": "Next button",
+          "scrollLeft": 280
+        },
+        {
+          "action": "Previous button to first card",
+          "scrollLeft": 0,
+          "previousDisabled": true
+        }
+      ],
+      "reveal": [
+        {
+          "tag": "DIV",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "SECTION",
+          "state": "visible",
+          "inView": true
+        },
+        {
+          "tag": "DIV",
+          "state": "visible",
+          "inView": true
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "visible",
+          "inView": true
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "visible",
+          "inView": true
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "visible",
+          "inView": true
+        },
+        {
+          "tag": "DIV",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "SECTION",
+          "state": "pending",
+          "inView": false
+        }
+      ],
+      "dimensions": {
+        "viewport": 320,
+        "document": 320
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 24
+          }
+        ]
+      }
+    },
+    {
+      "name": "hospital-desktop",
+      "status": "pass",
+      "authentication": {
+        "role": "HOSPITAL_ADMIN",
+        "organization": "Hospital Aurora · DEMO",
+        "autofillWithoutSubmit": true,
+        "explicitLoginStatus": 200,
+        "loginEvidence": {
+          "screenshot": "evidence/identity-v12/after/hospital-desktop-login.png",
+          "image": "/_next/image?url=%2Fimages%2Fhealthcare-editorial.jpg&w=3840&q=75",
+          "axe": {
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "nodes": 20
+              }
+            ]
+          }
+        }
+      },
+      "sculpture": {
+        "identity": "hospital",
+        "viewport": "desktop",
+        "eligibleForWebGL": true,
+        "renderer": "webgl",
+        "motion": "full",
+        "frames": 1,
+        "calls": 5,
+        "triangles": 9568,
+        "geometries": 2,
+        "textures": 2,
+        "pixelRatio": 1
+      },
+      "composition": {
+        "nav": {
+          "x": 32,
+          "y": 65,
+          "width": 1361,
+          "height": 51,
+          "right": 1393,
+          "bottom": 116
+        },
+        "content": {
+          "x": 32,
+          "y": 116,
+          "width": 1361,
+          "height": 888.609375,
+          "right": 1393,
+          "bottom": 1004.609375
+        },
+        "accent": "#256e63",
+        "coverHeight": 136.6875
+      },
+      "visited": [
+        "/hospital",
+        "/hospital/accounts",
+        "/hospital/review",
+        "/hospital/import",
+        "/hospital/agreements",
+        "/hospital/reports",
+        "/hospital/users",
+        "/hospital/audit"
+      ],
+      "controls": {
+        "helpOpenedAndClosed": true
+      },
+      "logoutReturnsToOwnSystem": true,
+      "desktopDensity": {
+        "viewportHeight": 900,
+        "rows": [
+          {
+            "top": 541.796875,
+            "bottom": 599.796875
+          },
+          {
+            "top": 599.796875,
+            "bottom": 657.796875
+          },
+          {
+            "top": 657.796875,
+            "bottom": 715.796875
+          },
+          {
+            "top": 715.796875,
+            "bottom": 773.796875
+          },
+          {
+            "top": 773.796875,
+            "bottom": 831.796875
+          },
+          {
+            "top": 831.796875,
+            "bottom": 883.796875
+          }
+        ],
+        "visibleRows": 6
+      },
+      "accountControls": {
+        "filterMatchesRealAPI": true,
+        "searchMatchesRealAPI": true,
+        "detailBreadcrumb": {
+          "system": "hospital",
+          "text": "Portal hospitalario Hospital Aurora · DEMO Cuentas hospitalarias Detalle de cuenta",
+          "heading": "DEMO-00001"
+        },
+        "insurerMutationsAbsent": false
+      }
+    },
+    {
+      "name": "control-desktop",
+      "status": "pass",
+      "authentication": {
+        "role": "PLATFORM_ADMIN",
+        "organization": "Atlas Link",
+        "autofillWithoutSubmit": true,
+        "explicitLoginStatus": 200,
+        "loginEvidence": {
+          "screenshot": "evidence/identity-v12/after/control-desktop-login.png",
+          "image": "/_next/image?url=%2Fimages%2Fhospital-facade.jpg&w=3840&q=75",
+          "axe": {
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "nodes": 15
+              }
+            ]
+          }
+        }
+      },
+      "sculpture": {
+        "identity": "control",
+        "viewport": "desktop",
+        "eligibleForWebGL": true,
+        "renderer": "webgl",
+        "motion": "full",
+        "frames": 1,
+        "calls": 21,
+        "triangles": 9132,
+        "geometries": 5,
+        "textures": 3,
+        "pixelRatio": 1
+      },
+      "composition": {
+        "nav": {
+          "x": 14,
+          "y": 78,
+          "width": 198,
+          "height": 908,
+          "right": 212,
+          "bottom": 986
+        },
+        "content": {
+          "x": 236,
+          "y": 64,
+          "width": 1180,
+          "height": 882,
+          "right": 1416,
+          "bottom": 946
+        },
+        "accent": "#315fab",
+        "coverHeight": 188
+      },
+      "visited": [
+        "/admin",
+        "/admin/tenants",
+        "/admin/licenses",
+        "/admin/leads",
+        "/admin/users",
+        "/admin/audit"
+      ],
+      "controls": {
+        "helpOpenedAndClosed": true
+      },
+      "logoutReturnsToOwnSystem": true
+    },
+    {
+      "name": "insurer-desktop",
+      "status": "pass",
+      "authentication": {
+        "role": "INSURER_DEMO",
+        "organization": "Hospital Aurora · DEMO",
+        "autofillWithoutSubmit": true,
+        "explicitLoginStatus": 200,
+        "loginEvidence": {
+          "screenshot": "evidence/identity-v12/after/insurer-desktop-login.png",
+          "image": "/_next/image?url=%2Fimages%2Fhospital.jpg&w=3840&q=75",
+          "axe": {
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "nodes": 15
+              }
+            ]
+          }
+        }
+      },
+      "sculpture": {
+        "identity": "insurer",
+        "viewport": "desktop",
+        "eligibleForWebGL": true,
+        "renderer": "webgl",
+        "motion": "full",
+        "frames": 1,
+        "calls": 33,
+        "triangles": 24192,
+        "geometries": 4,
+        "textures": 3,
+        "pixelRatio": 1
+      },
+      "composition": {
+        "nav": {
+          "x": 32,
+          "y": 68,
+          "width": 1361,
+          "height": 54,
+          "right": 1393,
+          "bottom": 122
+        },
+        "content": {
+          "x": 32,
+          "y": 122,
+          "width": 1361,
+          "height": 992.921875,
+          "right": 1393,
+          "bottom": 1114.921875
+        },
+        "accent": "#8d5e3f",
+        "coverHeight": 188
+      },
+      "visited": [
+        "/hospital",
+        "/hospital/accounts"
+      ],
+      "controls": {
+        "helpOpenedAndClosed": true
+      },
+      "logoutReturnsToOwnSystem": true,
+      "accountControls": {
+        "filterMatchesRealAPI": true,
+        "searchMatchesRealAPI": true,
+        "detailBreadcrumb": {
+          "system": "insurer",
+          "text": "Portal aseguradora Hospital Aurora · DEMO Cuentas hospitalarias Detalle de cuenta",
+          "heading": "DEMO-00001"
+        },
+        "insurerMutationsAbsent": true
+      },
+      "permissions": {
+        "denied": [
+          {
+            "path": "/api/accounts/template",
+            "status": 403
+          },
+          {
+            "path": "/api/accounts/report",
+            "status": 403
+          },
+          {
+            "path": "/api/licenses",
+            "status": 403
+          }
+        ],
+        "limit": "Read-only UI controls and forbidden GET capabilities checked. No mutating endpoint probed; this is not a complete permission/security audit."
+      }
+    },
+    {
+      "name": "hospital-mobile-390",
+      "status": "pass",
+      "authentication": {
+        "role": "HOSPITAL_ADMIN",
+        "organization": "Hospital Aurora · DEMO",
+        "autofillWithoutSubmit": true,
+        "explicitLoginStatus": 200,
+        "loginEvidence": {
+          "screenshot": "evidence/identity-v12/after/hospital-mobile-390-login.png",
+          "image": "/_next/image?url=%2Fimages%2Fhealthcare-editorial.jpg&w=3840&q=75",
+          "axe": {
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "nodes": 20
+              }
+            ]
+          }
+        }
+      },
+      "sculpture": {
+        "identity": "hospital",
+        "viewport": "mobile-390",
+        "eligibleForWebGL": false,
+        "renderer": "svg",
+        "motion": null,
+        "frames": 0,
+        "calls": 0,
+        "triangles": 0,
+        "geometries": 0,
+        "textures": 0,
+        "pixelRatio": 0
+      },
+      "composition": {
+        "nav": {
+          "x": -330,
+          "y": 0,
+          "width": 330,
+          "height": 844,
+          "right": 0,
+          "bottom": 844
+        },
+        "content": {
+          "x": 16,
+          "y": 63,
+          "width": 358,
+          "height": 1765.921875,
+          "right": 374,
+          "bottom": 1828.921875
+        },
+        "accent": "#256e63",
+        "coverHeight": 160
+      },
+      "visited": [
+        "/hospital",
+        "/hospital/accounts",
+        "/hospital/review",
+        "/hospital/import",
+        "/hospital/agreements",
+        "/hospital/reports",
+        "/hospital/users",
+        "/hospital/audit"
+      ],
+      "controls": {
+        "helpOpenedAndClosed": true,
+        "keyboardTrap": "forward/backward Tab stays in drawer; Escape restores trigger focus"
+      },
+      "logoutReturnsToOwnSystem": true,
+      "accountControls": {
+        "filterMatchesRealAPI": true,
+        "searchMatchesRealAPI": true,
+        "detailBreadcrumb": {
+          "system": "hospital",
+          "text": "Portal hospitalario Hospital Aurora · DEMO Cuentas hospitalarias Detalle de cuenta",
+          "heading": "DEMO-00001"
+        },
+        "insurerMutationsAbsent": false
+      }
+    },
+    {
+      "name": "control-mobile-390",
+      "status": "pass",
+      "authentication": {
+        "role": "PLATFORM_ADMIN",
+        "organization": "Atlas Link",
+        "autofillWithoutSubmit": true,
+        "explicitLoginStatus": 200,
+        "loginEvidence": {
+          "screenshot": "evidence/identity-v12/after/control-mobile-390-login.png",
+          "image": "/_next/image?url=%2Fimages%2Fhospital-facade.jpg&w=3840&q=75",
+          "axe": {
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "nodes": 15
+              }
+            ]
+          }
+        }
+      },
+      "sculpture": {
+        "identity": "control",
+        "viewport": "mobile-390",
+        "eligibleForWebGL": false,
+        "renderer": "svg",
+        "motion": null,
+        "frames": 0,
+        "calls": 0,
+        "triangles": 0,
+        "geometries": 0,
+        "textures": 0,
+        "pixelRatio": 0
+      },
+      "composition": {
+        "nav": {
+          "x": -330,
+          "y": 0,
+          "width": 330,
+          "height": 844,
+          "right": 0,
+          "bottom": 844
+        },
+        "content": {
+          "x": 16,
+          "y": 63,
+          "width": 358,
+          "height": 1435.21875,
+          "right": 374,
+          "bottom": 1498.21875
+        },
+        "accent": "#315fab",
+        "coverHeight": 165.09375
+      },
+      "visited": [
+        "/admin",
+        "/admin/tenants",
+        "/admin/licenses",
+        "/admin/leads",
+        "/admin/users",
+        "/admin/audit"
+      ],
+      "controls": {
+        "helpOpenedAndClosed": true,
+        "keyboardTrap": "forward/backward Tab stays in drawer; Escape restores trigger focus"
+      },
+      "logoutReturnsToOwnSystem": true
+    },
+    {
+      "name": "insurer-mobile-390",
+      "status": "pass",
+      "authentication": {
+        "role": "INSURER_DEMO",
+        "organization": "Hospital Aurora · DEMO",
+        "autofillWithoutSubmit": true,
+        "explicitLoginStatus": 200,
+        "loginEvidence": {
+          "screenshot": "evidence/identity-v12/after/insurer-mobile-390-login.png",
+          "image": "/_next/image?url=%2Fimages%2Fhospital.jpg&w=3840&q=75",
+          "axe": {
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "nodes": 15
+              }
+            ]
+          }
+        }
+      },
+      "sculpture": {
+        "identity": "insurer",
+        "viewport": "mobile-390",
+        "eligibleForWebGL": false,
+        "renderer": "svg",
+        "motion": null,
+        "frames": 0,
+        "calls": 0,
+        "triangles": 0,
+        "geometries": 0,
+        "textures": 0,
+        "pixelRatio": 0
+      },
+      "composition": {
+        "nav": {
+          "x": -330,
+          "y": 0,
+          "width": 330,
+          "height": 844,
+          "right": 0,
+          "bottom": 844
+        },
+        "content": {
+          "x": 16,
+          "y": 66,
+          "width": 358,
+          "height": 1814.203125,
+          "right": 374,
+          "bottom": 1880.203125
+        },
+        "accent": "#8d5e3f",
+        "coverHeight": 169.28125
+      },
+      "visited": [
+        "/hospital",
+        "/hospital/accounts"
+      ],
+      "controls": {
+        "helpOpenedAndClosed": true,
+        "keyboardTrap": "forward/backward Tab stays in drawer; Escape restores trigger focus"
+      },
+      "logoutReturnsToOwnSystem": true,
+      "accountControls": {
+        "filterMatchesRealAPI": true,
+        "searchMatchesRealAPI": true,
+        "detailBreadcrumb": {
+          "system": "insurer",
+          "text": "Portal aseguradora Hospital Aurora · DEMO Cuentas hospitalarias Detalle de cuenta",
+          "heading": "DEMO-00001"
+        },
+        "insurerMutationsAbsent": true
+      }
+    },
+    {
+      "name": "hospital-tablet-1024",
+      "status": "pass",
+      "authentication": {
+        "role": "HOSPITAL_ADMIN",
+        "organization": "Hospital Aurora · DEMO",
+        "autofillWithoutSubmit": true,
+        "explicitLoginStatus": 200,
+        "loginEvidence": {
+          "screenshot": "evidence/identity-v12/after/hospital-tablet-1024-login.png",
+          "image": "/_next/image?url=%2Fimages%2Fhealthcare-editorial.jpg&w=3840&q=75",
+          "axe": {
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "nodes": 20
+              }
+            ]
+          }
+        }
+      },
+      "sculpture": {
+        "identity": "hospital",
+        "viewport": "tablet-1024",
+        "eligibleForWebGL": false,
+        "renderer": "svg",
+        "motion": null,
+        "frames": 0,
+        "calls": 0,
+        "triangles": 0,
+        "geometries": 0,
+        "textures": 0,
+        "pixelRatio": 0
+      },
+      "composition": {
+        "nav": {
+          "x": 32,
+          "y": 65,
+          "width": 945,
+          "height": 51,
+          "right": 977,
+          "bottom": 116
+        },
+        "content": {
+          "x": 32,
+          "y": 116,
+          "width": 945,
+          "height": 981.921875,
+          "right": 977,
+          "bottom": 1097.921875
+        },
+        "accent": "#256e63",
+        "coverHeight": 188
+      },
+      "visited": [
+        "/hospital",
+        "/hospital/accounts"
+      ],
+      "controls": {
+        "helpOpenedAndClosed": true
+      },
+      "logoutReturnsToOwnSystem": true,
+      "accountControls": {
+        "filterMatchesRealAPI": true,
+        "searchMatchesRealAPI": true,
+        "detailBreadcrumb": {
+          "system": "hospital",
+          "text": "Portal hospitalario Hospital Aurora · DEMO Cuentas hospitalarias Detalle de cuenta",
+          "heading": "DEMO-00001"
+        },
+        "insurerMutationsAbsent": false
+      }
+    },
+    {
+      "name": "control-tablet-1024",
+      "status": "pass",
+      "authentication": {
+        "role": "PLATFORM_ADMIN",
+        "organization": "Atlas Link",
+        "autofillWithoutSubmit": true,
+        "explicitLoginStatus": 200,
+        "loginEvidence": {
+          "screenshot": "evidence/identity-v12/after/control-tablet-1024-login.png",
+          "image": "/_next/image?url=%2Fimages%2Fhospital-facade.jpg&w=3840&q=75",
+          "axe": {
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "nodes": 15
+              }
+            ]
+          }
+        }
+      },
+      "sculpture": {
+        "identity": "control",
+        "viewport": "tablet-1024",
+        "eligibleForWebGL": false,
+        "renderer": "svg",
+        "motion": null,
+        "frames": 0,
+        "calls": 0,
+        "triangles": 0,
+        "geometries": 0,
+        "textures": 0,
+        "pixelRatio": 0
+      },
+      "composition": {
+        "nav": {
+          "x": 32,
+          "y": 71,
+          "width": 945,
+          "height": 47,
+          "right": 977,
+          "bottom": 118
+        },
+        "content": {
+          "x": 32,
+          "y": 118,
+          "width": 945,
+          "height": 848.234375,
+          "right": 977,
+          "bottom": 966.234375
+        },
+        "accent": "#315fab",
+        "coverHeight": 188
+      },
+      "visited": [
+        "/admin",
+        "/admin/tenants"
+      ],
+      "controls": {
+        "helpOpenedAndClosed": true
+      },
+      "logoutReturnsToOwnSystem": true
+    },
+    {
+      "name": "insurer-tablet-1024",
+      "status": "pass",
+      "authentication": {
+        "role": "INSURER_DEMO",
+        "organization": "Hospital Aurora · DEMO",
+        "autofillWithoutSubmit": true,
+        "explicitLoginStatus": 200,
+        "loginEvidence": {
+          "screenshot": "evidence/identity-v12/after/insurer-tablet-1024-login.png",
+          "image": "/_next/image?url=%2Fimages%2Fhospital.jpg&w=3840&q=75",
+          "axe": {
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "nodes": 15
+              }
+            ]
+          }
+        }
+      },
+      "sculpture": {
+        "identity": "insurer",
+        "viewport": "tablet-1024",
+        "eligibleForWebGL": false,
+        "renderer": "svg",
+        "motion": null,
+        "frames": 0,
+        "calls": 0,
+        "triangles": 0,
+        "geometries": 0,
+        "textures": 0,
+        "pixelRatio": 0
+      },
+      "composition": {
+        "nav": {
+          "x": 32,
+          "y": 68,
+          "width": 945,
+          "height": 54,
+          "right": 977,
+          "bottom": 122
+        },
+        "content": {
+          "x": 32,
+          "y": 122,
+          "width": 945,
+          "height": 992.921875,
+          "right": 977,
+          "bottom": 1114.921875
+        },
+        "accent": "#8d5e3f",
+        "coverHeight": 188
+      },
+      "visited": [
+        "/hospital",
+        "/hospital/accounts"
+      ],
+      "controls": {
+        "helpOpenedAndClosed": true
+      },
+      "logoutReturnsToOwnSystem": true,
+      "accountControls": {
+        "filterMatchesRealAPI": true,
+        "searchMatchesRealAPI": true,
+        "detailBreadcrumb": {
+          "system": "insurer",
+          "text": "Portal aseguradora Hospital Aurora · DEMO Cuentas hospitalarias Detalle de cuenta",
+          "heading": "DEMO-00001"
+        },
+        "insurerMutationsAbsent": true
+      }
+    },
+    {
+      "name": "hospital-mobile-320",
+      "status": "pass",
+      "authentication": {
+        "role": "HOSPITAL_ADMIN",
+        "organization": "Hospital Aurora · DEMO",
+        "autofillWithoutSubmit": true,
+        "explicitLoginStatus": 200,
+        "loginEvidence": {
+          "screenshot": "evidence/identity-v12/after/hospital-mobile-320-login.png",
+          "image": "/_next/image?url=%2Fimages%2Fhealthcare-editorial.jpg&w=3840&q=75",
+          "axe": {
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "nodes": 20
+              }
+            ]
+          }
+        }
+      },
+      "sculpture": {
+        "identity": "hospital",
+        "viewport": "mobile-320",
+        "eligibleForWebGL": false,
+        "renderer": "svg",
+        "motion": null,
+        "frames": 0,
+        "calls": 0,
+        "triangles": 0,
+        "geometries": 0,
+        "textures": 0,
+        "pixelRatio": 0
+      },
+      "composition": {
+        "nav": {
+          "x": -288,
+          "y": 0,
+          "width": 288,
+          "height": 740,
+          "right": 0,
+          "bottom": 740
+        },
+        "content": {
+          "x": 16,
+          "y": 63,
+          "width": 288,
+          "height": 2071.875,
+          "right": 304,
+          "bottom": 2134.875
+        },
+        "accent": "#256e63",
+        "coverHeight": 160.875
+      },
+      "visited": [
+        "/hospital",
+        "/hospital/accounts"
+      ],
+      "controls": {
+        "helpOpenedAndClosed": true,
+        "keyboardTrap": "forward/backward Tab stays in drawer; Escape restores trigger focus"
+      },
+      "logoutReturnsToOwnSystem": true,
+      "accountControls": {
+        "filterMatchesRealAPI": true,
+        "searchMatchesRealAPI": true,
+        "detailBreadcrumb": {
+          "system": "hospital",
+          "text": "Portal hospitalario Hospital Aurora · DEMO Cuentas hospitalarias Detalle de cuenta",
+          "heading": "DEMO-00001"
+        },
+        "insurerMutationsAbsent": false
+      }
+    },
+    {
+      "name": "control-mobile-320",
+      "status": "pass",
+      "authentication": {
+        "role": "PLATFORM_ADMIN",
+        "organization": "Atlas Link",
+        "autofillWithoutSubmit": true,
+        "explicitLoginStatus": 200,
+        "loginEvidence": {
+          "screenshot": "evidence/identity-v12/after/control-mobile-320-login.png",
+          "image": "/_next/image?url=%2Fimages%2Fhospital-facade.jpg&w=3840&q=75",
+          "axe": {
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "nodes": 15
+              }
+            ]
+          }
+        }
+      },
+      "sculpture": {
+        "identity": "control",
+        "viewport": "mobile-320",
+        "eligibleForWebGL": false,
+        "renderer": "svg",
+        "motion": null,
+        "frames": 0,
+        "calls": 0,
+        "triangles": 0,
+        "geometries": 0,
+        "textures": 0,
+        "pixelRatio": 0
+      },
+      "composition": {
+        "nav": {
+          "x": -288,
+          "y": 0,
+          "width": 288,
+          "height": 740,
+          "right": 0,
+          "bottom": 740
+        },
+        "content": {
+          "x": 16,
+          "y": 63,
+          "width": 288,
+          "height": 1475.1875,
+          "right": 304,
+          "bottom": 1538.1875
+        },
+        "accent": "#315fab",
+        "coverHeight": 160.875
+      },
+      "visited": [
+        "/admin",
+        "/admin/tenants"
+      ],
+      "controls": {
+        "helpOpenedAndClosed": true,
+        "keyboardTrap": "forward/backward Tab stays in drawer; Escape restores trigger focus"
+      },
+      "logoutReturnsToOwnSystem": true
+    },
+    {
+      "name": "insurer-mobile-320",
+      "status": "pass",
+      "authentication": {
+        "role": "INSURER_DEMO",
+        "organization": "Hospital Aurora · DEMO",
+        "autofillWithoutSubmit": true,
+        "explicitLoginStatus": 200,
+        "loginEvidence": {
+          "screenshot": "evidence/identity-v12/after/insurer-mobile-320-login.png",
+          "image": "/_next/image?url=%2Fimages%2Fhospital.jpg&w=3840&q=75",
+          "axe": {
+            "violations": [],
+            "incomplete": [
+              {
+                "id": "color-contrast",
+                "nodes": 15
+              }
+            ]
+          }
+        }
+      },
+      "sculpture": {
+        "identity": "insurer",
+        "viewport": "mobile-320",
+        "eligibleForWebGL": false,
+        "renderer": "svg",
+        "motion": null,
+        "frames": 0,
+        "calls": 0,
+        "triangles": 0,
+        "geometries": 0,
+        "textures": 0,
+        "pixelRatio": 0
+      },
+      "composition": {
+        "nav": {
+          "x": -288,
+          "y": 0,
+          "width": 288,
+          "height": 740,
+          "right": 0,
+          "bottom": 740
+        },
+        "content": {
+          "x": 16,
+          "y": 66,
+          "width": 288,
+          "height": 2081.09375,
+          "right": 304,
+          "bottom": 2147.09375
+        },
+        "accent": "#8d5e3f",
+        "coverHeight": 165.09375
+      },
+      "visited": [
+        "/hospital",
+        "/hospital/accounts"
+      ],
+      "controls": {
+        "helpOpenedAndClosed": true,
+        "keyboardTrap": "forward/backward Tab stays in drawer; Escape restores trigger focus"
+      },
+      "logoutReturnsToOwnSystem": true,
+      "accountControls": {
+        "filterMatchesRealAPI": true,
+        "searchMatchesRealAPI": true,
+        "detailBreadcrumb": {
+          "system": "insurer",
+          "text": "Portal aseguradora Hospital Aurora · DEMO Cuentas hospitalarias Detalle de cuenta",
+          "heading": "DEMO-00001"
+        },
+        "insurerMutationsAbsent": true
+      }
+    }
+  ],
+  "routes": [
+    {
+      "route": "/hospital",
+      "identity": "hospital",
+      "viewport": "desktop",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Vista general",
+        "heading": "Pulso del hospital."
+      },
+      "dimensions": {
+        "viewport": 1425,
+        "document": 1425
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-hospital-desktop.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 77
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/accounts",
+      "identity": "hospital",
+      "viewport": "desktop",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Cuentas hospitalarias",
+        "heading": "Cuentas hospitalarias"
+      },
+      "dimensions": {
+        "viewport": 1425,
+        "document": 1425
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-accounts-desktop.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 94
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/accounts/e0000000-0000-0000-0000-000000000001",
+      "identity": "hospital",
+      "viewport": "desktop",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Cuentas hospitalarias Detalle de cuenta",
+        "heading": "DEMO-00001"
+      },
+      "dimensions": {
+        "viewport": 1425,
+        "document": 1425
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-detail-desktop.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 76
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/review",
+      "identity": "hospital",
+      "viewport": "desktop",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Bandeja de revisión",
+        "heading": "Bandeja de revisión"
+      },
+      "dimensions": {
+        "viewport": 1425,
+        "document": 1425
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-review-desktop.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 93
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/import",
+      "identity": "hospital",
+      "viewport": "desktop",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Cargar cuentas",
+        "heading": "Cargar cuentas"
+      },
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-import-desktop.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 27
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/agreements",
+      "identity": "hospital",
+      "viewport": "desktop",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Convenios",
+        "heading": "Convenios y tabuladores"
+      },
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-agreements-desktop.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 55
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/reports",
+      "identity": "hospital",
+      "viewport": "desktop",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Reportes",
+        "heading": "Reportes"
+      },
+      "dimensions": {
+        "viewport": 1425,
+        "document": 1425
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-reports-desktop.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 56
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/users",
+      "identity": "hospital",
+      "viewport": "desktop",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Equipo y accesos",
+        "heading": "Equipo y accesos"
+      },
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-users-desktop.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 48
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/audit",
+      "identity": "hospital",
+      "viewport": "desktop",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Bitácora de actividad",
+        "heading": "Bitácora"
+      },
+      "dimensions": {
+        "viewport": 1425,
+        "document": 1425
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-audit-desktop.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 673
+          }
+        ]
+      }
+    },
+    {
+      "route": "/admin",
+      "identity": "control",
+      "viewport": "desktop",
+      "location": {
+        "system": "control",
+        "text": "Consola Atlas Atlas Link Vista general",
+        "heading": "Tu red,\nen perspectiva."
+      },
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "screenshot": "evidence/identity-v12/after/control-admin-desktop.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "nodes": 62
+          }
+        ]
+      }
+    },
+    {
+      "route": "/admin/tenants",
+      "identity": "control",
+      "viewport": "desktop",
+      "location": {
+        "system": "control",
+        "text": "Consola Atlas Atlas Link Hospitales",
+        "heading": "Hospitales"
+      },
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "screenshot": "evidence/identity-v12/after/control-tenants-desktop.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 47
+          }
+        ]
+      }
+    },
+    {
+      "route": "/admin/licenses",
+      "identity": "control",
+      "viewport": "desktop",
+      "location": {
+        "system": "control",
+        "text": "Consola Atlas Atlas Link Licencias y capacidad",
+        "heading": "Licencias y capacidad"
+      },
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "screenshot": "evidence/identity-v12/after/control-licenses-desktop.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 49
+          }
+        ]
+      }
+    },
+    {
+      "route": "/admin/leads",
+      "identity": "control",
+      "viewport": "desktop",
+      "location": {
+        "system": "control",
+        "text": "Consola Atlas Atlas Link Solicitudes comerciales",
+        "heading": "Solicitudes comerciales"
+      },
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "screenshot": "evidence/identity-v12/after/control-leads-desktop.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 29
+          }
+        ]
+      }
+    },
+    {
+      "route": "/admin/users",
+      "identity": "control",
+      "viewport": "desktop",
+      "location": {
+        "system": "control",
+        "text": "Consola Atlas Atlas Link Equipo Atlas",
+        "heading": "Equipo Atlas"
+      },
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "screenshot": "evidence/identity-v12/after/control-users-desktop.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 33
+          }
+        ]
+      }
+    },
+    {
+      "route": "/admin/audit",
+      "identity": "control",
+      "viewport": "desktop",
+      "location": {
+        "system": "control",
+        "text": "Consola Atlas Atlas Link Bitácora de actividad",
+        "heading": "Bitácora"
+      },
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "screenshot": "evidence/identity-v12/after/control-audit-desktop.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 29
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital",
+      "identity": "insurer",
+      "viewport": "desktop",
+      "location": {
+        "system": "insurer",
+        "text": "Portal aseguradora Hospital Aurora · DEMO Vista general",
+        "heading": "Mesa de consulta."
+      },
+      "dimensions": {
+        "viewport": 1425,
+        "document": 1425
+      },
+      "screenshot": "evidence/identity-v12/after/insurer-hospital-desktop.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 61
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/accounts",
+      "identity": "insurer",
+      "viewport": "desktop",
+      "location": {
+        "system": "insurer",
+        "text": "Portal aseguradora Hospital Aurora · DEMO Cuentas hospitalarias",
+        "heading": "Cuentas hospitalarias"
+      },
+      "dimensions": {
+        "viewport": 1425,
+        "document": 1425
+      },
+      "screenshot": "evidence/identity-v12/after/insurer-accounts-desktop.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 81
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/accounts/e0000000-0000-0000-0000-000000000001",
+      "identity": "insurer",
+      "viewport": "desktop",
+      "location": {
+        "system": "insurer",
+        "text": "Portal aseguradora Hospital Aurora · DEMO Cuentas hospitalarias Detalle de cuenta",
+        "heading": "DEMO-00001"
+      },
+      "dimensions": {
+        "viewport": 1425,
+        "document": 1425
+      },
+      "screenshot": "evidence/identity-v12/after/insurer-detail-desktop.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 61
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital",
+      "identity": "hospital",
+      "viewport": "mobile-390",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Vista general",
+        "heading": "Pulso del hospital."
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-hospital-mobile-390.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 54
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/accounts",
+      "identity": "hospital",
+      "viewport": "mobile-390",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Cuentas hospitalarias",
+        "heading": "Cuentas hospitalarias"
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-accounts-mobile-390.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 63
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/accounts/e0000000-0000-0000-0000-000000000001",
+      "identity": "hospital",
+      "viewport": "mobile-390",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Cuentas hospitalarias Detalle de cuenta",
+        "heading": "DEMO-00001"
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-detail-mobile-390.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 61
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/review",
+      "identity": "hospital",
+      "viewport": "mobile-390",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Bandeja de revisión",
+        "heading": "Bandeja de revisión"
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-review-mobile-390.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 63
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/import",
+      "identity": "hospital",
+      "viewport": "mobile-390",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Cargar cuentas",
+        "heading": "Cargar cuentas"
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-import-mobile-390.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 14
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/agreements",
+      "identity": "hospital",
+      "viewport": "mobile-390",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Convenios",
+        "heading": "Convenios y tabuladores"
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-agreements-mobile-390.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 47
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/reports",
+      "identity": "hospital",
+      "viewport": "mobile-390",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Reportes",
+        "heading": "Reportes"
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-reports-mobile-390.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 31
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/users",
+      "identity": "hospital",
+      "viewport": "mobile-390",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Equipo y accesos",
+        "heading": "Equipo y accesos"
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-users-mobile-390.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 31
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/audit",
+      "identity": "hospital",
+      "viewport": "mobile-390",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Bitácora de actividad",
+        "heading": "Bitácora"
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-audit-mobile-390.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 341
+          }
+        ]
+      }
+    },
+    {
+      "route": "/admin",
+      "identity": "control",
+      "viewport": "mobile-390",
+      "location": {
+        "system": "control",
+        "text": "Consola Atlas Atlas Link Vista general",
+        "heading": "Tu red,\nen perspectiva."
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/after/control-admin-mobile-390.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "nodes": 35
+          }
+        ]
+      }
+    },
+    {
+      "route": "/admin/tenants",
+      "identity": "control",
+      "viewport": "mobile-390",
+      "location": {
+        "system": "control",
+        "text": "Consola Atlas Atlas Link Hospitales",
+        "heading": "Hospitales"
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/after/control-tenants-mobile-390.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 29
+          }
+        ]
+      }
+    },
+    {
+      "route": "/admin/licenses",
+      "identity": "control",
+      "viewport": "mobile-390",
+      "location": {
+        "system": "control",
+        "text": "Consola Atlas Atlas Link Licencias y capacidad",
+        "heading": "Licencias y capacidad"
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/after/control-licenses-mobile-390.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 22
+          }
+        ]
+      }
+    },
+    {
+      "route": "/admin/leads",
+      "identity": "control",
+      "viewport": "mobile-390",
+      "location": {
+        "system": "control",
+        "text": "Consola Atlas Atlas Link Solicitudes comerciales",
+        "heading": "Solicitudes comerciales"
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/after/control-leads-mobile-390.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 11
+          }
+        ]
+      }
+    },
+    {
+      "route": "/admin/users",
+      "identity": "control",
+      "viewport": "mobile-390",
+      "location": {
+        "system": "control",
+        "text": "Consola Atlas Atlas Link Equipo Atlas",
+        "heading": "Equipo Atlas"
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/after/control-users-mobile-390.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 14
+          }
+        ]
+      }
+    },
+    {
+      "route": "/admin/audit",
+      "identity": "control",
+      "viewport": "mobile-390",
+      "location": {
+        "system": "control",
+        "text": "Consola Atlas Atlas Link Bitácora de actividad",
+        "heading": "Bitácora"
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/after/control-audit-mobile-390.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 11
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital",
+      "identity": "insurer",
+      "viewport": "mobile-390",
+      "location": {
+        "system": "insurer",
+        "text": "Portal aseguradora Hospital Aurora · DEMO Vista general",
+        "heading": "Mesa de consulta."
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/after/insurer-hospital-mobile-390.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 52
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/accounts",
+      "identity": "insurer",
+      "viewport": "mobile-390",
+      "location": {
+        "system": "insurer",
+        "text": "Portal aseguradora Hospital Aurora · DEMO Cuentas hospitalarias",
+        "heading": "Cuentas hospitalarias"
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/after/insurer-accounts-mobile-390.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 60
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/accounts/e0000000-0000-0000-0000-000000000001",
+      "identity": "insurer",
+      "viewport": "mobile-390",
+      "location": {
+        "system": "insurer",
+        "text": "Portal aseguradora Hospital Aurora · DEMO Cuentas hospitalarias Detalle de cuenta",
+        "heading": "DEMO-00001"
+      },
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "screenshot": "evidence/identity-v12/after/insurer-detail-mobile-390.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 56
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital",
+      "identity": "hospital",
+      "viewport": "tablet-1024",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Vista general",
+        "heading": "Pulso del hospital."
+      },
+      "dimensions": {
+        "viewport": 1009,
+        "document": 1009
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-hospital-tablet-1024.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 64
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/accounts",
+      "identity": "hospital",
+      "viewport": "tablet-1024",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Cuentas hospitalarias",
+        "heading": "Cuentas hospitalarias"
+      },
+      "dimensions": {
+        "viewport": 1009,
+        "document": 1009
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-accounts-tablet-1024.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 94
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/accounts/e0000000-0000-0000-0000-000000000001",
+      "identity": "hospital",
+      "viewport": "tablet-1024",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Cuentas hospitalarias Detalle de cuenta",
+        "heading": "DEMO-00001"
+      },
+      "dimensions": {
+        "viewport": 1009,
+        "document": 1009
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-detail-tablet-1024.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 74
+          }
+        ]
+      }
+    },
+    {
+      "route": "/admin",
+      "identity": "control",
+      "viewport": "tablet-1024",
+      "location": {
+        "system": "control",
+        "text": "Consola Atlas Atlas Link Vista general",
+        "heading": "Tu red,\nen perspectiva."
+      },
+      "dimensions": {
+        "viewport": 1009,
+        "document": 1009
+      },
+      "screenshot": "evidence/identity-v12/after/control-admin-tablet-1024.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "nodes": 50
+          }
+        ]
+      }
+    },
+    {
+      "route": "/admin/tenants",
+      "identity": "control",
+      "viewport": "tablet-1024",
+      "location": {
+        "system": "control",
+        "text": "Consola Atlas Atlas Link Hospitales",
+        "heading": "Hospitales"
+      },
+      "dimensions": {
+        "viewport": 1024,
+        "document": 1024
+      },
+      "screenshot": "evidence/identity-v12/after/control-tenants-tablet-1024.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 36
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital",
+      "identity": "insurer",
+      "viewport": "tablet-1024",
+      "location": {
+        "system": "insurer",
+        "text": "Portal aseguradora Hospital Aurora · DEMO Vista general",
+        "heading": "Mesa de consulta."
+      },
+      "dimensions": {
+        "viewport": 1009,
+        "document": 1009
+      },
+      "screenshot": "evidence/identity-v12/after/insurer-hospital-tablet-1024.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 54
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/accounts",
+      "identity": "insurer",
+      "viewport": "tablet-1024",
+      "location": {
+        "system": "insurer",
+        "text": "Portal aseguradora Hospital Aurora · DEMO Cuentas hospitalarias",
+        "heading": "Cuentas hospitalarias"
+      },
+      "dimensions": {
+        "viewport": 1009,
+        "document": 1009
+      },
+      "screenshot": "evidence/identity-v12/after/insurer-accounts-tablet-1024.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 83
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/accounts/e0000000-0000-0000-0000-000000000001",
+      "identity": "insurer",
+      "viewport": "tablet-1024",
+      "location": {
+        "system": "insurer",
+        "text": "Portal aseguradora Hospital Aurora · DEMO Cuentas hospitalarias Detalle de cuenta",
+        "heading": "DEMO-00001"
+      },
+      "dimensions": {
+        "viewport": 1009,
+        "document": 1009
+      },
+      "screenshot": "evidence/identity-v12/after/insurer-detail-tablet-1024.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 62
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital",
+      "identity": "hospital",
+      "viewport": "mobile-320",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Vista general",
+        "heading": "Pulso del hospital."
+      },
+      "dimensions": {
+        "viewport": 320,
+        "document": 320
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-hospital-mobile-320.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 54
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/accounts",
+      "identity": "hospital",
+      "viewport": "mobile-320",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Cuentas hospitalarias",
+        "heading": "Cuentas hospitalarias"
+      },
+      "dimensions": {
+        "viewport": 320,
+        "document": 320
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-accounts-mobile-320.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 63
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/accounts/e0000000-0000-0000-0000-000000000001",
+      "identity": "hospital",
+      "viewport": "mobile-320",
+      "location": {
+        "system": "hospital",
+        "text": "Portal hospitalario Hospital Aurora · DEMO Cuentas hospitalarias Detalle de cuenta",
+        "heading": "DEMO-00001"
+      },
+      "dimensions": {
+        "viewport": 320,
+        "document": 320
+      },
+      "screenshot": "evidence/identity-v12/after/hospital-detail-mobile-320.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 56
+          }
+        ]
+      }
+    },
+    {
+      "route": "/admin",
+      "identity": "control",
+      "viewport": "mobile-320",
+      "location": {
+        "system": "control",
+        "text": "Consola Atlas Atlas Link Vista general",
+        "heading": "Tu red,\nen perspectiva."
+      },
+      "dimensions": {
+        "viewport": 320,
+        "document": 320
+      },
+      "screenshot": "evidence/identity-v12/after/control-admin-mobile-320.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "nodes": 35
+          }
+        ]
+      }
+    },
+    {
+      "route": "/admin/tenants",
+      "identity": "control",
+      "viewport": "mobile-320",
+      "location": {
+        "system": "control",
+        "text": "Consola Atlas Atlas Link Hospitales",
+        "heading": "Hospitales"
+      },
+      "dimensions": {
+        "viewport": 320,
+        "document": 320
+      },
+      "screenshot": "evidence/identity-v12/after/control-tenants-mobile-320.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 29
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital",
+      "identity": "insurer",
+      "viewport": "mobile-320",
+      "location": {
+        "system": "insurer",
+        "text": "Portal aseguradora Hospital Aurora · DEMO Vista general",
+        "heading": "Mesa de consulta."
+      },
+      "dimensions": {
+        "viewport": 320,
+        "document": 320
+      },
+      "screenshot": "evidence/identity-v12/after/insurer-hospital-mobile-320.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 52
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/accounts",
+      "identity": "insurer",
+      "viewport": "mobile-320",
+      "location": {
+        "system": "insurer",
+        "text": "Portal aseguradora Hospital Aurora · DEMO Cuentas hospitalarias",
+        "heading": "Cuentas hospitalarias"
+      },
+      "dimensions": {
+        "viewport": 320,
+        "document": 320
+      },
+      "screenshot": "evidence/identity-v12/after/insurer-accounts-mobile-320.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 60
+          }
+        ]
+      }
+    },
+    {
+      "route": "/hospital/accounts/e0000000-0000-0000-0000-000000000001",
+      "identity": "insurer",
+      "viewport": "mobile-320",
+      "location": {
+        "system": "insurer",
+        "text": "Portal aseguradora Hospital Aurora · DEMO Cuentas hospitalarias Detalle de cuenta",
+        "heading": "DEMO-00001"
+      },
+      "dimensions": {
+        "viewport": 320,
+        "document": 320
+      },
+      "screenshot": "evidence/identity-v12/after/insurer-detail-mobile-320.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 51
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "browser": "153.0.8010.53",
+  "finishedAt": "2026-09-24T22:57:31.171Z",
+  "planned": 16,
+  "passed": false
+}

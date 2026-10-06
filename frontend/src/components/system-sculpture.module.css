@@ -1,0 +1,42 @@
+.sculpture {
+  --scene-glow: #d7e6fa66;
+  --scene-shadow: #7e9cc530;
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  height: 220px;
+  min-width: 0;
+  overflow: hidden;
+  contain: paint;
+  user-select: none;
+  background: radial-gradient(ellipse at 50% 55%, var(--scene-glow), transparent 67%);
+}
+.sculpture[data-system-sculpture="hospital"] { --scene-glow: #d8eee244; --scene-shadow: #759d8c26; }
+.sculpture[data-system-sculpture="insurer"] { --scene-glow: #f2e2c94a; --scene-shadow: #b7947029; }
+.sculpture::before {
+  content: "";
+  position: absolute;
+  left: 14%;
+  right: 14%;
+  bottom: 4%;
+  height: 13%;
+  background: radial-gradient(ellipse, var(--scene-shadow), transparent 68%);
+  pointer-events: none;
+}
+.canvas, .fallback { position: absolute; inset: 0; width: 100%; height: 100%; }
+.canvas { display: block; visibility: hidden; touch-action: pan-y; }
+.fallback { pointer-events: none; }
+.vector { display: block; width: 100%; height: 100%; }
+.sculpture[data-renderer="webgl"] > .canvas { visibility: visible; }
+.sculpture[data-renderer="webgl"] > .fallback { visibility: hidden; }
+
+@media (max-width: 899px), (pointer: coarse) {
+  .sculpture { height: 180px; }
+  .canvas { display: none; }
+  .sculpture[data-renderer="webgl"] > .fallback { visibility: visible; }
+}
+@media (forced-colors: active) { .sculpture { display: none; } }
+@media print {
+  .canvas { display: none; }
+  .sculpture[data-renderer="webgl"] > .fallback { visibility: visible; }
+}

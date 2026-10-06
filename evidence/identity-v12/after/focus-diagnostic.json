@@ -1,0 +1,40 @@
+{
+  "activeTag": "BUTTON",
+  "activeLabel": "Abrir menú",
+  "activeText": "",
+  "inside": false,
+  "firstTag": "BUTTON",
+  "firstLabel": "Cerrar menú",
+  "firstRect": {
+    "x": 90.8817138671875,
+    "y": 18,
+    "width": 44,
+    "height": 44,
+    "top": 18,
+    "right": 134.8817138671875,
+    "bottom": 62,
+    "left": 90.8817138671875
+  },
+  "dialogInert": false,
+  "dialogStyle": {
+    "visibility": "visible",
+    "display": "flex"
+  },
+  "focus": [
+    {
+      "tag": "BUTTON",
+      "label": "Administrador del hospital, Ana Beltrán, admin@demo.atlaslink.mx",
+      "text": "Administraciónadmin@demo.atlaslink.mx"
+    },
+    {
+      "tag": "BUTTON",
+      "label": null,
+      "text": "Iniciar sesión"
+    },
+    {
+      "tag": "BUTTON",
+      "label": "Abrir menú",
+      "text": ""
+    }
+  ]
+}

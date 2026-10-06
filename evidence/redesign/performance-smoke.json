@@ -1,0 +1,4050 @@
+{
+  "startedAt": "2026-09-24T15:52:37.060Z",
+  "baseURL": "http://127.0.0.1:4430",
+  "method": {
+    "environment": "Docker production build on loopback; Chrome installed on macOS",
+    "repetitions": 3,
+    "routes": [
+      "/",
+      "/login"
+    ],
+    "observationAfterLoadMs": 2500,
+    "cache": "New isolated browser context per navigation; CDP Network.setCacheDisabled=true",
+    "throttling": "None: local network and host CPU; not representative of customer network or mobile CPU",
+    "mutations": "None: public landing and login reads only; no login submissions",
+    "definitions": {
+      "ttfbMs": "Navigation responseStart minus navigation start (includes connection setup)",
+      "serverResponseMs": "Navigation responseStart minus requestStart",
+      "lcpMs": "Last largest-contentful-paint entry during the observation window",
+      "cls": "Maximum unexpected layout-shift session window: <1s gap and <5s duration",
+      "transferredBytes": "Navigation plus resource timing transferSize; includes reported response headers",
+      "longTasks": "PerformanceObserver longtask entries reported during the observation window"
+    },
+    "limits": [
+      "Small local laboratory sample, not field percentiles or a Lighthouse score",
+      "No CPU/network throttling; no real Windows, Android, iOS, or Safari device measurement",
+      "No INP measurement or interaction workload",
+      "CLS and LCP only cover initial navigation and observation window; no full session coverage",
+      "Fresh browser cache does not reset server, OS, image optimizer, or transport caches"
+    ]
+  },
+  "staticInspection": {
+    "dependencies": {
+      "@fontsource-variable/inter": "5.3.0",
+      "@fontsource-variable/manrope": "5.3.0",
+      "next": "16.3.5",
+      "react": "19.2.4",
+      "react-dom": "19.2.4"
+    },
+    "cssSourceBytes": 45832,
+    "clinicalPhotoBytes": 113703,
+    "scene": "CSS perspective and inline SVG; actual canvas count recorded in each sample",
+    "reducedMotionRulePresent": true,
+    "reducedMotionImplementation": "Runtime animation state and scroll behavior verified below",
+    "fonts": "Inter and Manrope variable WOFF2 hosted locally with font-display swap; browser chooses unicode subsets",
+    "photo": "Locally hosted real photography, responsive Next Image",
+    "localBuild": {
+      "location": "frontend/.next/static (local build, not a transfer measurement)",
+      "buildId": "OnMMit0fUQthohqlasaeY",
+      "groups": {
+        ".js": {
+          "files": 25,
+          "rawBytes": 771850,
+          "gzipBytes": 238813
+        },
+        ".css": {
+          "files": 1,
+          "rawBytes": 131476,
+          "gzipBytes": 27556
+        },
+        ".woff2": {
+          "files": 13,
+          "rawBytes": 293484,
+          "gzipBytes": 293784
+        }
+      }
+    }
+  },
+  "samples": [
+    {
+      "observationMs": 2658.199999988079,
+      "visibility": "visible",
+      "ttfbMs": 13.399999976158142,
+      "serverResponseMs": 12,
+      "domContentLoadedMs": 48.09999996423721,
+      "loadMs": 129.69999998807907,
+      "firstContentfulPaintMs": 120,
+      "lcpMs": 120,
+      "lcpElement": "H1",
+      "cls": 0,
+      "longTaskCount": 0,
+      "longTaskTotalMs": 0,
+      "longestTaskMs": 0,
+      "longTasks": [],
+      "transferredBytes": 293704,
+      "documentTransferBytes": 11320,
+      "resourceCount": 20,
+      "groups": {
+        "css": {
+          "count": 3,
+          "transferredBytes": 31495,
+          "encodedBytes": 30595,
+          "decodedBytes": 171458
+        },
+        "script": {
+          "count": 10,
+          "transferredBytes": 171808,
+          "encodedBytes": 168808,
+          "decodedBytes": 566341
+        },
+        "font": {
+          "count": 2,
+          "transferredBytes": 73692,
+          "encodedBytes": 73092,
+          "decodedBytes": 73092
+        },
+        "image": {
+          "count": 1,
+          "transferredBytes": 677,
+          "encodedBytes": 377,
+          "decodedBytes": 377
+        },
+        "other": {
+          "count": 4,
+          "transferredBytes": 4712,
+          "encodedBytes": 3512,
+          "decodedBytes": 10611
+        }
+      },
+      "resources": [
+        {
+          "path": "/_next/static/chunks/2qol2v-7laqxp.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 11535,
+          "encodedBodySize": 11235,
+          "decodedBodySize": 51163,
+          "durationMs": 24.30000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1f3ffd2jb8pt2.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 12306,
+          "encodedBodySize": 12006,
+          "decodedBodySize": 74527,
+          "durationMs": 28.30000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3s6nzrbk-8mnv.js",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 2329,
+          "encodedBodySize": 2029,
+          "decodedBodySize": 5598,
+          "durationMs": 29.100000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7914,
+          "encodedBodySize": 7614,
+          "decodedBodySize": 28907,
+          "durationMs": 31.80000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/turbopack-2-vpl8jgjmkts.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 4151,
+          "encodedBodySize": 3851,
+          "decodedBodySize": 9721,
+          "durationMs": 41.39999997615814,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1-iu_q85n3obe.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 691,
+          "encodedBodySize": 391,
+          "decodedBodySize": 391,
+          "durationMs": 43,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0wkc79ykrmhi2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10735,
+          "encodedBodySize": 10435,
+          "decodedBodySize": 32131,
+          "durationMs": 46.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/2-rtuqsgzmno4.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 45395,
+          "encodedBodySize": 45095,
+          "decodedBodySize": 165743,
+          "durationMs": 49.299999952316284,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3kmozkq6tgqnz.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 71876,
+          "encodedBodySize": 71576,
+          "decodedBodySize": 228922,
+          "durationMs": 52.59999996423721,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1hakx2itgg6bn.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7006,
+          "encodedBodySize": 6706,
+          "decodedBodySize": 17702,
+          "durationMs": 49,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0a3l-yqqmups9.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 11022,
+          "encodedBodySize": 10722,
+          "decodedBodySize": 44975,
+          "durationMs": 54.60000002384186,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 48556,
+          "encodedBodySize": 48256,
+          "decodedBodySize": 48256,
+          "durationMs": 18.30000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 25136,
+          "encodedBodySize": 24836,
+          "decodedBodySize": 24836,
+          "durationMs": 18.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/favicon.svg",
+          "sameOrigin": true,
+          "initiator": "other",
+          "transferSize": 677,
+          "encodedBodySize": 377,
+          "decodedBodySize": 377,
+          "durationMs": 5.899999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 525,
+          "encodedBodySize": 225,
+          "decodedBodySize": 315,
+          "durationMs": 17.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 538,
+          "encodedBodySize": 238,
+          "decodedBodySize": 387,
+          "durationMs": 28.599999964237213,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1822,
+          "encodedBodySize": 1522,
+          "decodedBodySize": 4916,
+          "durationMs": 6.100000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0bh90qwz_8519.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 7654,
+          "encodedBodySize": 7354,
+          "decodedBodySize": 45768,
+          "durationMs": 7.299999952316284,
+          "responseStatus": 200
+        },
+        {
+          "path": "/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1827,
+          "encodedBodySize": 1527,
+          "decodedBodySize": 4993,
+          "durationMs": 5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3-dy3tdihp2y2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10689,
+          "encodedBodySize": 10389,
+          "decodedBodySize": 32251,
+          "durationMs": 5.600000023841858,
+          "responseStatus": 200
+        }
+      ],
+      "observersSupported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "layoutShifts": [],
+      "viewport": "desktop",
+      "canvasCount": 0,
+      "dimensions": {
+        "width": 1440,
+        "documentWidth": 1425
+      },
+      "route": "/",
+      "repetition": 1,
+      "httpStatus": 200,
+      "documentEtag": "\"xuirla8ug217w6\""
+    },
+    {
+      "observationMs": 2645.800000011921,
+      "visibility": "visible",
+      "ttfbMs": 10.700000047683716,
+      "serverResponseMs": 9.800000011920929,
+      "domContentLoadedMs": 33.40000003576279,
+      "loadMs": 118.20000004768372,
+      "firstContentfulPaintMs": 112,
+      "lcpMs": 112,
+      "lcpElement": "H1",
+      "cls": 0,
+      "longTaskCount": 0,
+      "longTaskTotalMs": 0,
+      "longestTaskMs": 0,
+      "longTasks": [],
+      "transferredBytes": 293704,
+      "documentTransferBytes": 11320,
+      "resourceCount": 20,
+      "groups": {
+        "css": {
+          "count": 3,
+          "transferredBytes": 31495,
+          "encodedBytes": 30595,
+          "decodedBytes": 171458
+        },
+        "script": {
+          "count": 10,
+          "transferredBytes": 171808,
+          "encodedBytes": 168808,
+          "decodedBytes": 566341
+        },
+        "font": {
+          "count": 2,
+          "transferredBytes": 73692,
+          "encodedBytes": 73092,
+          "decodedBytes": 73092
+        },
+        "image": {
+          "count": 1,
+          "transferredBytes": 677,
+          "encodedBytes": 377,
+          "decodedBytes": 377
+        },
+        "other": {
+          "count": 4,
+          "transferredBytes": 4712,
+          "encodedBytes": 3512,
+          "decodedBytes": 10611
+        }
+      },
+      "resources": [
+        {
+          "path": "/_next/static/chunks/2qol2v-7laqxp.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 11535,
+          "encodedBodySize": 11235,
+          "decodedBodySize": 51163,
+          "durationMs": 11.600000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1f3ffd2jb8pt2.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 12306,
+          "encodedBodySize": 12006,
+          "decodedBodySize": 74527,
+          "durationMs": 16.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3s6nzrbk-8mnv.js",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 2329,
+          "encodedBodySize": 2029,
+          "decodedBodySize": 5598,
+          "durationMs": 17.600000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7914,
+          "encodedBodySize": 7614,
+          "decodedBodySize": 28907,
+          "durationMs": 19.899999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/2-rtuqsgzmno4.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 45395,
+          "encodedBodySize": 45095,
+          "decodedBodySize": 165743,
+          "durationMs": 30.899999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3kmozkq6tgqnz.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 71876,
+          "encodedBodySize": 71576,
+          "decodedBodySize": 228922,
+          "durationMs": 38.69999998807907,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/turbopack-2-vpl8jgjmkts.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 4151,
+          "encodedBodySize": 3851,
+          "decodedBodySize": 9721,
+          "durationMs": 21.30000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1-iu_q85n3obe.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 691,
+          "encodedBodySize": 391,
+          "decodedBodySize": 391,
+          "durationMs": 29.600000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0wkc79ykrmhi2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10735,
+          "encodedBodySize": 10435,
+          "decodedBodySize": 32131,
+          "durationMs": 29.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1hakx2itgg6bn.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7006,
+          "encodedBodySize": 6706,
+          "decodedBodySize": 17702,
+          "durationMs": 36.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0a3l-yqqmups9.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 11022,
+          "encodedBodySize": 10722,
+          "decodedBodySize": 44975,
+          "durationMs": 38.19999998807907,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 48556,
+          "encodedBodySize": 48256,
+          "decodedBodySize": 48256,
+          "durationMs": 21.399999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 25136,
+          "encodedBodySize": 24836,
+          "decodedBodySize": 24836,
+          "durationMs": 21.399999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/favicon.svg",
+          "sameOrigin": true,
+          "initiator": "other",
+          "transferSize": 677,
+          "encodedBodySize": 377,
+          "decodedBodySize": 377,
+          "durationMs": 5.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 525,
+          "encodedBodySize": 225,
+          "decodedBodySize": 315,
+          "durationMs": 18.399999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 538,
+          "encodedBodySize": 238,
+          "decodedBodySize": 387,
+          "durationMs": 17.900000035762787,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0bh90qwz_8519.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 7654,
+          "encodedBodySize": 7354,
+          "decodedBodySize": 45768,
+          "durationMs": 13.699999988079071,
+          "responseStatus": 200
+        },
+        {
+          "path": "/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1827,
+          "encodedBodySize": 1527,
+          "decodedBodySize": 4993,
+          "durationMs": 13.099999964237213,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1822,
+          "encodedBodySize": 1522,
+          "decodedBodySize": 4916,
+          "durationMs": 12.399999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3-dy3tdihp2y2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10689,
+          "encodedBodySize": 10389,
+          "decodedBodySize": 32251,
+          "durationMs": 5.699999988079071,
+          "responseStatus": 200
+        }
+      ],
+      "observersSupported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "layoutShifts": [],
+      "viewport": "desktop",
+      "canvasCount": 0,
+      "dimensions": {
+        "width": 1440,
+        "documentWidth": 1425
+      },
+      "route": "/",
+      "repetition": 2,
+      "httpStatus": 200,
+      "documentEtag": "\"xuirla8ug217w6\""
+    },
+    {
+      "observationMs": 2706.399999976158,
+      "visibility": "visible",
+      "ttfbMs": 9,
+      "serverResponseMs": 8,
+      "domContentLoadedMs": 34.30000001192093,
+      "loadMs": 134.39999997615814,
+      "firstContentfulPaintMs": 120,
+      "lcpMs": 120,
+      "lcpElement": "H1",
+      "cls": 0,
+      "longTaskCount": 0,
+      "longTaskTotalMs": 0,
+      "longestTaskMs": 0,
+      "longTasks": [],
+      "transferredBytes": 293704,
+      "documentTransferBytes": 11320,
+      "resourceCount": 20,
+      "groups": {
+        "css": {
+          "count": 3,
+          "transferredBytes": 31495,
+          "encodedBytes": 30595,
+          "decodedBytes": 171458
+        },
+        "script": {
+          "count": 10,
+          "transferredBytes": 171808,
+          "encodedBytes": 168808,
+          "decodedBytes": 566341
+        },
+        "font": {
+          "count": 2,
+          "transferredBytes": 73692,
+          "encodedBytes": 73092,
+          "decodedBytes": 73092
+        },
+        "image": {
+          "count": 1,
+          "transferredBytes": 677,
+          "encodedBytes": 377,
+          "decodedBytes": 377
+        },
+        "other": {
+          "count": 4,
+          "transferredBytes": 4712,
+          "encodedBytes": 3512,
+          "decodedBytes": 10611
+        }
+      },
+      "resources": [
+        {
+          "path": "/_next/static/chunks/2qol2v-7laqxp.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 11535,
+          "encodedBodySize": 11235,
+          "decodedBodySize": 51163,
+          "durationMs": 14.099999964237213,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1f3ffd2jb8pt2.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 12306,
+          "encodedBodySize": 12006,
+          "decodedBodySize": 74527,
+          "durationMs": 16.80000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3s6nzrbk-8mnv.js",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 2329,
+          "encodedBodySize": 2029,
+          "decodedBodySize": 5598,
+          "durationMs": 19.599999964237213,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7914,
+          "encodedBodySize": 7614,
+          "decodedBodySize": 28907,
+          "durationMs": 20.100000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/turbopack-2-vpl8jgjmkts.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 4151,
+          "encodedBodySize": 3851,
+          "decodedBodySize": 9721,
+          "durationMs": 25.700000047683716,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0wkc79ykrmhi2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10735,
+          "encodedBodySize": 10435,
+          "decodedBodySize": 32131,
+          "durationMs": 27.100000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1-iu_q85n3obe.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 691,
+          "encodedBodySize": 391,
+          "decodedBodySize": 391,
+          "durationMs": 27.900000035762787,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/2-rtuqsgzmno4.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 45395,
+          "encodedBodySize": 45095,
+          "decodedBodySize": 165743,
+          "durationMs": 36.10000002384186,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3kmozkq6tgqnz.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 71876,
+          "encodedBodySize": 71576,
+          "decodedBodySize": 228922,
+          "durationMs": 39.80000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1hakx2itgg6bn.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7006,
+          "encodedBodySize": 6706,
+          "decodedBodySize": 17702,
+          "durationMs": 32.60000002384186,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0a3l-yqqmups9.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 11022,
+          "encodedBodySize": 10722,
+          "decodedBodySize": 44975,
+          "durationMs": 41.69999998807907,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 48556,
+          "encodedBodySize": 48256,
+          "decodedBodySize": 48256,
+          "durationMs": 16.700000047683716,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 25136,
+          "encodedBodySize": 24836,
+          "decodedBodySize": 24836,
+          "durationMs": 16,
+          "responseStatus": 200
+        },
+        {
+          "path": "/favicon.svg",
+          "sameOrigin": true,
+          "initiator": "other",
+          "transferSize": 677,
+          "encodedBodySize": 377,
+          "decodedBodySize": 377,
+          "durationMs": 4.900000035762787,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 525,
+          "encodedBodySize": 225,
+          "decodedBodySize": 315,
+          "durationMs": 8.599999964237213,
+          "responseStatus": 200
+        },
+        {
+          "path": "/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 538,
+          "encodedBodySize": 238,
+          "decodedBodySize": 387,
+          "durationMs": 7.400000035762787,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0bh90qwz_8519.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 7654,
+          "encodedBodySize": 7354,
+          "decodedBodySize": 45768,
+          "durationMs": 12.899999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1827,
+          "encodedBodySize": 1527,
+          "decodedBodySize": 4993,
+          "durationMs": 11.399999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1822,
+          "encodedBodySize": 1522,
+          "decodedBodySize": 4916,
+          "durationMs": 12.600000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3-dy3tdihp2y2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10689,
+          "encodedBodySize": 10389,
+          "decodedBodySize": 32251,
+          "durationMs": 6.599999964237213,
+          "responseStatus": 200
+        }
+      ],
+      "observersSupported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "layoutShifts": [],
+      "viewport": "desktop",
+      "canvasCount": 0,
+      "dimensions": {
+        "width": 1440,
+        "documentWidth": 1425
+      },
+      "route": "/",
+      "repetition": 3,
+      "httpStatus": 200,
+      "documentEtag": "\"xuirla8ug217w6\""
+    },
+    {
+      "observationMs": 2744.900000035763,
+      "visibility": "visible",
+      "ttfbMs": 10.300000011920929,
+      "serverResponseMs": 8.599999964237213,
+      "domContentLoadedMs": 139.5,
+      "loadMs": 210.60000002384186,
+      "firstContentfulPaintMs": 168,
+      "lcpMs": 232,
+      "lcpElement": "IMG",
+      "cls": 0.00037529135118498,
+      "longTaskCount": 0,
+      "longTaskTotalMs": 0,
+      "longestTaskMs": 0,
+      "longTasks": [],
+      "transferredBytes": 304150,
+      "documentTransferBytes": 4543,
+      "resourceCount": 24,
+      "groups": {
+        "image": {
+          "count": 2,
+          "transferredBytes": 14337,
+          "encodedBytes": 13737,
+          "decodedBytes": 13737
+        },
+        "css": {
+          "count": 3,
+          "transferredBytes": 31495,
+          "encodedBytes": 30595,
+          "decodedBytes": 171458
+        },
+        "script": {
+          "count": 10,
+          "transferredBytes": 171808,
+          "encodedBytes": 168808,
+          "decodedBytes": 566341
+        },
+        "font": {
+          "count": 2,
+          "transferredBytes": 73692,
+          "encodedBytes": 73092,
+          "decodedBytes": 73092
+        },
+        "api": {
+          "count": 1,
+          "transferredBytes": 641,
+          "encodedBytes": 341,
+          "decodedBytes": 1120
+        },
+        "other": {
+          "count": 6,
+          "transferredBytes": 7634,
+          "encodedBytes": 5834,
+          "decodedBytes": 17443
+        }
+      },
+      "resources": [
+        {
+          "path": "/_next/image",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 13660,
+          "encodedBodySize": 13360,
+          "decodedBodySize": 13360,
+          "durationMs": 190.89999997615814,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/2qol2v-7laqxp.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 11535,
+          "encodedBodySize": 11235,
+          "decodedBodySize": 51163,
+          "durationMs": 90.80000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0bh90qwz_8519.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 7654,
+          "encodedBodySize": 7354,
+          "decodedBodySize": 45768,
+          "durationMs": 94.40000003576279,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3s6nzrbk-8mnv.js",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 2329,
+          "encodedBodySize": 2029,
+          "decodedBodySize": 5598,
+          "durationMs": 97.39999997615814,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7914,
+          "encodedBodySize": 7614,
+          "decodedBodySize": 28907,
+          "durationMs": 99,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/turbopack-2-vpl8jgjmkts.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 4151,
+          "encodedBodySize": 3851,
+          "decodedBodySize": 9721,
+          "durationMs": 107.30000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/2-rtuqsgzmno4.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 45395,
+          "encodedBodySize": 45095,
+          "decodedBodySize": 165743,
+          "durationMs": 115.39999997615814,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3kmozkq6tgqnz.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 71876,
+          "encodedBodySize": 71576,
+          "decodedBodySize": 228922,
+          "durationMs": 115.59999996423721,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1-iu_q85n3obe.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 691,
+          "encodedBodySize": 391,
+          "decodedBodySize": 391,
+          "durationMs": 118.20000004768372,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0wkc79ykrmhi2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10735,
+          "encodedBodySize": 10435,
+          "decodedBodySize": 32131,
+          "durationMs": 118.80000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3-dy3tdihp2y2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10689,
+          "encodedBodySize": 10389,
+          "decodedBodySize": 32251,
+          "durationMs": 123.60000002384186,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 25136,
+          "encodedBodySize": 24836,
+          "decodedBodySize": 24836,
+          "durationMs": 9,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 48556,
+          "encodedBodySize": 48256,
+          "decodedBodySize": 48256,
+          "durationMs": 13.199999988079071,
+          "responseStatus": 200
+        },
+        {
+          "path": "/api/auth/demo-profiles",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 641,
+          "encodedBodySize": 341,
+          "decodedBodySize": 1120,
+          "durationMs": 56.10000002384186,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 525,
+          "encodedBodySize": 225,
+          "decodedBodySize": 315,
+          "durationMs": 28,
+          "responseStatus": 200
+        },
+        {
+          "path": "/admin/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 544,
+          "encodedBodySize": 244,
+          "decodedBodySize": 459,
+          "durationMs": 57.30000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/privacidad",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 523,
+          "encodedBodySize": 223,
+          "decodedBodySize": 338,
+          "durationMs": 56.299999952316284,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1f3ffd2jb8pt2.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 12306,
+          "encodedBodySize": 12006,
+          "decodedBodySize": 74527,
+          "durationMs": 19.30000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1822,
+          "encodedBodySize": 1522,
+          "decodedBodySize": 4916,
+          "durationMs": 12.300000011920929,
+          "responseStatus": 200
+        },
+        {
+          "path": "/favicon.svg",
+          "sameOrigin": true,
+          "initiator": "other",
+          "transferSize": 677,
+          "encodedBodySize": 377,
+          "decodedBodySize": 377,
+          "durationMs": 13.100000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1hakx2itgg6bn.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7006,
+          "encodedBodySize": 6706,
+          "decodedBodySize": 17702,
+          "durationMs": 15.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0a3l-yqqmups9.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 11022,
+          "encodedBodySize": 10722,
+          "decodedBodySize": 44975,
+          "durationMs": 16.600000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/privacidad",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 2386,
+          "encodedBodySize": 2086,
+          "decodedBodySize": 6213,
+          "durationMs": 7.100000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/admin/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1834,
+          "encodedBodySize": 1534,
+          "decodedBodySize": 5202,
+          "durationMs": 7.799999952316284,
+          "responseStatus": 200
+        }
+      ],
+      "observersSupported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "layoutShifts": [
+        {
+          "time": 138.70000004768372,
+          "value": 0.00037529135118498,
+          "sources": [
+            {
+              "class": null,
+              "previous": {
+                "x": 48,
+                "y": 256.296875,
+                "width": 516.75,
+                "height": 82,
+                "top": 256.296875,
+                "right": 564.75,
+                "bottom": 338.296875,
+                "left": 48
+              },
+              "current": {
+                "x": 48,
+                "y": 249.296875,
+                "width": 516.75,
+                "height": 82,
+                "top": 249.296875,
+                "right": 564.75,
+                "bottom": 331.296875,
+                "left": 48
+              }
+            },
+            {
+              "class": null,
+              "previous": {
+                "x": 48,
+                "y": 320.234375,
+                "width": 516.75,
+                "height": 82,
+                "top": 320.234375,
+                "right": 564.75,
+                "bottom": 402.234375,
+                "left": 48
+              },
+              "current": {
+                "x": 48,
+                "y": 313.234375,
+                "width": 516.75,
+                "height": 82,
+                "top": 313.234375,
+                "right": 564.75,
+                "bottom": 395.234375,
+                "left": 48
+              }
+            },
+            {
+              "class": null,
+              "previous": {
+                "x": 736.375,
+                "y": 170.78125,
+                "width": 565,
+                "height": 41,
+                "top": 170.78125,
+                "right": 1301.375,
+                "bottom": 211.78125,
+                "left": 736.375
+              },
+              "current": {
+                "x": 736.375,
+                "y": 167.78125,
+                "width": 565,
+                "height": 41,
+                "top": 167.78125,
+                "right": 1301.375,
+                "bottom": 208.78125,
+                "left": 736.375
+              }
+            },
+            {
+              "class": null,
+              "previous": {
+                "x": 100,
+                "y": 45,
+                "width": 104.75,
+                "height": 41,
+                "top": 45,
+                "right": 204.75,
+                "bottom": 86,
+                "left": 100
+              },
+              "current": {
+                "x": 100,
+                "y": 42,
+                "width": 112.46875,
+                "height": 41,
+                "top": 42,
+                "right": 212.46875,
+                "bottom": 83,
+                "left": 100
+              }
+            }
+          ]
+        }
+      ],
+      "viewport": "desktop",
+      "canvasCount": 0,
+      "dimensions": {
+        "width": 1440,
+        "documentWidth": 1425
+      },
+      "route": "/login",
+      "repetition": 1,
+      "httpStatus": 200,
+      "documentEtag": "\"151fv5itj9iev3\""
+    },
+    {
+      "observationMs": 2696.300000011921,
+      "visibility": "visible",
+      "ttfbMs": 8.5,
+      "serverResponseMs": 6.600000023841858,
+      "domContentLoadedMs": 69.5,
+      "loadMs": 97.80000001192093,
+      "firstContentfulPaintMs": 104,
+      "lcpMs": 104,
+      "lcpElement": "IMG",
+      "cls": 0.00037529135118498,
+      "longTaskCount": 0,
+      "longTaskTotalMs": 0,
+      "longestTaskMs": 0,
+      "longTasks": [],
+      "transferredBytes": 304150,
+      "documentTransferBytes": 4543,
+      "resourceCount": 24,
+      "groups": {
+        "image": {
+          "count": 2,
+          "transferredBytes": 14337,
+          "encodedBytes": 13737,
+          "decodedBytes": 13737
+        },
+        "css": {
+          "count": 3,
+          "transferredBytes": 31495,
+          "encodedBytes": 30595,
+          "decodedBytes": 171458
+        },
+        "script": {
+          "count": 10,
+          "transferredBytes": 171808,
+          "encodedBytes": 168808,
+          "decodedBytes": 566341
+        },
+        "font": {
+          "count": 2,
+          "transferredBytes": 73692,
+          "encodedBytes": 73092,
+          "decodedBytes": 73092
+        },
+        "api": {
+          "count": 1,
+          "transferredBytes": 641,
+          "encodedBytes": 341,
+          "decodedBytes": 1120
+        },
+        "other": {
+          "count": 6,
+          "transferredBytes": 7634,
+          "encodedBytes": 5834,
+          "decodedBytes": 17443
+        }
+      },
+      "resources": [
+        {
+          "path": "/_next/image",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 13660,
+          "encodedBodySize": 13360,
+          "decodedBodySize": 13360,
+          "durationMs": 12.699999988079071,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/2qol2v-7laqxp.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 11535,
+          "encodedBodySize": 11235,
+          "decodedBodySize": 51163,
+          "durationMs": 15.200000047683716,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0bh90qwz_8519.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 7654,
+          "encodedBodySize": 7354,
+          "decodedBodySize": 45768,
+          "durationMs": 13.199999988079071,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3s6nzrbk-8mnv.js",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 2329,
+          "encodedBodySize": 2029,
+          "decodedBodySize": 5598,
+          "durationMs": 16.30000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7914,
+          "encodedBodySize": 7614,
+          "decodedBodySize": 28907,
+          "durationMs": 20.899999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/turbopack-2-vpl8jgjmkts.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 4151,
+          "encodedBodySize": 3851,
+          "decodedBodySize": 9721,
+          "durationMs": 26.69999998807907,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0wkc79ykrmhi2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10735,
+          "encodedBodySize": 10435,
+          "decodedBodySize": 32131,
+          "durationMs": 27.599999964237213,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3kmozkq6tgqnz.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 71876,
+          "encodedBodySize": 71576,
+          "decodedBodySize": 228922,
+          "durationMs": 39.299999952316284,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/2-rtuqsgzmno4.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 45395,
+          "encodedBodySize": 45095,
+          "decodedBodySize": 165743,
+          "durationMs": 40.299999952316284,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1-iu_q85n3obe.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 691,
+          "encodedBodySize": 391,
+          "decodedBodySize": 391,
+          "durationMs": 24.30000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3-dy3tdihp2y2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10689,
+          "encodedBodySize": 10389,
+          "decodedBodySize": 32251,
+          "durationMs": 40.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 25136,
+          "encodedBodySize": 24836,
+          "decodedBodySize": 24836,
+          "durationMs": 12.399999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 48556,
+          "encodedBodySize": 48256,
+          "decodedBodySize": 48256,
+          "durationMs": 18.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/api/auth/demo-profiles",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 641,
+          "encodedBodySize": 341,
+          "decodedBodySize": 1120,
+          "durationMs": 12.899999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/favicon.svg",
+          "sameOrigin": true,
+          "initiator": "other",
+          "transferSize": 677,
+          "encodedBodySize": 377,
+          "decodedBodySize": 377,
+          "durationMs": 7.100000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/privacidad",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 523,
+          "encodedBodySize": 223,
+          "decodedBodySize": 338,
+          "durationMs": 9.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/admin/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 544,
+          "encodedBodySize": 244,
+          "decodedBodySize": 459,
+          "durationMs": 10,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 525,
+          "encodedBodySize": 225,
+          "decodedBodySize": 315,
+          "durationMs": 10.300000011920929,
+          "responseStatus": 200
+        },
+        {
+          "path": "/privacidad",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 2386,
+          "encodedBodySize": 2086,
+          "decodedBodySize": 6213,
+          "durationMs": 14,
+          "responseStatus": 200
+        },
+        {
+          "path": "/admin/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1834,
+          "encodedBodySize": 1534,
+          "decodedBodySize": 5202,
+          "durationMs": 13.600000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1f3ffd2jb8pt2.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 12306,
+          "encodedBodySize": 12006,
+          "decodedBodySize": 74527,
+          "durationMs": 17.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1822,
+          "encodedBodySize": 1522,
+          "decodedBodySize": 4916,
+          "durationMs": 11.800000011920929,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1hakx2itgg6bn.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7006,
+          "encodedBodySize": 6706,
+          "decodedBodySize": 17702,
+          "durationMs": 6.400000035762787,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0a3l-yqqmups9.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 11022,
+          "encodedBodySize": 10722,
+          "decodedBodySize": 44975,
+          "durationMs": 7.399999976158142,
+          "responseStatus": 200
+        }
+      ],
+      "observersSupported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "layoutShifts": [
+        {
+          "time": 68.39999997615814,
+          "value": 0.00037529135118498,
+          "sources": [
+            {
+              "class": null,
+              "previous": {
+                "x": 48,
+                "y": 256.296875,
+                "width": 516.75,
+                "height": 82,
+                "top": 256.296875,
+                "right": 564.75,
+                "bottom": 338.296875,
+                "left": 48
+              },
+              "current": {
+                "x": 48,
+                "y": 249.296875,
+                "width": 516.75,
+                "height": 82,
+                "top": 249.296875,
+                "right": 564.75,
+                "bottom": 331.296875,
+                "left": 48
+              }
+            },
+            {
+              "class": null,
+              "previous": {
+                "x": 48,
+                "y": 320.234375,
+                "width": 516.75,
+                "height": 82,
+                "top": 320.234375,
+                "right": 564.75,
+                "bottom": 402.234375,
+                "left": 48
+              },
+              "current": {
+                "x": 48,
+                "y": 313.234375,
+                "width": 516.75,
+                "height": 82,
+                "top": 313.234375,
+                "right": 564.75,
+                "bottom": 395.234375,
+                "left": 48
+              }
+            },
+            {
+              "class": null,
+              "previous": {
+                "x": 736.375,
+                "y": 170.78125,
+                "width": 565,
+                "height": 41,
+                "top": 170.78125,
+                "right": 1301.375,
+                "bottom": 211.78125,
+                "left": 736.375
+              },
+              "current": {
+                "x": 736.375,
+                "y": 167.78125,
+                "width": 565,
+                "height": 41,
+                "top": 167.78125,
+                "right": 1301.375,
+                "bottom": 208.78125,
+                "left": 736.375
+              }
+            },
+            {
+              "class": null,
+              "previous": {
+                "x": 100,
+                "y": 45,
+                "width": 104.75,
+                "height": 41,
+                "top": 45,
+                "right": 204.75,
+                "bottom": 86,
+                "left": 100
+              },
+              "current": {
+                "x": 100,
+                "y": 42,
+                "width": 112.46875,
+                "height": 41,
+                "top": 42,
+                "right": 212.46875,
+                "bottom": 83,
+                "left": 100
+              }
+            }
+          ]
+        }
+      ],
+      "viewport": "desktop",
+      "canvasCount": 0,
+      "dimensions": {
+        "width": 1440,
+        "documentWidth": 1425
+      },
+      "route": "/login",
+      "repetition": 2,
+      "httpStatus": 200,
+      "documentEtag": "\"151fv5itj9iev3\""
+    },
+    {
+      "observationMs": 2602.899999976158,
+      "visibility": "visible",
+      "ttfbMs": 12.399999976158142,
+      "serverResponseMs": 9.799999952316284,
+      "domContentLoadedMs": 39,
+      "loadMs": 77,
+      "firstContentfulPaintMs": 108,
+      "lcpMs": 108,
+      "lcpElement": "IMG",
+      "cls": 0,
+      "longTaskCount": 0,
+      "longTaskTotalMs": 0,
+      "longestTaskMs": 0,
+      "longTasks": [],
+      "transferredBytes": 304150,
+      "documentTransferBytes": 4543,
+      "resourceCount": 24,
+      "groups": {
+        "image": {
+          "count": 2,
+          "transferredBytes": 14337,
+          "encodedBytes": 13737,
+          "decodedBytes": 13737
+        },
+        "css": {
+          "count": 3,
+          "transferredBytes": 31495,
+          "encodedBytes": 30595,
+          "decodedBytes": 171458
+        },
+        "script": {
+          "count": 10,
+          "transferredBytes": 171808,
+          "encodedBytes": 168808,
+          "decodedBytes": 566341
+        },
+        "font": {
+          "count": 2,
+          "transferredBytes": 73692,
+          "encodedBytes": 73092,
+          "decodedBytes": 73092
+        },
+        "api": {
+          "count": 1,
+          "transferredBytes": 641,
+          "encodedBytes": 341,
+          "decodedBytes": 1120
+        },
+        "other": {
+          "count": 6,
+          "transferredBytes": 7634,
+          "encodedBytes": 5834,
+          "decodedBytes": 17443
+        }
+      },
+      "resources": [
+        {
+          "path": "/_next/image",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 13660,
+          "encodedBodySize": 13360,
+          "decodedBodySize": 13360,
+          "durationMs": 17.30000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/2qol2v-7laqxp.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 11535,
+          "encodedBodySize": 11235,
+          "decodedBodySize": 51163,
+          "durationMs": 18.600000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0bh90qwz_8519.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 7654,
+          "encodedBodySize": 7354,
+          "decodedBodySize": 45768,
+          "durationMs": 20.899999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3s6nzrbk-8mnv.js",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 2329,
+          "encodedBodySize": 2029,
+          "decodedBodySize": 5598,
+          "durationMs": 19.69999998807907,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7914,
+          "encodedBodySize": 7614,
+          "decodedBodySize": 28907,
+          "durationMs": 22.600000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1-iu_q85n3obe.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 691,
+          "encodedBodySize": 391,
+          "decodedBodySize": 391,
+          "durationMs": 31.900000035762787,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/turbopack-2-vpl8jgjmkts.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 4151,
+          "encodedBodySize": 3851,
+          "decodedBodySize": 9721,
+          "durationMs": 32.80000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0wkc79ykrmhi2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10735,
+          "encodedBodySize": 10435,
+          "decodedBodySize": 32131,
+          "durationMs": 34,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/2-rtuqsgzmno4.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 45395,
+          "encodedBodySize": 45095,
+          "decodedBodySize": 165743,
+          "durationMs": 38.19999998807907,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3kmozkq6tgqnz.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 71876,
+          "encodedBodySize": 71576,
+          "decodedBodySize": 228922,
+          "durationMs": 40,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3-dy3tdihp2y2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10689,
+          "encodedBodySize": 10389,
+          "decodedBodySize": 32251,
+          "durationMs": 35.39999997615814,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 25136,
+          "encodedBodySize": 24836,
+          "decodedBodySize": 24836,
+          "durationMs": 15.799999952316284,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 48556,
+          "encodedBodySize": 48256,
+          "decodedBodySize": 48256,
+          "durationMs": 18.400000035762787,
+          "responseStatus": 200
+        },
+        {
+          "path": "/favicon.svg",
+          "sameOrigin": true,
+          "initiator": "other",
+          "transferSize": 677,
+          "encodedBodySize": 377,
+          "decodedBodySize": 377,
+          "durationMs": 6.300000011920929,
+          "responseStatus": 200
+        },
+        {
+          "path": "/api/auth/demo-profiles",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 641,
+          "encodedBodySize": 341,
+          "decodedBodySize": 1120,
+          "durationMs": 9,
+          "responseStatus": 200
+        },
+        {
+          "path": "/admin/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 544,
+          "encodedBodySize": 244,
+          "decodedBodySize": 459,
+          "durationMs": 8,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 525,
+          "encodedBodySize": 225,
+          "decodedBodySize": 315,
+          "durationMs": 8.300000011920929,
+          "responseStatus": 200
+        },
+        {
+          "path": "/privacidad",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 523,
+          "encodedBodySize": 223,
+          "decodedBodySize": 338,
+          "durationMs": 8.600000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/admin/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1834,
+          "encodedBodySize": 1534,
+          "decodedBodySize": 5202,
+          "durationMs": 12.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/privacidad",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 2386,
+          "encodedBodySize": 2086,
+          "decodedBodySize": 6213,
+          "durationMs": 12.100000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1f3ffd2jb8pt2.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 12306,
+          "encodedBodySize": 12006,
+          "decodedBodySize": 74527,
+          "durationMs": 14.699999988079071,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1822,
+          "encodedBodySize": 1522,
+          "decodedBodySize": 4916,
+          "durationMs": 11.700000047683716,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1hakx2itgg6bn.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7006,
+          "encodedBodySize": 6706,
+          "decodedBodySize": 17702,
+          "durationMs": 4.299999952316284,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0a3l-yqqmups9.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 11022,
+          "encodedBodySize": 10722,
+          "decodedBodySize": 44975,
+          "durationMs": 4.300000011920929,
+          "responseStatus": 200
+        }
+      ],
+      "observersSupported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "layoutShifts": [],
+      "viewport": "desktop",
+      "canvasCount": 0,
+      "dimensions": {
+        "width": 1440,
+        "documentWidth": 1425
+      },
+      "route": "/login",
+      "repetition": 3,
+      "httpStatus": 200,
+      "documentEtag": "\"151fv5itj9iev3\""
+    },
+    {
+      "observationMs": 2638,
+      "visibility": "visible",
+      "ttfbMs": 7.800000011920929,
+      "serverResponseMs": 6.900000035762787,
+      "domContentLoadedMs": 92.69999998807907,
+      "loadMs": 119.30000001192093,
+      "firstContentfulPaintMs": 112,
+      "lcpMs": 112,
+      "lcpElement": "H1",
+      "cls": 0,
+      "longTaskCount": 0,
+      "longTaskTotalMs": 0,
+      "longestTaskMs": 0,
+      "longTasks": [],
+      "transferredBytes": 293704,
+      "documentTransferBytes": 11320,
+      "resourceCount": 20,
+      "groups": {
+        "css": {
+          "count": 3,
+          "transferredBytes": 31495,
+          "encodedBytes": 30595,
+          "decodedBytes": 171458
+        },
+        "script": {
+          "count": 10,
+          "transferredBytes": 171808,
+          "encodedBytes": 168808,
+          "decodedBytes": 566341
+        },
+        "font": {
+          "count": 2,
+          "transferredBytes": 73692,
+          "encodedBytes": 73092,
+          "decodedBytes": 73092
+        },
+        "image": {
+          "count": 1,
+          "transferredBytes": 677,
+          "encodedBytes": 377,
+          "decodedBytes": 377
+        },
+        "other": {
+          "count": 4,
+          "transferredBytes": 4712,
+          "encodedBytes": 3512,
+          "decodedBytes": 10611
+        }
+      },
+      "resources": [
+        {
+          "path": "/_next/static/chunks/2qol2v-7laqxp.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 11535,
+          "encodedBodySize": 11235,
+          "decodedBodySize": 51163,
+          "durationMs": 9.700000047683716,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1f3ffd2jb8pt2.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 12306,
+          "encodedBodySize": 12006,
+          "decodedBodySize": 74527,
+          "durationMs": 16.30000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3s6nzrbk-8mnv.js",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 2329,
+          "encodedBodySize": 2029,
+          "decodedBodySize": 5598,
+          "durationMs": 12.300000011920929,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7914,
+          "encodedBodySize": 7614,
+          "decodedBodySize": 28907,
+          "durationMs": 19.30000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/turbopack-2-vpl8jgjmkts.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 4151,
+          "encodedBodySize": 3851,
+          "decodedBodySize": 9721,
+          "durationMs": 27,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/2-rtuqsgzmno4.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 45395,
+          "encodedBodySize": 45095,
+          "decodedBodySize": 165743,
+          "durationMs": 28.899999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3kmozkq6tgqnz.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 71876,
+          "encodedBodySize": 71576,
+          "decodedBodySize": 228922,
+          "durationMs": 37,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1-iu_q85n3obe.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 691,
+          "encodedBodySize": 391,
+          "decodedBodySize": 391,
+          "durationMs": 26.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0wkc79ykrmhi2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10735,
+          "encodedBodySize": 10435,
+          "decodedBodySize": 32131,
+          "durationMs": 28.30000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1hakx2itgg6bn.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7006,
+          "encodedBodySize": 6706,
+          "decodedBodySize": 17702,
+          "durationMs": 31.600000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0a3l-yqqmups9.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 11022,
+          "encodedBodySize": 10722,
+          "decodedBodySize": 44975,
+          "durationMs": 38.90000003576279,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 48556,
+          "encodedBodySize": 48256,
+          "decodedBodySize": 48256,
+          "durationMs": 15.799999952316284,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 25136,
+          "encodedBodySize": 24836,
+          "decodedBodySize": 24836,
+          "durationMs": 16.19999998807907,
+          "responseStatus": 200
+        },
+        {
+          "path": "/favicon.svg",
+          "sameOrigin": true,
+          "initiator": "other",
+          "transferSize": 677,
+          "encodedBodySize": 377,
+          "decodedBodySize": 377,
+          "durationMs": 9,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 525,
+          "encodedBodySize": 225,
+          "decodedBodySize": 315,
+          "durationMs": 8.300000011920929,
+          "responseStatus": 200
+        },
+        {
+          "path": "/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 538,
+          "encodedBodySize": 238,
+          "decodedBodySize": 387,
+          "durationMs": 8.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0bh90qwz_8519.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 7654,
+          "encodedBodySize": 7354,
+          "decodedBodySize": 45768,
+          "durationMs": 7.900000035762787,
+          "responseStatus": 200
+        },
+        {
+          "path": "/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1827,
+          "encodedBodySize": 1527,
+          "decodedBodySize": 4993,
+          "durationMs": 6.699999988079071,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1822,
+          "encodedBodySize": 1522,
+          "decodedBodySize": 4916,
+          "durationMs": 5.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3-dy3tdihp2y2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10689,
+          "encodedBodySize": 10389,
+          "decodedBodySize": 32251,
+          "durationMs": 3.699999988079071,
+          "responseStatus": 200
+        }
+      ],
+      "observersSupported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "layoutShifts": [],
+      "viewport": "mobile-emulated",
+      "canvasCount": 0,
+      "dimensions": {
+        "width": 390,
+        "documentWidth": 390
+      },
+      "route": "/",
+      "repetition": 1,
+      "httpStatus": 200,
+      "documentEtag": "\"xuirla8ug217w6\""
+    },
+    {
+      "observationMs": 2610.100000023842,
+      "visibility": "visible",
+      "ttfbMs": 8.900000035762787,
+      "serverResponseMs": 8,
+      "domContentLoadedMs": 30.80000001192093,
+      "loadMs": 96.40000003576279,
+      "firstContentfulPaintMs": 92,
+      "lcpMs": 92,
+      "lcpElement": "H1",
+      "cls": 0,
+      "longTaskCount": 0,
+      "longTaskTotalMs": 0,
+      "longestTaskMs": 0,
+      "longTasks": [],
+      "transferredBytes": 293704,
+      "documentTransferBytes": 11320,
+      "resourceCount": 20,
+      "groups": {
+        "css": {
+          "count": 3,
+          "transferredBytes": 31495,
+          "encodedBytes": 30595,
+          "decodedBytes": 171458
+        },
+        "script": {
+          "count": 10,
+          "transferredBytes": 171808,
+          "encodedBytes": 168808,
+          "decodedBytes": 566341
+        },
+        "font": {
+          "count": 2,
+          "transferredBytes": 73692,
+          "encodedBytes": 73092,
+          "decodedBytes": 73092
+        },
+        "image": {
+          "count": 1,
+          "transferredBytes": 677,
+          "encodedBytes": 377,
+          "decodedBytes": 377
+        },
+        "other": {
+          "count": 4,
+          "transferredBytes": 4712,
+          "encodedBytes": 3512,
+          "decodedBytes": 10611
+        }
+      },
+      "resources": [
+        {
+          "path": "/_next/static/chunks/2qol2v-7laqxp.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 11535,
+          "encodedBodySize": 11235,
+          "decodedBodySize": 51163,
+          "durationMs": 11.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3s6nzrbk-8mnv.js",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 2329,
+          "encodedBodySize": 2029,
+          "decodedBodySize": 5598,
+          "durationMs": 15.300000011920929,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1f3ffd2jb8pt2.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 12306,
+          "encodedBodySize": 12006,
+          "decodedBodySize": 74527,
+          "durationMs": 16.30000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7914,
+          "encodedBodySize": 7614,
+          "decodedBodySize": 28907,
+          "durationMs": 15.399999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/2-rtuqsgzmno4.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 45395,
+          "encodedBodySize": 45095,
+          "decodedBodySize": 165743,
+          "durationMs": 21,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3kmozkq6tgqnz.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 71876,
+          "encodedBodySize": 71576,
+          "decodedBodySize": 228922,
+          "durationMs": 23.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/turbopack-2-vpl8jgjmkts.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 4151,
+          "encodedBodySize": 3851,
+          "decodedBodySize": 9721,
+          "durationMs": 17.30000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1-iu_q85n3obe.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 691,
+          "encodedBodySize": 391,
+          "decodedBodySize": 391,
+          "durationMs": 19.400000035762787,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0wkc79ykrmhi2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10735,
+          "encodedBodySize": 10435,
+          "decodedBodySize": 32131,
+          "durationMs": 21.600000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1hakx2itgg6bn.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7006,
+          "encodedBodySize": 6706,
+          "decodedBodySize": 17702,
+          "durationMs": 23.30000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0a3l-yqqmups9.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 11022,
+          "encodedBodySize": 10722,
+          "decodedBodySize": 44975,
+          "durationMs": 24.600000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 25136,
+          "encodedBodySize": 24836,
+          "decodedBodySize": 24836,
+          "durationMs": 4.300000011920929,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 48556,
+          "encodedBodySize": 48256,
+          "decodedBodySize": 48256,
+          "durationMs": 4.099999964237213,
+          "responseStatus": 200
+        },
+        {
+          "path": "/favicon.svg",
+          "sameOrigin": true,
+          "initiator": "other",
+          "transferSize": 677,
+          "encodedBodySize": 377,
+          "decodedBodySize": 377,
+          "durationMs": 5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 525,
+          "encodedBodySize": 225,
+          "decodedBodySize": 315,
+          "durationMs": 6.400000035762787,
+          "responseStatus": 200
+        },
+        {
+          "path": "/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 538,
+          "encodedBodySize": 238,
+          "decodedBodySize": 387,
+          "durationMs": 6.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1822,
+          "encodedBodySize": 1522,
+          "decodedBodySize": 4916,
+          "durationMs": 4.599999964237213,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0bh90qwz_8519.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 7654,
+          "encodedBodySize": 7354,
+          "decodedBodySize": 45768,
+          "durationMs": 5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1827,
+          "encodedBodySize": 1527,
+          "decodedBodySize": 4993,
+          "durationMs": 3.900000035762787,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3-dy3tdihp2y2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10689,
+          "encodedBodySize": 10389,
+          "decodedBodySize": 32251,
+          "durationMs": 2.699999988079071,
+          "responseStatus": 200
+        }
+      ],
+      "observersSupported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "layoutShifts": [],
+      "viewport": "mobile-emulated",
+      "canvasCount": 0,
+      "dimensions": {
+        "width": 390,
+        "documentWidth": 390
+      },
+      "route": "/",
+      "repetition": 2,
+      "httpStatus": 200,
+      "documentEtag": "\"xuirla8ug217w6\""
+    },
+    {
+      "observationMs": 2650.199999988079,
+      "visibility": "visible",
+      "ttfbMs": 7.300000011920929,
+      "serverResponseMs": 6.400000035762787,
+      "domContentLoadedMs": 115.89999997615814,
+      "loadMs": 126.89999997615814,
+      "firstContentfulPaintMs": 140,
+      "lcpMs": 140,
+      "lcpElement": "H1",
+      "cls": 0,
+      "longTaskCount": 0,
+      "longTaskTotalMs": 0,
+      "longestTaskMs": 0,
+      "longTasks": [],
+      "transferredBytes": 293704,
+      "documentTransferBytes": 11320,
+      "resourceCount": 20,
+      "groups": {
+        "css": {
+          "count": 3,
+          "transferredBytes": 31495,
+          "encodedBytes": 30595,
+          "decodedBytes": 171458
+        },
+        "script": {
+          "count": 10,
+          "transferredBytes": 171808,
+          "encodedBytes": 168808,
+          "decodedBytes": 566341
+        },
+        "font": {
+          "count": 2,
+          "transferredBytes": 73692,
+          "encodedBytes": 73092,
+          "decodedBytes": 73092
+        },
+        "image": {
+          "count": 1,
+          "transferredBytes": 677,
+          "encodedBytes": 377,
+          "decodedBytes": 377
+        },
+        "other": {
+          "count": 4,
+          "transferredBytes": 4712,
+          "encodedBytes": 3512,
+          "decodedBytes": 10611
+        }
+      },
+      "resources": [
+        {
+          "path": "/_next/static/chunks/2qol2v-7laqxp.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 11535,
+          "encodedBodySize": 11235,
+          "decodedBodySize": 51163,
+          "durationMs": 14.699999988079071,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1f3ffd2jb8pt2.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 12306,
+          "encodedBodySize": 12006,
+          "decodedBodySize": 74527,
+          "durationMs": 16.400000035762787,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7914,
+          "encodedBodySize": 7614,
+          "decodedBodySize": 28907,
+          "durationMs": 14.899999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3s6nzrbk-8mnv.js",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 2329,
+          "encodedBodySize": 2029,
+          "decodedBodySize": 5598,
+          "durationMs": 15.699999988079071,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/turbopack-2-vpl8jgjmkts.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 4151,
+          "encodedBodySize": 3851,
+          "decodedBodySize": 9721,
+          "durationMs": 26.69999998807907,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0wkc79ykrmhi2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10735,
+          "encodedBodySize": 10435,
+          "decodedBodySize": 32131,
+          "durationMs": 28.30000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/2-rtuqsgzmno4.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 45395,
+          "encodedBodySize": 45095,
+          "decodedBodySize": 165743,
+          "durationMs": 32,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3kmozkq6tgqnz.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 71876,
+          "encodedBodySize": 71576,
+          "decodedBodySize": 228922,
+          "durationMs": 35.19999998807907,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1-iu_q85n3obe.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 691,
+          "encodedBodySize": 391,
+          "decodedBodySize": 391,
+          "durationMs": 22.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1hakx2itgg6bn.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7006,
+          "encodedBodySize": 6706,
+          "decodedBodySize": 17702,
+          "durationMs": 28.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0a3l-yqqmups9.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 11022,
+          "encodedBodySize": 10722,
+          "decodedBodySize": 44975,
+          "durationMs": 35.200000047683716,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 25136,
+          "encodedBodySize": 24836,
+          "decodedBodySize": 24836,
+          "durationMs": 7.399999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 48556,
+          "encodedBodySize": 48256,
+          "decodedBodySize": 48256,
+          "durationMs": 7.299999952316284,
+          "responseStatus": 200
+        },
+        {
+          "path": "/favicon.svg",
+          "sameOrigin": true,
+          "initiator": "other",
+          "transferSize": 677,
+          "encodedBodySize": 377,
+          "decodedBodySize": 377,
+          "durationMs": 7.099999964237213,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 525,
+          "encodedBodySize": 225,
+          "decodedBodySize": 315,
+          "durationMs": 6,
+          "responseStatus": 200
+        },
+        {
+          "path": "/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 538,
+          "encodedBodySize": 238,
+          "decodedBodySize": 387,
+          "durationMs": 6.100000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1822,
+          "encodedBodySize": 1522,
+          "decodedBodySize": 4916,
+          "durationMs": 5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0bh90qwz_8519.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 7654,
+          "encodedBodySize": 7354,
+          "decodedBodySize": 45768,
+          "durationMs": 5.900000035762787,
+          "responseStatus": 200
+        },
+        {
+          "path": "/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1827,
+          "encodedBodySize": 1527,
+          "decodedBodySize": 4993,
+          "durationMs": 4.399999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3-dy3tdihp2y2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10689,
+          "encodedBodySize": 10389,
+          "decodedBodySize": 32251,
+          "durationMs": 3.099999964237213,
+          "responseStatus": 200
+        }
+      ],
+      "observersSupported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "layoutShifts": [],
+      "viewport": "mobile-emulated",
+      "canvasCount": 0,
+      "dimensions": {
+        "width": 390,
+        "documentWidth": 390
+      },
+      "route": "/",
+      "repetition": 3,
+      "httpStatus": 200,
+      "documentEtag": "\"xuirla8ug217w6\""
+    },
+    {
+      "observationMs": 2625.100000023842,
+      "visibility": "visible",
+      "ttfbMs": 6.699999988079071,
+      "serverResponseMs": 5.599999964237213,
+      "domContentLoadedMs": 32.80000001192093,
+      "loadMs": 103.60000002384186,
+      "firstContentfulPaintMs": 64,
+      "lcpMs": 64,
+      "lcpElement": "H1",
+      "cls": 0,
+      "longTaskCount": 0,
+      "longTaskTotalMs": 0,
+      "longestTaskMs": 0,
+      "longTasks": [],
+      "transferredBytes": 303067,
+      "documentTransferBytes": 4543,
+      "resourceCount": 22,
+      "groups": {
+        "image": {
+          "count": 2,
+          "transferredBytes": 16163,
+          "encodedBytes": 15563,
+          "decodedBytes": 15563
+        },
+        "css": {
+          "count": 3,
+          "transferredBytes": 31495,
+          "encodedBytes": 30595,
+          "decodedBytes": 171458
+        },
+        "script": {
+          "count": 10,
+          "transferredBytes": 171808,
+          "encodedBytes": 168808,
+          "decodedBytes": 566341
+        },
+        "font": {
+          "count": 2,
+          "transferredBytes": 73692,
+          "encodedBytes": 73092,
+          "decodedBytes": 73092
+        },
+        "api": {
+          "count": 1,
+          "transferredBytes": 641,
+          "encodedBytes": 341,
+          "decodedBytes": 1120
+        },
+        "other": {
+          "count": 4,
+          "transferredBytes": 4725,
+          "encodedBytes": 3525,
+          "decodedBytes": 10892
+        }
+      },
+      "resources": [
+        {
+          "path": "/_next/image",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 15486,
+          "encodedBodySize": 15186,
+          "decodedBodySize": 15186,
+          "durationMs": 90.20000004768372,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0bh90qwz_8519.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 7654,
+          "encodedBodySize": 7354,
+          "decodedBodySize": 45768,
+          "durationMs": 18.399999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/2qol2v-7laqxp.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 11535,
+          "encodedBodySize": 11235,
+          "decodedBodySize": 51163,
+          "durationMs": 19.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3s6nzrbk-8mnv.js",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 2329,
+          "encodedBodySize": 2029,
+          "decodedBodySize": 5598,
+          "durationMs": 23.100000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7914,
+          "encodedBodySize": 7614,
+          "decodedBodySize": 28907,
+          "durationMs": 20.599999964237213,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/turbopack-2-vpl8jgjmkts.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 4151,
+          "encodedBodySize": 3851,
+          "decodedBodySize": 9721,
+          "durationMs": 33.69999998807907,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0wkc79ykrmhi2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10735,
+          "encodedBodySize": 10435,
+          "decodedBodySize": 32131,
+          "durationMs": 35.90000003576279,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/2-rtuqsgzmno4.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 45395,
+          "encodedBodySize": 45095,
+          "decodedBodySize": 165743,
+          "durationMs": 37.80000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3kmozkq6tgqnz.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 71876,
+          "encodedBodySize": 71576,
+          "decodedBodySize": 228922,
+          "durationMs": 39.80000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1-iu_q85n3obe.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 691,
+          "encodedBodySize": 391,
+          "decodedBodySize": 391,
+          "durationMs": 40.30000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3-dy3tdihp2y2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10689,
+          "encodedBodySize": 10389,
+          "decodedBodySize": 32251,
+          "durationMs": 41.40000003576279,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 48556,
+          "encodedBodySize": 48256,
+          "decodedBodySize": 48256,
+          "durationMs": 9.900000035762787,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 25136,
+          "encodedBodySize": 24836,
+          "decodedBodySize": 24836,
+          "durationMs": 18,
+          "responseStatus": 200
+        },
+        {
+          "path": "/api/auth/demo-profiles",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 641,
+          "encodedBodySize": 341,
+          "decodedBodySize": 1120,
+          "durationMs": 11.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 525,
+          "encodedBodySize": 225,
+          "decodedBodySize": 315,
+          "durationMs": 7.800000011920929,
+          "responseStatus": 200
+        },
+        {
+          "path": "/admin/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 544,
+          "encodedBodySize": 244,
+          "decodedBodySize": 459,
+          "durationMs": 7.300000011920929,
+          "responseStatus": 200
+        },
+        {
+          "path": "/admin/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1834,
+          "encodedBodySize": 1534,
+          "decodedBodySize": 5202,
+          "durationMs": 6.699999988079071,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1f3ffd2jb8pt2.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 12306,
+          "encodedBodySize": 12006,
+          "decodedBodySize": 74527,
+          "durationMs": 8.800000011920929,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1822,
+          "encodedBodySize": 1522,
+          "decodedBodySize": 4916,
+          "durationMs": 6.300000011920929,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1hakx2itgg6bn.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7006,
+          "encodedBodySize": 6706,
+          "decodedBodySize": 17702,
+          "durationMs": 8,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0a3l-yqqmups9.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 11022,
+          "encodedBodySize": 10722,
+          "decodedBodySize": 44975,
+          "durationMs": 8.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/favicon.svg",
+          "sameOrigin": true,
+          "initiator": "other",
+          "transferSize": 677,
+          "encodedBodySize": 377,
+          "decodedBodySize": 377,
+          "durationMs": 3.600000023841858,
+          "responseStatus": 200
+        }
+      ],
+      "observersSupported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "layoutShifts": [],
+      "viewport": "mobile-emulated",
+      "canvasCount": 0,
+      "dimensions": {
+        "width": 390,
+        "documentWidth": 390
+      },
+      "route": "/login",
+      "repetition": 1,
+      "httpStatus": 200,
+      "documentEtag": "\"151fv5itj9iev3\""
+    },
+    {
+      "observationMs": 2603.900000035763,
+      "visibility": "visible",
+      "ttfbMs": 7.400000035762787,
+      "serverResponseMs": 5.800000011920929,
+      "domContentLoadedMs": 55,
+      "loadMs": 89,
+      "firstContentfulPaintMs": 80,
+      "lcpMs": 80,
+      "lcpElement": "H1",
+      "cls": 0,
+      "longTaskCount": 0,
+      "longTaskTotalMs": 0,
+      "longestTaskMs": 0,
+      "longTasks": [],
+      "transferredBytes": 303067,
+      "documentTransferBytes": 4543,
+      "resourceCount": 22,
+      "groups": {
+        "image": {
+          "count": 2,
+          "transferredBytes": 16163,
+          "encodedBytes": 15563,
+          "decodedBytes": 15563
+        },
+        "script": {
+          "count": 10,
+          "transferredBytes": 171808,
+          "encodedBytes": 168808,
+          "decodedBytes": 566341
+        },
+        "css": {
+          "count": 3,
+          "transferredBytes": 31495,
+          "encodedBytes": 30595,
+          "decodedBytes": 171458
+        },
+        "font": {
+          "count": 2,
+          "transferredBytes": 73692,
+          "encodedBytes": 73092,
+          "decodedBytes": 73092
+        },
+        "api": {
+          "count": 1,
+          "transferredBytes": 641,
+          "encodedBytes": 341,
+          "decodedBytes": 1120
+        },
+        "other": {
+          "count": 4,
+          "transferredBytes": 4725,
+          "encodedBytes": 3525,
+          "decodedBytes": 10892
+        }
+      },
+      "resources": [
+        {
+          "path": "/_next/image",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 15486,
+          "encodedBodySize": 15186,
+          "decodedBodySize": 15186,
+          "durationMs": 15.300000011920929,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3s6nzrbk-8mnv.js",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 2329,
+          "encodedBodySize": 2029,
+          "decodedBodySize": 5598,
+          "durationMs": 19.200000047683716,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/2qol2v-7laqxp.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 11535,
+          "encodedBodySize": 11235,
+          "decodedBodySize": 51163,
+          "durationMs": 21.700000047683716,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0bh90qwz_8519.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 7654,
+          "encodedBodySize": 7354,
+          "decodedBodySize": 45768,
+          "durationMs": 23,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7914,
+          "encodedBodySize": 7614,
+          "decodedBodySize": 28907,
+          "durationMs": 24.30000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/turbopack-2-vpl8jgjmkts.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 4151,
+          "encodedBodySize": 3851,
+          "decodedBodySize": 9721,
+          "durationMs": 31.69999998807907,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1-iu_q85n3obe.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 691,
+          "encodedBodySize": 391,
+          "decodedBodySize": 391,
+          "durationMs": 32.69999998807907,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0wkc79ykrmhi2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10735,
+          "encodedBodySize": 10435,
+          "decodedBodySize": 32131,
+          "durationMs": 33.69999998807907,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/2-rtuqsgzmno4.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 45395,
+          "encodedBodySize": 45095,
+          "decodedBodySize": 165743,
+          "durationMs": 39.80000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3kmozkq6tgqnz.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 71876,
+          "encodedBodySize": 71576,
+          "decodedBodySize": 228922,
+          "durationMs": 43.80000001192093,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3-dy3tdihp2y2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10689,
+          "encodedBodySize": 10389,
+          "decodedBodySize": 32251,
+          "durationMs": 41.19999998807907,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 48556,
+          "encodedBodySize": 48256,
+          "decodedBodySize": 48256,
+          "durationMs": 18.5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 25136,
+          "encodedBodySize": 24836,
+          "decodedBodySize": 24836,
+          "durationMs": 19,
+          "responseStatus": 200
+        },
+        {
+          "path": "/api/auth/demo-profiles",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 641,
+          "encodedBodySize": 341,
+          "decodedBodySize": 1120,
+          "durationMs": 11.199999988079071,
+          "responseStatus": 200
+        },
+        {
+          "path": "/favicon.svg",
+          "sameOrigin": true,
+          "initiator": "other",
+          "transferSize": 677,
+          "encodedBodySize": 377,
+          "decodedBodySize": 377,
+          "durationMs": 4.800000011920929,
+          "responseStatus": 200
+        },
+        {
+          "path": "/admin/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 544,
+          "encodedBodySize": 244,
+          "decodedBodySize": 459,
+          "durationMs": 6.200000047683716,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 525,
+          "encodedBodySize": 225,
+          "decodedBodySize": 315,
+          "durationMs": 6.600000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/admin/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1834,
+          "encodedBodySize": 1534,
+          "decodedBodySize": 5202,
+          "durationMs": 8.100000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1f3ffd2jb8pt2.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 12306,
+          "encodedBodySize": 12006,
+          "decodedBodySize": 74527,
+          "durationMs": 10.199999988079071,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1822,
+          "encodedBodySize": 1522,
+          "decodedBodySize": 4916,
+          "durationMs": 7.900000035762787,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1hakx2itgg6bn.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7006,
+          "encodedBodySize": 6706,
+          "decodedBodySize": 17702,
+          "durationMs": 5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0a3l-yqqmups9.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 11022,
+          "encodedBodySize": 10722,
+          "decodedBodySize": 44975,
+          "durationMs": 5.5,
+          "responseStatus": 200
+        }
+      ],
+      "observersSupported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "layoutShifts": [],
+      "viewport": "mobile-emulated",
+      "canvasCount": 0,
+      "dimensions": {
+        "width": 390,
+        "documentWidth": 390
+      },
+      "route": "/login",
+      "repetition": 2,
+      "httpStatus": 200,
+      "documentEtag": "\"151fv5itj9iev3\""
+    },
+    {
+      "observationMs": 2598.399999976158,
+      "visibility": "visible",
+      "ttfbMs": 6.800000011920929,
+      "serverResponseMs": 6,
+      "domContentLoadedMs": 55.39999997615814,
+      "loadMs": 79.39999997615814,
+      "firstContentfulPaintMs": 68,
+      "lcpMs": 68,
+      "lcpElement": "H1",
+      "cls": 0,
+      "longTaskCount": 0,
+      "longTaskTotalMs": 0,
+      "longestTaskMs": 0,
+      "longTasks": [],
+      "transferredBytes": 303067,
+      "documentTransferBytes": 4543,
+      "resourceCount": 22,
+      "groups": {
+        "image": {
+          "count": 2,
+          "transferredBytes": 16163,
+          "encodedBytes": 15563,
+          "decodedBytes": 15563
+        },
+        "css": {
+          "count": 3,
+          "transferredBytes": 31495,
+          "encodedBytes": 30595,
+          "decodedBytes": 171458
+        },
+        "script": {
+          "count": 10,
+          "transferredBytes": 171808,
+          "encodedBytes": 168808,
+          "decodedBytes": 566341
+        },
+        "font": {
+          "count": 2,
+          "transferredBytes": 73692,
+          "encodedBytes": 73092,
+          "decodedBytes": 73092
+        },
+        "api": {
+          "count": 1,
+          "transferredBytes": 641,
+          "encodedBytes": 341,
+          "decodedBytes": 1120
+        },
+        "other": {
+          "count": 4,
+          "transferredBytes": 4725,
+          "encodedBytes": 3525,
+          "decodedBytes": 10892
+        }
+      },
+      "resources": [
+        {
+          "path": "/_next/image",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 15486,
+          "encodedBodySize": 15186,
+          "decodedBodySize": 15186,
+          "durationMs": 16.399999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0bh90qwz_8519.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 7654,
+          "encodedBodySize": 7354,
+          "decodedBodySize": 45768,
+          "durationMs": 17.19999998807907,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/2qol2v-7laqxp.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 11535,
+          "encodedBodySize": 11235,
+          "decodedBodySize": 51163,
+          "durationMs": 18.19999998807907,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3s6nzrbk-8mnv.js",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 2329,
+          "encodedBodySize": 2029,
+          "decodedBodySize": 5598,
+          "durationMs": 18.69999998807907,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/19mx3mg6lkumu.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7914,
+          "encodedBodySize": 7614,
+          "decodedBodySize": 28907,
+          "durationMs": 23.399999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/turbopack-2-vpl8jgjmkts.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 4151,
+          "encodedBodySize": 3851,
+          "decodedBodySize": 9721,
+          "durationMs": 29.899999976158142,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3kmozkq6tgqnz.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 71876,
+          "encodedBodySize": 71576,
+          "decodedBodySize": 228922,
+          "durationMs": 36.69999998807907,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/2-rtuqsgzmno4.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 45395,
+          "encodedBodySize": 45095,
+          "decodedBodySize": 165743,
+          "durationMs": 37.69999998807907,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1-iu_q85n3obe.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 691,
+          "encodedBodySize": 391,
+          "decodedBodySize": 391,
+          "durationMs": 29.400000035762787,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0wkc79ykrmhi2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10735,
+          "encodedBodySize": 10435,
+          "decodedBodySize": 32131,
+          "durationMs": 30.69999998807907,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/3-dy3tdihp2y2.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 10689,
+          "encodedBodySize": 10389,
+          "decodedBodySize": 32251,
+          "durationMs": 38.19999998807907,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 48556,
+          "encodedBodySize": 48256,
+          "decodedBodySize": 48256,
+          "durationMs": 12,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "sameOrigin": true,
+          "initiator": "css",
+          "transferSize": 25136,
+          "encodedBodySize": 24836,
+          "decodedBodySize": 24836,
+          "durationMs": 15.400000035762787,
+          "responseStatus": 200
+        },
+        {
+          "path": "/api/auth/demo-profiles",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 641,
+          "encodedBodySize": 341,
+          "decodedBodySize": 1120,
+          "durationMs": 9.700000047683716,
+          "responseStatus": 200
+        },
+        {
+          "path": "/favicon.svg",
+          "sameOrigin": true,
+          "initiator": "other",
+          "transferSize": 677,
+          "encodedBodySize": 377,
+          "decodedBodySize": 377,
+          "durationMs": 4.199999988079071,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 525,
+          "encodedBodySize": 225,
+          "decodedBodySize": 315,
+          "durationMs": 4.900000035762787,
+          "responseStatus": 200
+        },
+        {
+          "path": "/admin/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 544,
+          "encodedBodySize": 244,
+          "decodedBodySize": 459,
+          "durationMs": 5,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1f3ffd2jb8pt2.css",
+          "sameOrigin": true,
+          "initiator": "link",
+          "transferSize": 12306,
+          "encodedBodySize": 12006,
+          "decodedBodySize": 74527,
+          "durationMs": 7.100000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1822,
+          "encodedBodySize": 1522,
+          "decodedBodySize": 4916,
+          "durationMs": 4.600000023841858,
+          "responseStatus": 200
+        },
+        {
+          "path": "/admin/login",
+          "sameOrigin": true,
+          "initiator": "fetch",
+          "transferSize": 1834,
+          "encodedBodySize": 1534,
+          "decodedBodySize": 5202,
+          "durationMs": 4.800000011920929,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/1hakx2itgg6bn.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 7006,
+          "encodedBodySize": 6706,
+          "decodedBodySize": 17702,
+          "durationMs": 3.599999964237213,
+          "responseStatus": 200
+        },
+        {
+          "path": "/_next/static/chunks/0a3l-yqqmups9.js",
+          "sameOrigin": true,
+          "initiator": "script",
+          "transferSize": 11022,
+          "encodedBodySize": 10722,
+          "decodedBodySize": 44975,
+          "durationMs": 3.5,
+          "responseStatus": 200
+        }
+      ],
+      "observersSupported": [
+        "element",
+        "event",
+        "first-input",
+        "interaction-contentful-paint",
+        "largest-contentful-paint",
+        "layout-shift",
+        "long-animation-frame",
+        "longtask",
+        "mark",
+        "measure",
+        "navigation",
+        "paint",
+        "resource",
+        "soft-navigation",
+        "visibility-state"
+      ],
+      "layoutShifts": [],
+      "viewport": "mobile-emulated",
+      "canvasCount": 0,
+      "dimensions": {
+        "width": 390,
+        "documentWidth": 390
+      },
+      "route": "/login",
+      "repetition": 3,
+      "httpStatus": 200,
+      "documentEtag": "\"151fv5itj9iev3\""
+    }
+  ],
+  "summary": [
+    {
+      "viewport": "desktop",
+      "route": "/",
+      "samples": 3,
+      "ttfbMs": {
+        "median": 10.700000047683716,
+        "min": 9,
+        "max": 13.399999976158142
+      },
+      "lcpMs": {
+        "median": 120,
+        "min": 112,
+        "max": 120
+      },
+      "cls": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "longTaskCount": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "longTaskTotalMs": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "transferredBytes": {
+        "median": 293704,
+        "min": 293704,
+        "max": 293704
+      },
+      "resourceCount": {
+        "median": 20,
+        "min": 20,
+        "max": 20
+      }
+    },
+    {
+      "viewport": "desktop",
+      "route": "/login",
+      "samples": 3,
+      "ttfbMs": {
+        "median": 10.300000011920929,
+        "min": 8.5,
+        "max": 12.399999976158142
+      },
+      "lcpMs": {
+        "median": 108,
+        "min": 104,
+        "max": 232
+      },
+      "cls": {
+        "median": 0.00037529135118498,
+        "min": 0,
+        "max": 0.00037529135118498
+      },
+      "longTaskCount": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "longTaskTotalMs": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "transferredBytes": {
+        "median": 304150,
+        "min": 304150,
+        "max": 304150
+      },
+      "resourceCount": {
+        "median": 24,
+        "min": 24,
+        "max": 24
+      }
+    },
+    {
+      "viewport": "mobile-emulated",
+      "route": "/",
+      "samples": 3,
+      "ttfbMs": {
+        "median": 7.800000011920929,
+        "min": 7.300000011920929,
+        "max": 8.900000035762787
+      },
+      "lcpMs": {
+        "median": 112,
+        "min": 92,
+        "max": 140
+      },
+      "cls": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "longTaskCount": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "longTaskTotalMs": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "transferredBytes": {
+        "median": 293704,
+        "min": 293704,
+        "max": 293704
+      },
+      "resourceCount": {
+        "median": 20,
+        "min": 20,
+        "max": 20
+      }
+    },
+    {
+      "viewport": "mobile-emulated",
+      "route": "/login",
+      "samples": 3,
+      "ttfbMs": {
+        "median": 6.800000011920929,
+        "min": 6.699999988079071,
+        "max": 7.400000035762787
+      },
+      "lcpMs": {
+        "median": 68,
+        "min": 64,
+        "max": 80
+      },
+      "cls": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "longTaskCount": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "longTaskTotalMs": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "transferredBytes": {
+        "median": 303067,
+        "min": 303067,
+        "max": 303067
+      },
+      "resourceCount": {
+        "median": 22,
+        "min": 22,
+        "max": 22
+      }
+    }
+  ],
+  "motion": [
+    {
+      "viewport": "desktop",
+      "preference": true,
+      "activeAnimations": [],
+      "scene": [
+        {
+          "duration": "0s",
+          "iterations": "1",
+          "transform": "none"
+        }
+      ],
+      "scrollBehavior": "auto"
+    },
+    {
+      "viewport": "mobile-emulated",
+      "preference": true,
+      "activeAnimations": [],
+      "scene": [
+        {
+          "duration": "0s",
+          "iterations": "1",
+          "transform": "none"
+        }
+      ],
+      "scrollBehavior": "auto"
+    }
+  ],
+  "errors": [],
+  "browserVersion": "153.0.8010.53",
+  "finishedAt": "2026-09-24T15:53:17.813Z",
+  "completed": true
+}

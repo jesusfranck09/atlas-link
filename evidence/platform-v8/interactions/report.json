@@ -1,0 +1,73 @@
+{
+  "passed": true,
+  "executedAt": "2026-09-24T19:35:02.896Z",
+  "environment": "Chrome on macOS, mobile emulated",
+  "results": [
+    {
+      "label": "1366-hospital",
+      "passed": true,
+      "dimension": {
+        "viewport": 1366,
+        "document": 1351
+      },
+      "axeViolations": 0,
+      "activityKeyboard": true,
+      "checks": [
+        "filters-match-api",
+        "chart-toggle",
+        "account-detail",
+        "logout"
+      ]
+    },
+    {
+      "label": "320-hospital",
+      "passed": true,
+      "dimension": {
+        "viewport": 320,
+        "document": 320
+      },
+      "axeViolations": 0,
+      "activityKeyboard": true,
+      "checks": [
+        "filters-match-api",
+        "chart-toggle",
+        "account-detail",
+        "logout"
+      ]
+    },
+    {
+      "label": "1366-atlas",
+      "passed": true,
+      "dimensions": {
+        "viewport": 1366,
+        "document": 1351
+      },
+      "axeViolations": 0,
+      "activityKeyboard": true,
+      "activityCount": 0,
+      "checks": [
+        "empty-activity-matches-api",
+        "usage-refresh",
+        "chart-toggle",
+        "logout"
+      ]
+    },
+    {
+      "label": "320-atlas",
+      "passed": true,
+      "dimensions": {
+        "viewport": 320,
+        "document": 320
+      },
+      "axeViolations": 0,
+      "activityKeyboard": true,
+      "activityCount": 0,
+      "checks": [
+        "empty-activity-matches-api",
+        "usage-refresh",
+        "chart-toggle",
+        "logout"
+      ]
+    }
+  ]
+}

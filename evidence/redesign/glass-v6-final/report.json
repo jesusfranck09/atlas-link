@@ -1,0 +1,582 @@
+{
+  "label": "glass-v6-final",
+  "startedAt": "2026-09-24T17:56:32.339Z",
+  "baseURL": "http://127.0.0.1:4430",
+  "views": [
+    {
+      "name": "desktop-landing",
+      "route": "/",
+      "dimensions": {
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "visualWidth": 1425,
+        "width": 1425,
+        "height": 5666,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 2
+    },
+    {
+      "name": "desktop-hospital-login",
+      "route": "/login",
+      "dimensions": {
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "visualWidth": 1425,
+        "width": 1425,
+        "height": 1054,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-platform-login",
+      "route": "/admin/login",
+      "dimensions": {
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "visualWidth": 1440,
+        "width": 1440,
+        "height": 1000,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital",
+      "route": "/hospital",
+      "dimensions": {
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "visualWidth": 1425,
+        "width": 1425,
+        "height": 1189,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 2
+    },
+    {
+      "name": "desktop-hospital-accounts",
+      "route": "/hospital/accounts",
+      "dimensions": {
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "visualWidth": 1425,
+        "width": 1425,
+        "height": 1328,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-account-detail",
+      "route": "/hospital/accounts/e0000000-0000-0000-0000-000000000001",
+      "dimensions": {
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "visualWidth": 1425,
+        "width": 1425,
+        "height": 1383,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital-review",
+      "route": "/hospital/review",
+      "dimensions": {
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "visualWidth": 1425,
+        "width": 1425,
+        "height": 1328,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital-import",
+      "route": "/hospital/import",
+      "dimensions": {
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "visualWidth": 1440,
+        "width": 1440,
+        "height": 1000,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital-agreements",
+      "route": "/hospital/agreements",
+      "dimensions": {
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "visualWidth": 1440,
+        "width": 1440,
+        "height": 1000,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital-reports",
+      "route": "/hospital/reports",
+      "dimensions": {
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "visualWidth": 1425,
+        "width": 1425,
+        "height": 1200,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital-users",
+      "route": "/hospital/users",
+      "dimensions": {
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "visualWidth": 1440,
+        "width": 1440,
+        "height": 1000,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital-audit",
+      "route": "/hospital/audit",
+      "dimensions": {
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "visualWidth": 1425,
+        "width": 1425,
+        "height": 5690,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-admin",
+      "route": "/admin",
+      "dimensions": {
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "visualWidth": 1440,
+        "width": 1440,
+        "height": 1000,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 2
+    },
+    {
+      "name": "desktop-admin-tenants",
+      "route": "/admin/tenants",
+      "dimensions": {
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "visualWidth": 1440,
+        "width": 1440,
+        "height": 1000,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-admin-licenses",
+      "route": "/admin/licenses",
+      "dimensions": {
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "visualWidth": 1440,
+        "width": 1440,
+        "height": 1000,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-admin-leads",
+      "route": "/admin/leads",
+      "dimensions": {
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "visualWidth": 1440,
+        "width": 1440,
+        "height": 1000,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-admin-users",
+      "route": "/admin/users",
+      "dimensions": {
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "visualWidth": 1440,
+        "width": 1440,
+        "height": 1000,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-admin-audit",
+      "route": "/admin/audit",
+      "dimensions": {
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "visualWidth": 1440,
+        "width": 1440,
+        "height": 1000,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-landing",
+      "route": "/",
+      "dimensions": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "width": 390,
+        "height": 7290,
+        "viewport": 390
+      },
+      "violations": [],
+      "incomplete": 2
+    },
+    {
+      "name": "mobile-hospital-login",
+      "route": "/login",
+      "dimensions": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "width": 390,
+        "height": 1781,
+        "viewport": 390
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-platform-login",
+      "route": "/admin/login",
+      "dimensions": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "width": 390,
+        "height": 1406,
+        "viewport": 390
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-hospital",
+      "route": "/hospital",
+      "dimensions": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "width": 390,
+        "height": 2258,
+        "viewport": 390
+      },
+      "violations": [],
+      "incomplete": 2
+    },
+    {
+      "name": "mobile-hospital-accounts",
+      "route": "/hospital/accounts",
+      "dimensions": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "width": 390,
+        "height": 1641,
+        "viewport": 390
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-account-detail",
+      "route": "/hospital/accounts/e0000000-0000-0000-0000-000000000001",
+      "dimensions": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "width": 390,
+        "height": 1920,
+        "viewport": 390
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-hospital-review",
+      "route": "/hospital/review",
+      "dimensions": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "width": 390,
+        "height": 1641,
+        "viewport": 390
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-hospital-import",
+      "route": "/hospital/import",
+      "dimensions": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "width": 390,
+        "height": 1509,
+        "viewport": 390
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-hospital-agreements",
+      "route": "/hospital/agreements",
+      "dimensions": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "width": 390,
+        "height": 1869,
+        "viewport": 390
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-hospital-reports",
+      "route": "/hospital/reports",
+      "dimensions": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "width": 390,
+        "height": 2111,
+        "viewport": 390
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-hospital-users",
+      "route": "/hospital/users",
+      "dimensions": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "width": 390,
+        "height": 946,
+        "viewport": 390
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-hospital-audit",
+      "route": "/hospital/audit",
+      "dimensions": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "width": 390,
+        "height": 8213,
+        "viewport": 390
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-admin",
+      "route": "/admin",
+      "dimensions": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "width": 390,
+        "height": 1603,
+        "viewport": 390
+      },
+      "violations": [],
+      "incomplete": 2
+    },
+    {
+      "name": "mobile-admin-tenants",
+      "route": "/admin/tenants",
+      "dimensions": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "width": 390,
+        "height": 1005,
+        "viewport": 390
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-admin-licenses",
+      "route": "/admin/licenses",
+      "dimensions": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "width": 390,
+        "height": 976,
+        "viewport": 390
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-admin-leads",
+      "route": "/admin/leads",
+      "dimensions": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "width": 390,
+        "height": 844,
+        "viewport": 390
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-admin-users",
+      "route": "/admin/users",
+      "dimensions": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "width": 390,
+        "height": 844,
+        "viewport": 390
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-admin-audit",
+      "route": "/admin/audit",
+      "dimensions": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "width": 390,
+        "height": 844,
+        "viewport": 390
+      },
+      "violations": [],
+      "incomplete": 1
+    }
+  ],
+  "errors": [],
+  "interactionChecks": [
+    {
+      "name": "desktop-reduced-motion",
+      "infiniteRunningAnimations": 0
+    },
+    {
+      "name": "desktop-help-modal-and-navigation",
+      "passed": true
+    },
+    {
+      "name": "desktop-unchanged-demo-accounts",
+      "accountCount": 20
+    },
+    {
+      "name": "desktop-caja-demo-login",
+      "passed": true
+    },
+    {
+      "name": "desktop-auditor-demo-login",
+      "passed": true
+    },
+    {
+      "name": "desktop-direccion-demo-login",
+      "passed": true
+    },
+    {
+      "name": "desktop-aseguradora-demo-login",
+      "passed": true
+    },
+    {
+      "name": "desktop-demo-profile-login",
+      "passed": true
+    },
+    {
+      "name": "mobile-reduced-motion",
+      "infiniteRunningAnimations": 0
+    },
+    {
+      "name": "mobile-help-modal-and-navigation",
+      "passed": true
+    },
+    {
+      "name": "mobile-unchanged-demo-accounts",
+      "accountCount": 20
+    },
+    {
+      "name": "mobile-caja-demo-login",
+      "passed": true
+    },
+    {
+      "name": "mobile-auditor-demo-login",
+      "passed": true
+    },
+    {
+      "name": "mobile-direccion-demo-login",
+      "passed": true
+    },
+    {
+      "name": "mobile-aseguradora-demo-login",
+      "passed": true
+    },
+    {
+      "name": "mobile-demo-profile-login",
+      "passed": true
+    }
+  ],
+  "scope": "Local packaged UI; synthetic data; authentication and read-only navigation",
+  "browserVersion": "153.0.8010.53",
+  "finishedAt": "2026-09-24T17:58:19.231Z",
+  "passed": true
+}

@@ -1,0 +1,403 @@
+{
+  "startedAt": "2026-09-24T15:41:38.159Z",
+  "baseURL": "http://127.0.0.1:4430",
+  "environment": "Chrome installed on macOS, CDP headless, local Docker production build",
+  "limits": [
+    "Viewport/touch emulation is not a physical iOS or Android result.",
+    "No physical Windows, Safari or GPU frame-time measurement.",
+    "The scene uses CSS perspective and SVG; this check does not infer GPU memory or FPS.",
+    "Examples are fictional and buttons change presentation only."
+  ],
+  "views": [
+    {
+      "name": "desktop",
+      "stage": "Recibe",
+      "amount": "$48,600.00",
+      "measurements": {
+        "innerWidth": 1440,
+        "scrollWidth": 1425,
+        "surface": {
+          "width": 638.921875,
+          "height": 556,
+          "top": 101,
+          "bottom": 657
+        },
+        "documentPlane": {
+          "width": 337.7628173828125,
+          "height": 367.6514892578125,
+          "top": 170.69580078125,
+          "bottom": 538.3472900390625
+        },
+        "controlsTop": 657,
+        "paperLayout": {
+          "height": 358,
+          "scrollHeight": 358,
+          "children": [
+            {
+              "className": "landing-scene-module__q8OeTq__documentHeader",
+              "height": 35,
+              "offsetTop": 24
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentHeading",
+              "height": 52,
+              "offsetTop": 77
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentRows",
+              "height": 92,
+              "offsetTop": 143
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentTotal",
+              "height": 74,
+              "offsetTop": 235
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentFooter",
+              "height": 17,
+              "offsetTop": 309
+            }
+          ]
+        },
+        "foundation": {
+          "top": 254.38345336914062,
+          "bottom": 617.7918701171875
+        },
+        "activeAnimations": 0,
+        "infiniteAnimations": 0
+      },
+      "screenshot": "evidence/redesign/scene/desktop-1-recibe.png"
+    },
+    {
+      "name": "desktop",
+      "stage": "Contrasta",
+      "amount": "$2,400.00",
+      "measurements": {
+        "innerWidth": 1440,
+        "scrollWidth": 1425,
+        "surface": {
+          "width": 638.921875,
+          "height": 556,
+          "top": 101,
+          "bottom": 657
+        },
+        "documentPlane": {
+          "width": 340.455322265625,
+          "height": 370.00360107421875,
+          "top": 160.7772979736328,
+          "bottom": 530.7808990478516
+        },
+        "controlsTop": 657,
+        "paperLayout": {
+          "height": 358,
+          "scrollHeight": 358,
+          "children": [
+            {
+              "className": "landing-scene-module__q8OeTq__documentHeader",
+              "height": 35,
+              "offsetTop": 24
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentHeading",
+              "height": 52,
+              "offsetTop": 77
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentRows",
+              "height": 92,
+              "offsetTop": 143
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentTotal",
+              "height": 74,
+              "offsetTop": 235
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentFooter",
+              "height": 17,
+              "offsetTop": 309
+            }
+          ]
+        },
+        "foundation": {
+          "top": 254.38345336914062,
+          "bottom": 617.7918701171875
+        },
+        "activeAnimations": 0,
+        "infiniteAnimations": 0
+      },
+      "screenshot": "evidence/redesign/scene/desktop-2-contrasta.png"
+    },
+    {
+      "name": "desktop",
+      "stage": "Decide",
+      "amount": "$46,200.00",
+      "measurements": {
+        "innerWidth": 1440,
+        "scrollWidth": 1425,
+        "surface": {
+          "width": 638.921875,
+          "height": 556,
+          "top": 101,
+          "bottom": 657
+        },
+        "documentPlane": {
+          "width": 338.773681640625,
+          "height": 368.6325378417969,
+          "top": 167.73941040039062,
+          "bottom": 536.3719482421875
+        },
+        "controlsTop": 657,
+        "paperLayout": {
+          "height": 358,
+          "scrollHeight": 358,
+          "children": [
+            {
+              "className": "landing-scene-module__q8OeTq__documentHeader",
+              "height": 35,
+              "offsetTop": 24
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentHeading",
+              "height": 52,
+              "offsetTop": 77
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentRows",
+              "height": 92,
+              "offsetTop": 143
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentTotal",
+              "height": 74,
+              "offsetTop": 235
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentFooter",
+              "height": 17,
+              "offsetTop": 309
+            }
+          ]
+        },
+        "foundation": {
+          "top": 237.63270568847656,
+          "bottom": 601.1859283447266
+        },
+        "activeAnimations": 0,
+        "infiniteAnimations": 0
+      },
+      "screenshot": "evidence/redesign/scene/desktop-3-decide.png"
+    },
+    {
+      "name": "mobile-emulated",
+      "stage": "Recibe",
+      "amount": "$48,600.00",
+      "measurements": {
+        "innerWidth": 390,
+        "scrollWidth": 390,
+        "surface": {
+          "width": 368,
+          "height": 408,
+          "top": 270.5625,
+          "bottom": 678.5625
+        },
+        "documentPlane": {
+          "width": 256.69989013671875,
+          "height": 279.3121337890625,
+          "top": 316.8104248046875,
+          "bottom": 596.12255859375
+        },
+        "controlsTop": 678.5625,
+        "paperLayout": {
+          "height": 358,
+          "scrollHeight": 358,
+          "children": [
+            {
+              "className": "landing-scene-module__q8OeTq__documentHeader",
+              "height": 35,
+              "offsetTop": 24
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentHeading",
+              "height": 52,
+              "offsetTop": 77
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentRows",
+              "height": 92,
+              "offsetTop": 143
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentTotal",
+              "height": 74,
+              "offsetTop": 235
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentFooter",
+              "height": 17,
+              "offsetTop": 309
+            }
+          ]
+        },
+        "foundation": {
+          "top": 380.4581298828125,
+          "bottom": 656.559326171875
+        },
+        "activeAnimations": 0,
+        "infiniteAnimations": 0
+      },
+      "screenshot": "evidence/redesign/scene/mobile-emulated-1-recibe.png"
+    },
+    {
+      "name": "mobile-emulated",
+      "stage": "Contrasta",
+      "amount": "$2,400.00",
+      "measurements": {
+        "innerWidth": 390,
+        "scrollWidth": 390,
+        "surface": {
+          "width": 368,
+          "height": 408,
+          "top": 270.5625,
+          "bottom": 678.5625
+        },
+        "documentPlane": {
+          "width": 258.74615478515625,
+          "height": 281.0979309082031,
+          "top": 309.2627868652344,
+          "bottom": 590.3607177734375
+        },
+        "controlsTop": 678.5625,
+        "paperLayout": {
+          "height": 358,
+          "scrollHeight": 358,
+          "children": [
+            {
+              "className": "landing-scene-module__q8OeTq__documentHeader",
+              "height": 35,
+              "offsetTop": 24
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentHeading",
+              "height": 52,
+              "offsetTop": 77
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentRows",
+              "height": 92,
+              "offsetTop": 143
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentTotal",
+              "height": 74,
+              "offsetTop": 235
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentFooter",
+              "height": 17,
+              "offsetTop": 309
+            }
+          ]
+        },
+        "foundation": {
+          "top": 380.4581298828125,
+          "bottom": 656.559326171875
+        },
+        "activeAnimations": 0,
+        "infiniteAnimations": 0
+      },
+      "screenshot": "evidence/redesign/scene/mobile-emulated-2-contrasta.png"
+    },
+    {
+      "name": "mobile-emulated",
+      "stage": "Decide",
+      "amount": "$46,200.00",
+      "measurements": {
+        "innerWidth": 390,
+        "scrollWidth": 390,
+        "surface": {
+          "width": 368,
+          "height": 408,
+          "top": 270.5625,
+          "bottom": 678.5625
+        },
+        "documentPlane": {
+          "width": 257.46807861328125,
+          "height": 280.05706787109375,
+          "top": 314.55987548828125,
+          "bottom": 594.616943359375
+        },
+        "controlsTop": 678.5625,
+        "paperLayout": {
+          "height": 358,
+          "scrollHeight": 358,
+          "children": [
+            {
+              "className": "landing-scene-module__q8OeTq__documentHeader",
+              "height": 35,
+              "offsetTop": 24
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentHeading",
+              "height": 52,
+              "offsetTop": 77
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentRows",
+              "height": 92,
+              "offsetTop": 143
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentTotal",
+              "height": 74,
+              "offsetTop": 235
+            },
+            {
+              "className": "landing-scene-module__q8OeTq__documentFooter",
+              "height": 17,
+              "offsetTop": 309
+            }
+          ]
+        },
+        "foundation": {
+          "top": 367.72503662109375,
+          "bottom": 643.933349609375
+        },
+        "activeAnimations": 0,
+        "infiniteAnimations": 0
+      },
+      "screenshot": "evidence/redesign/scene/mobile-emulated-3-decide.png"
+    }
+  ],
+  "checks": [
+    {
+      "name": "desktop",
+      "behavior": "Bounded pointer tilt and exit reset",
+      "moved": {
+        "x": "0.5999999560898157deg",
+        "y": "1.750000191056712deg"
+      },
+      "passed": true
+    },
+    {
+      "name": "desktop",
+      "behavior": "Live reduced-motion preference: pointer disabled, stage controls functional, no running transitions",
+      "passed": true
+    },
+    {
+      "name": "desktop",
+      "behavior": "Keyboard tab and Enter control the selected stage",
+      "passed": true
+    },
+    {
+      "name": "mobile-emulated",
+      "behavior": "Touch input preserves static perspective",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "browserVersion": "153.0.8010.53",
+  "finishedAt": "2026-09-24T15:41:46.373Z",
+  "passed": true
+}

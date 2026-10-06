@@ -1,0 +1,136 @@
+name: atlas-link-demo
+
+x-service-env: &service-env
+  SERVER_ADDRESS: 0.0.0.0
+  SPRING_PROFILES_ACTIVE: demo
+  ATLAS_DEMO_ENABLED: 'true'
+  DB_URL: jdbc:postgresql://postgres:5432/atlas_link
+  INTERNAL_API_KEY: ${INTERNAL_API_KEY:?Generate .local/compose.env first}
+  IDENTITY_URL: http://identity:8091
+  CONTROL_URL: http://control:8092
+  HOSPITAL_URL: http://hospital:8097
+
+services:
+  postgres:
+    build:
+      context: .
+      dockerfile: infra/Dockerfile.postgres
+    environment:
+      POSTGRES_DB: atlas_link
+      POSTGRES_USER: atlas_cluster
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Generate credentials}
+      IDENTITY_PASSWORD: ${IDENTITY_PASSWORD:?Generate credentials}
+      IDENTITY_OWNER_PASSWORD: ${IDENTITY_OWNER_PASSWORD:?Generate credentials}
+      CONTROL_PASSWORD: ${CONTROL_PASSWORD:?Generate credentials}
+      CONTROL_OWNER_PASSWORD: ${CONTROL_OWNER_PASSWORD:?Generate credentials}
+      HOSPITAL_PASSWORD: ${HOSPITAL_PASSWORD:?Generate credentials}
+      HOSPITAL_OWNER_PASSWORD: ${HOSPITAL_OWNER_PASSWORD:?Generate credentials}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U atlas_cluster -d atlas_link']
+      interval: 5s
+      retries: 15
+    restart: unless-stopped
+
+  identity:
+    build:
+      context: .
+      dockerfile: infra/Dockerfile.backend
+      args: { SERVICE: identity-service }
+    environment:
+      <<: *service-env
+      DB_USER: atlas_identity
+      DB_PASSWORD: ${IDENTITY_PASSWORD}
+      DB_SCHEMA: identity
+      FLYWAY_USER: atlas_identity_owner
+      FLYWAY_PASSWORD: ${IDENTITY_OWNER_PASSWORD}
+    depends_on:
+      postgres: { condition: service_healthy }
+    healthcheck:
+      test: [CMD, curl, -fsS, 'http://localhost:8091/actuator/health']
+      interval: 10s
+      start_period: 45s
+      retries: 10
+    restart: unless-stopped
+
+  control:
+    build:
+      context: .
+      dockerfile: infra/Dockerfile.backend
+      args: { SERVICE: control-service }
+    environment:
+      <<: *service-env
+      DB_USER: atlas_control
+      DB_PASSWORD: ${CONTROL_PASSWORD}
+      DB_SCHEMA: control
+      FLYWAY_USER: atlas_control_owner
+      FLYWAY_PASSWORD: ${CONTROL_OWNER_PASSWORD}
+    depends_on:
+      postgres: { condition: service_healthy }
+      identity: { condition: service_healthy }
+    healthcheck:
+      test: [CMD, curl, -fsS, 'http://localhost:8092/actuator/health']
+      interval: 10s
+      start_period: 45s
+      retries: 10
+    restart: unless-stopped
+
+  hospital:
+    build:
+      context: .
+      dockerfile: infra/Dockerfile.backend
+      args: { SERVICE: hospital-service }
+    environment:
+      <<: *service-env
+      PORT: '8097'
+      DB_USER: atlas_hospital
+      DB_PASSWORD: ${HOSPITAL_PASSWORD}
+      DB_SCHEMA: hospital
+      FLYWAY_USER: atlas_hospital_owner
+      FLYWAY_PASSWORD: ${HOSPITAL_OWNER_PASSWORD}
+    depends_on:
+      control: { condition: service_healthy }
+    healthcheck:
+      test: [CMD, curl, -fsS, 'http://localhost:8097/actuator/health']
+      interval: 10s
+      start_period: 45s
+      retries: 10
+    restart: unless-stopped
+
+  gateway:
+    build:
+      context: .
+      dockerfile: infra/Dockerfile.backend
+      args: { SERVICE: gateway }
+    environment:
+      SERVER_ADDRESS: 0.0.0.0
+      IDENTITY_URL: http://identity:8091
+      CONTROL_URL: http://control:8092
+      HOSPITAL_URL: http://hospital:8097
+    depends_on:
+      hospital: { condition: service_healthy }
+    healthcheck:
+      test: [CMD, curl, -fsS, 'http://localhost:8095/actuator/health']
+      interval: 10s
+      start_period: 30s
+      retries: 10
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      dockerfile: infra/Dockerfile.frontend
+      args: { API_URL: 'http://gateway:8095', NEXT_PUBLIC_SITE_URL: 'http://127.0.0.1:4430' }
+    ports: ['127.0.0.1:${WEB_PORT:-4430}:4300']
+    depends_on:
+      gateway: { condition: service_healthy }
+    healthcheck:
+      test: [CMD, node, -e, 'fetch("http://127.0.0.1:4300").then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))']
+      interval: 10s
+      start_period: 20s
+      retries: 10
+    restart: unless-stopped
+
+volumes:
+  postgres-data:

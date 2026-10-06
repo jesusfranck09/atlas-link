@@ -1,0 +1,20 @@
+[
+  {
+    "name": "login-desktop",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "height": 1000
+  },
+  {
+    "name": "landing-mobile",
+    "width": 390,
+    "scrollWidth": 390,
+    "height": 6599
+  },
+  {
+    "name": "login-mobile",
+    "width": 390,
+    "scrollWidth": 390,
+    "height": 844
+  }
+]

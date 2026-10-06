@@ -1,0 +1,54 @@
+[
+  {
+    "role": "admin",
+    "viewport": {
+      "width": 1440,
+      "height": 1100
+    },
+    "dimensions": {
+      "width": 1425,
+      "viewport": 1440
+    },
+    "errors": [],
+    "violations": []
+  },
+  {
+    "role": "atlas",
+    "viewport": {
+      "width": 1440,
+      "height": 1100
+    },
+    "dimensions": {
+      "width": 1425,
+      "viewport": 1440
+    },
+    "errors": [],
+    "violations": []
+  },
+  {
+    "role": "admin",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dimensions": {
+      "width": 375,
+      "viewport": 390
+    },
+    "errors": [],
+    "violations": []
+  },
+  {
+    "role": "atlas",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "dimensions": {
+      "width": 375,
+      "viewport": 390
+    },
+    "errors": [],
+    "violations": []
+  }
+]

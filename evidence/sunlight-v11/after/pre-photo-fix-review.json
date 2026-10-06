@@ -1,0 +1,783 @@
+{
+  "startedAt": "2026-09-24T21:37:57.385Z",
+  "baseURL": "http://127.0.0.1:4430",
+  "revision": "6a37e87c8ecf56c015bc3a7fb773928b11543f2d",
+  "workingTree": [
+    "M AGENTS.md",
+    " M frontend/src/components/daylight.module.css",
+    " M frontend/src/components/daylight.tsx",
+    " M frontend/src/components/landing.module.css",
+    " M frontend/src/components/landing.tsx",
+    " M qa/daylight-review.mjs",
+    " M qa/premium-finish-review.mjs",
+    " M qa/production-smoke.mjs",
+    " M qa/tests/journeys.spec.ts",
+    "?? evidence/sunlight-v11/",
+    "?? qa/sunlight-review.mjs"
+  ],
+  "scope": "New fixed V11 illumination and compact landing hero. Actual local demo authentication and read-only accounts/reports. Checks scroll, visible compositing on opaque content, text selection, input/click access, menu/dialog stacking and accessibility preferences.",
+  "reusedEvidence": [
+    "evidence/premium-v10/after/review.json",
+    "evidence/premium-v10/after/smoke/report.json"
+  ],
+  "limits": "Chrome on macOS with emulated mobile/tablet dimensions. No physical mobile, other browser, FPS or battery claims. Axe has limits on gradients/canvas; visual screenshots and pixel comparisons complement it. Business data, lead submissions and production are excluded.",
+  "checks": [
+    {
+      "name": "landing-day-desktop",
+      "status": "pass",
+      "hero": {
+        "fontSize": "53.28px",
+        "headingHeight": 115.0625,
+        "headingBottom": 266.5625,
+        "photoTop": 298.5625,
+        "visiblePhotoHeight": 549.171875,
+        "viewportHeight": 1000
+      },
+      "topLight": {
+        "top": 0,
+        "left": 0,
+        "bottom": 1000,
+        "right": 1425,
+        "width": 1425,
+        "height": 1000,
+        "viewportHeight": 1000,
+        "viewportWidth": 1425,
+        "documentWidth": 1425,
+        "scrollY": 0,
+        "zIndex": "2",
+        "opacity": "0.40299"
+      },
+      "bottomLight": {
+        "top": 0,
+        "left": 0,
+        "bottom": 1000,
+        "right": 1425,
+        "width": 1425,
+        "height": 1000,
+        "viewportHeight": 1000,
+        "viewportWidth": 1425,
+        "documentWidth": 1425,
+        "scrollY": 4418,
+        "zIndex": "2",
+        "opacity": "0.84"
+      },
+      "heroScreenshot": "evidence/sunlight-v11/after/landing-day-desktop.png",
+      "contactInputWorks": true,
+      "painted": {
+        "region": {
+          "x": 745.8125,
+          "y": 192.375,
+          "right": 1280.5,
+          "bottom": 696.140625
+        },
+        "changedPixels": 257187,
+        "totalPixels": 268602,
+        "meanChannelDifference": 3.6232170026036044,
+        "maxChannelDifference": 22,
+        "mechanism": "Same viewport/clock, screenshot with only data-daylight-overlay hidden transiently for comparison; restored immediately",
+        "images": [
+          "contact-day-desktop-light-on.png",
+          "contact-day-desktop-light-off.png"
+        ]
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodeCount": 19
+          }
+        ]
+      },
+      "selection": {
+        "mouseSelectionWorks": true,
+        "selectedCharacters": 7
+      },
+      "media": {
+        "reducedMotionTransitionsDisabled": true,
+        "runningLightAnimations": 0,
+        "forcedColorsHidden": true
+      },
+      "execution": "retest.json"
+    },
+    {
+      "name": "landing-day-tablet-1024",
+      "status": "pass",
+      "hero": {
+        "fontSize": "44px",
+        "headingHeight": 95.03125,
+        "headingBottom": 248.296875,
+        "photoTop": 280.296875,
+        "visiblePhotoHeight": 487.703125,
+        "viewportHeight": 768
+      },
+      "topLight": {
+        "top": 0,
+        "left": 0,
+        "bottom": 768,
+        "right": 1009,
+        "width": 1009,
+        "height": 768,
+        "viewportHeight": 768,
+        "viewportWidth": 1009,
+        "documentWidth": 1009,
+        "scrollY": 0,
+        "zIndex": "2",
+        "opacity": "0.216413"
+      },
+      "bottomLight": {
+        "top": 0,
+        "left": 0,
+        "bottom": 768,
+        "right": 1009,
+        "width": 1009,
+        "height": 768,
+        "viewportHeight": 768,
+        "viewportWidth": 1009,
+        "documentWidth": 1009,
+        "scrollY": 4392,
+        "zIndex": "2",
+        "opacity": "0.84"
+      },
+      "heroScreenshot": "evidence/sunlight-v11/after/landing-day-tablet-1024.png",
+      "contactInputWorks": true,
+      "painted": {
+        "region": {
+          "x": 534.09375,
+          "y": 174.21875,
+          "right": 905,
+          "bottom": 677.984375
+        },
+        "changedPixels": 177612,
+        "totalPixels": 185740,
+        "meanChannelDifference": 3.9265568357201825,
+        "maxChannelDifference": 22,
+        "mechanism": "Same viewport/clock, screenshot with only data-daylight-overlay hidden transiently for comparison; restored immediately",
+        "images": [
+          "contact-day-tablet-1024-light-on.png",
+          "contact-day-tablet-1024-light-off.png"
+        ]
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodeCount": 19
+          }
+        ]
+      },
+      "selection": {
+        "mouseSelectionWorks": true,
+        "selectedCharacters": 8
+      },
+      "execution": "retest.json"
+    },
+    {
+      "name": "landing-day-mobile-390",
+      "status": "pass",
+      "hero": {
+        "fontSize": "32px",
+        "headingHeight": 70.375,
+        "headingBottom": 211.375,
+        "photoTop": 361.5625,
+        "visiblePhotoHeight": 482.4375,
+        "viewportHeight": 844
+      },
+      "topLight": {
+        "top": 0,
+        "left": 0,
+        "bottom": 844,
+        "right": 390,
+        "width": 390,
+        "height": 844,
+        "viewportHeight": 844,
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "scrollY": 0,
+        "zIndex": "2",
+        "opacity": "0.154483"
+      },
+      "bottomLight": {
+        "top": 0,
+        "left": 0,
+        "bottom": 844,
+        "right": 390,
+        "width": 390,
+        "height": 844,
+        "viewportHeight": 844,
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "scrollY": 5987,
+        "zIndex": "2",
+        "opacity": "0.7"
+      },
+      "heroScreenshot": "evidence/sunlight-v11/after/landing-day-mobile-390.png",
+      "contactInputWorks": true,
+      "painted": {
+        "region": {
+          "x": 55,
+          "y": 224.34375,
+          "right": 335,
+          "bottom": 844
+        },
+        "changedPixels": 169018,
+        "totalPixels": 173320,
+        "meanChannelDifference": 3.799159550734672,
+        "maxChannelDifference": 18,
+        "mechanism": "Same viewport/clock, screenshot with only data-daylight-overlay hidden transiently for comparison; restored immediately",
+        "images": [
+          "contact-day-mobile-390-light-on.png",
+          "contact-day-mobile-390-light-off.png"
+        ]
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodeCount": 18
+          }
+        ]
+      },
+      "execution": "retest.json"
+    },
+    {
+      "name": "landing-day-mobile-320",
+      "status": "pass",
+      "hero": {
+        "fontSize": "32px",
+        "headingHeight": 70.375,
+        "headingBottom": 211.375,
+        "photoTop": 415.5625,
+        "visiblePhotoHeight": 324.4375,
+        "viewportHeight": 740
+      },
+      "topLight": {
+        "top": 0,
+        "left": 0,
+        "bottom": 740,
+        "right": 320,
+        "width": 320,
+        "height": 740,
+        "viewportHeight": 740,
+        "viewportWidth": 320,
+        "documentWidth": 320,
+        "scrollY": 0,
+        "zIndex": "2",
+        "opacity": "0.00562185"
+      },
+      "bottomLight": {
+        "top": 0,
+        "left": 0,
+        "bottom": 740,
+        "right": 320,
+        "width": 320,
+        "height": 740,
+        "viewportHeight": 740,
+        "viewportWidth": 320,
+        "documentWidth": 320,
+        "scrollY": 6806,
+        "zIndex": "2",
+        "opacity": "0.7"
+      },
+      "heroScreenshot": "evidence/sunlight-v11/after/landing-day-mobile-320.png",
+      "contactInputWorks": true,
+      "painted": {
+        "region": {
+          "x": 55,
+          "y": 100.28125,
+          "right": 265,
+          "bottom": 740
+        },
+        "changedPixels": 122465,
+        "totalPixels": 134190,
+        "meanChannelDifference": 3.606108254465062,
+        "maxChannelDifference": 18,
+        "mechanism": "Same viewport/clock, screenshot with only data-daylight-overlay hidden transiently for comparison; restored immediately",
+        "images": [
+          "contact-day-mobile-320-light-on.png",
+          "contact-day-mobile-320-light-off.png"
+        ]
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodeCount": 18
+          }
+        ]
+      },
+      "execution": "retest.json"
+    },
+    {
+      "name": "hospital-day-desktop",
+      "status": "pass",
+      "topLight": {
+        "top": 0,
+        "left": 0,
+        "bottom": 1000,
+        "right": 1440,
+        "width": 1440,
+        "height": 1000,
+        "viewportHeight": 1000,
+        "viewportWidth": 1440,
+        "documentWidth": 1440,
+        "scrollY": 0,
+        "zIndex": "2",
+        "opacity": "0.56"
+      },
+      "lowerLight": {
+        "top": 0,
+        "left": 0,
+        "bottom": 1000,
+        "right": 1425,
+        "width": 1425,
+        "height": 1000,
+        "viewportHeight": 1000,
+        "viewportWidth": 1425,
+        "documentWidth": 1425,
+        "scrollY": 0,
+        "zIndex": "2",
+        "opacity": "0.56"
+      },
+      "dashboardScreenshot": "evidence/sunlight-v11/after/hospital-day-desktop.png",
+      "accountScreenshot": "evidence/sunlight-v11/after/hospital-accounts-desktop.png",
+      "menuAndNativeModalWork": true,
+      "laneTabWorks": true,
+      "painted": {
+        "region": {
+          "x": 33,
+          "y": 732.96875,
+          "right": 1392,
+          "bottom": 918.28125
+        },
+        "changedPixels": 242680,
+        "totalPixels": 251415,
+        "meanChannelDifference": 2.926864612957328,
+        "maxChannelDifference": 15,
+        "mechanism": "Same viewport/clock, screenshot with only data-daylight-overlay hidden transiently for comparison; restored immediately",
+        "images": [
+          "report-table-desktop-light-on.png",
+          "report-table-desktop-light-off.png"
+        ]
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodeCount": 47
+          }
+        ]
+      },
+      "selection": {
+        "mouseSelectionWorks": true,
+        "selectedCharacters": 23
+      },
+      "execution": "initial-review.json"
+    },
+    {
+      "name": "hospital-day-tablet-1024",
+      "status": "pass",
+      "topLight": {
+        "top": 0,
+        "left": 0,
+        "bottom": 768,
+        "right": 1009,
+        "width": 1009,
+        "height": 768,
+        "viewportHeight": 768,
+        "viewportWidth": 1009,
+        "documentWidth": 1009,
+        "scrollY": 0,
+        "zIndex": "2",
+        "opacity": "0.56"
+      },
+      "lowerLight": {
+        "top": 0,
+        "left": 0,
+        "bottom": 768,
+        "right": 1009,
+        "width": 1009,
+        "height": 768,
+        "viewportHeight": 768,
+        "viewportWidth": 1009,
+        "documentWidth": 1009,
+        "scrollY": 479,
+        "zIndex": "2",
+        "opacity": "0.56"
+      },
+      "dashboardScreenshot": "evidence/sunlight-v11/after/hospital-day-tablet-1024.png",
+      "accountScreenshot": "evidence/sunlight-v11/after/hospital-accounts-tablet-1024.png",
+      "menuAndNativeModalWork": true,
+      "laneTabWorks": true,
+      "painted": {
+        "region": {
+          "x": 33,
+          "y": 462.59375,
+          "right": 976,
+          "bottom": 647.90625
+        },
+        "changedPixels": 167418,
+        "totalPixels": 173512,
+        "meanChannelDifference": 2.5791222893325343,
+        "maxChannelDifference": 15,
+        "mechanism": "Same viewport/clock, screenshot with only data-daylight-overlay hidden transiently for comparison; restored immediately",
+        "images": [
+          "report-table-tablet-1024-light-on.png",
+          "report-table-tablet-1024-light-off.png"
+        ]
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodeCount": 42
+          }
+        ]
+      },
+      "selection": {
+        "mouseSelectionWorks": true,
+        "selectedCharacters": 23
+      },
+      "execution": "initial-review.json"
+    },
+    {
+      "name": "hospital-day-mobile-390",
+      "status": "pass",
+      "topLight": {
+        "top": 0,
+        "left": 0,
+        "bottom": 844,
+        "right": 390,
+        "width": 390,
+        "height": 844,
+        "viewportHeight": 844,
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "scrollY": 0,
+        "zIndex": "2",
+        "opacity": "0.46"
+      },
+      "lowerLight": {
+        "top": 0,
+        "left": 0,
+        "bottom": 844,
+        "right": 390,
+        "width": 390,
+        "height": 844,
+        "viewportHeight": 844,
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "scrollY": 979,
+        "zIndex": "2",
+        "opacity": "0.46"
+      },
+      "dashboardScreenshot": "evidence/sunlight-v11/after/hospital-day-mobile-390.png",
+      "accountScreenshot": "evidence/sunlight-v11/after/hospital-accounts-mobile-390.png",
+      "menuAndNativeModalWork": true,
+      "laneTabWorks": true,
+      "painted": {
+        "region": {
+          "x": 17,
+          "y": 528.25,
+          "right": 373,
+          "bottom": 713.5625
+        },
+        "changedPixels": 57854,
+        "totalPixels": 65504,
+        "meanChannelDifference": 2.2932696222113664,
+        "maxChannelDifference": 12,
+        "mechanism": "Same viewport/clock, screenshot with only data-daylight-overlay hidden transiently for comparison; restored immediately",
+        "images": [
+          "report-table-mobile-390-light-on.png",
+          "report-table-mobile-390-light-off.png"
+        ]
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodeCount": 29
+          }
+        ]
+      },
+      "execution": "retest.json"
+    },
+    {
+      "name": "hospital-day-mobile-320",
+      "status": "pass",
+      "topLight": {
+        "top": 0,
+        "left": 0,
+        "bottom": 740,
+        "right": 320,
+        "width": 320,
+        "height": 740,
+        "viewportHeight": 740,
+        "viewportWidth": 320,
+        "documentWidth": 320,
+        "scrollY": 0,
+        "zIndex": "2",
+        "opacity": "0.46"
+      },
+      "lowerLight": {
+        "top": 0,
+        "left": 0,
+        "bottom": 740,
+        "right": 320,
+        "width": 320,
+        "height": 740,
+        "viewportHeight": 740,
+        "viewportWidth": 320,
+        "documentWidth": 320,
+        "scrollY": 1130,
+        "zIndex": "2",
+        "opacity": "0.46"
+      },
+      "dashboardScreenshot": "evidence/sunlight-v11/after/hospital-day-mobile-320.png",
+      "accountScreenshot": "evidence/sunlight-v11/after/hospital-accounts-mobile-320.png",
+      "menuAndNativeModalWork": true,
+      "laneTabWorks": true,
+      "painted": {
+        "region": {
+          "x": 17,
+          "y": 377.25,
+          "right": 303,
+          "bottom": 562.5625
+        },
+        "changedPixels": 46065,
+        "totalPixels": 52624,
+        "meanChannelDifference": 2.170435542718151,
+        "maxChannelDifference": 12,
+        "mechanism": "Same viewport/clock, screenshot with only data-daylight-overlay hidden transiently for comparison; restored immediately",
+        "images": [
+          "report-table-mobile-320-light-on.png",
+          "report-table-mobile-320-light-off.png"
+        ]
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodeCount": 28
+          }
+        ]
+      },
+      "media": {
+        "reducedMotionTransitionsDisabled": true,
+        "runningLightAnimations": 0,
+        "forcedColorsHidden": true
+      },
+      "execution": "initial-review.json"
+    },
+    {
+      "name": "landing-night-desktop",
+      "status": "pass",
+      "topLight": {
+        "top": 0,
+        "left": 0,
+        "bottom": 1000,
+        "right": 1425,
+        "width": 1425,
+        "height": 1000,
+        "viewportHeight": 1000,
+        "viewportWidth": 1425,
+        "documentWidth": 1425,
+        "scrollY": 0,
+        "zIndex": "2",
+        "opacity": "0.552802"
+      },
+      "bottomLight": {
+        "top": 0,
+        "left": 0,
+        "bottom": 1000,
+        "right": 1425,
+        "width": 1425,
+        "height": 1000,
+        "viewportHeight": 1000,
+        "viewportWidth": 1425,
+        "documentWidth": 1425,
+        "scrollY": 4312,
+        "zIndex": "2",
+        "opacity": "0.84"
+      },
+      "heroScreenshot": "evidence/sunlight-v11/after/landing-night-desktop.png",
+      "screenshot": "evidence/sunlight-v11/after/contact-night-desktop.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodeCount": 15
+          }
+        ]
+      },
+      "execution": "initial-review.json"
+    },
+    {
+      "name": "landing-night-mobile-320",
+      "status": "pass",
+      "topLight": {
+        "top": 0,
+        "left": 0,
+        "bottom": 740,
+        "right": 320,
+        "width": 320,
+        "height": 740,
+        "viewportHeight": 740,
+        "viewportWidth": 320,
+        "documentWidth": 320,
+        "scrollY": 0,
+        "zIndex": "2",
+        "opacity": "0.0132655"
+      },
+      "bottomLight": {
+        "top": 0,
+        "left": 0,
+        "bottom": 740,
+        "right": 320,
+        "width": 320,
+        "height": 740,
+        "viewportHeight": 740,
+        "viewportWidth": 320,
+        "documentWidth": 320,
+        "scrollY": 6824,
+        "zIndex": "2",
+        "opacity": "0.7"
+      },
+      "heroScreenshot": "evidence/sunlight-v11/after/landing-night-mobile-320.png",
+      "screenshot": "evidence/sunlight-v11/after/contact-night-mobile-320.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodeCount": 14
+          }
+        ]
+      },
+      "execution": "initial-review.json"
+    },
+    {
+      "name": "hospital-night-mobile-390",
+      "status": "pass",
+      "layout": {
+        "top": 0,
+        "left": 0,
+        "bottom": 844,
+        "right": 390,
+        "width": 390,
+        "height": 844,
+        "viewportHeight": 844,
+        "viewportWidth": 390,
+        "documentWidth": 390,
+        "scrollY": 979,
+        "zIndex": "2",
+        "opacity": "0.46"
+      },
+      "screenshot": "evidence/sunlight-v11/after/report-night-mobile-390.png",
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodeCount": 28
+          }
+        ]
+      },
+      "execution": "initial-review.json"
+    },
+    {
+      "name": "sunset-hero-geometry-desktop",
+      "status": "pass",
+      "disk": {
+        "x": 1303.0687005859374,
+        "y": 255.2656,
+        "width": 61.4688,
+        "height": 61.4688,
+        "right": 1364.5375005859376,
+        "bottom": 316.7344
+      },
+      "collisions": [],
+      "opacity": "1",
+      "checked": "Eyebrow, actual heading/paragraph text lines and both CTA rectangles",
+      "screenshot": "evidence/sunlight-v11/after/landing-sunset-desktop.png",
+      "execution": "retest.json"
+    },
+    {
+      "name": "sunset-hero-geometry-tablet-1024",
+      "status": "pass",
+      "disk": {
+        "x": 881.562525,
+        "y": 98.2344,
+        "width": 43.5312,
+        "height": 43.5312,
+        "right": 925.0937250000001,
+        "bottom": 141.7656
+      },
+      "collisions": [],
+      "opacity": "1",
+      "checked": "Eyebrow, actual heading/paragraph text lines and both CTA rectangles",
+      "screenshot": "evidence/sunlight-v11/after/landing-sunset-tablet-1024.png",
+      "execution": "retest.json"
+    }
+  ],
+  "errors": [],
+  "browser": "153.0.8010.53",
+  "finishedAt": "2026-09-24T21:41:23.665Z",
+  "filter": null,
+  "plannedChecks": 13,
+  "totals": {
+    "pass": 13,
+    "fail": 0,
+    "block": 0
+  },
+  "passed": true,
+  "executions": [
+    {
+      "file": "initial-review.json",
+      "startedAt": "2026-09-24T21:37:57.385Z",
+      "finishedAt": "2026-09-24T21:39:16.898Z",
+      "totals": {
+        "pass": 6,
+        "fail": 5,
+        "block": 0
+      }
+    },
+    {
+      "file": "retest.json",
+      "startedAt": "2026-09-24T21:41:06.999Z",
+      "finishedAt": "2026-09-24T21:41:23.665Z",
+      "totals": {
+        "pass": 7,
+        "fail": 0,
+        "block": 0
+      }
+    }
+  ],
+  "qaCorrections": [
+    {
+      "cases": [
+        "landing-day-desktop",
+        "landing-day-tablet-1024",
+        "landing-day-mobile-390",
+        "landing-day-mobile-320"
+      ],
+      "cause": "Accessible field name includes the required asterisk: Correo de trabajo *. Exact matcher omitted it.",
+      "resolution": "Match the published field label including optional required mark; no application change."
+    },
+    {
+      "cases": [
+        "hospital-day-mobile-390"
+      ],
+      "cause": "Chart-ready condition included a visible legend while the lazily loaded 3D host was offscreen.",
+      "resolution": "Wait for rendering only if the actual 3D host intersects the viewport; no application change."
+    }
+  ]
+}

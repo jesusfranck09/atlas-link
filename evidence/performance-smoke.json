@@ -1,0 +1,58 @@
+{
+  "startedAt": "2026-09-24T06:35:00.491Z",
+  "baseURL": "http://127.0.0.1:4430",
+  "method": {
+    "environment": "Docker production build on loopback; Chrome installed on macOS",
+    "repetitions": 3,
+    "routes": [
+      "/",
+      "/login"
+    ],
+    "observationAfterLoadMs": 2500,
+    "cache": "New isolated browser context per navigation; CDP Network.setCacheDisabled=true",
+    "throttling": "None: local network and host CPU; not representative of customer network or mobile CPU",
+    "mutations": "None: public landing and login reads only; no login submissions",
+    "definitions": {
+      "ttfbMs": "Navigation responseStart minus navigation start (includes connection setup)",
+      "serverResponseMs": "Navigation responseStart minus requestStart",
+      "lcpMs": "Last largest-contentful-paint entry during the observation window",
+      "cls": "Maximum unexpected layout-shift session window: <1s gap and <5s duration",
+      "transferredBytes": "Navigation plus resource timing transferSize; includes reported response headers",
+      "longTasks": "PerformanceObserver longtask entries reported during the observation window"
+    },
+    "limits": [
+      "Small local laboratory sample, not field percentiles or a Lighthouse score",
+      "No CPU/network throttling; no real Windows, Android, iOS, or Safari device measurement",
+      "No INP measurement or interaction workload",
+      "CLS and LCP only cover initial navigation and observation window; no full session coverage",
+      "Fresh browser cache does not reset server, OS, image optimizer, or transport caches"
+    ]
+  },
+  "staticInspection": {
+    "dependencies": {
+      "@fontsource-variable/inter": "5.3.0",
+      "@fontsource-variable/manrope": "5.3.0",
+      "next": "16.3.5",
+      "react": "19.2.4",
+      "react-dom": "19.2.4"
+    },
+    "cssSourceBytes": 122282,
+    "hospitalPhotoBytes": 202071,
+    "scene": "CSS transforms/perspective and inline SVG; no 3D engine, WebGL canvas, external model, or render loop",
+    "sceneAnimation": "Two small decorative cards animate transform at 10s and 11s intervals; no account workflow depends on animation",
+    "reducedMotionRulePresent": true,
+    "reducedMotionImplementation": "Animation duration 0.01ms, one iteration; transitions 0.01ms; scroll behavior auto",
+    "fonts": "Inter and Manrope variable WOFF2 hosted locally with font-display swap; browser chooses unicode subsets",
+    "photo": "Next Image fill with sizes; reserved container; lazy below-fold hospital photography"
+  },
+  "samples": [],
+  "summary": [],
+  "motion": [],
+  "errors": [
+    {
+      "message": "browserType.connectOverCDP: connect EPERM 127.0.0.1:9430 - Local (0.0.0.0:0)\nCall log:\n\u001b[2m  - <ws preparing> retrieving websocket url from http://127.0.0.1:9430\u001b[22m\n"
+    }
+  ],
+  "finishedAt": "2026-09-24T06:35:00.519Z",
+  "completed": false
+}

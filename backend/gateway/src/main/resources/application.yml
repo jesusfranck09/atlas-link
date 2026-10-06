@@ -1,0 +1,26 @@
+server:
+  address: 127.0.0.1
+  port: 8095
+  max-http-request-header-size: 16KB
+  tomcat:
+    max-swallow-size: 3MB
+  error:
+    include-message: never
+spring:
+  application:
+    name: atlas-gateway
+  servlet:
+    multipart:
+      enabled: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
+atlas:
+  identity-url: ${IDENTITY_URL:http://127.0.0.1:8091}
+  control-url: ${CONTROL_URL:http://127.0.0.1:8092}
+  hospital-url: ${HOSPITAL_URL:http://127.0.0.1:8097}

@@ -1,0 +1,162 @@
+{
+  "config": {
+    "argv": [
+      "/usr/local/bin/node",
+      "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/node_modules/.bin/playwright",
+      "test",
+      "tests/contracts.spec.ts",
+      "--project=chrome-desktop",
+      "--reporter=json",
+      "--output=../evidence/contract-pagination-results"
+    ],
+    "configFile": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/playwright.config.ts",
+    "rootDir": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/jesusfranciscofrancisco/Documents/atlas-link/evidence/contract-pagination-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome-desktop",
+        "name": "chrome-desktop",
+        "testDir": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "/Users/jesusfranciscofrancisco/Documents/atlas-link/evidence/contract-pagination-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome-mobile-emulated",
+        "name": "chrome-mobile-emulated",
+        "testDir": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/journeys.spec.ts"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "contracts.spec.ts",
+      "file": "contracts.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "admission date selects agreement; frozen evidence remains reproducible after correction",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-desktop",
+              "projectName": "chrome-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 23,
+                  "error": {
+                    "message": "Error: apiRequestContext.fetch: connect ECONNREFUSED 127.0.0.1:4300\nCall log:\n\u001b[2m  - → POST http://127.0.0.1:4300/api/auth/login\u001b[22m\n\u001b[2m    - user-agent: Playwright/1.63.0 (arm64; macOS 26.6) node/24.14\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 63\u001b[22m\n",
+                    "stack": "Error: apiRequestContext.fetch: connect ECONNREFUSED 127.0.0.1:4300\nCall log:\n\u001b[2m  - → POST http://127.0.0.1:4300/api/auth/login\u001b[22m\n\u001b[2m    - user-agent: Playwright/1.63.0 (arm64; macOS 26.6) node/24.14\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 63\u001b[22m\n\n    at call (/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/contracts.spec.ts:8:36)\n    at /Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/contracts.spec.ts:12:26",
+                    "location": {
+                      "file": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/contracts.spec.ts",
+                      "column": 36,
+                      "line": 8
+                    },
+                    "snippet": "   6 |   let bearer: string | undefined;\n   7 |   async function call(method: string, endpoint: string, data?: unknown, expected = 200, headers: Record<string, string> = {}) {\n>  8 |     const response = await request.fetch(`/api${endpoint}`, { method, data, headers: { ...(bearer ? { Authorization: `Bearer ${bearer}` } : {}), ...headers } });\n     |                                    ^\n   9 |     expect(response.status(), `${method} ${endpoint}: HTTP ${response.status()}`).toBe(expected);\n  10 |     return response.json();\n  11 |   }"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/contracts.spec.ts",
+                        "column": 36,
+                        "line": 8
+                      },
+                      "message": "Error: apiRequestContext.fetch: connect ECONNREFUSED 127.0.0.1:4300\nCall log:\n\u001b[2m  - → POST http://127.0.0.1:4300/api/auth/login\u001b[22m\n\u001b[2m    - user-agent: Playwright/1.63.0 (arm64; macOS 26.6) node/24.14\u001b[22m\n\u001b[2m    - accept: */*\u001b[22m\n\u001b[2m    - accept-encoding: gzip,deflate,br\u001b[22m\n\u001b[2m    - content-type: application/json\u001b[22m\n\u001b[2m    - content-length: 63\u001b[22m\n\n\n   6 |   let bearer: string | undefined;\n   7 |   async function call(method: string, endpoint: string, data?: unknown, expected = 200, headers: Record<string, string> = {}) {\n>  8 |     const response = await request.fetch(`/api${endpoint}`, { method, data, headers: { ...(bearer ? { Authorization: `Bearer ${bearer}` } : {}), ...headers } });\n     |                                    ^\n   9 |     expect(response.status(), `${method} ${endpoint}: HTTP ${response.status()}`).toBe(expected);\n  10 |     return response.json();\n  11 |   }\n    at call (/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/contracts.spec.ts:8:36)\n    at /Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/contracts.spec.ts:12:26"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-24T06:36:52.558Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/jesusfranciscofrancisco/Documents/atlas-link/evidence/contract-pagination-results/contracts-admission-date-s-794d1-producible-after-correction-chrome-desktop/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/contracts.spec.ts",
+                    "column": 36,
+                    "line": 8
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "94d2a11b1fc1ed31b81d-a3dacd13dd2babbefa3b",
+          "file": "contracts.spec.ts",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-24T06:36:52.314Z",
+    "duration": 289.774,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "startedAt": "2026-09-24T22:38:45.017Z",
+  "mode": "preview",
+  "baseURL": "http://127.0.0.1:4430",
+  "revision": "815cb3e70bc31720af9bfb94ef092a583acce7db",
+  "workingTree": [
+    "M AGENTS.md",
+    " M frontend/package-lock.json",
+    " M frontend/package.json",
+    " M frontend/src/components/dashboard.tsx",
+    " M frontend/src/components/landing.module.css",
+    " M frontend/src/components/landing.tsx",
+    " M frontend/src/components/login.module.css",
+    " M frontend/src/components/login.tsx",
+    " M frontend/src/components/portal.module.css",
+    " M frontend/src/components/workspace.tsx",
+    " M infra/Dockerfile.frontend",
+    " M qa/helpers/inspect-mobile-overflow.mjs",
+    " M qa/premium-capture.mjs",
+    " M qa/premium-finish-review.mjs",
+    " M qa/production-smoke.mjs",
+    " M qa/redesign-review.mjs",
+    " M qa/report-visual-review.mjs",
+    " M qa/sunlight-review.mjs",
+    " M qa/tests/journeys.spec.ts",
+    "?? docs/react-bits-mcp.md",
+    "?? docs/review-identity-v12.md",
+    "?? evidence/identity-v12/",
+    "?? evidence/tooling/",
+    "?? frontend/.mcp.json",
+    "?? frontend/src/app/insurer/",
+    "?? frontend/src/components/prismatic-text.module.css",
+    "?? frontend/src/components/prismatic-text.tsx",
+    "?? frontend/src/components/system-sculpture.module.css",
+    "?? frontend/src/components/system-sculpture.tsx",
+    "?? frontend/src/components/system-showcase.module.css",
+    "?? frontend/src/components/system-showcase.tsx",
+    "?? frontend/src/components/use-scroll-reveal.ts",
+    "?? qa/identity-review.mjs"
+  ],
+  "environment": "Local Docker Next.js production build, actual Java/Spring APIs and PostgreSQL demo data; Chrome on macOS via CDP. 390/320 and tablet dimensions are emulated, not physical mobile devices.",
+  "mutations": "Authentication/session audit only. No business-data writes, commercial forms, email, payments or API mocks.",
+  "scope": "Early V12 desktop composition screenshots for the design reviewers. Not the complete regression run.",
+  "checks": [
+    {
+      "name": "hospital-desktop-preview",
+      "status": "pass",
+      "dimensions": {
+        "viewport": 1425,
+        "document": 1425
+      },
+      "sculpture": {
+        "identity": "hospital",
+        "viewport": "desktop",
+        "eligibleForWebGL": true,
+        "renderer": "webgl",
+        "motion": "full",
+        "frames": 1,
+        "calls": 5,
+        "triangles": 9568,
+        "geometries": 2,
+        "textures": 2,
+        "pixelRatio": 1
+      },
+      "screenshot": "evidence/identity-v12/preview/hospital-desktop.png"
+    },
+    {
+      "name": "control-desktop-preview",
+      "status": "pass",
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "sculpture": {
+        "identity": "control",
+        "viewport": "desktop",
+        "eligibleForWebGL": true,
+        "renderer": "webgl",
+        "motion": "full",
+        "frames": 1,
+        "calls": 21,
+        "triangles": 9132,
+        "geometries": 5,
+        "textures": 3,
+        "pixelRatio": 1
+      },
+      "screenshot": "evidence/identity-v12/preview/control-desktop.png"
+    },
+    {
+      "name": "insurer-desktop-preview",
+      "status": "pass",
+      "dimensions": {
+        "viewport": 1425,
+        "document": 1425
+      },
+      "sculpture": {
+        "identity": "insurer",
+        "viewport": "desktop",
+        "eligibleForWebGL": true,
+        "renderer": "webgl",
+        "motion": "full",
+        "frames": 1,
+        "calls": 33,
+        "triangles": 24192,
+        "geometries": 4,
+        "textures": 3,
+        "pixelRatio": 1
+      },
+      "screenshot": "evidence/identity-v12/preview/insurer-desktop.png"
+    },
+    {
+      "name": "landing-desktop-preview",
+      "status": "pass",
+      "hero": "evidence/identity-v12/preview/landing-desktop.png",
+      "showcase": "evidence/identity-v12/preview/landing-showcase-desktop.png",
+      "dimensions": {
+        "viewport": 1425,
+        "document": 1425
+      }
+    }
+  ],
+  "routes": [],
+  "errors": [],
+  "browser": "153.0.8010.53",
+  "finishedAt": "2026-09-24T22:38:51.007Z",
+  "planned": 4,
+  "passed": true
+}

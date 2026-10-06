@@ -1,0 +1,147 @@
+{
+  "baseURL": "http://127.0.0.1:4300",
+  "views": [
+    {
+      "name": "desktop-hospital",
+      "dimensions": {
+        "width": 1440,
+        "scroll": 1425,
+        "height": 1005,
+        "firstDemoTop": 668.46875,
+        "profileHeight": 68.390625,
+        "inputHeight": 48,
+        "submitHeight": 48,
+        "images": 0,
+        "submitBackground": "rgb(234, 224, 248)"
+      },
+      "beforeHeight": 1133,
+      "change": -128,
+      "violations": []
+    },
+    {
+      "name": "desktop-company",
+      "dimensions": {
+        "width": 1440,
+        "scroll": 1440,
+        "height": 900,
+        "firstDemoTop": 668.46875,
+        "profileHeight": 68.390625,
+        "inputHeight": 48,
+        "submitHeight": 48,
+        "images": 0,
+        "submitBackground": "rgb(234, 224, 248)"
+      },
+      "beforeHeight": 1029,
+      "change": -129,
+      "violations": []
+    },
+    {
+      "name": "mobile-hospital",
+      "dimensions": {
+        "width": 390,
+        "scroll": 390,
+        "height": 1228,
+        "firstDemoTop": 653.8125,
+        "profileHeight": 68.390625,
+        "inputHeight": 48,
+        "submitHeight": 48,
+        "images": 0,
+        "submitBackground": "rgb(234, 224, 248)"
+      },
+      "beforeHeight": 1555,
+      "change": -327,
+      "violations": []
+    },
+    {
+      "name": "mobile-company",
+      "dimensions": {
+        "width": 390,
+        "scroll": 390,
+        "height": 851,
+        "firstDemoTop": 653.8125,
+        "profileHeight": 68.390625,
+        "inputHeight": 48,
+        "submitHeight": 48,
+        "images": 0,
+        "submitBackground": "rgb(234, 224, 248)"
+      },
+      "beforeHeight": 1045,
+      "change": -194,
+      "violations": []
+    },
+    {
+      "name": "narrow-hospital",
+      "dimensions": {
+        "width": 320,
+        "scroll": 320,
+        "height": 1238,
+        "firstDemoTop": 653.8125,
+        "profileHeight": 68.390625,
+        "inputHeight": 48,
+        "submitHeight": 48,
+        "images": 0,
+        "submitBackground": "rgb(234, 224, 248)"
+      },
+      "beforeHeight": 1655,
+      "change": -417,
+      "violations": []
+    },
+    {
+      "name": "narrow-company",
+      "dimensions": {
+        "width": 320,
+        "scroll": 320,
+        "height": 861,
+        "firstDemoTop": 653.8125,
+        "profileHeight": 68.390625,
+        "inputHeight": 48,
+        "submitHeight": 48,
+        "images": 0,
+        "submitBackground": "rgb(234, 224, 248)"
+      },
+      "beforeHeight": 1108,
+      "change": -247,
+      "violations": []
+    }
+  ],
+  "checks": [
+    {
+      "name": "desktop-hospital:all-demo-profiles-fill-and-password-toggle",
+      "passed": true
+    },
+    {
+      "name": "disabled-account-refused",
+      "passed": true
+    },
+    {
+      "name": "desktop-hospital:real-authentication",
+      "passed": true
+    },
+    {
+      "name": "desktop-company:all-demo-profiles-fill-and-password-toggle",
+      "passed": true
+    },
+    {
+      "name": "desktop-company:real-authentication",
+      "passed": true
+    },
+    {
+      "name": "mobile-hospital:all-demo-profiles-fill-and-password-toggle",
+      "passed": true
+    },
+    {
+      "name": "mobile-company:all-demo-profiles-fill-and-password-toggle",
+      "passed": true
+    },
+    {
+      "name": "narrow-hospital:all-demo-profiles-fill-and-password-toggle",
+      "passed": true
+    },
+    {
+      "name": "narrow-company:all-demo-profiles-fill-and-password-toggle",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "baseline": "evidence/soft-v4-login/review-final.json"
+}

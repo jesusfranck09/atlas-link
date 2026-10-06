@@ -1,0 +1,50 @@
+[
+  {
+    "name": "landing-desktop-final",
+    "url": "/",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "animation": "1e-05s",
+    "violations": []
+  },
+  {
+    "name": "landing-mobile-final",
+    "url": "/",
+    "width": 390,
+    "scrollWidth": 390,
+    "animation": "1e-05s",
+    "violations": []
+  },
+  {
+    "name": "hospital-login-final",
+    "url": "/login",
+    "width": 390,
+    "scrollWidth": 390,
+    "animation": "1e-05s",
+    "violations": []
+  },
+  {
+    "name": "platform-login-final",
+    "url": "/admin/login",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "animation": "1e-05s",
+    "violations": []
+  },
+  {
+    "name": "hospital-dashboard-final",
+    "url": "/hospital",
+    "width": 390,
+    "scrollWidth": 390,
+    "animation": "1e-05s",
+    "violations": []
+  },
+  {
+    "name": "platform-dashboard-final",
+    "url": "/admin",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "animation": "1e-05s",
+    "violations": []
+  }
+]

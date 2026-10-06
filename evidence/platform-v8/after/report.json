@@ -1,0 +1,568 @@
+{
+  "startedAt": "2026-09-24T19:35:37.243Z",
+  "baseURL": "http://127.0.0.1:4430",
+  "environment": "Docker production build; Chrome installed; desktop and mobile viewport emulation; synthetic demo data",
+  "mutations": "Authentication/session audit only; no creation or modification of business data",
+  "pages": [
+    {
+      "label": "landing",
+      "viewport": "desktop",
+      "route": "/",
+      "dimensions": {
+        "viewport": 1425,
+        "document": 1425
+      },
+      "violations": [],
+      "incomplete": 2,
+      "passed": true
+    },
+    {
+      "label": "admin-login",
+      "viewport": "desktop",
+      "route": "/login",
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "violations": [],
+      "incomplete": 1,
+      "passed": true
+    },
+    {
+      "label": "admin-dashboard",
+      "viewport": "desktop",
+      "route": "/hospital",
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "accounts",
+      "viewport": "desktop",
+      "route": "/hospital/accounts",
+      "dimensions": {
+        "viewport": 1425,
+        "document": 1425
+      },
+      "violations": [],
+      "incomplete": 1,
+      "passed": true
+    },
+    {
+      "label": "agreements",
+      "viewport": "desktop",
+      "route": "/hospital/agreements",
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "hospital-review",
+      "viewport": "desktop",
+      "route": "/hospital/review",
+      "dimensions": {
+        "viewport": 1425,
+        "document": 1425
+      },
+      "violations": [],
+      "incomplete": 1,
+      "passed": true
+    },
+    {
+      "label": "hospital-reports",
+      "viewport": "desktop",
+      "route": "/hospital/reports",
+      "dimensions": {
+        "viewport": 1425,
+        "document": 1425
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "hospital-import",
+      "viewport": "desktop",
+      "route": "/hospital/import",
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "hospital-users",
+      "viewport": "desktop",
+      "route": "/hospital/users",
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "hospital-audit",
+      "viewport": "desktop",
+      "route": "/hospital/audit",
+      "dimensions": {
+        "viewport": 1425,
+        "document": 1425
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "caja-dashboard",
+      "viewport": "desktop",
+      "route": "/hospital",
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "auditor-dashboard",
+      "viewport": "desktop",
+      "route": "/hospital",
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "direccion-dashboard",
+      "viewport": "desktop",
+      "route": "/hospital",
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "aseguradora-dashboard",
+      "viewport": "desktop",
+      "route": "/hospital",
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "atlas-login",
+      "viewport": "desktop",
+      "route": "/admin/login",
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "violations": [],
+      "incomplete": 1,
+      "passed": true
+    },
+    {
+      "label": "atlas-dashboard",
+      "viewport": "desktop",
+      "route": "/admin",
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "violations": [],
+      "incomplete": 1,
+      "passed": true
+    },
+    {
+      "label": "licenses",
+      "viewport": "desktop",
+      "route": "/admin/licenses",
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "admin-tenants",
+      "viewport": "desktop",
+      "route": "/admin/tenants",
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "admin-leads",
+      "viewport": "desktop",
+      "route": "/admin/leads",
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "admin-users",
+      "viewport": "desktop",
+      "route": "/admin/users",
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "admin-audit",
+      "viewport": "desktop",
+      "route": "/admin/audit",
+      "dimensions": {
+        "viewport": 1440,
+        "document": 1440
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "landing",
+      "viewport": "mobile-emulated",
+      "route": "/",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "violations": [],
+      "incomplete": 2,
+      "passed": true
+    },
+    {
+      "label": "admin-login",
+      "viewport": "mobile-emulated",
+      "route": "/login",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "violations": [],
+      "incomplete": 1,
+      "passed": true
+    },
+    {
+      "label": "admin-dashboard",
+      "viewport": "mobile-emulated",
+      "route": "/hospital",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "accounts",
+      "viewport": "mobile-emulated",
+      "route": "/hospital/accounts",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "violations": [],
+      "incomplete": 1,
+      "passed": true
+    },
+    {
+      "label": "agreements",
+      "viewport": "mobile-emulated",
+      "route": "/hospital/agreements",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "hospital-review",
+      "viewport": "mobile-emulated",
+      "route": "/hospital/review",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "violations": [],
+      "incomplete": 1,
+      "passed": true
+    },
+    {
+      "label": "hospital-reports",
+      "viewport": "mobile-emulated",
+      "route": "/hospital/reports",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "hospital-import",
+      "viewport": "mobile-emulated",
+      "route": "/hospital/import",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "hospital-users",
+      "viewport": "mobile-emulated",
+      "route": "/hospital/users",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "hospital-audit",
+      "viewport": "mobile-emulated",
+      "route": "/hospital/audit",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "caja-dashboard",
+      "viewport": "mobile-emulated",
+      "route": "/hospital",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "auditor-dashboard",
+      "viewport": "mobile-emulated",
+      "route": "/hospital",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "direccion-dashboard",
+      "viewport": "mobile-emulated",
+      "route": "/hospital",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "aseguradora-dashboard",
+      "viewport": "mobile-emulated",
+      "route": "/hospital",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "atlas-login",
+      "viewport": "mobile-emulated",
+      "route": "/admin/login",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "violations": [],
+      "incomplete": 1,
+      "passed": true
+    },
+    {
+      "label": "atlas-dashboard",
+      "viewport": "mobile-emulated",
+      "route": "/admin",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "violations": [],
+      "incomplete": 1,
+      "passed": true
+    },
+    {
+      "label": "licenses",
+      "viewport": "mobile-emulated",
+      "route": "/admin/licenses",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "admin-tenants",
+      "viewport": "mobile-emulated",
+      "route": "/admin/tenants",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "admin-leads",
+      "viewport": "mobile-emulated",
+      "route": "/admin/leads",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "admin-users",
+      "viewport": "mobile-emulated",
+      "route": "/admin/users",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    },
+    {
+      "label": "admin-audit",
+      "viewport": "mobile-emulated",
+      "route": "/admin/audit",
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "violations": [],
+      "incomplete": 0,
+      "passed": true
+    }
+  ],
+  "publicAssets": [
+    {
+      "path": "/favicon.svg",
+      "status": 200,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "/brand/atlas-link-mark.svg",
+      "status": 200,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "/brand/atlas-link-wordmark.svg",
+      "status": 200,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "/brand/atlas-link-social.svg",
+      "status": 200,
+      "contentType": "image/svg+xml"
+    },
+    {
+      "path": "/contracts/account-v1.schema.json",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8"
+    }
+  ],
+  "reducedMotion": [
+    {
+      "viewport": "desktop",
+      "infiniteAnimations": 0,
+      "passed": true
+    },
+    {
+      "viewport": "mobile-emulated",
+      "infiniteAnimations": 0,
+      "passed": true
+    }
+  ],
+  "businessAccountCounts": [
+    {
+      "viewport": "desktop",
+      "accountCount": 20
+    },
+    {
+      "viewport": "mobile-emulated",
+      "accountCount": 20
+    }
+  ],
+  "browserErrors": [],
+  "httpErrors": [],
+  "consoleErrors": [],
+  "failures": [],
+  "browserVersion": "153.0.8010.53",
+  "finishedAt": "2026-09-24T19:36:08.125Z",
+  "passed": true
+}

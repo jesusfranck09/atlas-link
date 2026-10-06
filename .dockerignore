@@ -1,0 +1,9 @@
+.git
+.local
+**/node_modules
+**/.next
+**/target
+evidence
+qa
+**/__pycache__
+.env*

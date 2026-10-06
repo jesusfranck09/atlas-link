@@ -1,0 +1,11 @@
+{
+  "run": "QA-02BF2261AF",
+  "startedAt": "2026-09-24T05:58:00.422108+00:00",
+  "environment": "local PostgreSQL + 4 Spring services; real HTTP; no payment/email/insurer integrations",
+  "checks": [],
+  "requests": [],
+  "artifacts": [],
+  "passed": false,
+  "error": "<urlopen error [Errno 1] Operation not permitted>",
+  "finishedAt": "2026-09-24T05:58:00.431111+00:00"
+}

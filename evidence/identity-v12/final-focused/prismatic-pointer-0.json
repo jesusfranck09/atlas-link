@@ -1,0 +1,54 @@
+{
+  "hit": {
+    "x": 122.75625000000001,
+    "y": 237.796875,
+    "tag": "SPAN",
+    "className": "prismatic-text-module__ooB89W__text",
+    "text": "en perspectiva.",
+    "isPrismatic": true,
+    "hidden": false,
+    "reduced": false,
+    "forcedColors": false
+  },
+  "state": {
+    "motion": "full",
+    "state": "idle",
+    "engaged": "true",
+    "position": "71.6000003127502%",
+    "fontSize": "53.28px",
+    "box": {
+      "x": 52.5,
+      "y": 209.03125,
+      "width": 351.28125,
+      "height": 57.53125,
+      "top": 209.03125,
+      "right": 403.78125,
+      "bottom": 266.5625,
+      "left": 52.5
+    }
+  },
+  "events": [
+    {
+      "name": "pointerenter",
+      "time": 10795,
+      "pointer": "mouse",
+      "x": 122.7562484741211,
+      "y": 237.796875,
+      "text": "en perspectiva.",
+      "motion": "full",
+      "state": "idle",
+      "engaged": "true"
+    },
+    {
+      "name": "pointermove",
+      "time": 10795,
+      "pointer": "mouse",
+      "x": 122.7562484741211,
+      "y": 237.796875,
+      "text": "en perspectiva.",
+      "motion": "full",
+      "state": "idle",
+      "engaged": "true"
+    }
+  ]
+}

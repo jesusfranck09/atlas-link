@@ -1,0 +1,453 @@
+{
+  "startedAt": "2026-09-24T17:06:46.666Z",
+  "baseURL": "http://127.0.0.1:4430",
+  "scope": "Hospital reports with real local API responses and synthetic data; desktop and emulated mobile. Authentication and read-only filtering; no business-data writes or downloads.",
+  "checks": [
+    {
+      "name": "desktop-demo-login",
+      "passed": true,
+      "role": "HOSPITAL_ADMIN",
+      "dataset": "Synthetic demonstration"
+    },
+    {
+      "name": "desktop-reports-pie-bars-and-metric-spacing",
+      "passed": true,
+      "totalAccounts": 18,
+      "insurerCategories": 3,
+      "dimensions": {
+        "documentWidth": 1425,
+        "clientWidth": 1425,
+        "innerWidth": 1440
+      },
+      "renderers": [
+        {
+          "type": "pie",
+          "renderer": "webgl"
+        },
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ]
+    },
+    {
+      "name": "desktop-single-insurer-matches-api",
+      "passed": true,
+      "insurerId": "c0000000-0000-0000-0000-000000000002",
+      "countFromApi": 8,
+      "dimensions": {
+        "documentWidth": 1425,
+        "clientWidth": 1425,
+        "innerWidth": 1440
+      },
+      "renderers": [
+        {
+          "type": "pie",
+          "renderer": "webgl"
+        },
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ]
+    },
+    {
+      "name": "desktop-future-period-empty-state",
+      "passed": true,
+      "totalAccounts": 0,
+      "downloadDisabled": true,
+      "dimensions": {
+        "documentWidth": 1425,
+        "clientWidth": 1425,
+        "innerWidth": 1440
+      },
+      "renderers": [
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ]
+    },
+    {
+      "name": "desktop-clear-restores-original-report",
+      "passed": true,
+      "originalAccountCount": 18,
+      "restoredAccountCount": 18
+    },
+    {
+      "name": "mobile-demo-login",
+      "passed": true,
+      "role": "HOSPITAL_ADMIN",
+      "dataset": "Synthetic demonstration"
+    },
+    {
+      "name": "mobile-reports-pie-bars-and-metric-spacing",
+      "passed": true,
+      "totalAccounts": 18,
+      "insurerCategories": 3,
+      "dimensions": {
+        "documentWidth": 390,
+        "clientWidth": 390,
+        "innerWidth": 390
+      },
+      "renderers": [
+        {
+          "type": "pie",
+          "renderer": "webgl"
+        },
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ]
+    },
+    {
+      "name": "mobile-single-insurer-matches-api",
+      "passed": true,
+      "insurerId": "c0000000-0000-0000-0000-000000000002",
+      "countFromApi": 8,
+      "dimensions": {
+        "documentWidth": 390,
+        "clientWidth": 390,
+        "innerWidth": 390
+      },
+      "renderers": [
+        {
+          "type": "pie",
+          "renderer": "webgl"
+        },
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ]
+    },
+    {
+      "name": "mobile-future-period-empty-state",
+      "passed": true,
+      "totalAccounts": 0,
+      "downloadDisabled": true,
+      "dimensions": {
+        "documentWidth": 390,
+        "clientWidth": 390,
+        "innerWidth": 390
+      },
+      "renderers": [
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ]
+    },
+    {
+      "name": "mobile-clear-restores-original-report",
+      "passed": true,
+      "originalAccountCount": 18,
+      "restoredAccountCount": 18
+    }
+  ],
+  "errors": [],
+  "views": [
+    {
+      "name": "report-desktop",
+      "dimensions": {
+        "documentWidth": 1425,
+        "clientWidth": 1425,
+        "innerWidth": 1440
+      },
+      "metrics": {
+        "columnGap": "16px",
+        "rowGap": "16px",
+        "cards": [
+          {
+            "x": 264,
+            "y": 414.453125,
+            "width": 272.25,
+            "height": 153.515625
+          },
+          {
+            "x": 552.25,
+            "y": 414.453125,
+            "width": 272.25,
+            "height": 153.515625
+          },
+          {
+            "x": 840.5,
+            "y": 414.453125,
+            "width": 272.25,
+            "height": 153.515625
+          },
+          {
+            "x": 1128.75,
+            "y": 414.453125,
+            "width": 272.25,
+            "height": 153.515625
+          }
+        ]
+      },
+      "renderers": [
+        {
+          "type": "pie",
+          "renderer": "webgl"
+        },
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ],
+      "screenshot": "evidence/premium-v4/report-desktop.png",
+      "violations": [],
+      "incompleteAxeChecks": 1
+    },
+    {
+      "name": "report-desktop-single-insurer",
+      "dimensions": {
+        "documentWidth": 1425,
+        "clientWidth": 1425,
+        "innerWidth": 1440
+      },
+      "metrics": {
+        "columnGap": "16px",
+        "rowGap": "16px",
+        "cards": [
+          {
+            "x": 264,
+            "y": 414.453125,
+            "width": 272.25,
+            "height": 153.515625
+          },
+          {
+            "x": 552.25,
+            "y": 414.453125,
+            "width": 272.25,
+            "height": 153.515625
+          },
+          {
+            "x": 840.5,
+            "y": 414.453125,
+            "width": 272.25,
+            "height": 153.515625
+          },
+          {
+            "x": 1128.75,
+            "y": 414.453125,
+            "width": 272.25,
+            "height": 153.515625
+          }
+        ]
+      },
+      "renderers": [
+        {
+          "type": "pie",
+          "renderer": "webgl"
+        },
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ],
+      "screenshot": "evidence/premium-v4/report-desktop-single-insurer.png",
+      "violations": [],
+      "incompleteAxeChecks": 1
+    },
+    {
+      "name": "report-desktop-empty",
+      "dimensions": {
+        "documentWidth": 1425,
+        "clientWidth": 1425,
+        "innerWidth": 1440
+      },
+      "metrics": {
+        "columnGap": "16px",
+        "rowGap": "16px",
+        "cards": [
+          {
+            "x": 264,
+            "y": 414.453125,
+            "width": 272.25,
+            "height": 153.515625
+          },
+          {
+            "x": 552.25,
+            "y": 414.453125,
+            "width": 272.25,
+            "height": 153.515625
+          },
+          {
+            "x": 840.5,
+            "y": 414.453125,
+            "width": 272.25,
+            "height": 153.515625
+          },
+          {
+            "x": 1128.75,
+            "y": 414.453125,
+            "width": 272.25,
+            "height": 153.515625
+          }
+        ]
+      },
+      "renderers": [
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ],
+      "screenshot": "evidence/premium-v4/report-desktop-empty.png",
+      "violations": [],
+      "incompleteAxeChecks": 2
+    },
+    {
+      "name": "report-mobile",
+      "dimensions": {
+        "documentWidth": 390,
+        "clientWidth": 390,
+        "innerWidth": 390
+      },
+      "metrics": {
+        "columnGap": "16px",
+        "rowGap": "16px",
+        "cards": [
+          {
+            "x": 17,
+            "y": 594.734375,
+            "width": 170,
+            "height": 145.75
+          },
+          {
+            "x": 203,
+            "y": 594.734375,
+            "width": 170,
+            "height": 145.75
+          },
+          {
+            "x": 17,
+            "y": 756.484375,
+            "width": 170,
+            "height": 151.75
+          },
+          {
+            "x": 203,
+            "y": 756.484375,
+            "width": 170,
+            "height": 151.75
+          }
+        ]
+      },
+      "renderers": [
+        {
+          "type": "pie",
+          "renderer": "webgl"
+        },
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ],
+      "screenshot": "evidence/premium-v4/report-mobile.png",
+      "violations": [],
+      "incompleteAxeChecks": 1
+    },
+    {
+      "name": "report-mobile-single-insurer",
+      "dimensions": {
+        "documentWidth": 390,
+        "clientWidth": 390,
+        "innerWidth": 390
+      },
+      "metrics": {
+        "columnGap": "16px",
+        "rowGap": "16px",
+        "cards": [
+          {
+            "x": 17,
+            "y": 594.734375,
+            "width": 170,
+            "height": 145.75
+          },
+          {
+            "x": 203,
+            "y": 594.734375,
+            "width": 170,
+            "height": 145.75
+          },
+          {
+            "x": 17,
+            "y": 756.484375,
+            "width": 170,
+            "height": 151.75
+          },
+          {
+            "x": 203,
+            "y": 756.484375,
+            "width": 170,
+            "height": 151.75
+          }
+        ]
+      },
+      "renderers": [
+        {
+          "type": "pie",
+          "renderer": "webgl"
+        },
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ],
+      "screenshot": "evidence/premium-v4/report-mobile-single-insurer.png",
+      "violations": [],
+      "incompleteAxeChecks": 1
+    },
+    {
+      "name": "report-mobile-empty",
+      "dimensions": {
+        "documentWidth": 390,
+        "clientWidth": 390,
+        "innerWidth": 390
+      },
+      "metrics": {
+        "columnGap": "16px",
+        "rowGap": "16px",
+        "cards": [
+          {
+            "x": 17,
+            "y": 594.734375,
+            "width": 170,
+            "height": 145.75
+          },
+          {
+            "x": 203,
+            "y": 594.734375,
+            "width": 170,
+            "height": 145.75
+          },
+          {
+            "x": 17,
+            "y": 756.484375,
+            "width": 170,
+            "height": 151.75
+          },
+          {
+            "x": 203,
+            "y": 756.484375,
+            "width": 170,
+            "height": 151.75
+          }
+        ]
+      },
+      "renderers": [
+        {
+          "type": "bars",
+          "renderer": "webgl"
+        }
+      ],
+      "screenshot": "evidence/premium-v4/report-mobile-empty.png",
+      "violations": [],
+      "incompleteAxeChecks": 2
+    }
+  ],
+  "browserVersion": "153.0.8010.53",
+  "finishedAt": "2026-09-24T17:06:58.179Z",
+  "passed": true
+}

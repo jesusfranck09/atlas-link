@@ -1,0 +1,356 @@
+{
+  "startedAt": "2026-09-24T23:00:13.017Z",
+  "mode": "after",
+  "baseURL": "http://127.0.0.1:4430",
+  "outputLabel": "diagnostic-native",
+  "filter": "^landing-(desktop|mobile-390)$",
+  "deploymentImage": "sha256:72152157ac39e7500e05d9d3946d6cad3b5e9cc7bc0335379821cd22481b7101",
+  "revision": "815cb3e70bc31720af9bfb94ef092a583acce7db",
+  "workingTree": [
+    "M AGENTS.md",
+    " M frontend/package-lock.json",
+    " M frontend/package.json",
+    " M frontend/src/components/account-detail.tsx",
+    " M frontend/src/components/dashboard.tsx",
+    " M frontend/src/components/landing.module.css",
+    " M frontend/src/components/landing.tsx",
+    " M frontend/src/components/login.module.css",
+    " M frontend/src/components/login.tsx",
+    " M frontend/src/components/portal.module.css",
+    " M frontend/src/components/workspace.tsx",
+    " M infra/Dockerfile.frontend",
+    " M qa/helpers/inspect-mobile-overflow.mjs",
+    " M qa/premium-capture.mjs",
+    " M qa/premium-finish-review.mjs",
+    " M qa/production-smoke.mjs",
+    " M qa/redesign-review.mjs",
+    " M qa/report-visual-review.mjs",
+    " M qa/sunlight-review.mjs",
+    " M qa/tests/journeys.spec.ts",
+    "?? docs/react-bits-mcp.md",
+    "?? docs/review-identity-v12.md",
+    "?? evidence/identity-v12/",
+    "?? evidence/tooling/",
+    "?? frontend/.mcp.json",
+    "?? frontend/src/app/insurer/",
+    "?? frontend/src/components/prismatic-text.module.css",
+    "?? frontend/src/components/prismatic-text.tsx",
+    "?? frontend/src/components/system-sculpture.module.css",
+    "?? frontend/src/components/system-sculpture.tsx",
+    "?? frontend/src/components/system-showcase.module.css",
+    "?? frontend/src/components/system-showcase.tsx",
+    "?? frontend/src/components/use-scroll-reveal.ts",
+    "?? qa/identity-review.mjs"
+  ],
+  "environment": "Local Docker Next.js production build, actual Java/Spring APIs and PostgreSQL demo data; Chrome on macOS via CDP. 390/320 and tablet dimensions are emulated, not physical mobile devices.",
+  "mutations": "Authentication/session audit only. No business-data writes, commercial forms, email, payments or API mocks.",
+  "scope": "Distinct shell identity/context on every module; real demo autofill/authentication; navigation, read-only insurer, bounded 3D/fallback and landing interactions.",
+  "checks": [
+    {
+      "name": "landing-desktop",
+      "status": "pass",
+      "hero": "evidence/identity-v12/diagnostic-native/landing-hero-desktop.png",
+      "cardScreenshot": "evidence/identity-v12/diagnostic-native/landing-showcase-desktop.png",
+      "flips": [
+        {
+          "system": "hospital",
+          "keyboardToggle": true,
+          "inactiveFaceExcluded": true,
+          "destinationAlwaysAvailable": true,
+          "destination": "/login"
+        },
+        {
+          "system": "control",
+          "keyboardToggle": true,
+          "inactiveFaceExcluded": true,
+          "destinationAlwaysAvailable": true,
+          "destination": "/admin/login"
+        },
+        {
+          "system": "insurer",
+          "keyboardToggle": true,
+          "inactiveFaceExcluded": true,
+          "destinationAlwaysAvailable": true,
+          "destination": "/insurer/login"
+        }
+      ],
+      "scrollChecks": [
+        {
+          "action": "ArrowRight",
+          "scrollLeft": 622
+        },
+        {
+          "action": "Next button",
+          "scrollLeft": 622
+        },
+        {
+          "action": "Previous button to first card",
+          "scrollLeft": 0,
+          "previousDisabled": true
+        }
+      ],
+      "reveal": [
+        {
+          "tag": "DIV",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "SECTION",
+          "state": "visible",
+          "inView": true
+        },
+        {
+          "tag": "DIV",
+          "state": "visible",
+          "inView": true
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "visible",
+          "inView": true
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "visible",
+          "inView": true
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "visible",
+          "inView": true
+        },
+        {
+          "tag": "DIV",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "SECTION",
+          "state": "pending",
+          "inView": false
+        }
+      ],
+      "dimensions": {
+        "viewport": 1425,
+        "document": 1425
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 24
+          }
+        ]
+      },
+      "preferences": {
+        "revealsVisibleInReducedMotion": true,
+        "runningShowcaseAnimations": 0,
+        "reducedScreenshot": "evidence/identity-v12/diagnostic-native/landing-reduced-motion.png",
+        "forcedColorsRetainsContent": true
+      },
+      "textEffect": {
+        "results": [
+          {
+            "text": "en perspectiva.",
+            "htmlText": "en perspectiva.",
+            "color": "rgb(64, 56, 73)",
+            "opacity": "1",
+            "animations": [],
+            "pointerChangesFinish": true,
+            "pointerLeaveReturnsToIdle": true
+          },
+          {
+            "text": "Más claridad para avanzar.",
+            "htmlText": "Más claridad para avanzar.",
+            "color": "rgb(64, 56, 73)",
+            "opacity": "0.72",
+            "animations": [
+              {
+                "iterations": 1,
+                "duration": 1100
+              },
+              {
+                "iterations": 1,
+                "duration": 1200
+              }
+            ],
+            "pointerChangesFinish": true,
+            "pointerLeaveReturnsToIdle": true
+          }
+        ],
+        "reduced": [
+          {
+            "text": "en perspectiva.",
+            "opacity": "1",
+            "running": 0
+          },
+          {
+            "text": "Más claridad para avanzar.",
+            "opacity": "1",
+            "running": 0
+          }
+        ],
+        "forcedColors": [
+          {
+            "color": "rgb(0, 0, 0)",
+            "background": "none",
+            "textFill": "rgb(0, 0, 0)"
+          },
+          {
+            "color": "rgb(0, 0, 0)",
+            "background": "none",
+            "textFill": "rgb(0, 0, 0)"
+          }
+        ],
+        "limits": "DOM readability, finite browser animations and preferences; no aesthetic acceptance or physical-device performance claim."
+      }
+    },
+    {
+      "name": "landing-mobile-390",
+      "status": "pass",
+      "hero": "evidence/identity-v12/diagnostic-native/landing-hero-mobile-390.png",
+      "cardScreenshot": "evidence/identity-v12/diagnostic-native/landing-showcase-mobile-390.png",
+      "flips": [
+        {
+          "system": "hospital",
+          "keyboardToggle": true,
+          "inactiveFaceExcluded": true,
+          "destinationAlwaysAvailable": true,
+          "destination": "/login"
+        },
+        {
+          "system": "control",
+          "keyboardToggle": true,
+          "inactiveFaceExcluded": true,
+          "destinationAlwaysAvailable": true,
+          "destination": "/admin/login"
+        },
+        {
+          "system": "insurer",
+          "keyboardToggle": true,
+          "inactiveFaceExcluded": true,
+          "destinationAlwaysAvailable": true,
+          "destination": "/insurer/login"
+        }
+      ],
+      "scrollChecks": [
+        {
+          "action": "ArrowRight",
+          "scrollLeft": 350
+        },
+        {
+          "action": "Next button",
+          "scrollLeft": 350
+        },
+        {
+          "action": "Previous button to first card",
+          "scrollLeft": 0,
+          "previousDisabled": true
+        }
+      ],
+      "reveal": [
+        {
+          "tag": "DIV",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "SECTION",
+          "state": "visible",
+          "inView": true
+        },
+        {
+          "tag": "DIV",
+          "state": "visible",
+          "inView": true
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "visible",
+          "inView": true
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "visible",
+          "inView": true
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "visible",
+          "inView": true
+        },
+        {
+          "tag": "DIV",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "ARTICLE",
+          "state": "pending",
+          "inView": false
+        },
+        {
+          "tag": "SECTION",
+          "state": "pending",
+          "inView": false
+        }
+      ],
+      "dimensions": {
+        "viewport": 390,
+        "document": 390
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 24
+          }
+        ]
+      }
+    }
+  ],
+  "routes": [],
+  "errors": [],
+  "browser": "153.0.8010.53",
+  "finishedAt": "2026-09-24T23:00:34.193Z",
+  "planned": 2,
+  "passed": true
+}

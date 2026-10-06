@@ -1,0 +1,440 @@
+{
+  "label": "iteration-2",
+  "startedAt": "2026-09-24T15:32:11.806Z",
+  "baseURL": "http://127.0.0.1:4430",
+  "views": [
+    {
+      "name": "desktop-landing",
+      "route": "/",
+      "dimensions": {
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "visualWidth": 1425,
+        "width": 1425,
+        "height": 6301,
+        "viewport": 1440
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".landing-scene-module__q8OeTq__sceneStepSelected > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.86 (foreground color: #4d6df0, background color: #eaf0ff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__planSwitch > button[type=\"button\"]:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #586b8a, background color: #e2e9fb, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 2
+    },
+    {
+      "name": "desktop-hospital-login",
+      "route": "/login",
+      "dimensions": {
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "visualWidth": 1425,
+        "width": 1425,
+        "height": 1077,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-platform-login",
+      "route": "/admin/login",
+      "dimensions": {
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "visualWidth": 1440,
+        "width": 1440,
+        "height": 1000,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital",
+      "route": "/hospital",
+      "dimensions": {
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "visualWidth": 1425,
+        "width": 1425,
+        "height": 1506,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital-accounts",
+      "route": "/hospital/accounts",
+      "dimensions": {
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "visualWidth": 1425,
+        "width": 1425,
+        "height": 1668,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-account-detail",
+      "route": "/hospital/accounts/e0000000-0000-0000-0000-000000000001",
+      "dimensions": {
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "visualWidth": 1425,
+        "width": 1425,
+        "height": 1570,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital-review",
+      "route": "/hospital/review",
+      "dimensions": {
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "visualWidth": 1425,
+        "width": 1425,
+        "height": 1668,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital-import",
+      "route": "/hospital/import",
+      "dimensions": {
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "visualWidth": 1425,
+        "width": 1425,
+        "height": 1101,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital-agreements",
+      "route": "/hospital/agreements",
+      "dimensions": {
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "visualWidth": 1425,
+        "width": 1425,
+        "height": 1049,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital-reports",
+      "route": "/hospital/reports",
+      "dimensions": {
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "visualWidth": 1425,
+        "width": 1425,
+        "height": 1508,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital-users",
+      "route": "/hospital/users",
+      "dimensions": {
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "visualWidth": 1425,
+        "width": 1425,
+        "height": 1049,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital-audit",
+      "route": "/hospital/audit",
+      "dimensions": {
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "visualWidth": 1425,
+        "width": 1425,
+        "height": 2086,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-admin",
+      "route": "/admin",
+      "dimensions": {
+        "clientWidth": 1425,
+        "innerWidth": 1440,
+        "visualWidth": 1425,
+        "width": 1425,
+        "height": 1107,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-admin-tenants",
+      "route": "/admin/tenants",
+      "dimensions": {
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "visualWidth": 1440,
+        "width": 1440,
+        "height": 1000,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-admin-licenses",
+      "route": "/admin/licenses",
+      "dimensions": {
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "visualWidth": 1440,
+        "width": 1440,
+        "height": 1000,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-admin-leads",
+      "route": "/admin/leads",
+      "dimensions": {
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "visualWidth": 1440,
+        "width": 1440,
+        "height": 1000,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-admin-users",
+      "route": "/admin/users",
+      "dimensions": {
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "visualWidth": 1440,
+        "width": 1440,
+        "height": 1000,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-admin-audit",
+      "route": "/admin/audit",
+      "dimensions": {
+        "clientWidth": 1440,
+        "innerWidth": 1440,
+        "visualWidth": 1440,
+        "width": 1440,
+        "height": 1000,
+        "viewport": 1440
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-landing",
+      "route": "/",
+      "dimensions": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "width": 390,
+        "height": 7887,
+        "viewport": 390
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".landing-scene-module__q8OeTq__sceneStepSelected > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.86 (foreground color: #4d6df0, background color: #eaf0ff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__planSwitch > button[type=\"button\"]:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #586b8a, background color: #e2e9fb, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 2
+    },
+    {
+      "name": "mobile-hospital-login",
+      "route": "/login",
+      "dimensions": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "width": 390,
+        "height": 1330,
+        "viewport": 390
+      },
+      "violations": [],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-platform-login",
+      "route": "/admin/login",
+      "dimensions": {
+        "clientWidth": 390,
+        "innerWidth": 390,
+        "visualWidth": 390,
+        "width": 390,
+        "height": 846,
+        "viewport": 390
+      },
+      "violations": [],
+      "incomplete": 1
+    }
+  ],
+  "errors": [
+    {
+      "name": "desktop-landing",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".landing-scene-module__q8OeTq__sceneStepSelected > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.86 (foreground color: #4d6df0, background color: #eaf0ff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__planSwitch > button[type=\"button\"]:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #586b8a, background color: #e2e9fb, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-landing",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".landing-scene-module__q8OeTq__sceneStepSelected > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.86 (foreground color: #4d6df0, background color: #eaf0ff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__planSwitch > button[type=\"button\"]:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #586b8a, background color: #e2e9fb, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "type": "journey",
+      "message": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Centro de ayuda', exact: true })\u001b[22m\n"
+    }
+  ],
+  "interactionChecks": [
+    {
+      "name": "desktop-reduced-motion",
+      "infiniteRunningAnimations": 0
+    },
+    {
+      "name": "desktop-help-modal-and-navigation",
+      "passed": true
+    },
+    {
+      "name": "desktop-unchanged-demo-accounts",
+      "accountCount": 20
+    },
+    {
+      "name": "desktop-caja-demo-login",
+      "passed": true
+    },
+    {
+      "name": "desktop-auditor-demo-login",
+      "passed": true
+    },
+    {
+      "name": "desktop-direccion-demo-login",
+      "passed": true
+    },
+    {
+      "name": "desktop-aseguradora-demo-login",
+      "passed": true
+    },
+    {
+      "name": "desktop-demo-profile-login",
+      "passed": true
+    },
+    {
+      "name": "mobile-reduced-motion",
+      "infiniteRunningAnimations": 0
+    }
+  ],
+  "scope": "Local packaged UI; synthetic data; authentication and read-only navigation",
+  "browserVersion": "153.0.8010.53",
+  "finishedAt": "2026-09-24T15:33:41.819Z",
+  "passed": false
+}

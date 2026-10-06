@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-09-24T22:34:07.360Z",
+  "client": "Temporary local SDK client over stdio, not Claude UI",
+  "registries": {
+    "content": [
+      {
+        "type": "text",
+        "text": "The following registries are configured in the current project:\n\n- @react-bits\n\nYou can view the items in a registry by running:\n`npx shadcn@latest view @name-of-registry`\n\nFor example: `npx shadcn@latest view @shadcn` or `npx shadcn@latest view @shadcn @acme` to view multiple registries."
+      }
+    ]
+  },
+  "search": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Found 60 items matching \"TrueFocus\" in registries @react-bits:\n\nShowing items 1-2 of 60:\n\n- TrueFocus-JS-TW (registry:component) - Applies dynamic blur / clarity based over a series of words in order. [@react-bits] \n  Add command: `[object Promise]`\n\n- TrueFocus-JS-CSS (registry:component) - Applies dynamic blur / clarity based over a series of words in order. [@react-bits] \n  Add command: `[object Promise]`\n\nMore items available. Use offset: 2 to see the next page."
+      }
+    ]
+  }
+}

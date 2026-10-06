@@ -1,0 +1,42 @@
+server:
+  address: 127.0.0.1
+  port: 8091
+  max-http-request-header-size: 16KB
+  error:
+    include-message: never
+spring:
+  application:
+    name: atlas-identity
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+    hikari:
+      maximum-pool-size: 8
+      connection-timeout: 5000
+  flyway:
+    enabled: ${ATLAS_MIGRATE:true}
+    url: ${DB_URL}
+    user: ${FLYWAY_USER:}
+    password: ${FLYWAY_PASSWORD:}
+    default-schema: ${DB_SCHEMA:identity}
+    schemas: ${DB_SCHEMA:identity}
+    locations: classpath:db/migration
+    placeholders:
+      demoEnabled: ${ATLAS_DEMO_ENABLED:false}
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
+atlas:
+  auth-mode: ${ATLAS_AUTH_MODE:demo}
+  demo-enabled: ${ATLAS_DEMO_ENABLED:false}
+  control-url: ${CONTROL_URL:http://127.0.0.1:8092}
+  internal-key: ${INTERNAL_API_KEY}

@@ -1,0 +1,10 @@
+{
+  "revision": "6a37e87",
+  "source": "evidence/premium-v10/after",
+  "method": "Reuse verified V10 screenshots as baseline, not a new capture",
+  "files": [
+    "landing-day.png",
+    "landing-day-mobile-320.png",
+    "hospital-day.png"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "first": {
+    "label": "fresh",
+    "box": {
+      "x": 52.5,
+      "y": 209.03125,
+      "width": 351.28125,
+      "height": 57.53125
+    },
+    "hit": {
+      "tag": "SPAN",
+      "class": "prismatic-text-module__ooB89W__text",
+      "text": "en perspectiva.",
+      "scrollY": 0,
+      "hidden": false,
+      "media": {
+        "reduced": false,
+        "contrast": false
+      },
+      "targetAtPoint": true
+    },
+    "after": {
+      "motion": "full",
+      "state": "idle",
+      "engaged": "true",
+      "position": "71.6000003127502%"
+    }
+  },
+  "second": {
+    "label": "after preferences/scroll",
+    "box": {
+      "x": 52.5,
+      "y": 209.03125,
+      "width": 351.28125,
+      "height": 57.53125
+    },
+    "hit": {
+      "tag": "SPAN",
+      "class": "prismatic-text-module__ooB89W__text",
+      "text": "en perspectiva.",
+      "scrollY": 0,
+      "hidden": false,
+      "media": {
+        "reduced": false,
+        "contrast": false
+      },
+      "targetAtPoint": true
+    },
+    "after": {
+      "motion": "full",
+      "state": "idle",
+      "engaged": "true",
+      "position": "71.6000003127502%"
+    }
+  },
+  "events": [
+    {
+      "event": "pointerenter",
+      "type": "mouse",
+      "x": 122.7562484741211,
+      "y": 237.796875,
+      "motion": "full",
+      "state": "idle",
+      "engaged": "true"
+    },
+    {
+      "event": "pointermove",
+      "type": "mouse",
+      "x": 122.7562484741211,
+      "y": 237.796875,
+      "motion": "full",
+      "state": "idle",
+      "engaged": "true"
+    },
+    {
+      "event": "pointerleave",
+      "type": "mouse",
+      "x": 1,
+      "y": 1,
+      "motion": "full",
+      "state": "idle",
+      "engaged": "false"
+    },
+    {
+      "event": "pointerenter",
+      "type": "mouse",
+      "x": 122.7562484741211,
+      "y": 237.796875,
+      "motion": "full",
+      "state": "idle",
+      "engaged": "true"
+    },
+    {
+      "event": "pointermove",
+      "type": "mouse",
+      "x": 122.7562484741211,
+      "y": 237.796875,
+      "motion": "full",
+      "state": "idle",
+      "engaged": "true"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "route": "/",
+    "metrics": {
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    "violations": []
+  },
+  {
+    "route": "/login",
+    "metrics": {
+      "width": 390,
+      "scrollWidth": 390
+    },
+    "violations": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              ".demo-selected"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.35 (foreground color: #729665, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "route": "/hospital",
+    "metrics": {
+      "width": 390,
+      "scrollWidth": 390,
+      "table": {
+        "x": 17,
+        "y": 1573.4375,
+        "width": 356,
+        "height": 432.046875,
+        "top": 1573.4375,
+        "right": 373,
+        "bottom": 2005.484375,
+        "left": 17
+      }
+    },
+    "violations": []
+  }
+]

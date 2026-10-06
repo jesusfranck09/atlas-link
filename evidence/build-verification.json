@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-24",
+  "frontend": {
+    "typescript": "passed",
+    "eslint": "passed",
+    "nextProductionBuild": "passed",
+    "routes": 20,
+    "nextVersion": "16.3.5",
+    "dockerNodeMajor": 24
+  },
+  "dependencyAudit": {
+    "source": "npm ci output during authorized Docker web build",
+    "packagesAudited": 368,
+    "reportedVulnerabilities": 0,
+    "earlierNativeAttempt": "npm audit could not reach registry in native sandbox; subsequent Docker build audit succeeded",
+    "limit": "Registry advisory result at build time; not a guarantee that code or dependencies have no vulnerabilities"
+  },
+  "backend": {"javaMajor": 21, "mavenPackage": "passed", "springBootVersion": "3.5.11", "tests": 77},
+  "deployment": {"type": "local Docker Compose", "services": 6, "allHealthy": true, "publicPort": 4430, "hospitalMigration": 3, "syntheticAccounts": 20}
+}

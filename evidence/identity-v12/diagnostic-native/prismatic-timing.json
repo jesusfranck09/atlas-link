@@ -1,0 +1,124 @@
+{
+  "trials": [
+    {
+      "i": 0,
+      "engaged": "false",
+      "state": "idle",
+      "hit": true
+    }
+  ],
+  "timeline": [
+    {
+      "time": 1838.3999999761581,
+      "state": "idle",
+      "motion": "full",
+      "engaged": "false",
+      "hidden": false,
+      "reduced": false,
+      "forced": false,
+      "box": {
+        "x": 52.5,
+        "y": 209.03125,
+        "width": 351.28125,
+        "height": 57.53125,
+        "top": 209.03125,
+        "right": 403.78125,
+        "bottom": 266.5625,
+        "left": 52.5
+      },
+      "event": "IO",
+      "intersection": true,
+      "ratio": 1
+    },
+    {
+      "time": 1872.3999999761581,
+      "state": "idle",
+      "motion": "full",
+      "engaged": "false",
+      "hidden": false,
+      "reduced": false,
+      "forced": false,
+      "box": {
+        "x": 52.5,
+        "y": -1290.96875,
+        "width": 351.28125,
+        "height": 57.53125,
+        "top": -1290.96875,
+        "right": 403.78125,
+        "bottom": -1233.4375,
+        "left": 52.5
+      },
+      "event": "IO",
+      "intersection": false,
+      "ratio": 0
+    },
+    {
+      "time": 1969.0999999642372,
+      "state": "idle",
+      "motion": "full",
+      "engaged": "false",
+      "hidden": false,
+      "reduced": false,
+      "forced": false,
+      "box": {
+        "x": 52.5,
+        "y": 209.03125,
+        "width": 351.28125,
+        "height": 57.53125,
+        "top": 209.03125,
+        "right": 403.78125,
+        "bottom": 266.5625,
+        "left": 52.5
+      },
+      "event": "pointerenter",
+      "pointer": "mouse",
+      "x": 122.7562484741211,
+      "y": 237.796875
+    },
+    {
+      "time": 1969.199999988079,
+      "state": "idle",
+      "motion": "full",
+      "engaged": "false",
+      "hidden": false,
+      "reduced": false,
+      "forced": false,
+      "box": {
+        "x": 52.5,
+        "y": 209.03125,
+        "width": 351.28125,
+        "height": 57.53125,
+        "top": 209.03125,
+        "right": 403.78125,
+        "bottom": 266.5625,
+        "left": 52.5
+      },
+      "event": "pointermove",
+      "pointer": "mouse",
+      "x": 122.7562484741211,
+      "y": 237.796875
+    },
+    {
+      "time": 1969.699999988079,
+      "state": "idle",
+      "motion": "full",
+      "engaged": "false",
+      "hidden": false,
+      "reduced": false,
+      "forced": false,
+      "box": {
+        "x": 52.5,
+        "y": 209.03125,
+        "width": 351.28125,
+        "height": 57.53125,
+        "top": 209.03125,
+        "right": 403.78125,
+        "bottom": 266.5625,
+        "left": 52.5
+      },
+      "event": "IO",
+      "intersection": true,
+      "ratio": 1
+    }
+  ]
+}

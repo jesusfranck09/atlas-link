@@ -1,0 +1,682 @@
+{
+  "config": {
+    "argv": [
+      "/usr/local/bin/node",
+      "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/playwright.config.ts",
+    "rootDir": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/jesusfranciscofrancisco/Documents/atlas-link/evidence/browser-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome-desktop",
+        "name": "chrome-desktop",
+        "testDir": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "/Users/jesusfranciscofrancisco/Documents/atlas-link/evidence/browser-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome-mobile-emulated",
+        "name": "chrome-mobile-emulated",
+        "testDir": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "../evidence/browser-report.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "../evidence/browser-report",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "journeys.spec.ts",
+      "file": "journeys.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "landing, real photography, responsive layout and commercial request persistence",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-desktop",
+              "projectName": "chrome-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 12615,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected substring: \u001b[32m\"Mejores cuentas.\"\u001b[39m\nTimeout: 12000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('heading', { level: 1 }) with timeout 12000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected substring: \u001b[32m\"Mejores cuentas.\"\u001b[39m\nTimeout: 12000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('heading', { level: 1 }) with timeout 12000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n    at /Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/journeys.spec.ts:82:57",
+                    "location": {
+                      "file": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/journeys.spec.ts",
+                      "column": 57,
+                      "line": 82
+                    },
+                    "snippet": "  80 | test('landing, real photography, responsive layout and commercial request persistence', async ({ page }, info) => {\n  81 |   await page.goto('/');\n> 82 |   await expect(page.getByRole('heading', { level: 1 })).toContainText('Mejores cuentas.');\n     |                                                         ^\n  83 |   await noOverflow(page);\n  84 |   await screenshot(page, info, 'landing');\n  85 |   await a11y(page, info, 'landing');"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/journeys.spec.ts",
+                        "column": 57,
+                        "line": 82
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading', { level: 1 })\nExpected substring: \u001b[32m\"Mejores cuentas.\"\u001b[39m\nTimeout: 12000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('heading', { level: 1 }) with timeout 12000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\n\n  80 | test('landing, real photography, responsive layout and commercial request persistence', async ({ page }, info) => {\n  81 |   await page.goto('/');\n> 82 |   await expect(page.getByRole('heading', { level: 1 })).toContainText('Mejores cuentas.');\n     |                                                         ^\n  83 |   await noOverflow(page);\n  84 |   await screenshot(page, info, 'landing');\n  85 |   await a11y(page, info, 'landing');\n    at /Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/journeys.spec.ts:82:57"
+                    },
+                    {
+                      "location": {
+                        "file": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/journeys.spec.ts",
+                        "column": 58,
+                        "line": 27
+                      },
+                      "message": "Error: No uncaught browser exceptions\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 36\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"./src/app/globals.css\u001b[39m\n\u001b[31m+ Error: Error evaluating Node.js code\u001b[39m\n\u001b[31m+ CssSyntaxError: tailwindcss: /Users/jesusfranciscofrancisco/Documents/atlas-link/frontend/src/app/globals.css:1:1: Package path ./latin.css is exported from package /Users/jesusfranciscofrancisco/Documents/atlas-link/frontend/node_modules/@fontsource-variable/inter, but no valid target file was found (see exports field in /Users/jesusfranciscofrancisco/Documents/atlas-link/frontend/node_modules/@fontsource-variable/inter/package.json)\u001b[39m\n\u001b[31m+     [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]\u001b[39m\n\u001b[31m+     [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]\u001b[39m\n\u001b[31m+     [at Object.Once (/Users/jesusfranciscofrancisco/Documents/atlas-link/frontend/node_modules/@tailwindcss/postcss/dist/index.js:10:7013)]\u001b[39m\n\u001b[31m+     [at process.processTicksAndRejections (node:internal/process/task_queues:104:5)]\u001b[39m\n\u001b[31m+     [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]\u001b[39m\n\u001b[31m+     [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]\u001b[39m\n\u001b[31m+     [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ Import trace:\u001b[39m\n\u001b[31m+   Client Component Browser:\u001b[39m\n\u001b[31m+     ./src/app/globals.css [Client Component Browser]\u001b[39m\n\u001b[31m+     ./src/app/layout.tsx [Server Component]\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ \",\u001b[39m\n\u001b[31m+   \"./src/app/globals.css\u001b[39m\n\u001b[31m+ Error: Error evaluating Node.js code\u001b[39m\n\u001b[31m+ CssSyntaxError: tailwindcss: /Users/jesusfranciscofrancisco/Documents/atlas-link/frontend/src/app/globals.css:1:1: Package path ./latin.css is exported from package /Users/jesusfranciscofrancisco/Documents/atlas-link/frontend/node_modules/@fontsource-variable/inter, but no valid target file was found (see exports field in /Users/jesusfranciscofrancisco/Documents/atlas-link/frontend/node_modules/@fontsource-variable/inter/package.json)\u001b[39m\n\u001b[31m+     [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]\u001b[39m\n\u001b[31m+     [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]\u001b[39m\n\u001b[31m+     [at Object.Once (/Users/jesusfranciscofrancisco/Documents/atlas-link/frontend/node_modules/@tailwindcss/postcss/dist/index.js:10:7013)]\u001b[39m\n\u001b[31m+     [at process.processTicksAndRejections (node:internal/process/task_queues:104:5)]\u001b[39m\n\u001b[31m+     [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]\u001b[39m\n\u001b[31m+     [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]\u001b[39m\n\u001b[31m+     [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ Import trace:\u001b[39m\n\u001b[31m+   Client Component Browser:\u001b[39m\n\u001b[31m+     ./src/app/globals.css [Client Component Browser]\u001b[39m\n\u001b[31m+     ./src/app/layout.tsx [Server Component]\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ \",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  25 |     await use();\n  26 |     await testInfo.attach('browser-diagnostics.json', { body: JSON.stringify({ browser: 'installed Google Chrome / Chromium engine', platform: process.platform, emulation: testInfo.project.name, consoleErrors, pageErrors, serverErrors }, null, 2), contentType: 'application/json' });\n> 27 |     expect(pageErrors, 'No uncaught browser exceptions').toEqual([]);\n     |                                                          ^\n  28 |     expect(serverErrors, 'No local server 5xx during browser journey').toEqual([]);\n  29 |   }, { auto: true }],\n  30 | });\n    at Object.base.extend.diagnostics.auto (/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/journeys.spec.ts:27:58)"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-24T05:47:28.217Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/jesusfranciscofrancisco/Documents/atlas-link/evidence/browser-results/journeys-landing-real-phot-8f60c-mercial-request-persistence-chrome-desktop/test-failed-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/jesusfranciscofrancisco/Documents/atlas-link/evidence/browser-results/journeys-landing-real-phot-8f60c-mercial-request-persistence-chrome-desktop/test-failed-2.png"
+                    },
+                    {
+                      "name": "browser-diagnostics.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJicm93c2VyIjogImluc3RhbGxlZCBHb29nbGUgQ2hyb21lIC8gQ2hyb21pdW0gZW5naW5lIiwKICAicGxhdGZvcm0iOiAiZGFyd2luIiwKICAiZW11bGF0aW9uIjogImNocm9tZS1kZXNrdG9wIiwKICAiY29uc29sZUVycm9ycyI6IFsKICAgICJGYWlsZWQgdG8gbG9hZCByZXNvdXJjZTogdGhlIHNlcnZlciByZXNwb25kZWQgd2l0aCBhIHN0YXR1cyBvZiA1MDAgKEludGVybmFsIFNlcnZlciBFcnJvcikiLAogICAgIlJlZnVzZWQgdG8gZXhlY3V0ZSBzY3JpcHQgZnJvbSAnaHR0cDovL2xvY2FsaG9zdDo0MzAwL19uZXh0L3N0YXRpYy9kZXZlbG9wbWVudC9fY2xpZW50TWlkZGxld2FyZU1hbmlmZXN0LmpzJyBiZWNhdXNlIGl0cyBNSU1FIHR5cGUgKCdhcHBsaWNhdGlvbi9qc29uJykgaXMgbm90IGV4ZWN1dGFibGUsIGFuZCBzdHJpY3QgTUlNRSB0eXBlIGNoZWNraW5nIGlzIGVuYWJsZWQuIiwKICAgICJGYWlsZWQgdG8gbG9hZCByZXNvdXJjZTogdGhlIHNlcnZlciByZXNwb25kZWQgd2l0aCBhIHN0YXR1cyBvZiA0MDQgKE5vdCBGb3VuZCkiLAogICAgIi4vc3JjL2FwcC9nbG9iYWxzLmNzc1xuRXJyb3I6IEVycm9yIGV2YWx1YXRpbmcgTm9kZS5qcyBjb2RlXG5Dc3NTeW50YXhFcnJvcjogdGFpbHdpbmRjc3M6IC9Vc2Vycy9qZXN1c2ZyYW5jaXNjb2ZyYW5jaXNjby9Eb2N1bWVudHMvYXRsYXMtbGluay9mcm9udGVuZC9zcmMvYXBwL2dsb2JhbHMuY3NzOjE6MTogUGFja2FnZSBwYXRoIC4vbGF0aW4uY3NzIGlzIGV4cG9ydGVkIGZyb20gcGFja2FnZSAvVXNlcnMvamVzdXNmcmFuY2lzY29mcmFuY2lzY28vRG9jdW1lbnRzL2F0bGFzLWxpbmsvZnJvbnRlbmQvbm9kZV9tb2R1bGVzL0Bmb250c291cmNlLXZhcmlhYmxlL2ludGVyLCBidXQgbm8gdmFsaWQgdGFyZ2V0IGZpbGUgd2FzIGZvdW5kIChzZWUgZXhwb3J0cyBmaWVsZCBpbiAvVXNlcnMvamVzdXNmcmFuY2lzY29mcmFuY2lzY28vRG9jdW1lbnRzL2F0bGFzLWxpbmsvZnJvbnRlbmQvbm9kZV9tb2R1bGVzL0Bmb250c291cmNlLXZhcmlhYmxlL2ludGVyL3BhY2thZ2UuanNvbilcbiAgICBbYXQgSW5wdXQuZXJyb3IgKHR1cmJvcGFjazovLy9bcHJvamVjdF0vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MvbGliL2lucHV0LmpzOjEzNToxNildXG4gICAgW2F0IFJvb3QuZXJyb3IgKHR1cmJvcGFjazovLy9bcHJvamVjdF0vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MvbGliL25vZGUuanM6MTY2OjMyKV1cbiAgICBbYXQgT2JqZWN0Lk9uY2UgKC9Vc2Vycy9qZXN1c2ZyYW5jaXNjb2ZyYW5jaXNjby9Eb2N1bWVudHMvYXRsYXMtbGluay9mcm9udGVuZC9ub2RlX21vZHVsZXMvQHRhaWx3aW5kY3NzL3Bvc3Rjc3MvZGlzdC9pbmRleC5qczoxMDo3MDEzKV1cbiAgICBbYXQgcHJvY2Vzcy5wcm9jZXNzVGlja3NBbmRSZWplY3Rpb25zIChub2RlOmludGVybmFsL3Byb2Nlc3MvdGFza19xdWV1ZXM6MTA0OjUpXVxuICAgIFthdCBhc3luYyBMYXp5UmVzdWx0LnJ1bkFzeW5jICh0dXJib3BhY2s6Ly8vW3Byb2plY3RdL25vZGVfbW9kdWxlcy9wb3N0Y3NzL2xpYi9sYXp5LXJlc3VsdC5qczoyOTk6MTEpXVxuICAgIFthdCBhc3luYyB0cmFuc2Zvcm0gKHR1cmJvcGFjazovLy9bdHVyYm9wYWNrLW5vZGVdL3RyYW5zZm9ybXMvcG9zdGNzcy50cz9jb25maWc9W3Byb2plY3RdL3Bvc3Rjc3MuY29uZmlnLm1qczo3MDozNCldXG4gICAgW2F0IGFzeW5jIHJ1biAodHVyYm9wYWNrOi8vL1t0dXJib3BhY2stbm9kZV0vY2hpbGRfcHJvY2Vzcy9ldmFsdWF0ZS50czo4OSIsCiAgICAiLi9zcmMvYXBwL2dsb2JhbHMuY3NzXG5FcnJvcjogRXJyb3IgZXZhbHVhdGluZyBOb2RlLmpzIGNvZGVcbkNzc1N5bnRheEVycm9yOiB0YWlsd2luZGNzczogL1VzZXJzL2plc3VzZnJhbmNpc2NvZnJhbmNpc2NvL0RvY3VtZW50cy9hdGxhcy1saW5rL2Zyb250ZW5kL3NyYy9hcHAvZ2xvYmFscy5jc3M6MToxOiBQYWNrYWdlIHBhdGggLi9sYXRpbi5jc3MgaXMgZXhwb3J0ZWQgZnJvbSBwYWNrYWdlIC9Vc2Vycy9qZXN1c2ZyYW5jaXNjb2ZyYW5jaXNjby9Eb2N1bWVudHMvYXRsYXMtbGluay9mcm9udGVuZC9ub2RlX21vZHVsZXMvQGZvbnRzb3VyY2UtdmFyaWFibGUvaW50ZXIsIGJ1dCBubyB2YWxpZCB0YXJnZXQgZmlsZSB3YXMgZm91bmQgKHNlZSBleHBvcnRzIGZpZWxkIGluIC9Vc2Vycy9qZXN1c2ZyYW5jaXNjb2ZyYW5jaXNjby9Eb2N1bWVudHMvYXRsYXMtbGluay9mcm9udGVuZC9ub2RlX21vZHVsZXMvQGZvbnRzb3VyY2UtdmFyaWFibGUvaW50ZXIvcGFja2FnZS5qc29uKVxuICAgIFthdCBJbnB1dC5lcnJvciAodHVyYm9wYWNrOi8vL1twcm9qZWN0XS9ub2RlX21vZHVsZXMvcG9zdGNzcy9saWIvaW5wdXQuanM6MTM1OjE2KV1cbiAgICBbYXQgUm9vdC5lcnJvciAodHVyYm9wYWNrOi8vL1twcm9qZWN0XS9ub2RlX21vZHVsZXMvcG9zdGNzcy9saWIvbm9kZS5qczoxNjY6MzIpXVxuICAgIFthdCBPYmplY3QuT25jZSAoL1VzZXJzL2plc3VzZnJhbmNpc2NvZnJhbmNpc2NvL0RvY3VtZW50cy9hdGxhcy1saW5rL2Zyb250ZW5kL25vZGVfbW9kdWxlcy9AdGFpbHdpbmRjc3MvcG9zdGNzcy9kaXN0L2luZGV4LmpzOjEwOjcwMTMpXVxuICAgIFthdCBwcm9jZXNzLnByb2Nlc3NUaWNrc0FuZFJlamVjdGlvbnMgKG5vZGU6aW50ZXJuYWwvcHJvY2Vzcy90YXNrX3F1ZXVlczoxMDQ6NSldXG4gICAgW2F0IGFzeW5jIExhenlSZXN1bHQucnVuQXN5bmMgKHR1cmJvcGFjazovLy9bcHJvamVjdF0vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MvbGliL2xhenktcmVzdWx0LmpzOjI5OToxMSldXG4gICAgW2F0IGFzeW5jIHRyYW5zZm9ybSAodHVyYm9wYWNrOi8vL1t0dXJib3BhY2stbm9kZV0vdHJhbnNmb3Jtcy9wb3N0Y3NzLnRzP2NvbmZpZz1bcHJvamVjdF0vcG9zdGNzcy5jb25maWcubWpzOjcwOjM0KV1cbiAgICBbYXQgYXN5bmMgcnVuICh0dXJib3BhY2s6Ly8vW3R1cmJvcGFjay1ub2RlXS9jaGlsZF9wcm9jZXNzL2V2YWx1YXRlLnRzOjg5IiwKICAgICIuL3NyYy9hcHAvZ2xvYmFscy5jc3NcbkVycm9yOiBFcnJvciBldmFsdWF0aW5nIE5vZGUuanMgY29kZVxuQ3NzU3ludGF4RXJyb3I6IHRhaWx3aW5kY3NzOiAvVXNlcnMvamVzdXNmcmFuY2lzY29mcmFuY2lzY28vRG9jdW1lbnRzL2F0bGFzLWxpbmsvZnJvbnRlbmQvc3JjL2FwcC9nbG9iYWxzLmNzczoxOjE6IFBhY2thZ2UgcGF0aCAuL2xhdGluLmNzcyBpcyBleHBvcnRlZCBmcm9tIHBhY2thZ2UgL1VzZXJzL2plc3VzZnJhbmNpc2NvZnJhbmNpc2NvL0RvY3VtZW50cy9hdGxhcy1saW5rL2Zyb250ZW5kL25vZGVfbW9kdWxlcy9AZm9udHNvdXJjZS12YXJpYWJsZS9pbnRlciwgYnV0IG5vIHZhbGlkIHRhcmdldCBmaWxlIHdhcyBmb3VuZCAoc2VlIGV4cG9ydHMgZmllbGQgaW4gL1VzZXJzL2plc3VzZnJhbmNpc2NvZnJhbmNpc2NvL0RvY3VtZW50cy9hdGxhcy1saW5rL2Zyb250ZW5kL25vZGVfbW9kdWxlcy9AZm9udHNvdXJjZS12YXJpYWJsZS9pbnRlci9wYWNrYWdlLmpzb24pXG4gICAgW2F0IElucHV0LmVycm9yICh0dXJib3BhY2s6Ly8vW3Byb2plY3RdL25vZGVfbW9kdWxlcy9wb3N0Y3NzL2xpYi9pbnB1dC5qczoxMzU6MTYpXVxuICAgIFthdCBSb290LmVycm9yICh0dXJib3BhY2s6Ly8vW3Byb2plY3RdL25vZGVfbW9kdWxlcy9wb3N0Y3NzL2xpYi9ub2RlLmpzOjE2NjozMildXG4gICAgW2F0IE9iamVjdC5PbmNlICgvVXNlcnMvamVzdXNmcmFuY2lzY29mcmFuY2lzY28vRG9jdW1lbnRzL2F0bGFzLWxpbmsvZnJvbnRlbmQvbm9kZV9tb2R1bGVzL0B0YWlsd2luZGNzcy9wb3N0Y3NzL2Rpc3QvaW5kZXguanM6MTA6NzAxMyldXG4gICAgW2F0IHByb2Nlc3MucHJvY2Vzc1RpY2tzQW5kUmVqZWN0aW9ucyAobm9kZTppbnRlcm5hbC9wcm9jZXNzL3Rhc2tfcXVldWVzOjEwNDo1KV1cbiAgICBbYXQgYXN5bmMgTGF6eVJlc3VsdC5ydW5Bc3luYyAodHVyYm9wYWNrOi8vL1twcm9qZWN0XS9ub2RlX21vZHVsZXMvcG9zdGNzcy9saWIvbGF6eS1yZXN1bHQuanM6Mjk5OjExKV1cbiAgICBbYXQgYXN5bmMgdHJhbnNmb3JtICh0dXJib3BhY2s6Ly8vW3R1cmJvcGFjay1ub2RlXS90cmFuc2Zvcm1zL3Bvc3Rjc3MudHM/Y29uZmlnPVtwcm9qZWN0XS9wb3N0Y3NzLmNvbmZpZy5tanM6NzA6MzQpXVxuICAgIFthdCBhc3luYyBydW4gKHR1cmJvcGFjazovLy9bdHVyYm9wYWNrLW5vZGVdL2NoaWxkX3Byb2Nlc3MvZXZhbHVhdGUudHM6ODkiLAogICAgIkZhaWxlZCB0byBsb2FkIHJlc291cmNlOiB0aGUgc2VydmVyIHJlc3BvbmRlZCB3aXRoIGEgc3RhdHVzIG9mIDUwMCAoSW50ZXJuYWwgU2VydmVyIEVycm9yKSIsCiAgICAiUmVmdXNlZCB0byBleGVjdXRlIHNjcmlwdCBmcm9tICdodHRwOi8vbG9jYWxob3N0OjQzMDAvX25leHQvc3RhdGljL2RldmVsb3BtZW50L19jbGllbnRNaWRkbGV3YXJlTWFuaWZlc3QuanMnIGJlY2F1c2UgaXRzIE1JTUUgdHlwZSAoJ2FwcGxpY2F0aW9uL2pzb24nKSBpcyBub3QgZXhlY3V0YWJsZSwgYW5kIHN0cmljdCBNSU1FIHR5cGUgY2hlY2tpbmcgaXMgZW5hYmxlZC4iLAogICAgIi4vc3JjL2FwcC9nbG9iYWxzLmNzc1xuRXJyb3I6IEVycm9yIGV2YWx1YXRpbmcgTm9kZS5qcyBjb2RlXG5Dc3NTeW50YXhFcnJvcjogdGFpbHdpbmRjc3M6IC9Vc2Vycy9qZXN1c2ZyYW5jaXNjb2ZyYW5jaXNjby9Eb2N1bWVudHMvYXRsYXMtbGluay9mcm9udGVuZC9zcmMvYXBwL2dsb2JhbHMuY3NzOjE6MTogUGFja2FnZSBwYXRoIC4vbGF0aW4uY3NzIGlzIGV4cG9ydGVkIGZyb20gcGFja2FnZSAvVXNlcnMvamVzdXNmcmFuY2lzY29mcmFuY2lzY28vRG9jdW1lbnRzL2F0bGFzLWxpbmsvZnJvbnRlbmQvbm9kZV9tb2R1bGVzL0Bmb250c291cmNlLXZhcmlhYmxlL2ludGVyLCBidXQgbm8gdmFsaWQgdGFyZ2V0IGZpbGUgd2FzIGZvdW5kIChzZWUgZXhwb3J0cyBmaWVsZCBpbiAvVXNlcnMvamVzdXNmcmFuY2lzY29mcmFuY2lzY28vRG9jdW1lbnRzL2F0bGFzLWxpbmsvZnJvbnRlbmQvbm9kZV9tb2R1bGVzL0Bmb250c291cmNlLXZhcmlhYmxlL2ludGVyL3BhY2thZ2UuanNvbilcbiAgICBbYXQgSW5wdXQuZXJyb3IgKHR1cmJvcGFjazovLy9bcHJvamVjdF0vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MvbGliL2lucHV0LmpzOjEzNToxNildXG4gICAgW2F0IFJvb3QuZXJyb3IgKHR1cmJvcGFjazovLy9bcHJvamVjdF0vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MvbGliL25vZGUuanM6MTY2OjMyKV1cbiAgICBbYXQgT2JqZWN0Lk9uY2UgKC9Vc2Vycy9qZXN1c2ZyYW5jaXNjb2ZyYW5jaXNjby9Eb2N1bWVudHMvYXRsYXMtbGluay9mcm9udGVuZC9ub2RlX21vZHVsZXMvQHRhaWx3aW5kY3NzL3Bvc3Rjc3MvZGlzdC9pbmRleC5qczoxMDo3MDEzKV1cbiAgICBbYXQgcHJvY2Vzcy5wcm9jZXNzVGlja3NBbmRSZWplY3Rpb25zIChub2RlOmludGVybmFsL3Byb2Nlc3MvdGFza19xdWV1ZXM6MTA0OjUpXVxuICAgIFthdCBhc3luYyBMYXp5UmVzdWx0LnJ1bkFzeW5jICh0dXJib3BhY2s6Ly8vW3Byb2plY3RdL25vZGVfbW9kdWxlcy9wb3N0Y3NzL2xpYi9sYXp5LXJlc3VsdC5qczoyOTk6MTEpXVxuICAgIFthdCBhc3luYyB0cmFuc2Zvcm0gKHR1cmJvcGFjazovLy9bdHVyYm9wYWNrLW5vZGVdL3RyYW5zZm9ybXMvcG9zdGNzcy50cz9jb25maWc9W3Byb2plY3RdL3Bvc3Rjc3MuY29uZmlnLm1qczo3MDozNCldXG4gICAgW2F0IGFzeW5jIHJ1biAodHVyYm9wYWNrOi8vL1t0dXJib3BhY2stbm9kZV0vY2hpbGRfcHJvY2Vzcy9ldmFsdWF0ZS50czo4OSIsCiAgICAiLi9zcmMvYXBwL2dsb2JhbHMuY3NzXG5FcnJvcjogRXJyb3IgZXZhbHVhdGluZyBOb2RlLmpzIGNvZGVcbkNzc1N5bnRheEVycm9yOiB0YWlsd2luZGNzczogL1VzZXJzL2plc3VzZnJhbmNpc2NvZnJhbmNpc2NvL0RvY3VtZW50cy9hdGxhcy1saW5rL2Zyb250ZW5kL3NyYy9hcHAvZ2xvYmFscy5jc3M6MToxOiBQYWNrYWdlIHBhdGggLi9sYXRpbi5jc3MgaXMgZXhwb3J0ZWQgZnJvbSBwYWNrYWdlIC9Vc2Vycy9qZXN1c2ZyYW5jaXNjb2ZyYW5jaXNjby9Eb2N1bWVudHMvYXRsYXMtbGluay9mcm9udGVuZC9ub2RlX21vZHVsZXMvQGZvbnRzb3VyY2UtdmFyaWFibGUvaW50ZXIsIGJ1dCBubyB2YWxpZCB0YXJnZXQgZmlsZSB3YXMgZm91bmQgKHNlZSBleHBvcnRzIGZpZWxkIGluIC9Vc2Vycy9qZXN1c2ZyYW5jaXNjb2ZyYW5jaXNjby9Eb2N1bWVudHMvYXRsYXMtbGluay9mcm9udGVuZC9ub2RlX21vZHVsZXMvQGZvbnRzb3VyY2UtdmFyaWFibGUvaW50ZXIvcGFja2FnZS5qc29uKVxuICAgIFthdCBJbnB1dC5lcnJvciAodHVyYm9wYWNrOi8vL1twcm9qZWN0XS9ub2RlX21vZHVsZXMvcG9zdGNzcy9saWIvaW5wdXQuanM6MTM1OjE2KV1cbiAgICBbYXQgUm9vdC5lcnJvciAodHVyYm9wYWNrOi8vL1twcm9qZWN0XS9ub2RlX21vZHVsZXMvcG9zdGNzcy9saWIvbm9kZS5qczoxNjY6MzIpXVxuICAgIFthdCBPYmplY3QuT25jZSAoL1VzZXJzL2plc3VzZnJhbmNpc2NvZnJhbmNpc2NvL0RvY3VtZW50cy9hdGxhcy1saW5rL2Zyb250ZW5kL25vZGVfbW9kdWxlcy9AdGFpbHdpbmRjc3MvcG9zdGNzcy9kaXN0L2luZGV4LmpzOjEwOjcwMTMpXVxuICAgIFthdCBwcm9jZXNzLnByb2Nlc3NUaWNrc0FuZFJlamVjdGlvbnMgKG5vZGU6aW50ZXJuYWwvcHJvY2Vzcy90YXNrX3F1ZXVlczoxMDQ6NSldXG4gICAgW2F0IGFzeW5jIExhenlSZXN1bHQucnVuQXN5bmMgKHR1cmJvcGFjazovLy9bcHJvamVjdF0vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MvbGliL2xhenktcmVzdWx0LmpzOjI5OToxMSldXG4gICAgW2F0IGFzeW5jIHRyYW5zZm9ybSAodHVyYm9wYWNrOi8vL1t0dXJib3BhY2stbm9kZV0vdHJhbnNmb3Jtcy9wb3N0Y3NzLnRzP2NvbmZpZz1bcHJvamVjdF0vcG9zdGNzcy5jb25maWcubWpzOjcwOjM0KV1cbiAgICBbYXQgYXN5bmMgcnVuICh0dXJib3BhY2s6Ly8vW3R1cmJvcGFjay1ub2RlXS9jaGlsZF9wcm9jZXNzL2V2YWx1YXRlLnRzOjg5IiwKICAgICIuL3NyYy9hcHAvZ2xvYmFscy5jc3NcbkVycm9yOiBFcnJvciBldmFsdWF0aW5nIE5vZGUuanMgY29kZVxuQ3NzU3ludGF4RXJyb3I6IHRhaWx3aW5kY3NzOiAvVXNlcnMvamVzdXNmcmFuY2lzY29mcmFuY2lzY28vRG9jdW1lbnRzL2F0bGFzLWxpbmsvZnJvbnRlbmQvc3JjL2FwcC9nbG9iYWxzLmNzczoxOjE6IFBhY2thZ2UgcGF0aCAuL2xhdGluLmNzcyBpcyBleHBvcnRlZCBmcm9tIHBhY2thZ2UgL1VzZXJzL2plc3VzZnJhbmNpc2NvZnJhbmNpc2NvL0RvY3VtZW50cy9hdGxhcy1saW5rL2Zyb250ZW5kL25vZGVfbW9kdWxlcy9AZm9udHNvdXJjZS12YXJpYWJsZS9pbnRlciwgYnV0IG5vIHZhbGlkIHRhcmdldCBmaWxlIHdhcyBmb3VuZCAoc2VlIGV4cG9ydHMgZmllbGQgaW4gL1VzZXJzL2plc3VzZnJhbmNpc2NvZnJhbmNpc2NvL0RvY3VtZW50cy9hdGxhcy1saW5rL2Zyb250ZW5kL25vZGVfbW9kdWxlcy9AZm9udHNvdXJjZS12YXJpYWJsZS9pbnRlci9wYWNrYWdlLmpzb24pXG4gICAgW2F0IElucHV0LmVycm9yICh0dXJib3BhY2s6Ly8vW3Byb2plY3RdL25vZGVfbW9kdWxlcy9wb3N0Y3NzL2xpYi9pbnB1dC5qczoxMzU6MTYpXVxuICAgIFthdCBSb290LmVycm9yICh0dXJib3BhY2s6Ly8vW3Byb2plY3RdL25vZGVfbW9kdWxlcy9wb3N0Y3NzL2xpYi9ub2RlLmpzOjE2NjozMildXG4gICAgW2F0IE9iamVjdC5PbmNlICgvVXNlcnMvamVzdXNmcmFuY2lzY29mcmFuY2lzY28vRG9jdW1lbnRzL2F0bGFzLWxpbmsvZnJvbnRlbmQvbm9kZV9tb2R1bGVzL0B0YWlsd2luZGNzcy9wb3N0Y3NzL2Rpc3QvaW5kZXguanM6MTA6NzAxMyldXG4gICAgW2F0IHByb2Nlc3MucHJvY2Vzc1RpY2tzQW5kUmVqZWN0aW9ucyAobm9kZTppbnRlcm5hbC9wcm9jZXNzL3Rhc2tfcXVldWVzOjEwNDo1KV1cbiAgICBbYXQgYXN5bmMgTGF6eVJlc3VsdC5ydW5Bc3luYyAodHVyYm9wYWNrOi8vL1twcm9qZWN0XS9ub2RlX21vZHVsZXMvcG9zdGNzcy9saWIvbGF6eS1yZXN1bHQuanM6Mjk5OjExKV1cbiAgICBbYXQgYXN5bmMgdHJhbnNmb3JtICh0dXJib3BhY2s6Ly8vW3R1cmJvcGFjay1ub2RlXS90cmFuc2Zvcm1zL3Bvc3Rjc3MudHM/Y29uZmlnPVtwcm9qZWN0XS9wb3N0Y3NzLmNvbmZpZy5tanM6NzA6MzQpXVxuICAgIFthdCBhc3luYyBydW4gKHR1cmJvcGFjazovLy9bdHVyYm9wYWNrLW5vZGVdL2NoaWxkX3Byb2Nlc3MvZXZhbHVhdGUudHM6ODkiLAogICAgIi4vc3JjL2FwcC9nbG9iYWxzLmNzc1xuRXJyb3I6IEVycm9yIGV2YWx1YXRpbmcgTm9kZS5qcyBjb2RlXG5Dc3NTeW50YXhFcnJvcjogdGFpbHdpbmRjc3M6IC9Vc2Vycy9qZXN1c2ZyYW5jaXNjb2ZyYW5jaXNjby9Eb2N1bWVudHMvYXRsYXMtbGluay9mcm9udGVuZC9zcmMvYXBwL2dsb2JhbHMuY3NzOjE6MTogUGFja2FnZSBwYXRoIC4vbGF0aW4uY3NzIGlzIGV4cG9ydGVkIGZyb20gcGFja2FnZSAvVXNlcnMvamVzdXNmcmFuY2lzY29mcmFuY2lzY28vRG9jdW1lbnRzL2F0bGFzLWxpbmsvZnJvbnRlbmQvbm9kZV9tb2R1bGVzL0Bmb250c291cmNlLXZhcmlhYmxlL2ludGVyLCBidXQgbm8gdmFsaWQgdGFyZ2V0IGZpbGUgd2FzIGZvdW5kIChzZWUgZXhwb3J0cyBmaWVsZCBpbiAvVXNlcnMvamVzdXNmcmFuY2lzY29mcmFuY2lzY28vRG9jdW1lbnRzL2F0bGFzLWxpbmsvZnJvbnRlbmQvbm9kZV9tb2R1bGVzL0Bmb250c291cmNlLXZhcmlhYmxlL2ludGVyL3BhY2thZ2UuanNvbilcbiAgICBbYXQgSW5wdXQuZXJyb3IgKHR1cmJvcGFjazovLy9bcHJvamVjdF0vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MvbGliL2lucHV0LmpzOjEzNToxNildXG4gICAgW2F0IFJvb3QuZXJyb3IgKHR1cmJvcGFjazovLy9bcHJvamVjdF0vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MvbGliL25vZGUuanM6MTY2OjMyKV1cbiAgICBbYXQgT2JqZWN0Lk9uY2UgKC9Vc2Vycy9qZXN1c2ZyYW5jaXNjb2ZyYW5jaXNjby9Eb2N1bWVudHMvYXRsYXMtbGluay9mcm9udGVuZC9ub2RlX21vZHVsZXMvQHRhaWx3aW5kY3NzL3Bvc3Rjc3MvZGlzdC9pbmRleC5qczoxMDo3MDEzKV1cbiAgICBbYXQgcHJvY2Vzcy5wcm9jZXNzVGlja3NBbmRSZWplY3Rpb25zIChub2RlOmludGVybmFsL3Byb2Nlc3MvdGFza19xdWV1ZXM6MTA0OjUpXVxuICAgIFthdCBhc3luYyBMYXp5UmVzdWx0LnJ1bkFzeW5jICh0dXJib3BhY2s6Ly8vW3Byb2plY3RdL25vZGVfbW9kdWxlcy9wb3N0Y3NzL2xpYi9sYXp5LXJlc3VsdC5qczoyOTk6MTEpXVxuICAgIFthdCBhc3luYyB0cmFuc2Zvcm0gKHR1cmJvcGFjazovLy9bdHVyYm9wYWNrLW5vZGVdL3RyYW5zZm9ybXMvcG9zdGNzcy50cz9jb25maWc9W3Byb2plY3RdL3Bvc3Rjc3MuY29uZmlnLm1qczo3MDozNCldXG4gICAgW2F0IGFzeW5jIHJ1biAodHVyYm9wYWNrOi8vL1t0dXJib3BhY2stbm9kZV0vY2hpbGRfcHJvY2Vzcy9ldmFsdWF0ZS50czo4OSIKICBdLAogICJwYWdlRXJyb3JzIjogWwogICAgIi4vc3JjL2FwcC9nbG9iYWxzLmNzc1xuRXJyb3I6IEVycm9yIGV2YWx1YXRpbmcgTm9kZS5qcyBjb2RlXG5Dc3NTeW50YXhFcnJvcjogdGFpbHdpbmRjc3M6IC9Vc2Vycy9qZXN1c2ZyYW5jaXNjb2ZyYW5jaXNjby9Eb2N1bWVudHMvYXRsYXMtbGluay9mcm9udGVuZC9zcmMvYXBwL2dsb2JhbHMuY3NzOjE6MTogUGFja2FnZSBwYXRoIC4vbGF0aW4uY3NzIGlzIGV4cG9ydGVkIGZyb20gcGFja2FnZSAvVXNlcnMvamVzdXNmcmFuY2lzY29mcmFuY2lzY28vRG9jdW1lbnRzL2F0bGFzLWxpbmsvZnJvbnRlbmQvbm9kZV9tb2R1bGVzL0Bmb250c291cmNlLXZhcmlhYmxlL2ludGVyLCBidXQgbm8gdmFsaWQgdGFyZ2V0IGZpbGUgd2FzIGZvdW5kIChzZWUgZXhwb3J0cyBmaWVsZCBpbiAvVXNlcnMvamVzdXNmcmFuY2lzY29mcmFuY2lzY28vRG9jdW1lbnRzL2F0bGFzLWxpbmsvZnJvbnRlbmQvbm9kZV9tb2R1bGVzL0Bmb250c291cmNlLXZhcmlhYmxlL2ludGVyL3BhY2thZ2UuanNvbilcbiAgICBbYXQgSW5wdXQuZXJyb3IgKHR1cmJvcGFjazovLy9bcHJvamVjdF0vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MvbGliL2lucHV0LmpzOjEzNToxNildXG4gICAgW2F0IFJvb3QuZXJyb3IgKHR1cmJvcGFjazovLy9bcHJvamVjdF0vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MvbGliL25vZGUuanM6MTY2OjMyKV1cbiAgICBbYXQgT2JqZWN0Lk9uY2UgKC9Vc2Vycy9qZXN1c2ZyYW5jaXNjb2ZyYW5jaXNjby9Eb2N1bWVudHMvYXRsYXMtbGluay9mcm9udGVuZC9ub2RlX21vZHVsZXMvQHRhaWx3aW5kY3NzL3Bvc3Rjc3MvZGlzdC9pbmRleC5qczoxMDo3MDEzKV1cbiAgICBbYXQgcHJvY2Vzcy5wcm9jZXNzVGlja3NBbmRSZWplY3Rpb25zIChub2RlOmludGVybmFsL3Byb2Nlc3MvdGFza19xdWV1ZXM6MTA0OjUpXVxuICAgIFthdCBhc3luYyBMYXp5UmVzdWx0LnJ1bkFzeW5jICh0dXJib3BhY2s6Ly8vW3Byb2plY3RdL25vZGVfbW9kdWxlcy9wb3N0Y3NzL2xpYi9sYXp5LXJlc3VsdC5qczoyOTk6MTEpXVxuICAgIFthdCBhc3luYyB0cmFuc2Zvcm0gKHR1cmJvcGFjazovLy9bdHVyYm9wYWNrLW5vZGVdL3RyYW5zZm9ybXMvcG9zdGNzcy50cz9jb25maWc9W3Byb2plY3RdL3Bvc3Rjc3MuY29uZmlnLm1qczo3MDozNCldXG4gICAgW2F0IGFzeW5jIHJ1biAodHVyYm9wYWNrOi8vL1t0dXJib3BhY2stbm9kZV0vY2hpbGRfcHJvY2Vzcy9ldmFsdWF0ZS50czo4OToyMyldXG5cbkltcG9ydCB0cmFjZTpcbiAgQ2xpZW50IENvbXBvbmVudCBCcm93c2VyOlxuICAgIC4vc3JjL2FwcC9nbG9iYWxzLmNzcyBbQ2xpZW50IENvbXBvbmVudCBCcm93c2VyXVxuICAgIC4vc3JjL2FwcC9sYXlvdXQudHN4IFtTZXJ2ZXIgQ29tcG9uZW50XVxuXG4iLAogICAgIi4vc3JjL2FwcC9nbG9iYWxzLmNzc1xuRXJyb3I6IEVycm9yIGV2YWx1YXRpbmcgTm9kZS5qcyBjb2RlXG5Dc3NTeW50YXhFcnJvcjogdGFpbHdpbmRjc3M6IC9Vc2Vycy9qZXN1c2ZyYW5jaXNjb2ZyYW5jaXNjby9Eb2N1bWVudHMvYXRsYXMtbGluay9mcm9udGVuZC9zcmMvYXBwL2dsb2JhbHMuY3NzOjE6MTogUGFja2FnZSBwYXRoIC4vbGF0aW4uY3NzIGlzIGV4cG9ydGVkIGZyb20gcGFja2FnZSAvVXNlcnMvamVzdXNmcmFuY2lzY29mcmFuY2lzY28vRG9jdW1lbnRzL2F0bGFzLWxpbmsvZnJvbnRlbmQvbm9kZV9tb2R1bGVzL0Bmb250c291cmNlLXZhcmlhYmxlL2ludGVyLCBidXQgbm8gdmFsaWQgdGFyZ2V0IGZpbGUgd2FzIGZvdW5kIChzZWUgZXhwb3J0cyBmaWVsZCBpbiAvVXNlcnMvamVzdXNmcmFuY2lzY29mcmFuY2lzY28vRG9jdW1lbnRzL2F0bGFzLWxpbmsvZnJvbnRlbmQvbm9kZV9tb2R1bGVzL0Bmb250c291cmNlLXZhcmlhYmxlL2ludGVyL3BhY2thZ2UuanNvbilcbiAgICBbYXQgSW5wdXQuZXJyb3IgKHR1cmJvcGFjazovLy9bcHJvamVjdF0vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MvbGliL2lucHV0LmpzOjEzNToxNildXG4gICAgW2F0IFJvb3QuZXJyb3IgKHR1cmJvcGFjazovLy9bcHJvamVjdF0vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MvbGliL25vZGUuanM6MTY2OjMyKV1cbiAgICBbYXQgT2JqZWN0Lk9uY2UgKC9Vc2Vycy9qZXN1c2ZyYW5jaXNjb2ZyYW5jaXNjby9Eb2N1bWVudHMvYXRsYXMtbGluay9mcm9udGVuZC9ub2RlX21vZHVsZXMvQHRhaWx3aW5kY3NzL3Bvc3Rjc3MvZGlzdC9pbmRleC5qczoxMDo3MDEzKV1cbiAgICBbYXQgcHJvY2Vzcy5wcm9jZXNzVGlja3NBbmRSZWplY3Rpb25zIChub2RlOmludGVybmFsL3Byb2Nlc3MvdGFza19xdWV1ZXM6MTA0OjUpXVxuICAgIFthdCBhc3luYyBMYXp5UmVzdWx0LnJ1bkFzeW5jICh0dXJib3BhY2s6Ly8vW3Byb2plY3RdL25vZGVfbW9kdWxlcy9wb3N0Y3NzL2xpYi9sYXp5LXJlc3VsdC5qczoyOTk6MTEpXVxuICAgIFthdCBhc3luYyB0cmFuc2Zvcm0gKHR1cmJvcGFjazovLy9bdHVyYm9wYWNrLW5vZGVdL3RyYW5zZm9ybXMvcG9zdGNzcy50cz9jb25maWc9W3Byb2plY3RdL3Bvc3Rjc3MuY29uZmlnLm1qczo3MDozNCldXG4gICAgW2F0IGFzeW5jIHJ1biAodHVyYm9wYWNrOi8vL1t0dXJib3BhY2stbm9kZV0vY2hpbGRfcHJvY2Vzcy9ldmFsdWF0ZS50czo4OToyMyldXG5cbkltcG9ydCB0cmFjZTpcbiAgQ2xpZW50IENvbXBvbmVudCBCcm93c2VyOlxuICAgIC4vc3JjL2FwcC9nbG9iYWxzLmNzcyBbQ2xpZW50IENvbXBvbmVudCBCcm93c2VyXVxuICAgIC4vc3JjL2FwcC9sYXlvdXQudHN4IFtTZXJ2ZXIgQ29tcG9uZW50XVxuXG4iCiAgXSwKICAic2VydmVyRXJyb3JzIjogWwogICAgewogICAgICAidXJsIjogIi8iLAogICAgICAic3RhdHVzIjogNTAwCiAgICB9LAogICAgewogICAgICAidXJsIjogIi8iLAogICAgICAic3RhdHVzIjogNTAwCiAgICB9CiAgXQp9"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/jesusfranciscofrancisco/Documents/atlas-link/evidence/browser-results/journeys-landing-real-phot-8f60c-mercial-request-persistence-chrome-desktop/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/journeys.spec.ts",
+                    "column": 57,
+                    "line": 82
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-f3a1fa7b294fa7712c03",
+          "file": "journeys.spec.ts",
+          "line": 80,
+          "column": 1
+        },
+        {
+          "title": "both login surfaces autocomplete every embedded demo profile and reject disabled account",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-desktop",
+              "projectName": "chrome-desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "interrupted",
+                  "duration": 24266,
+                  "error": {
+                    "message": "Error: No uncaught browser exceptions\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 19\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"./src/app/globals.css\u001b[39m\n\u001b[31m+ Error: Error evaluating Node.js code\u001b[39m\n\u001b[31m+ CssSyntaxError: tailwindcss: /Users/jesusfranciscofrancisco/Documents/atlas-link/frontend/src/app/globals.css:1:1: Package path ./latin.css is exported from package /Users/jesusfranciscofrancisco/Documents/atlas-link/frontend/node_modules/@fontsource-variable/inter, but no valid target file was found (see exports field in /Users/jesusfranciscofrancisco/Documents/atlas-link/frontend/node_modules/@fontsource-variable/inter/package.json)\u001b[39m\n\u001b[31m+     [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]\u001b[39m\n\u001b[31m+     [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]\u001b[39m\n\u001b[31m+     [at Object.Once (/Users/jesusfranciscofrancisco/Documents/atlas-link/frontend/node_modules/@tailwindcss/postcss/dist/index.js:10:7013)]\u001b[39m\n\u001b[31m+     [at process.processTicksAndRejections (node:internal/process/task_queues:104:5)]\u001b[39m\n\u001b[31m+     [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]\u001b[39m\n\u001b[31m+     [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]\u001b[39m\n\u001b[31m+     [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ Import trace:\u001b[39m\n\u001b[31m+   Client Component Browser:\u001b[39m\n\u001b[31m+     ./src/app/globals.css [Client Component Browser]\u001b[39m\n\u001b[31m+     ./src/app/layout.tsx [Server Component]\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ \",\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                    "stack": "Error: No uncaught browser exceptions\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 19\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"./src/app/globals.css\u001b[39m\n\u001b[31m+ Error: Error evaluating Node.js code\u001b[39m\n\u001b[31m+ CssSyntaxError: tailwindcss: /Users/jesusfranciscofrancisco/Documents/atlas-link/frontend/src/app/globals.css:1:1: Package path ./latin.css is exported from package /Users/jesusfranciscofrancisco/Documents/atlas-link/frontend/node_modules/@fontsource-variable/inter, but no valid target file was found (see exports field in /Users/jesusfranciscofrancisco/Documents/atlas-link/frontend/node_modules/@fontsource-variable/inter/package.json)\u001b[39m\n\u001b[31m+     [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]\u001b[39m\n\u001b[31m+     [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]\u001b[39m\n\u001b[31m+     [at Object.Once (/Users/jesusfranciscofrancisco/Documents/atlas-link/frontend/node_modules/@tailwindcss/postcss/dist/index.js:10:7013)]\u001b[39m\n\u001b[31m+     [at process.processTicksAndRejections (node:internal/process/task_queues:104:5)]\u001b[39m\n\u001b[31m+     [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]\u001b[39m\n\u001b[31m+     [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]\u001b[39m\n\u001b[31m+     [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ Import trace:\u001b[39m\n\u001b[31m+   Client Component Browser:\u001b[39m\n\u001b[31m+     ./src/app/globals.css [Client Component Browser]\u001b[39m\n\u001b[31m+     ./src/app/layout.tsx [Server Component]\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ \",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at Object.base.extend.diagnostics.auto (/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/journeys.spec.ts:27:58)",
+                    "location": {
+                      "file": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/journeys.spec.ts",
+                      "column": 58,
+                      "line": 27
+                    },
+                    "snippet": "  25 |     await use();\n  26 |     await testInfo.attach('browser-diagnostics.json', { body: JSON.stringify({ browser: 'installed Google Chrome / Chromium engine', platform: process.platform, emulation: testInfo.project.name, consoleErrors, pageErrors, serverErrors }, null, 2), contentType: 'application/json' });\n> 27 |     expect(pageErrors, 'No uncaught browser exceptions').toEqual([]);\n     |                                                          ^\n  28 |     expect(serverErrors, 'No local server 5xx during browser journey').toEqual([]);\n  29 |   }, { auto: true }],\n  30 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/journeys.spec.ts",
+                        "column": 58,
+                        "line": 27
+                      },
+                      "message": "Error: No uncaught browser exceptions\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 19\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"./src/app/globals.css\u001b[39m\n\u001b[31m+ Error: Error evaluating Node.js code\u001b[39m\n\u001b[31m+ CssSyntaxError: tailwindcss: /Users/jesusfranciscofrancisco/Documents/atlas-link/frontend/src/app/globals.css:1:1: Package path ./latin.css is exported from package /Users/jesusfranciscofrancisco/Documents/atlas-link/frontend/node_modules/@fontsource-variable/inter, but no valid target file was found (see exports field in /Users/jesusfranciscofrancisco/Documents/atlas-link/frontend/node_modules/@fontsource-variable/inter/package.json)\u001b[39m\n\u001b[31m+     [at Input.error (turbopack:///[project]/node_modules/postcss/lib/input.js:135:16)]\u001b[39m\n\u001b[31m+     [at Root.error (turbopack:///[project]/node_modules/postcss/lib/node.js:166:32)]\u001b[39m\n\u001b[31m+     [at Object.Once (/Users/jesusfranciscofrancisco/Documents/atlas-link/frontend/node_modules/@tailwindcss/postcss/dist/index.js:10:7013)]\u001b[39m\n\u001b[31m+     [at process.processTicksAndRejections (node:internal/process/task_queues:104:5)]\u001b[39m\n\u001b[31m+     [at async LazyResult.runAsync (turbopack:///[project]/node_modules/postcss/lib/lazy-result.js:299:11)]\u001b[39m\n\u001b[31m+     [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts?config=[project]/postcss.config.mjs:70:34)]\u001b[39m\n\u001b[31m+     [at async run (turbopack:///[turbopack-node]/child_process/evaluate.ts:89:23)]\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ Import trace:\u001b[39m\n\u001b[31m+   Client Component Browser:\u001b[39m\n\u001b[31m+     ./src/app/globals.css [Client Component Browser]\u001b[39m\n\u001b[31m+     ./src/app/layout.tsx [Server Component]\u001b[39m\n\u001b[31m+\u001b[39m\n\u001b[31m+ \",\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  25 |     await use();\n  26 |     await testInfo.attach('browser-diagnostics.json', { body: JSON.stringify({ browser: 'installed Google Chrome / Chromium engine', platform: process.platform, emulation: testInfo.project.name, consoleErrors, pageErrors, serverErrors }, null, 2), contentType: 'application/json' });\n> 27 |     expect(pageErrors, 'No uncaught browser exceptions').toEqual([]);\n     |                                                          ^\n  28 |     expect(serverErrors, 'No local server 5xx during browser journey').toEqual([]);\n  29 |   }, { auto: true }],\n  30 | });\n    at Object.base.extend.diagnostics.auto (/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/journeys.spec.ts:27:58)"
+                    },
+                    {
+                      "location": {
+                        "file": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/journeys.spec.ts",
+                        "column": 92,
+                        "line": 110
+                      },
+                      "message": "Error: locator.click: Test ended.\nCall log:\n\u001b[2m  - waiting for getByRole('button').filter({ has: getByText('admin@demo.atlaslink.mx', { exact: true }) })\u001b[22m\n\n\n  108 |   for (const prefix of profiles) {\n  109 |     const email = `${prefix}@demo.atlaslink.mx`;\n> 110 |     await page.getByRole('button').filter({ has: page.getByText(email, { exact: true }) }).click();\n      |                                                                                            ^\n  111 |     await expect(page.getByLabel('Correo institucional')).toHaveValue(email);\n  112 |     await expect(page.locator('input[name=\"password\"]')).toHaveValue('AtlasDemo2026!');\n  113 |   }\n    at /Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/journeys.spec.ts:110:92"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-24T05:47:41.617Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/jesusfranciscofrancisco/Documents/atlas-link/evidence/browser-results/journeys-both-login-surfac-699f8-and-reject-disabled-account-chrome-desktop/test-failed-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/jesusfranciscofrancisco/Documents/atlas-link/evidence/browser-results/journeys-both-login-surfac-699f8-and-reject-disabled-account-chrome-desktop/test-failed-2.png"
+                    },
+                    {
+                      "name": "browser-diagnostics.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJicm93c2VyIjogImluc3RhbGxlZCBHb29nbGUgQ2hyb21lIC8gQ2hyb21pdW0gZW5naW5lIiwKICAicGxhdGZvcm0iOiAiZGFyd2luIiwKICAiZW11bGF0aW9uIjogImNocm9tZS1kZXNrdG9wIiwKICAiY29uc29sZUVycm9ycyI6IFsKICAgICJGYWlsZWQgdG8gbG9hZCByZXNvdXJjZTogdGhlIHNlcnZlciByZXNwb25kZWQgd2l0aCBhIHN0YXR1cyBvZiA1MDAgKEludGVybmFsIFNlcnZlciBFcnJvcikiLAogICAgIlJlZnVzZWQgdG8gZXhlY3V0ZSBzY3JpcHQgZnJvbSAnaHR0cDovL2xvY2FsaG9zdDo0MzAwL19uZXh0L3N0YXRpYy9kZXZlbG9wbWVudC9fY2xpZW50TWlkZGxld2FyZU1hbmlmZXN0LmpzJyBiZWNhdXNlIGl0cyBNSU1FIHR5cGUgKCdhcHBsaWNhdGlvbi9qc29uJykgaXMgbm90IGV4ZWN1dGFibGUsIGFuZCBzdHJpY3QgTUlNRSB0eXBlIGNoZWNraW5nIGlzIGVuYWJsZWQuIiwKICAgICIuL3NyYy9hcHAvZ2xvYmFscy5jc3NcbkVycm9yOiBFcnJvciBldmFsdWF0aW5nIE5vZGUuanMgY29kZVxuQ3NzU3ludGF4RXJyb3I6IHRhaWx3aW5kY3NzOiAvVXNlcnMvamVzdXNmcmFuY2lzY29mcmFuY2lzY28vRG9jdW1lbnRzL2F0bGFzLWxpbmsvZnJvbnRlbmQvc3JjL2FwcC9nbG9iYWxzLmNzczoxOjE6IFBhY2thZ2UgcGF0aCAuL2xhdGluLmNzcyBpcyBleHBvcnRlZCBmcm9tIHBhY2thZ2UgL1VzZXJzL2plc3VzZnJhbmNpc2NvZnJhbmNpc2NvL0RvY3VtZW50cy9hdGxhcy1saW5rL2Zyb250ZW5kL25vZGVfbW9kdWxlcy9AZm9udHNvdXJjZS12YXJpYWJsZS9pbnRlciwgYnV0IG5vIHZhbGlkIHRhcmdldCBmaWxlIHdhcyBmb3VuZCAoc2VlIGV4cG9ydHMgZmllbGQgaW4gL1VzZXJzL2plc3VzZnJhbmNpc2NvZnJhbmNpc2NvL0RvY3VtZW50cy9hdGxhcy1saW5rL2Zyb250ZW5kL25vZGVfbW9kdWxlcy9AZm9udHNvdXJjZS12YXJpYWJsZS9pbnRlci9wYWNrYWdlLmpzb24pXG4gICAgW2F0IElucHV0LmVycm9yICh0dXJib3BhY2s6Ly8vW3Byb2plY3RdL25vZGVfbW9kdWxlcy9wb3N0Y3NzL2xpYi9pbnB1dC5qczoxMzU6MTYpXVxuICAgIFthdCBSb290LmVycm9yICh0dXJib3BhY2s6Ly8vW3Byb2plY3RdL25vZGVfbW9kdWxlcy9wb3N0Y3NzL2xpYi9ub2RlLmpzOjE2NjozMildXG4gICAgW2F0IE9iamVjdC5PbmNlICgvVXNlcnMvamVzdXNmcmFuY2lzY29mcmFuY2lzY28vRG9jdW1lbnRzL2F0bGFzLWxpbmsvZnJvbnRlbmQvbm9kZV9tb2R1bGVzL0B0YWlsd2luZGNzcy9wb3N0Y3NzL2Rpc3QvaW5kZXguanM6MTA6NzAxMyldXG4gICAgW2F0IHByb2Nlc3MucHJvY2Vzc1RpY2tzQW5kUmVqZWN0aW9ucyAobm9kZTppbnRlcm5hbC9wcm9jZXNzL3Rhc2tfcXVldWVzOjEwNDo1KV1cbiAgICBbYXQgYXN5bmMgTGF6eVJlc3VsdC5ydW5Bc3luYyAodHVyYm9wYWNrOi8vL1twcm9qZWN0XS9ub2RlX21vZHVsZXMvcG9zdGNzcy9saWIvbGF6eS1yZXN1bHQuanM6Mjk5OjExKV1cbiAgICBbYXQgYXN5bmMgdHJhbnNmb3JtICh0dXJib3BhY2s6Ly8vW3R1cmJvcGFjay1ub2RlXS90cmFuc2Zvcm1zL3Bvc3Rjc3MudHM/Y29uZmlnPVtwcm9qZWN0XS9wb3N0Y3NzLmNvbmZpZy5tanM6NzA6MzQpXVxuICAgIFthdCBhc3luYyBydW4gKHR1cmJvcGFjazovLy9bdHVyYm9wYWNrLW5vZGVdL2NoaWxkX3Byb2Nlc3MvZXZhbHVhdGUudHM6ODkiLAogICAgIi4vc3JjL2FwcC9nbG9iYWxzLmNzc1xuRXJyb3I6IEVycm9yIGV2YWx1YXRpbmcgTm9kZS5qcyBjb2RlXG5Dc3NTeW50YXhFcnJvcjogdGFpbHdpbmRjc3M6IC9Vc2Vycy9qZXN1c2ZyYW5jaXNjb2ZyYW5jaXNjby9Eb2N1bWVudHMvYXRsYXMtbGluay9mcm9udGVuZC9zcmMvYXBwL2dsb2JhbHMuY3NzOjE6MTogUGFja2FnZSBwYXRoIC4vbGF0aW4uY3NzIGlzIGV4cG9ydGVkIGZyb20gcGFja2FnZSAvVXNlcnMvamVzdXNmcmFuY2lzY29mcmFuY2lzY28vRG9jdW1lbnRzL2F0bGFzLWxpbmsvZnJvbnRlbmQvbm9kZV9tb2R1bGVzL0Bmb250c291cmNlLXZhcmlhYmxlL2ludGVyLCBidXQgbm8gdmFsaWQgdGFyZ2V0IGZpbGUgd2FzIGZvdW5kIChzZWUgZXhwb3J0cyBmaWVsZCBpbiAvVXNlcnMvamVzdXNmcmFuY2lzY29mcmFuY2lzY28vRG9jdW1lbnRzL2F0bGFzLWxpbmsvZnJvbnRlbmQvbm9kZV9tb2R1bGVzL0Bmb250c291cmNlLXZhcmlhYmxlL2ludGVyL3BhY2thZ2UuanNvbilcbiAgICBbYXQgSW5wdXQuZXJyb3IgKHR1cmJvcGFjazovLy9bcHJvamVjdF0vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MvbGliL2lucHV0LmpzOjEzNToxNildXG4gICAgW2F0IFJvb3QuZXJyb3IgKHR1cmJvcGFjazovLy9bcHJvamVjdF0vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MvbGliL25vZGUuanM6MTY2OjMyKV1cbiAgICBbYXQgT2JqZWN0Lk9uY2UgKC9Vc2Vycy9qZXN1c2ZyYW5jaXNjb2ZyYW5jaXNjby9Eb2N1bWVudHMvYXRsYXMtbGluay9mcm9udGVuZC9ub2RlX21vZHVsZXMvQHRhaWx3aW5kY3NzL3Bvc3Rjc3MvZGlzdC9pbmRleC5qczoxMDo3MDEzKV1cbiAgICBbYXQgcHJvY2Vzcy5wcm9jZXNzVGlja3NBbmRSZWplY3Rpb25zIChub2RlOmludGVybmFsL3Byb2Nlc3MvdGFza19xdWV1ZXM6MTA0OjUpXVxuICAgIFthdCBhc3luYyBMYXp5UmVzdWx0LnJ1bkFzeW5jICh0dXJib3BhY2s6Ly8vW3Byb2plY3RdL25vZGVfbW9kdWxlcy9wb3N0Y3NzL2xpYi9sYXp5LXJlc3VsdC5qczoyOTk6MTEpXVxuICAgIFthdCBhc3luYyB0cmFuc2Zvcm0gKHR1cmJvcGFjazovLy9bdHVyYm9wYWNrLW5vZGVdL3RyYW5zZm9ybXMvcG9zdGNzcy50cz9jb25maWc9W3Byb2plY3RdL3Bvc3Rjc3MuY29uZmlnLm1qczo3MDozNCldXG4gICAgW2F0IGFzeW5jIHJ1biAodHVyYm9wYWNrOi8vL1t0dXJib3BhY2stbm9kZV0vY2hpbGRfcHJvY2Vzcy9ldmFsdWF0ZS50czo4OSIsCiAgICAiLi9zcmMvYXBwL2dsb2JhbHMuY3NzXG5FcnJvcjogRXJyb3IgZXZhbHVhdGluZyBOb2RlLmpzIGNvZGVcbkNzc1N5bnRheEVycm9yOiB0YWlsd2luZGNzczogL1VzZXJzL2plc3VzZnJhbmNpc2NvZnJhbmNpc2NvL0RvY3VtZW50cy9hdGxhcy1saW5rL2Zyb250ZW5kL3NyYy9hcHAvZ2xvYmFscy5jc3M6MToxOiBQYWNrYWdlIHBhdGggLi9sYXRpbi5jc3MgaXMgZXhwb3J0ZWQgZnJvbSBwYWNrYWdlIC9Vc2Vycy9qZXN1c2ZyYW5jaXNjb2ZyYW5jaXNjby9Eb2N1bWVudHMvYXRsYXMtbGluay9mcm9udGVuZC9ub2RlX21vZHVsZXMvQGZvbnRzb3VyY2UtdmFyaWFibGUvaW50ZXIsIGJ1dCBubyB2YWxpZCB0YXJnZXQgZmlsZSB3YXMgZm91bmQgKHNlZSBleHBvcnRzIGZpZWxkIGluIC9Vc2Vycy9qZXN1c2ZyYW5jaXNjb2ZyYW5jaXNjby9Eb2N1bWVudHMvYXRsYXMtbGluay9mcm9udGVuZC9ub2RlX21vZHVsZXMvQGZvbnRzb3VyY2UtdmFyaWFibGUvaW50ZXIvcGFja2FnZS5qc29uKVxuICAgIFthdCBJbnB1dC5lcnJvciAodHVyYm9wYWNrOi8vL1twcm9qZWN0XS9ub2RlX21vZHVsZXMvcG9zdGNzcy9saWIvaW5wdXQuanM6MTM1OjE2KV1cbiAgICBbYXQgUm9vdC5lcnJvciAodHVyYm9wYWNrOi8vL1twcm9qZWN0XS9ub2RlX21vZHVsZXMvcG9zdGNzcy9saWIvbm9kZS5qczoxNjY6MzIpXVxuICAgIFthdCBPYmplY3QuT25jZSAoL1VzZXJzL2plc3VzZnJhbmNpc2NvZnJhbmNpc2NvL0RvY3VtZW50cy9hdGxhcy1saW5rL2Zyb250ZW5kL25vZGVfbW9kdWxlcy9AdGFpbHdpbmRjc3MvcG9zdGNzcy9kaXN0L2luZGV4LmpzOjEwOjcwMTMpXVxuICAgIFthdCBwcm9jZXNzLnByb2Nlc3NUaWNrc0FuZFJlamVjdGlvbnMgKG5vZGU6aW50ZXJuYWwvcHJvY2Vzcy90YXNrX3F1ZXVlczoxMDQ6NSldXG4gICAgW2F0IGFzeW5jIExhenlSZXN1bHQucnVuQXN5bmMgKHR1cmJvcGFjazovLy9bcHJvamVjdF0vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MvbGliL2xhenktcmVzdWx0LmpzOjI5OToxMSldXG4gICAgW2F0IGFzeW5jIHRyYW5zZm9ybSAodHVyYm9wYWNrOi8vL1t0dXJib3BhY2stbm9kZV0vdHJhbnNmb3Jtcy9wb3N0Y3NzLnRzP2NvbmZpZz1bcHJvamVjdF0vcG9zdGNzcy5jb25maWcubWpzOjcwOjM0KV1cbiAgICBbYXQgYXN5bmMgcnVuICh0dXJib3BhY2s6Ly8vW3R1cmJvcGFjay1ub2RlXS9jaGlsZF9wcm9jZXNzL2V2YWx1YXRlLnRzOjg5IgogIF0sCiAgInBhZ2VFcnJvcnMiOiBbCiAgICAiLi9zcmMvYXBwL2dsb2JhbHMuY3NzXG5FcnJvcjogRXJyb3IgZXZhbHVhdGluZyBOb2RlLmpzIGNvZGVcbkNzc1N5bnRheEVycm9yOiB0YWlsd2luZGNzczogL1VzZXJzL2plc3VzZnJhbmNpc2NvZnJhbmNpc2NvL0RvY3VtZW50cy9hdGxhcy1saW5rL2Zyb250ZW5kL3NyYy9hcHAvZ2xvYmFscy5jc3M6MToxOiBQYWNrYWdlIHBhdGggLi9sYXRpbi5jc3MgaXMgZXhwb3J0ZWQgZnJvbSBwYWNrYWdlIC9Vc2Vycy9qZXN1c2ZyYW5jaXNjb2ZyYW5jaXNjby9Eb2N1bWVudHMvYXRsYXMtbGluay9mcm9udGVuZC9ub2RlX21vZHVsZXMvQGZvbnRzb3VyY2UtdmFyaWFibGUvaW50ZXIsIGJ1dCBubyB2YWxpZCB0YXJnZXQgZmlsZSB3YXMgZm91bmQgKHNlZSBleHBvcnRzIGZpZWxkIGluIC9Vc2Vycy9qZXN1c2ZyYW5jaXNjb2ZyYW5jaXNjby9Eb2N1bWVudHMvYXRsYXMtbGluay9mcm9udGVuZC9ub2RlX21vZHVsZXMvQGZvbnRzb3VyY2UtdmFyaWFibGUvaW50ZXIvcGFja2FnZS5qc29uKVxuICAgIFthdCBJbnB1dC5lcnJvciAodHVyYm9wYWNrOi8vL1twcm9qZWN0XS9ub2RlX21vZHVsZXMvcG9zdGNzcy9saWIvaW5wdXQuanM6MTM1OjE2KV1cbiAgICBbYXQgUm9vdC5lcnJvciAodHVyYm9wYWNrOi8vL1twcm9qZWN0XS9ub2RlX21vZHVsZXMvcG9zdGNzcy9saWIvbm9kZS5qczoxNjY6MzIpXVxuICAgIFthdCBPYmplY3QuT25jZSAoL1VzZXJzL2plc3VzZnJhbmNpc2NvZnJhbmNpc2NvL0RvY3VtZW50cy9hdGxhcy1saW5rL2Zyb250ZW5kL25vZGVfbW9kdWxlcy9AdGFpbHdpbmRjc3MvcG9zdGNzcy9kaXN0L2luZGV4LmpzOjEwOjcwMTMpXVxuICAgIFthdCBwcm9jZXNzLnByb2Nlc3NUaWNrc0FuZFJlamVjdGlvbnMgKG5vZGU6aW50ZXJuYWwvcHJvY2Vzcy90YXNrX3F1ZXVlczoxMDQ6NSldXG4gICAgW2F0IGFzeW5jIExhenlSZXN1bHQucnVuQXN5bmMgKHR1cmJvcGFjazovLy9bcHJvamVjdF0vbm9kZV9tb2R1bGVzL3Bvc3Rjc3MvbGliL2xhenktcmVzdWx0LmpzOjI5OToxMSldXG4gICAgW2F0IGFzeW5jIHRyYW5zZm9ybSAodHVyYm9wYWNrOi8vL1t0dXJib3BhY2stbm9kZV0vdHJhbnNmb3Jtcy9wb3N0Y3NzLnRzP2NvbmZpZz1bcHJvamVjdF0vcG9zdGNzcy5jb25maWcubWpzOjcwOjM0KV1cbiAgICBbYXQgYXN5bmMgcnVuICh0dXJib3BhY2s6Ly8vW3R1cmJvcGFjay1ub2RlXS9jaGlsZF9wcm9jZXNzL2V2YWx1YXRlLnRzOjg5OjIzKV1cblxuSW1wb3J0IHRyYWNlOlxuICBDbGllbnQgQ29tcG9uZW50IEJyb3dzZXI6XG4gICAgLi9zcmMvYXBwL2dsb2JhbHMuY3NzIFtDbGllbnQgQ29tcG9uZW50IEJyb3dzZXJdXG4gICAgLi9zcmMvYXBwL2xheW91dC50c3ggW1NlcnZlciBDb21wb25lbnRdXG5cbiIKICBdLAogICJzZXJ2ZXJFcnJvcnMiOiBbCiAgICB7CiAgICAgICJ1cmwiOiAiL2xvZ2luIiwKICAgICAgInN0YXR1cyI6IDUwMAogICAgfQogIF0KfQ=="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/jesusfranciscofrancisco/Documents/atlas-link/evidence/browser-results/journeys-both-login-surfac-699f8-and-reject-disabled-account-chrome-desktop/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/journeys.spec.ts",
+                    "column": 58,
+                    "line": 27
+                  }
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-c341d200662760825d84",
+          "file": "journeys.spec.ts",
+          "line": 105,
+          "column": 1
+        },
+        {
+          "title": "hospital role admin: real authentication, dashboard and navigation permissions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-desktop",
+              "projectName": "chrome-desktop",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-ed7e41e6b805e977b570",
+          "file": "journeys.spec.ts",
+          "line": 136,
+          "column": 3
+        },
+        {
+          "title": "hospital role caja: real authentication, dashboard and navigation permissions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-desktop",
+              "projectName": "chrome-desktop",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-2c329f24c3f4a63f26bb",
+          "file": "journeys.spec.ts",
+          "line": 136,
+          "column": 3
+        },
+        {
+          "title": "hospital role auditor: real authentication, dashboard and navigation permissions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-desktop",
+              "projectName": "chrome-desktop",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-f64dfc6d9439c1578161",
+          "file": "journeys.spec.ts",
+          "line": 136,
+          "column": 3
+        },
+        {
+          "title": "hospital role direccion: real authentication, dashboard and navigation permissions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-desktop",
+              "projectName": "chrome-desktop",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-ab4268183a3910b0c39f",
+          "file": "journeys.spec.ts",
+          "line": 136,
+          "column": 3
+        },
+        {
+          "title": "hospital role aseguradora: real authentication, dashboard and navigation permissions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-desktop",
+              "projectName": "chrome-desktop",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-35a38f137df5fabed63c",
+          "file": "journeys.spec.ts",
+          "line": 136,
+          "column": 3
+        },
+        {
+          "title": "manual intake, correction, reevaluation, real export and recorded insurer outcome",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-desktop",
+              "projectName": "chrome-desktop",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-8fac353b4c6c4186c5e1",
+          "file": "journeys.spec.ts",
+          "line": 151,
+          "column": 1
+        },
+        {
+          "title": "download template and import Excel through the browser persists a unique account",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-desktop",
+              "projectName": "chrome-desktop",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-d91e3127468d49841ef1",
+          "file": "journeys.spec.ts",
+          "line": 213,
+          "column": 1
+        },
+        {
+          "title": "platform onboarding, persisted license capacity and new hospital login",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-desktop",
+              "projectName": "chrome-desktop",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-e65041868831a241ad93",
+          "file": "journeys.spec.ts",
+          "line": 234,
+          "column": 1
+        },
+        {
+          "title": "read-only role route gate and revoked session redirect",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-desktop",
+              "projectName": "chrome-desktop",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-d84e944a4932b000d813",
+          "file": "journeys.spec.ts",
+          "line": 272,
+          "column": 1
+        },
+        {
+          "title": "landing, real photography, responsive layout and commercial request persistence",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-mobile-emulated",
+              "projectName": "chrome-mobile-emulated",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-79391f61cc394e154a7e",
+          "file": "journeys.spec.ts",
+          "line": 80,
+          "column": 1
+        },
+        {
+          "title": "both login surfaces autocomplete every embedded demo profile and reject disabled account",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-mobile-emulated",
+              "projectName": "chrome-mobile-emulated",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-744692d99b67334b1c7c",
+          "file": "journeys.spec.ts",
+          "line": 105,
+          "column": 1
+        },
+        {
+          "title": "hospital role admin: real authentication, dashboard and navigation permissions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-mobile-emulated",
+              "projectName": "chrome-mobile-emulated",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-a409db7cc90aa5085f84",
+          "file": "journeys.spec.ts",
+          "line": 136,
+          "column": 3
+        },
+        {
+          "title": "hospital role caja: real authentication, dashboard and navigation permissions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-mobile-emulated",
+              "projectName": "chrome-mobile-emulated",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-ef45f8e6a5bcc443865e",
+          "file": "journeys.spec.ts",
+          "line": 136,
+          "column": 3
+        },
+        {
+          "title": "hospital role auditor: real authentication, dashboard and navigation permissions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-mobile-emulated",
+              "projectName": "chrome-mobile-emulated",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-4ddcd10cde584ddceefa",
+          "file": "journeys.spec.ts",
+          "line": 136,
+          "column": 3
+        },
+        {
+          "title": "hospital role direccion: real authentication, dashboard and navigation permissions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-mobile-emulated",
+              "projectName": "chrome-mobile-emulated",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-e3d2164db81e2db17a81",
+          "file": "journeys.spec.ts",
+          "line": 136,
+          "column": 3
+        },
+        {
+          "title": "hospital role aseguradora: real authentication, dashboard and navigation permissions",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-mobile-emulated",
+              "projectName": "chrome-mobile-emulated",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-eafb98994fb730a69656",
+          "file": "journeys.spec.ts",
+          "line": 136,
+          "column": 3
+        },
+        {
+          "title": "manual intake, correction, reevaluation, real export and recorded insurer outcome",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-mobile-emulated",
+              "projectName": "chrome-mobile-emulated",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-16eedabafbdc8b6e2868",
+          "file": "journeys.spec.ts",
+          "line": 151,
+          "column": 1
+        },
+        {
+          "title": "download template and import Excel through the browser persists a unique account",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-mobile-emulated",
+              "projectName": "chrome-mobile-emulated",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-517c06195198cb0c250e",
+          "file": "journeys.spec.ts",
+          "line": 213,
+          "column": 1
+        },
+        {
+          "title": "platform onboarding, persisted license capacity and new hospital login",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-mobile-emulated",
+              "projectName": "chrome-mobile-emulated",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-e5d80ab769c8fb5e5bd8",
+          "file": "journeys.spec.ts",
+          "line": 234,
+          "column": 1
+        },
+        {
+          "title": "read-only role route gate and revoked session redirect",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-mobile-emulated",
+              "projectName": "chrome-mobile-emulated",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "id": "aa09586c1d16412a1f00-dc9dcf2a45673f9f140d",
+          "file": "journeys.spec.ts",
+          "line": 272,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-24T05:47:27.863Z",
+    "duration": 38171.481999999996,
+    "expected": 0,
+    "skipped": 21,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

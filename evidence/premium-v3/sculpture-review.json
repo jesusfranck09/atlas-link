@@ -1,0 +1,216 @@
+{
+  "startedAt": "2026-09-24T16:27:07.253Z",
+  "baseURL": "http://127.0.0.1:4430",
+  "commit": "3ab895d9df9d36f6fb93707709af1e86d3930611",
+  "worktree": "Includes current uncommitted visual implementation",
+  "browser": "153.0.8010.53",
+  "platform": "Darwin 25.6.0 arm64",
+  "cpu": "Apple M3",
+  "scope": "Real local WebGL render, controls, demand-driven rest, pause, graphics loss/recovery, SVG fallback, and synthetic account dashboard. Mobile is emulated, not a physical device.",
+  "limits": "No FPS/GPU-time/battery/VRAM or physical Windows/iOS/Android claims. RAF counters measure renderer calls, not frame presentation. Screenshots use browser-rendered WebGL with the identified graphics adapter.",
+  "checks": [
+    {
+      "name": "desktop-webgl-geometry",
+      "passed": true,
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 1000,
+        "dpr": 1
+      },
+      "stats": {
+        "sculptureHost": "true",
+        "visible": "true",
+        "motion": "full",
+        "frames": "2",
+        "drawCalls": "8",
+        "triangles": "37132",
+        "geometries": "5",
+        "textures": "5",
+        "pixelRatio": "1",
+        "cssWidth": 416,
+        "cssHeight": 220,
+        "drawingWidth": 416,
+        "drawingHeight": 220,
+        "adapter": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3, Unspecified Version)",
+        "vendor": "Google Inc. (Apple)",
+        "webglVersion": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+      }
+    },
+    {
+      "name": "desktop-selection-original-values",
+      "passed": true,
+      "labels": [
+        "Preparadas12",
+        "En revisión5",
+        "Por resolver3"
+      ],
+      "input": "Arrow keys, Home, End"
+    },
+    {
+      "name": "desktop-renderer-rest",
+      "passed": true,
+      "before": 21,
+      "after": 21,
+      "idleSampleMilliseconds": 1300
+    },
+    {
+      "name": "desktop-offscreen-pause",
+      "passed": true,
+      "before": 21,
+      "afterResume": 26
+    },
+    {
+      "name": "webgl-context-loss-and-restoration",
+      "passed": true,
+      "controlsRemainOperable": true,
+      "rendererRestored": true
+    },
+    {
+      "name": "dashboard-real-ring-and-bars",
+      "passed": true,
+      "results": [
+        {
+          "variant": "ring",
+          "stats": {
+            "sculptureHost": "true",
+            "visible": "true",
+            "motion": "full",
+            "frames": "2",
+            "drawCalls": "8",
+            "triangles": "37132",
+            "geometries": "5",
+            "textures": "5",
+            "pixelRatio": "1",
+            "cssWidth": 668,
+            "cssHeight": 220,
+            "drawingWidth": 668,
+            "drawingHeight": 220,
+            "adapter": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3, Unspecified Version)",
+            "vendor": "Google Inc. (Apple)",
+            "webglVersion": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+          },
+          "values": [
+            "Sin alertas3Revisión requerida6Atención prioritaria9"
+          ]
+        },
+        {
+          "variant": "bars",
+          "stats": {
+            "sculptureHost": "true",
+            "visible": "true",
+            "motion": "full",
+            "frames": "2",
+            "drawCalls": "8",
+            "triangles": "156",
+            "geometries": "7",
+            "textures": "5",
+            "pixelRatio": "1",
+            "cssWidth": 343,
+            "cssHeight": 220,
+            "drawingWidth": 343,
+            "drawingHeight": 220,
+            "adapter": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3, Unspecified Version)",
+            "vendor": "Google Inc. (Apple)",
+            "webglVersion": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+          },
+          "values": [
+            "2026-09202,800"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "navigation-mount-unmount-three-cycles",
+      "passed": true,
+      "cycles": [
+        {
+          "cycle": 1,
+          "geometries": 5,
+          "textures": 5,
+          "drawCalls": 8
+        },
+        {
+          "cycle": 2,
+          "geometries": 5,
+          "textures": 5,
+          "drawCalls": 8
+        },
+        {
+          "cycle": 3,
+          "geometries": 5,
+          "textures": 5,
+          "drawCalls": 8
+        }
+      ],
+      "limit": "DOM teardown and equal renderer-owned resource counts after remount. This does not measure GPU memory or prove absence of every leak."
+    },
+    {
+      "name": "mobile-emulated-webgl-geometry",
+      "passed": true,
+      "viewport": {
+        "name": "mobile-emulated",
+        "width": 390,
+        "height": 844,
+        "dpr": 2
+      },
+      "stats": {
+        "sculptureHost": "true",
+        "visible": "true",
+        "motion": "full",
+        "frames": "2",
+        "drawCalls": "8",
+        "triangles": "37132",
+        "geometries": "5",
+        "textures": "5",
+        "pixelRatio": "1.5",
+        "cssWidth": 294,
+        "cssHeight": 200,
+        "drawingWidth": 441,
+        "drawingHeight": 300,
+        "adapter": "ANGLE (Apple, ANGLE Metal Renderer: Apple M3, Unspecified Version)",
+        "vendor": "Google Inc. (Apple)",
+        "webglVersion": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+      }
+    },
+    {
+      "name": "mobile-emulated-selection-original-values",
+      "passed": true,
+      "labels": [
+        "Preparadas12",
+        "En revisión5",
+        "Por resolver3"
+      ],
+      "input": "Touch on legend control"
+    },
+    {
+      "name": "mobile-emulated-renderer-rest",
+      "passed": true,
+      "before": 20,
+      "after": 20,
+      "idleSampleMilliseconds": 1300
+    },
+    {
+      "name": "mobile-emulated-offscreen-pause",
+      "passed": true,
+      "before": 20,
+      "afterResume": 25
+    },
+    {
+      "name": "reduced-motion-from-first-load",
+      "passed": true,
+      "before": 2,
+      "after": 3,
+      "pointerFrames": 0
+    },
+    {
+      "name": "webgl-unavailable-svg-fallback",
+      "passed": true,
+      "failureInjected": "Canvas WebGL context unavailable before app initialization",
+      "controlsRemainOperable": true
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-09-24T16:27:27.263Z",
+  "passed": true
+}

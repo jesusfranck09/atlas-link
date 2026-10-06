@@ -1,0 +1,122 @@
+[
+  {
+    "size": "desktop",
+    "route": "/login",
+    "dimensions": {
+      "width": 1440,
+      "scroll": 1440,
+      "height": 1133
+    },
+    "errors": [],
+    "violations": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              "button[data-testid=\"demo-reviewer\"] > .login-module__OJmY0W__avatar"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.84 (foreground color: #85718d, background color: #f2edf6, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "button[data-testid=\"demo-disabled\"] > .login-module__OJmY0W__avatar"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.84 (foreground color: #85718d, background color: #f2edf6, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "size": "desktop",
+    "route": "/admin/login",
+    "dimensions": {
+      "width": 1440,
+      "scroll": 1440,
+      "height": 1029
+    },
+    "errors": [],
+    "violations": []
+  },
+  {
+    "size": "tablet",
+    "route": "/login",
+    "dimensions": {
+      "width": 820,
+      "scroll": 820,
+      "height": 1241
+    },
+    "errors": [],
+    "violations": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              "button[data-testid=\"demo-reviewer\"] > .login-module__OJmY0W__avatar"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.84 (foreground color: #85718d, background color: #f2edf6, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "button[data-testid=\"demo-disabled\"] > .login-module__OJmY0W__avatar"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.84 (foreground color: #85718d, background color: #f2edf6, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "size": "tablet",
+    "route": "/admin/login",
+    "dimensions": {
+      "width": 820,
+      "scroll": 820,
+      "height": 1033
+    },
+    "errors": [],
+    "violations": []
+  },
+  {
+    "size": "mobile",
+    "route": "/login",
+    "dimensions": {
+      "width": 390,
+      "scroll": 390,
+      "height": 1555
+    },
+    "errors": [],
+    "violations": [
+      {
+        "id": "color-contrast",
+        "nodes": [
+          {
+            "target": [
+              "button[data-testid=\"demo-reviewer\"] > .login-module__OJmY0W__avatar"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.84 (foreground color: #85718d, background color: #f2edf6, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          },
+          {
+            "target": [
+              "button[data-testid=\"demo-disabled\"] > .login-module__OJmY0W__avatar"
+            ],
+            "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.84 (foreground color: #85718d, background color: #f2edf6, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "size": "mobile",
+    "route": "/admin/login",
+    "dimensions": {
+      "width": 390,
+      "scroll": 390,
+      "height": 1045
+    },
+    "errors": [],
+    "violations": []
+  }
+]

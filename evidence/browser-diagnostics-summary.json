@@ -1,0 +1,7 @@
+{
+  "uncaughtErrors": 0,
+  "server5xx": 0,
+  "consoleErrors": {
+    "Failed to load resource: the server responded with a status of 401 (Unauthorized)": 4
+  }
+}

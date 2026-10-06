@@ -1,0 +1,180 @@
+{
+  "config": {
+    "argv": [
+      "/usr/local/bin/node",
+      "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/node_modules/.bin/playwright",
+      "test",
+      "--project=chrome-desktop",
+      "--grep",
+      "admission date"
+    ],
+    "configFile": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/playwright.config.ts",
+    "rootDir": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/jesusfranciscofrancisco/Documents/atlas-link/evidence/browser-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome-desktop",
+        "name": "chrome-desktop",
+        "testDir": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      },
+      {
+        "outputDir": "/Users/jesusfranciscofrancisco/Documents/atlas-link/evidence/browser-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome-mobile-emulated",
+        "name": "chrome-mobile-emulated",
+        "testDir": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/journeys.spec.ts"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "../evidence/browser-report.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "../evidence/browser-report",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "contracts.spec.ts",
+      "file": "contracts.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "admission date chooses the agreement when the stay crosses a new version",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome-desktop",
+              "projectName": "chrome-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1174,
+                  "error": {
+                    "message": "Error: Agreement must be selected by admission date, not discharge date\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m50\u001b[39m\nReceived: \u001b[31m0\u001b[39m",
+                    "stack": "Error: Agreement must be selected by admission date, not discharge date\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m50\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n    at /Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/contracts.spec.ts:34:123",
+                    "location": {
+                      "file": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/contracts.spec.ts",
+                      "column": 123,
+                      "line": 34
+                    },
+                    "snippet": "  32 |   }, 200, { 'Idempotency-Key': randomUUID() });\n  33 |   await info.attach('agreement-date-contract.json', { body: JSON.stringify({ tenantId: tenant.id, accountId: account.id, admission: account.admissionDate, discharge: account.dischargeDate, expectedAgreementId: earlier.id, observedAgreementId: account.agreementId, expectedAdjustment: 50, observedAdjustment: account.evaluation.tariffAdjustment }, null, 2), contentType: 'application/json' });\n> 34 |   expect(Number(account.evaluation.tariffAdjustment), 'Agreement must be selected by admission date, not discharge date').toBe(50);\n     |                                                                                                                           ^\n  35 |   expect(account.agreementId).toBe(earlier.id);\n  36 |   expect(account.evaluation.agreementVersion).toBe(earlier.version);\n  37 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/contracts.spec.ts",
+                        "column": 123,
+                        "line": 34
+                      },
+                      "message": "Error: Agreement must be selected by admission date, not discharge date\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m50\u001b[39m\nReceived: \u001b[31m0\u001b[39m\n\n  32 |   }, 200, { 'Idempotency-Key': randomUUID() });\n  33 |   await info.attach('agreement-date-contract.json', { body: JSON.stringify({ tenantId: tenant.id, accountId: account.id, admission: account.admissionDate, discharge: account.dischargeDate, expectedAgreementId: earlier.id, observedAgreementId: account.agreementId, expectedAdjustment: 50, observedAdjustment: account.evaluation.tariffAdjustment }, null, 2), contentType: 'application/json' });\n> 34 |   expect(Number(account.evaluation.tariffAdjustment), 'Agreement must be selected by admission date, not discharge date').toBe(50);\n     |                                                                                                                           ^\n  35 |   expect(account.agreementId).toBe(earlier.id);\n  36 |   expect(account.evaluation.agreementVersion).toBe(earlier.version);\n  37 | });\n    at /Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/contracts.spec.ts:34:123"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-24T06:14:02.556Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "agreement-date-contract.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJ0ZW5hbnRJZCI6ICI3NDU5OTc4NC05ZDk4LTRmMDUtOWNkNC1lOTA3ZTk3YTU1NzkiLAogICJhY2NvdW50SWQiOiAiMWNiNzMwMjgtOGYwMC00ZTIwLWI3ZGEtNjE5MTUyNzMxNTE5IiwKICAiYWRtaXNzaW9uIjogIjIwMjYtMDgtMzEiLAogICJkaXNjaGFyZ2UiOiAiMjAyNi0wOS0wMSIsCiAgImV4cGVjdGVkQWdyZWVtZW50SWQiOiAiMjYxZDc3MGUtZGNhZi00MTA0LTlkNWItZjNkOTU4ZGFjY2Q1IiwKICAib2JzZXJ2ZWRBZ3JlZW1lbnRJZCI6ICJhMjQzZjljMi0yOWQ0LTQ3YjItYWVmYS0wNGI3YWFiMjE3MjQiLAogICJleHBlY3RlZEFkanVzdG1lbnQiOiA1MCwKICAib2JzZXJ2ZWRBZGp1c3RtZW50IjogMAp9"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/jesusfranciscofrancisco/Documents/atlas-link/evidence/browser-results/contracts-admission-date-c-1f5e3--stay-crosses-a-new-version-chrome-desktop/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/Users/jesusfranciscofrancisco/Documents/atlas-link/qa/tests/contracts.spec.ts",
+                    "column": 123,
+                    "line": 34
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "94d2a11b1fc1ed31b81d-5d2b3fddce78fa6ae01c",
+          "file": "contracts.spec.ts",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-24T06:14:02.167Z",
+    "duration": 1595.3110000000001,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

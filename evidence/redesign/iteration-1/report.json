@@ -1,0 +1,3195 @@
+{
+  "label": "iteration-1",
+  "startedAt": "2026-09-24T15:24:14.029Z",
+  "baseURL": "http://127.0.0.1:4430",
+  "views": [
+    {
+      "name": "desktop-landing",
+      "route": "/",
+      "dimensions": {
+        "viewport": 1440,
+        "width": 1425,
+        "height": 6260
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".landing-scene-module__q8OeTq__sceneSteps > button[type=\"button\"]:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.51 (foreground color: #6b82b0, background color: #c0d1f7, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[type=\"button\"]:nth-child(2) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #8197bd, background color: #c0d1f7, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-scene-module__q8OeTq__sceneSteps > button[type=\"button\"]:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.51 (foreground color: #6b82b0, background color: #c0d1f7, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[type=\"button\"]:nth-child(3) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #8197bd, background color: #c0d1f7, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-scene-module__q8OeTq__sceneCaption > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.37 (foreground color: #7287ab, background color: #c0d1f7, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewToolbar > span:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #61728d, background color: #f2f5fb, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewToolbar > span:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #61728d, background color: #f2f5fb, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewHospital"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.96 (foreground color: #667590, background color: #e9edf6, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewHeading > div > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #6c7a90, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > strong > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.72 (foreground color: #7685a0, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewStats > div:nth-child(2) > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.33 (foreground color: #6c7a93, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "div:nth-child(3) > strong > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.72 (foreground color: #7685a0, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewStats > div:nth-child(3) > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.33 (foreground color: #6c7a93, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewTableHeading > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.16 (foreground color: #6e7d96, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "th:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.92 (foreground color: #6c7d99, background color: #f6f8fc, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "th:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.92 (foreground color: #6c7d99, background color: #f6f8fc, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "th:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.92 (foreground color: #6c7d99, background color: #f6f8fc, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "th:nth-child(4)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.92 (foreground color: #6c7d99, background color: #f6f8fc, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "tr:nth-child(1) > td:nth-child(1) > span:nth-child(2) > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #72819a, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "tr:nth-child(2) > td:nth-child(1) > span:nth-child(2) > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #72819a, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "tr:nth-child(3) > td:nth-child(1) > span:nth-child(2) > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #72819a, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewActivity > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6c7c97, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewActivity > span:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6c7c97, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewRolebar > div:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.1 (foreground color: #647998, background color: #f3f6fd, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__roleTabs > button[type=\"button\"]:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #657897, background color: #e8edf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__roleTabs > button[type=\"button\"]:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #657897, background color: #e8edf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewDataNotice"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.28 (foreground color: #617695, background color: #f3f6fd, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__featureRail > article:nth-child(1) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #6c7890, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__featureRail > article:nth-child(2) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #6c7890, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__featureRail > article:nth-child(3) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #6c7890, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#workflow-title > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.86 (foreground color: #8594b3, background color: #f6f8fc, font size: 37.8pt (50.4px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "#workflow-0 > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #65758e, background color: #f6f8fc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#workflow-0 > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.41 (foreground color: #5672b6, background color: #f6f8fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-controls=\"workflow-1\"] > .landing-module__mMnuAW__stepNumber"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.71 (foreground color: #8a99b3, background color: #f6f8fc, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-controls=\"workflow-2\"] > .landing-module__mMnuAW__stepNumber"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.71 (foreground color: #8a99b3, background color: #f6f8fc, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-controls=\"workflow-3\"] > .landing-module__mMnuAW__stepNumber"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.71 (foreground color: #8a99b3, background color: #f6f8fc, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__workflowDisclaimer"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.56 (foreground color: #75849c, background color: #f6f8fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__photoTopline > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.23 (foreground color: #6b7c97, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__photoStatement > span:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.35 (foreground color: #7384a8, background color: #edf2ff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__trustRows > div:nth-child(1) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.96 (foreground color: #70819a, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__trustRows > div:nth-child(2) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.96 (foreground color: #70819a, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__trustRows > div:nth-child(3) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.96 (foreground color: #70819a, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__licenseIntro > p:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.97 (foreground color: #677897, background color: #edf2ff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__planSwitch > button[type=\"button\"]:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.65 (foreground color: #6278a2, background color: #e2e9fb, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__licenseTop > span:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #6d80a3, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__licenseDetail > p:nth-child(4)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #70809a, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__licenseFootnote > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.05 (foreground color: #6a7fa4, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerTop > div:nth-child(1) > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #8190a7, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerSignature"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.27 (foreground color: #dce4f3, background color: #ffffff, font size: 110.2pt (146.88px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerSignature > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.66 (foreground color: #b9c9ed, background color: #ffffff, font size: 110.2pt (146.88px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerBottom > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #7285a4, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerBottom > span:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #7285a4, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerBottom > a[href$=\"#contenido\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #7285a4, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 2
+    },
+    {
+      "name": "desktop-hospital-login",
+      "route": "/login",
+      "dimensions": {
+        "viewport": 1440,
+        "width": 1425,
+        "height": 1077
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "button[data-testid=\"demo-hospital_admin\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-testid=\"demo-billing\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-testid=\"demo-reviewer\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-testid=\"demo-director\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-testid=\"demo-insurer_demo\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-testid=\"demo-disabled\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-platform-login",
+      "route": "/admin/login",
+      "dimensions": {
+        "viewport": 1440,
+        "width": 1440,
+        "height": 1000
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital",
+      "route": "/hospital",
+      "dimensions": {
+        "viewport": 1440,
+        "width": 1425,
+        "height": 1512
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".portal-module__0SF6zG__chartAxis > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #738097, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-module__0SF6zG__chartAxis > span:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #738097, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-module__0SF6zG__chartAxis > span:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #738097, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital-accounts",
+      "route": "/hospital/accounts",
+      "dimensions": {
+        "viewport": 1440,
+        "width": 1425,
+        "height": 1668
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-account-detail",
+      "route": "/hospital/accounts/e0000000-0000-0000-0000-000000000001",
+      "dimensions": {
+        "viewport": 1440,
+        "width": 1425,
+        "height": 1570
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".financial-disclaimer"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #64738e, background color: #f1f5fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital-review",
+      "route": "/hospital/review",
+      "dimensions": {
+        "viewport": 1440,
+        "width": 1425,
+        "height": 1668
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital-import",
+      "route": "/hospital/import",
+      "dimensions": {
+        "viewport": 1440,
+        "width": 1425,
+        "height": 1101
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".import-guide > ol > li:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.53 (foreground color: #6682bd, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".import-guide > ol > li:nth-child(2) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.53 (foreground color: #6682bd, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".import-guide > ol > li:nth-child(3) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.53 (foreground color: #6682bd, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".import-guide-note > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #6d7d97, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital-agreements",
+      "route": "/hospital/agreements",
+      "dimensions": {
+        "viewport": 1440,
+        "width": 1425,
+        "height": 1049
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".portal-module__0SF6zG__footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital-reports",
+      "route": "/hospital/reports",
+      "dimensions": {
+        "viewport": 1440,
+        "width": 1425,
+        "height": 1508
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital-users",
+      "route": "/hospital/users",
+      "dimensions": {
+        "viewport": 1440,
+        "width": 1425,
+        "height": 1049
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-hospital-audit",
+      "route": "/hospital/audit",
+      "dimensions": {
+        "viewport": 1440,
+        "width": 1425,
+        "height": 1774
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-admin",
+      "route": "/admin",
+      "dimensions": {
+        "viewport": 1440,
+        "width": 1425,
+        "height": 1300
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-admin-tenants",
+      "route": "/admin/tenants",
+      "dimensions": {
+        "viewport": 1440,
+        "width": 1440,
+        "height": 1000
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".portal-module__0SF6zG__footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-admin-licenses",
+      "route": "/admin/licenses",
+      "dimensions": {
+        "viewport": 1440,
+        "width": 1440,
+        "height": 1000
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-admin-leads",
+      "route": "/admin/leads",
+      "dimensions": {
+        "viewport": 1440,
+        "width": 1440,
+        "height": 1000
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-admin-users",
+      "route": "/admin/users",
+      "dimensions": {
+        "viewport": 1440,
+        "width": 1440,
+        "height": 1000
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "desktop-admin-audit",
+      "route": "/admin/audit",
+      "dimensions": {
+        "viewport": 1440,
+        "width": 1440,
+        "height": 1000
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-landing",
+      "route": "/",
+      "dimensions": {
+        "viewport": 580,
+        "width": 580,
+        "height": 7627
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".landing-scene-module__q8OeTq__sceneControlTop > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.43 (foreground color: #7285a7, background color: #c0d1f7, font size: 3.8pt (5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-scene-module__q8OeTq__sceneSteps > button[type=\"button\"]:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.51 (foreground color: #6b82b0, background color: #c0d1f7, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[type=\"button\"]:nth-child(2) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #8197bd, background color: #c0d1f7, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-scene-module__q8OeTq__sceneSteps > button[type=\"button\"]:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.51 (foreground color: #6b82b0, background color: #c0d1f7, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[type=\"button\"]:nth-child(3) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #8197bd, background color: #c0d1f7, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewToolbar > span:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #61728d, background color: #f2f5fb, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewToolbar > span:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #61728d, background color: #f2f5fb, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewHeading > div > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #6c7a90, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > strong > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.72 (foreground color: #7685a0, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "div:nth-child(3) > strong > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.72 (foreground color: #7685a0, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewTableHeading > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.16 (foreground color: #6e7d96, background color: #ffffff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "th:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.92 (foreground color: #6c7d99, background color: #f6f8fc, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "th:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.92 (foreground color: #6c7d99, background color: #f6f8fc, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "th:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.92 (foreground color: #6c7d99, background color: #f6f8fc, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "tr:nth-child(1) > td:nth-child(1) > span:nth-child(2) > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #72819a, background color: #ffffff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "tr:nth-child(2) > td:nth-child(1) > span:nth-child(2) > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #72819a, background color: #ffffff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "tr:nth-child(3) > td:nth-child(1) > span:nth-child(2) > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #72819a, background color: #ffffff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewActivity > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6c7c97, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewRolebar > div:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.1 (foreground color: #647998, background color: #f3f6fd, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__roleTabs > button[type=\"button\"]:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #657897, background color: #e8edf8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__roleTabs > button[type=\"button\"]:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #657897, background color: #e8edf8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewDataNotice"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.28 (foreground color: #617695, background color: #f3f6fd, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__featureRail > article:nth-child(1) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #6c7890, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__featureRail > article:nth-child(2) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #6c7890, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__featureRail > article:nth-child(3) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #6c7890, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#workflow-title > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.86 (foreground color: #8594b3, background color: #f6f8fc, font size: 25.5pt (34px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "#workflow-0 > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #65758e, background color: #f6f8fc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#workflow-0 > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.41 (foreground color: #5672b6, background color: #f6f8fc, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-controls=\"workflow-1\"] > .landing-module__mMnuAW__stepNumber"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.71 (foreground color: #8a99b3, background color: #f6f8fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-controls=\"workflow-2\"] > .landing-module__mMnuAW__stepNumber"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.71 (foreground color: #8a99b3, background color: #f6f8fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-controls=\"workflow-3\"] > .landing-module__mMnuAW__stepNumber"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.71 (foreground color: #8a99b3, background color: #f6f8fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__workflowDisclaimer"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.56 (foreground color: #75849c, background color: #f6f8fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__photoTopline > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.23 (foreground color: #6b7c97, background color: #ffffff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__photoStatement > span:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.35 (foreground color: #7384a8, background color: #edf2ff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__trustRows > div:nth-child(1) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.96 (foreground color: #70819a, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__trustRows > div:nth-child(2) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.96 (foreground color: #70819a, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__trustRows > div:nth-child(3) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.96 (foreground color: #70819a, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__licenseIntro > p:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.97 (foreground color: #677897, background color: #edf2ff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__planSwitch > button[type=\"button\"]:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.65 (foreground color: #6278a2, background color: #e2e9fb, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__licenseTop > span:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #6d80a3, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__licenseDetail > p:nth-child(4)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #70809a, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__licenseFootnote > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.05 (foreground color: #6a7fa4, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerTop > div:nth-child(1) > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #8190a7, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerSignature"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.27 (foreground color: #dce4f3, background color: #ffffff, font size: 30.7pt (40.95px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerSignature > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.66 (foreground color: #b9c9ed, background color: #ffffff, font size: 30.7pt (40.95px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerBottom > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #7285a4, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerBottom > a[href$=\"#contenido\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #7285a4, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 2
+    },
+    {
+      "name": "mobile-hospital-login",
+      "route": "/login",
+      "dimensions": {
+        "viewport": 390,
+        "width": 390,
+        "height": 1330
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "button[data-testid=\"demo-hospital_admin\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-testid=\"demo-billing\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-testid=\"demo-reviewer\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-testid=\"demo-director\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-testid=\"demo-insurer_demo\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-testid=\"demo-disabled\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-platform-login",
+      "route": "/admin/login",
+      "dimensions": {
+        "viewport": 390,
+        "width": 390,
+        "height": 846
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-hospital",
+      "route": "/hospital",
+      "dimensions": {
+        "viewport": 500,
+        "width": 500,
+        "height": 2642
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".portal-module__0SF6zG__chartAxis > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #738097, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-module__0SF6zG__chartAxis > span:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #738097, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-module__0SF6zG__chartAxis > span:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #738097, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-hospital-accounts",
+      "route": "/hospital/accounts",
+      "dimensions": {
+        "viewport": 790,
+        "width": 790,
+        "height": 1817
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-account-detail",
+      "route": "/hospital/accounts/e0000000-0000-0000-0000-000000000001",
+      "dimensions": {
+        "viewport": 390,
+        "width": 390,
+        "height": 2136
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".financial-disclaimer"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #64738e, background color: #f1f5fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-hospital-review",
+      "route": "/hospital/review",
+      "dimensions": {
+        "viewport": 790,
+        "width": 790,
+        "height": 1817
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-hospital-import",
+      "route": "/hospital/import",
+      "dimensions": {
+        "viewport": 390,
+        "width": 390,
+        "height": 1764
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".import-guide > ol > li:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.53 (foreground color: #6682bd, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".import-guide > ol > li:nth-child(2) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.53 (foreground color: #6682bd, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".import-guide > ol > li:nth-child(3) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.53 (foreground color: #6682bd, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".import-guide-note > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #6d7d97, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-hospital-agreements",
+      "route": "/hospital/agreements",
+      "dimensions": {
+        "viewport": 390,
+        "width": 390,
+        "height": 2296
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".portal-module__0SF6zG__footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-hospital-reports",
+      "route": "/hospital/reports",
+      "dimensions": {
+        "viewport": 390,
+        "width": 390,
+        "height": 2234
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "scrollable-region-focusable",
+          "impact": "serious",
+          "description": "Ensure elements that have scrollable content are accessible by keyboard in Safari",
+          "nodes": [
+            {
+              "target": [
+                ".table-scroll"
+              ],
+              "summary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-hospital-users",
+      "route": "/hospital/users",
+      "dimensions": {
+        "viewport": 390,
+        "width": 390,
+        "height": 1103
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-hospital-audit",
+      "route": "/hospital/audit",
+      "dimensions": {
+        "viewport": 390,
+        "width": 390,
+        "height": 2380
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "scrollable-region-focusable",
+          "impact": "serious",
+          "description": "Ensure elements that have scrollable content are accessible by keyboard in Safari",
+          "nodes": [
+            {
+              "target": [
+                ".table-scroll"
+              ],
+              "summary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-admin",
+      "route": "/admin",
+      "dimensions": {
+        "viewport": 390,
+        "width": 390,
+        "height": 1616
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-admin-tenants",
+      "route": "/admin/tenants",
+      "dimensions": {
+        "viewport": 390,
+        "width": 390,
+        "height": 1207
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".portal-module__0SF6zG__footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-admin-licenses",
+      "route": "/admin/licenses",
+      "dimensions": {
+        "viewport": 390,
+        "width": 390,
+        "height": 1138
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-admin-leads",
+      "route": "/admin/leads",
+      "dimensions": {
+        "viewport": 390,
+        "width": 390,
+        "height": 844
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-admin-users",
+      "route": "/admin/users",
+      "dimensions": {
+        "viewport": 390,
+        "width": 390,
+        "height": 844
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    },
+    {
+      "name": "mobile-admin-audit",
+      "route": "/admin/audit",
+      "dimensions": {
+        "viewport": 390,
+        "width": 390,
+        "height": 844
+      },
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ],
+      "incomplete": 1
+    }
+  ],
+  "errors": [
+    {
+      "name": "desktop-landing",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".landing-scene-module__q8OeTq__sceneSteps > button[type=\"button\"]:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.51 (foreground color: #6b82b0, background color: #c0d1f7, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[type=\"button\"]:nth-child(2) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #8197bd, background color: #c0d1f7, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-scene-module__q8OeTq__sceneSteps > button[type=\"button\"]:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.51 (foreground color: #6b82b0, background color: #c0d1f7, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[type=\"button\"]:nth-child(3) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #8197bd, background color: #c0d1f7, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-scene-module__q8OeTq__sceneCaption > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.37 (foreground color: #7287ab, background color: #c0d1f7, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewToolbar > span:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #61728d, background color: #f2f5fb, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewToolbar > span:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #61728d, background color: #f2f5fb, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewHospital"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.96 (foreground color: #667590, background color: #e9edf6, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewHeading > div > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #6c7a90, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > strong > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.72 (foreground color: #7685a0, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewStats > div:nth-child(2) > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.33 (foreground color: #6c7a93, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "div:nth-child(3) > strong > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.72 (foreground color: #7685a0, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewStats > div:nth-child(3) > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.33 (foreground color: #6c7a93, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewTableHeading > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.16 (foreground color: #6e7d96, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "th:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.92 (foreground color: #6c7d99, background color: #f6f8fc, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "th:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.92 (foreground color: #6c7d99, background color: #f6f8fc, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "th:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.92 (foreground color: #6c7d99, background color: #f6f8fc, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "th:nth-child(4)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.92 (foreground color: #6c7d99, background color: #f6f8fc, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "tr:nth-child(1) > td:nth-child(1) > span:nth-child(2) > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #72819a, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "tr:nth-child(2) > td:nth-child(1) > span:nth-child(2) > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #72819a, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "tr:nth-child(3) > td:nth-child(1) > span:nth-child(2) > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #72819a, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewActivity > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6c7c97, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewActivity > span:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6c7c97, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewRolebar > div:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.1 (foreground color: #647998, background color: #f3f6fd, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__roleTabs > button[type=\"button\"]:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #657897, background color: #e8edf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__roleTabs > button[type=\"button\"]:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #657897, background color: #e8edf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewDataNotice"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.28 (foreground color: #617695, background color: #f3f6fd, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__featureRail > article:nth-child(1) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #6c7890, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__featureRail > article:nth-child(2) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #6c7890, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__featureRail > article:nth-child(3) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #6c7890, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#workflow-title > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.86 (foreground color: #8594b3, background color: #f6f8fc, font size: 37.8pt (50.4px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "#workflow-0 > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #65758e, background color: #f6f8fc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#workflow-0 > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.41 (foreground color: #5672b6, background color: #f6f8fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-controls=\"workflow-1\"] > .landing-module__mMnuAW__stepNumber"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.71 (foreground color: #8a99b3, background color: #f6f8fc, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-controls=\"workflow-2\"] > .landing-module__mMnuAW__stepNumber"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.71 (foreground color: #8a99b3, background color: #f6f8fc, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-controls=\"workflow-3\"] > .landing-module__mMnuAW__stepNumber"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.71 (foreground color: #8a99b3, background color: #f6f8fc, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__workflowDisclaimer"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.56 (foreground color: #75849c, background color: #f6f8fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__photoTopline > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.23 (foreground color: #6b7c97, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__photoStatement > span:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.35 (foreground color: #7384a8, background color: #edf2ff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__trustRows > div:nth-child(1) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.96 (foreground color: #70819a, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__trustRows > div:nth-child(2) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.96 (foreground color: #70819a, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__trustRows > div:nth-child(3) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.96 (foreground color: #70819a, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__licenseIntro > p:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.97 (foreground color: #677897, background color: #edf2ff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__planSwitch > button[type=\"button\"]:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.65 (foreground color: #6278a2, background color: #e2e9fb, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__licenseTop > span:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #6d80a3, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__licenseDetail > p:nth-child(4)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #70809a, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__licenseFootnote > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.05 (foreground color: #6a7fa4, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerTop > div:nth-child(1) > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #8190a7, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerSignature"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.27 (foreground color: #dce4f3, background color: #ffffff, font size: 110.2pt (146.88px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerSignature > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.66 (foreground color: #b9c9ed, background color: #ffffff, font size: 110.2pt (146.88px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerBottom > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #7285a4, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerBottom > span:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #7285a4, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerBottom > a[href$=\"#contenido\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #7285a4, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop-hospital-login",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "button[data-testid=\"demo-hospital_admin\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-testid=\"demo-billing\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-testid=\"demo-reviewer\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-testid=\"demo-director\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-testid=\"demo-insurer_demo\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-testid=\"demo-disabled\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop-platform-login",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop-hospital",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".portal-module__0SF6zG__chartAxis > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #738097, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-module__0SF6zG__chartAxis > span:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #738097, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-module__0SF6zG__chartAxis > span:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #738097, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop-hospital-accounts",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop-account-detail",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".financial-disclaimer"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #64738e, background color: #f1f5fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop-hospital-review",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop-hospital-import",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".import-guide > ol > li:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.53 (foreground color: #6682bd, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".import-guide > ol > li:nth-child(2) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.53 (foreground color: #6682bd, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".import-guide > ol > li:nth-child(3) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.53 (foreground color: #6682bd, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".import-guide-note > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #6d7d97, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop-hospital-agreements",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".portal-module__0SF6zG__footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop-hospital-reports",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop-hospital-users",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop-hospital-audit",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop-admin",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop-admin-tenants",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".portal-module__0SF6zG__footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop-admin-licenses",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop-admin-leads",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop-admin-users",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "desktop-admin-audit",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-landing",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".landing-scene-module__q8OeTq__sceneControlTop > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.43 (foreground color: #7285a7, background color: #c0d1f7, font size: 3.8pt (5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-scene-module__q8OeTq__sceneSteps > button[type=\"button\"]:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.51 (foreground color: #6b82b0, background color: #c0d1f7, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[type=\"button\"]:nth-child(2) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #8197bd, background color: #c0d1f7, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-scene-module__q8OeTq__sceneSteps > button[type=\"button\"]:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.51 (foreground color: #6b82b0, background color: #c0d1f7, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[type=\"button\"]:nth-child(3) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.93 (foreground color: #8197bd, background color: #c0d1f7, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewToolbar > span:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #61728d, background color: #f2f5fb, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewToolbar > span:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #61728d, background color: #f2f5fb, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewHeading > div > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #6c7a90, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "div:nth-child(2) > strong > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.72 (foreground color: #7685a0, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "div:nth-child(3) > strong > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.72 (foreground color: #7685a0, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewTableHeading > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.16 (foreground color: #6e7d96, background color: #ffffff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "th:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.92 (foreground color: #6c7d99, background color: #f6f8fc, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "th:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.92 (foreground color: #6c7d99, background color: #f6f8fc, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "th:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.92 (foreground color: #6c7d99, background color: #f6f8fc, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "tr:nth-child(1) > td:nth-child(1) > span:nth-child(2) > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #72819a, background color: #ffffff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "tr:nth-child(2) > td:nth-child(1) > span:nth-child(2) > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #72819a, background color: #ffffff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "tr:nth-child(3) > td:nth-child(1) > span:nth-child(2) > small"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.94 (foreground color: #72819a, background color: #ffffff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewActivity > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6c7c97, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewRolebar > div:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.1 (foreground color: #647998, background color: #f3f6fd, font size: 4.5pt (6px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__roleTabs > button[type=\"button\"]:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #657897, background color: #e8edf8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__roleTabs > button[type=\"button\"]:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.81 (foreground color: #657897, background color: #e8edf8, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__previewDataNotice"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.28 (foreground color: #617695, background color: #f3f6fd, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__featureRail > article:nth-child(1) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #6c7890, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__featureRail > article:nth-child(2) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #6c7890, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__featureRail > article:nth-child(3) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #6c7890, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#workflow-title > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.86 (foreground color: #8594b3, background color: #f6f8fc, font size: 25.5pt (34px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                "#workflow-0 > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.4 (foreground color: #65758e, background color: #f6f8fc, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "#workflow-0 > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.41 (foreground color: #5672b6, background color: #f6f8fc, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-controls=\"workflow-1\"] > .landing-module__mMnuAW__stepNumber"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.71 (foreground color: #8a99b3, background color: #f6f8fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-controls=\"workflow-2\"] > .landing-module__mMnuAW__stepNumber"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.71 (foreground color: #8a99b3, background color: #f6f8fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[aria-controls=\"workflow-3\"] > .landing-module__mMnuAW__stepNumber"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.71 (foreground color: #8a99b3, background color: #f6f8fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__workflowDisclaimer"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.56 (foreground color: #75849c, background color: #f6f8fc, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__photoTopline > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.23 (foreground color: #6b7c97, background color: #ffffff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__photoStatement > span:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.35 (foreground color: #7384a8, background color: #edf2ff, font size: 5.3pt (7px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__trustRows > div:nth-child(1) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.96 (foreground color: #70819a, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__trustRows > div:nth-child(2) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.96 (foreground color: #70819a, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__trustRows > div:nth-child(3) > div > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.96 (foreground color: #70819a, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__licenseIntro > p:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.97 (foreground color: #677897, background color: #edf2ff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__planSwitch > button[type=\"button\"]:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.65 (foreground color: #6278a2, background color: #e2e9fb, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__licenseTop > span:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #6d80a3, background color: #ffffff, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__licenseDetail > p:nth-child(4)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #70809a, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__licenseFootnote > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.05 (foreground color: #6a7fa4, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerTop > div:nth-child(1) > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.24 (foreground color: #8190a7, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerSignature"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.27 (foreground color: #dce4f3, background color: #ffffff, font size: 30.7pt (40.95px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerSignature > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.66 (foreground color: #b9c9ed, background color: #ffffff, font size: 30.7pt (40.95px), font weight: normal). Expected contrast ratio of 3:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerBottom > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #7285a4, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".landing-module__mMnuAW__footerBottom > a[href$=\"#contenido\"]"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #7285a4, background color: #ffffff, font size: 6.0pt (8px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-hospital-login",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "button[data-testid=\"demo-hospital_admin\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-testid=\"demo-billing\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-testid=\"demo-reviewer\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-testid=\"demo-director\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-testid=\"demo-insurer_demo\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "button[data-testid=\"demo-disabled\"] > .portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-platform-login",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".portal-module__0SF6zG__demoProfileText > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.22 (foreground color: #6d7c95, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-hospital",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".portal-module__0SF6zG__chartAxis > span:nth-child(1)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #738097, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-module__0SF6zG__chartAxis > span:nth-child(2)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #738097, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".portal-module__0SF6zG__chartAxis > span:nth-child(3)"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.98 (foreground color: #738097, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-hospital-accounts",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-account-detail",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".financial-disclaimer"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.38 (foreground color: #64738e, background color: #f1f5fd, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-hospital-review",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-hospital-import",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".import-guide > ol > li:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.53 (foreground color: #6682bd, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".import-guide > ol > li:nth-child(2) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.53 (foreground color: #6682bd, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".import-guide > ol > li:nth-child(3) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.53 (foreground color: #6682bd, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                ".import-guide-note > p"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.85 (foreground color: #6d7d97, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            },
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-hospital-agreements",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".portal-module__0SF6zG__footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-hospital-reports",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "scrollable-region-focusable",
+          "impact": "serious",
+          "description": "Ensure elements that have scrollable content are accessible by keyboard in Safari",
+          "nodes": [
+            {
+              "target": [
+                ".table-scroll"
+              ],
+              "summary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-hospital-users",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-hospital-audit",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        },
+        {
+          "id": "scrollable-region-focusable",
+          "impact": "serious",
+          "description": "Ensure elements that have scrollable content are accessible by keyboard in Safari",
+          "nodes": [
+            {
+              "target": [
+                ".table-scroll"
+              ],
+              "summary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-admin",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-admin-tenants",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                ".portal-module__0SF6zG__footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-admin-licenses",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-admin-leads",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-admin-users",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "footer > span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "mobile-admin-audit",
+      "type": "accessibility",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": [
+            {
+              "target": [
+                "span:nth-child(1) > span"
+              ],
+              "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #7b889f, background color: #f4f6fa, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "interactionChecks": [
+    {
+      "name": "desktop-reduced-motion",
+      "infiniteRunningAnimations": 0
+    },
+    {
+      "name": "desktop-unchanged-demo-accounts",
+      "accountCount": 20
+    },
+    {
+      "name": "desktop-caja-demo-login",
+      "passed": true
+    },
+    {
+      "name": "desktop-auditor-demo-login",
+      "passed": true
+    },
+    {
+      "name": "desktop-direccion-demo-login",
+      "passed": true
+    },
+    {
+      "name": "desktop-aseguradora-demo-login",
+      "passed": true
+    },
+    {
+      "name": "desktop-demo-profile-login",
+      "passed": true
+    },
+    {
+      "name": "mobile-reduced-motion",
+      "infiniteRunningAnimations": 0
+    },
+    {
+      "name": "mobile-unchanged-demo-accounts",
+      "accountCount": 20
+    },
+    {
+      "name": "mobile-caja-demo-login",
+      "passed": true
+    },
+    {
+      "name": "mobile-auditor-demo-login",
+      "passed": true
+    },
+    {
+      "name": "mobile-direccion-demo-login",
+      "passed": true
+    },
+    {
+      "name": "mobile-aseguradora-demo-login",
+      "passed": true
+    },
+    {
+      "name": "mobile-demo-profile-login",
+      "passed": true
+    }
+  ],
+  "scope": "Local packaged UI; synthetic data; authentication and read-only navigation",
+  "browserVersion": "153.0.8010.53",
+  "finishedAt": "2026-09-24T15:25:58.100Z",
+  "passed": false
+}

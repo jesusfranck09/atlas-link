@@ -1,0 +1,56 @@
+[
+  {
+    "name": "ink",
+    "foreground": "#101e36",
+    "background": "#ffffff",
+    "ratio": 16.65
+  },
+  {
+    "name": "muted",
+    "foreground": "#63718a",
+    "background": "#ffffff",
+    "ratio": 4.93
+  },
+  {
+    "name": "muted canvas",
+    "foreground": "#63718a",
+    "background": "#f4f6fa",
+    "ratio": 4.56
+  },
+  {
+    "name": "primary white",
+    "foreground": "#ffffff",
+    "background": "#3156ed",
+    "ratio": 5.7
+  },
+  {
+    "name": "green",
+    "foreground": "#15734a",
+    "background": "#e9f4ed",
+    "ratio": 5.2
+  },
+  {
+    "name": "amber",
+    "foreground": "#875e13",
+    "background": "#fff5df",
+    "ratio": 5.32
+  },
+  {
+    "name": "coral",
+    "foreground": "#b54146",
+    "background": "#fff0f0",
+    "ratio": 4.98
+  },
+  {
+    "name": "blue",
+    "foreground": "#3156ed",
+    "background": "#eaf0ff",
+    "ratio": 5.0
+  },
+  {
+    "name": "th",
+    "foreground": "#63718a",
+    "background": "#f8f9fc",
+    "ratio": 4.68
+  }
+]

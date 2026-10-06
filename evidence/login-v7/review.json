@@ -1,0 +1,4087 @@
+{
+  "startedAt": "2026-09-24T18:31:35.860Z",
+  "baseURL": "http://127.0.0.1:4430",
+  "cdpURL": "http://127.0.0.1:9430",
+  "revision": "c96844a14af1fc2975f9321c803083e948f15d2a",
+  "workingTree": [
+    "M AGENTS.md",
+    " M frontend/src/components/login.module.css",
+    " M frontend/src/components/login.tsx",
+    "?? docs/review-login-v7.md",
+    "?? evidence/login-v7/",
+    "?? qa/login-layout-review.mjs"
+  ],
+  "environment": {
+    "node": "v24.14.0",
+    "platform": "Darwin 25.6.0 arm64",
+    "browser": "153.0.8010.53",
+    "playwright": "1.63.0"
+  },
+  "sources": [
+    "docs/review-login-v7.md",
+    "AGENTS.md",
+    "qa/tests/journeys.spec.ts",
+    "backend/identity-service/src/main/java/mx/atlaslink/auth/IdentityService.java",
+    "frontend/src/components/workspace.tsx"
+  ],
+  "scope": "Both real login UIs, demo-profile API, credential submission and logout through the local gateway and identity service. No API interception or fabricated sessions. Existing synthetic demo users only. Initial layout and axe at four viewport sizes per login.",
+  "exclusions": "No production deployment, external messages, payment effects, data edits, full portal regression, persistence write/recovery test, physical mobile, Safari or Windows validation. A green run does not establish aesthetic acceptance or comprehensive accessibility/security.",
+  "checks": [
+    {
+      "name": "desktop-1366-hospital:ready",
+      "status": "pass",
+      "profiles": 6
+    },
+    {
+      "name": "desktop-1366-hospital:no-horizontal-overflow",
+      "status": "pass",
+      "viewportWidth": 1366,
+      "scrollWidth": 1366,
+      "documentHeight": 768
+    },
+    {
+      "name": "desktop-1366-hospital:form-demo-alignment",
+      "status": "pass",
+      "form": {
+        "x": 783,
+        "y": 197.40625,
+        "top": 197.40625,
+        "right": 1203,
+        "bottom": 429,
+        "left": 783,
+        "width": 420,
+        "height": 231.59375
+      },
+      "demos": {
+        "x": 783,
+        "y": 453,
+        "top": 453,
+        "right": 1203,
+        "bottom": 681,
+        "left": 783,
+        "width": 420,
+        "height": 228
+      },
+      "submit": {
+        "x": 783,
+        "y": 381,
+        "top": 381,
+        "right": 1203,
+        "bottom": 429,
+        "left": 783,
+        "width": 420,
+        "height": 48
+      }
+    },
+    {
+      "name": "desktop-1366-hospital:photo-alignment",
+      "status": "pass",
+      "photo": {
+        "x": 163,
+        "y": 107.015625,
+        "top": 107.015625,
+        "right": 703,
+        "bottom": 681,
+        "left": 163,
+        "width": 540,
+        "height": 573.984375,
+        "display": "block"
+      },
+      "content": {
+        "x": 783,
+        "y": 107.015625,
+        "top": 107.015625,
+        "right": 1203,
+        "bottom": 681,
+        "left": 783,
+        "width": 420,
+        "height": 573.984375
+      }
+    },
+    {
+      "name": "desktop-1366-hospital:profile-layout-and-accessible-details",
+      "status": "pass",
+      "heading": {
+        "text": "Bienvenido.",
+        "fontSize": "36px",
+        "rect": {
+          "x": 783,
+          "y": 134.015625,
+          "top": 134.015625,
+          "right": 1203,
+          "bottom": 175.40625,
+          "left": 783,
+          "width": 420,
+          "height": 41.390625
+        }
+      },
+      "profiles": [
+        {
+          "id": "demo-hospital_admin",
+          "rect": {
+            "x": 783,
+            "y": 501,
+            "top": 501,
+            "right": 986,
+            "bottom": 549,
+            "left": 783,
+            "width": 203,
+            "height": 48
+          },
+          "visibleText": [
+            {
+              "text": "Administración",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 822,
+                "y": 516.59375,
+                "top": 516.59375,
+                "right": 906.734375,
+                "bottom": 532.59375,
+                "left": 822,
+                "width": 84.734375,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 201,
+          "clientWidth": 201
+        },
+        {
+          "id": "demo-billing",
+          "rect": {
+            "x": 1000,
+            "y": 501,
+            "top": 501,
+            "right": 1203,
+            "bottom": 549,
+            "left": 1000,
+            "width": 203,
+            "height": 48
+          },
+          "visibleText": [
+            {
+              "text": "Caja y facturación",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 1039,
+                "y": 516.59375,
+                "top": 516.59375,
+                "right": 1141.03125,
+                "bottom": 532.59375,
+                "left": 1039,
+                "width": 102.03125,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 201,
+          "clientWidth": 201
+        },
+        {
+          "id": "demo-reviewer",
+          "rect": {
+            "x": 783,
+            "y": 553,
+            "top": 553,
+            "right": 986,
+            "bottom": 601,
+            "left": 783,
+            "width": 203,
+            "height": 48
+          },
+          "visibleText": [
+            {
+              "text": "Auditoría",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 822,
+                "y": 568.59375,
+                "top": 568.59375,
+                "right": 872.453125,
+                "bottom": 584.59375,
+                "left": 822,
+                "width": 50.453125,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 201,
+          "clientWidth": 201
+        },
+        {
+          "id": "demo-director",
+          "rect": {
+            "x": 1000,
+            "y": 553,
+            "top": 553,
+            "right": 1203,
+            "bottom": 601,
+            "left": 1000,
+            "width": 203,
+            "height": 48
+          },
+          "visibleText": [
+            {
+              "text": "Dirección",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 1039,
+                "y": 568.59375,
+                "top": 568.59375,
+                "right": 1092,
+                "bottom": 584.59375,
+                "left": 1039,
+                "width": 53,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 201,
+          "clientWidth": 201
+        },
+        {
+          "id": "demo-insurer_demo",
+          "rect": {
+            "x": 783,
+            "y": 605,
+            "top": 605,
+            "right": 986,
+            "bottom": 653,
+            "left": 783,
+            "width": 203,
+            "height": 48
+          },
+          "visibleText": [
+            {
+              "text": "Aseguradora · lectura",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 822,
+                "y": 620.59375,
+                "top": 620.59375,
+                "right": 941.421875,
+                "bottom": 636.59375,
+                "left": 822,
+                "width": 119.421875,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 201,
+          "clientWidth": 201
+        },
+        {
+          "id": "demo-disabled",
+          "rect": {
+            "x": 1000,
+            "y": 605,
+            "top": 605,
+            "right": 1203,
+            "bottom": 653,
+            "left": 1000,
+            "width": 203,
+            "height": 48
+          },
+          "visibleText": [
+            {
+              "text": "Cuenta desactivada",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 1039,
+                "y": 620.59375,
+                "top": 620.59375,
+                "right": 1150.578125,
+                "bottom": 636.59375,
+                "left": 1039,
+                "width": 111.578125,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 201,
+          "clientWidth": 201
+        }
+      ]
+    },
+    {
+      "name": "desktop-1366-hospital:first-screen-profiles-and-footer-gap",
+      "status": "pass",
+      "profileBottom": 653,
+      "footerTop": 724,
+      "footerBottom": 768,
+      "profileToFooterGap": 71
+    },
+    {
+      "name": "desktop-1366-hospital:screenshots",
+      "status": "pass",
+      "files": [
+        "desktop-1366-hospital-viewport.png",
+        "desktop-1366-hospital-full.png"
+      ]
+    },
+    {
+      "name": "desktop-1366-hospital:axe",
+      "status": "pass",
+      "version": "4.13.0",
+      "passes": 38,
+      "incomplete": 1,
+      "inapplicable": 50,
+      "violations": 0
+    },
+    {
+      "name": "desktop-1366-hospital:all-demo-profiles-autofill-without-submit",
+      "status": "pass",
+      "profileIds": [
+        "hospital_admin",
+        "billing",
+        "reviewer",
+        "director",
+        "insurer_demo",
+        "disabled"
+      ],
+      "loginRequests": 0
+    },
+    {
+      "name": "desktop-1366-hospital:password-toggle",
+      "status": "pass",
+      "valuePreserved": true
+    },
+    {
+      "name": "desktop-1366-hospital:selection-clears-when-either-input-edited",
+      "status": "pass",
+      "editedInputs": [
+        "email",
+        "password"
+      ]
+    },
+    {
+      "name": "disabled-demo-account-rejected",
+      "status": "pass",
+      "httpStatus": 401,
+      "sessionAbsent": true,
+      "alert": "Correo o contraseña incorrectos."
+    },
+    {
+      "name": "hospital:real-login",
+      "status": "pass",
+      "destination": "/hospital",
+      "role": "HOSPITAL_ADMIN",
+      "tokenPresent": true
+    },
+    {
+      "name": "hospital:real-logout",
+      "status": "pass",
+      "destination": "/login",
+      "sessionAbsent": true
+    },
+    {
+      "name": "desktop-1366-hospital:no-runtime-or-unexpected-http-errors",
+      "status": "pass",
+      "pageErrors": 0,
+      "unexpectedHttpErrors": 0,
+      "unexpectedConsoleErrors": 0
+    },
+    {
+      "name": "desktop-1366-company:ready",
+      "status": "pass",
+      "profiles": 1
+    },
+    {
+      "name": "desktop-1366-company:no-horizontal-overflow",
+      "status": "pass",
+      "viewportWidth": 1366,
+      "scrollWidth": 1366,
+      "documentHeight": 768
+    },
+    {
+      "name": "desktop-1366-company:form-demo-alignment",
+      "status": "pass",
+      "form": {
+        "x": 783,
+        "y": 249.40625,
+        "top": 249.40625,
+        "right": 1203,
+        "bottom": 481,
+        "left": 783,
+        "width": 420,
+        "height": 231.59375
+      },
+      "demos": {
+        "x": 783,
+        "y": 505,
+        "top": 505,
+        "right": 1203,
+        "bottom": 629,
+        "left": 783,
+        "width": 420,
+        "height": 124
+      },
+      "submit": {
+        "x": 783,
+        "y": 433,
+        "top": 433,
+        "right": 1203,
+        "bottom": 481,
+        "left": 783,
+        "width": 420,
+        "height": 48
+      }
+    },
+    {
+      "name": "desktop-1366-company:photo-alignment",
+      "status": "pass",
+      "photo": {
+        "x": 163,
+        "y": 159.015625,
+        "top": 159.015625,
+        "right": 703,
+        "bottom": 629,
+        "left": 163,
+        "width": 540,
+        "height": 469.984375,
+        "display": "block"
+      },
+      "content": {
+        "x": 783,
+        "y": 159.015625,
+        "top": 159.015625,
+        "right": 1203,
+        "bottom": 629,
+        "left": 783,
+        "width": 420,
+        "height": 469.984375
+      }
+    },
+    {
+      "name": "desktop-1366-company:profile-layout-and-accessible-details",
+      "status": "pass",
+      "heading": {
+        "text": "Bienvenido.",
+        "fontSize": "36px",
+        "rect": {
+          "x": 783,
+          "y": 186.015625,
+          "top": 186.015625,
+          "right": 1203,
+          "bottom": 227.40625,
+          "left": 783,
+          "width": 420,
+          "height": 41.390625
+        }
+      },
+      "profiles": [
+        {
+          "id": "demo-platform_admin",
+          "rect": {
+            "x": 783,
+            "y": 553,
+            "top": 553,
+            "right": 1203,
+            "bottom": 601,
+            "left": 783,
+            "width": 420,
+            "height": 48
+          },
+          "visibleText": [
+            {
+              "text": "Administración Atlas",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 822,
+                "y": 568.59375,
+                "top": 568.59375,
+                "right": 938.5625,
+                "bottom": 584.59375,
+                "left": 822,
+                "width": 116.5625,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 418,
+          "clientWidth": 418
+        }
+      ]
+    },
+    {
+      "name": "desktop-1366-company:first-screen-profiles-and-footer-gap",
+      "status": "pass",
+      "profileBottom": 601,
+      "footerTop": 724,
+      "footerBottom": 768,
+      "profileToFooterGap": 123
+    },
+    {
+      "name": "desktop-1366-company:screenshots",
+      "status": "pass",
+      "files": [
+        "desktop-1366-company-viewport.png",
+        "desktop-1366-company-full.png"
+      ]
+    },
+    {
+      "name": "desktop-1366-company:axe",
+      "status": "pass",
+      "version": "4.13.0",
+      "passes": 38,
+      "incomplete": 1,
+      "inapplicable": 50,
+      "violations": 0
+    },
+    {
+      "name": "desktop-1366-company:all-demo-profiles-autofill-without-submit",
+      "status": "pass",
+      "profileIds": [
+        "platform_admin"
+      ],
+      "loginRequests": 0
+    },
+    {
+      "name": "desktop-1366-company:password-toggle",
+      "status": "pass",
+      "valuePreserved": true
+    },
+    {
+      "name": "desktop-1366-company:selection-clears-when-either-input-edited",
+      "status": "pass",
+      "editedInputs": [
+        "email",
+        "password"
+      ]
+    },
+    {
+      "name": "company:real-login",
+      "status": "pass",
+      "destination": "/admin",
+      "role": "PLATFORM_ADMIN",
+      "tokenPresent": true
+    },
+    {
+      "name": "company:real-logout",
+      "status": "pass",
+      "destination": "/admin/login",
+      "sessionAbsent": true
+    },
+    {
+      "name": "desktop-1366-company:no-runtime-or-unexpected-http-errors",
+      "status": "pass",
+      "pageErrors": 0,
+      "unexpectedHttpErrors": 0,
+      "unexpectedConsoleErrors": 0
+    },
+    {
+      "name": "desktop-1440-hospital:ready",
+      "status": "pass",
+      "profiles": 6
+    },
+    {
+      "name": "desktop-1440-hospital:no-horizontal-overflow",
+      "status": "pass",
+      "viewportWidth": 1440,
+      "scrollWidth": 1440,
+      "documentHeight": 900
+    },
+    {
+      "name": "desktop-1440-hospital:form-demo-alignment",
+      "status": "pass",
+      "form": {
+        "x": 820,
+        "y": 263.90625,
+        "top": 263.90625,
+        "right": 1240,
+        "bottom": 495.5,
+        "left": 820,
+        "width": 420,
+        "height": 231.59375
+      },
+      "demos": {
+        "x": 820,
+        "y": 523.5,
+        "top": 523.5,
+        "right": 1240,
+        "bottom": 754.5,
+        "left": 820,
+        "width": 420,
+        "height": 231
+      },
+      "submit": {
+        "x": 820,
+        "y": 447.5,
+        "top": 447.5,
+        "right": 1240,
+        "bottom": 495.5,
+        "left": 820,
+        "width": 420,
+        "height": 48
+      }
+    },
+    {
+      "name": "desktop-1440-hospital:photo-alignment",
+      "status": "pass",
+      "photo": {
+        "x": 200,
+        "y": 169.515625,
+        "top": 169.515625,
+        "right": 740,
+        "bottom": 754.5,
+        "left": 200,
+        "width": 540,
+        "height": 584.984375,
+        "display": "block"
+      },
+      "content": {
+        "x": 820,
+        "y": 169.515625,
+        "top": 169.515625,
+        "right": 1240,
+        "bottom": 754.5,
+        "left": 820,
+        "width": 420,
+        "height": 584.984375
+      }
+    },
+    {
+      "name": "desktop-1440-hospital:profile-layout-and-accessible-details",
+      "status": "pass",
+      "heading": {
+        "text": "Bienvenido.",
+        "fontSize": "36px",
+        "rect": {
+          "x": 820,
+          "y": 196.515625,
+          "top": 196.515625,
+          "right": 1240,
+          "bottom": 237.90625,
+          "left": 820,
+          "width": 420,
+          "height": 41.390625
+        }
+      },
+      "profiles": [
+        {
+          "id": "demo-hospital_admin",
+          "rect": {
+            "x": 820,
+            "y": 574.5,
+            "top": 574.5,
+            "right": 1023,
+            "bottom": 622.5,
+            "left": 820,
+            "width": 203,
+            "height": 48
+          },
+          "visibleText": [
+            {
+              "text": "Administración",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 859,
+                "y": 590.09375,
+                "top": 590.09375,
+                "right": 943.734375,
+                "bottom": 606.09375,
+                "left": 859,
+                "width": 84.734375,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 201,
+          "clientWidth": 201
+        },
+        {
+          "id": "demo-billing",
+          "rect": {
+            "x": 1037,
+            "y": 574.5,
+            "top": 574.5,
+            "right": 1240,
+            "bottom": 622.5,
+            "left": 1037,
+            "width": 203,
+            "height": 48
+          },
+          "visibleText": [
+            {
+              "text": "Caja y facturación",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 1076,
+                "y": 590.09375,
+                "top": 590.09375,
+                "right": 1178.03125,
+                "bottom": 606.09375,
+                "left": 1076,
+                "width": 102.03125,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 201,
+          "clientWidth": 201
+        },
+        {
+          "id": "demo-reviewer",
+          "rect": {
+            "x": 820,
+            "y": 626.5,
+            "top": 626.5,
+            "right": 1023,
+            "bottom": 674.5,
+            "left": 820,
+            "width": 203,
+            "height": 48
+          },
+          "visibleText": [
+            {
+              "text": "Auditoría",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 859,
+                "y": 642.09375,
+                "top": 642.09375,
+                "right": 909.453125,
+                "bottom": 658.09375,
+                "left": 859,
+                "width": 50.453125,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 201,
+          "clientWidth": 201
+        },
+        {
+          "id": "demo-director",
+          "rect": {
+            "x": 1037,
+            "y": 626.5,
+            "top": 626.5,
+            "right": 1240,
+            "bottom": 674.5,
+            "left": 1037,
+            "width": 203,
+            "height": 48
+          },
+          "visibleText": [
+            {
+              "text": "Dirección",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 1076,
+                "y": 642.09375,
+                "top": 642.09375,
+                "right": 1129,
+                "bottom": 658.09375,
+                "left": 1076,
+                "width": 53,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 201,
+          "clientWidth": 201
+        },
+        {
+          "id": "demo-insurer_demo",
+          "rect": {
+            "x": 820,
+            "y": 678.5,
+            "top": 678.5,
+            "right": 1023,
+            "bottom": 726.5,
+            "left": 820,
+            "width": 203,
+            "height": 48
+          },
+          "visibleText": [
+            {
+              "text": "Aseguradora · lectura",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 859,
+                "y": 694.09375,
+                "top": 694.09375,
+                "right": 978.421875,
+                "bottom": 710.09375,
+                "left": 859,
+                "width": 119.421875,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 201,
+          "clientWidth": 201
+        },
+        {
+          "id": "demo-disabled",
+          "rect": {
+            "x": 1037,
+            "y": 678.5,
+            "top": 678.5,
+            "right": 1240,
+            "bottom": 726.5,
+            "left": 1037,
+            "width": 203,
+            "height": 48
+          },
+          "visibleText": [
+            {
+              "text": "Cuenta desactivada",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 1076,
+                "y": 694.09375,
+                "top": 694.09375,
+                "right": 1187.578125,
+                "bottom": 710.09375,
+                "left": 1076,
+                "width": 111.578125,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 201,
+          "clientWidth": 201
+        }
+      ]
+    },
+    {
+      "name": "desktop-1440-hospital:screenshots",
+      "status": "pass",
+      "files": [
+        "desktop-1440-hospital-viewport.png",
+        "desktop-1440-hospital-full.png"
+      ]
+    },
+    {
+      "name": "desktop-1440-hospital:axe",
+      "status": "pass",
+      "version": "4.13.0",
+      "passes": 38,
+      "incomplete": 1,
+      "inapplicable": 50,
+      "violations": 0
+    },
+    {
+      "name": "desktop-1440-hospital:all-demo-profiles-autofill-without-submit",
+      "status": "pass",
+      "profileIds": [
+        "hospital_admin",
+        "billing",
+        "reviewer",
+        "director",
+        "insurer_demo",
+        "disabled"
+      ],
+      "loginRequests": 0
+    },
+    {
+      "name": "desktop-1440-hospital:password-toggle",
+      "status": "pass",
+      "valuePreserved": true
+    },
+    {
+      "name": "desktop-1440-hospital:selection-clears-when-either-input-edited",
+      "status": "pass",
+      "editedInputs": [
+        "email",
+        "password"
+      ]
+    },
+    {
+      "name": "desktop-1440-hospital:no-runtime-or-unexpected-http-errors",
+      "status": "pass",
+      "pageErrors": 0,
+      "unexpectedHttpErrors": 0,
+      "unexpectedConsoleErrors": 0
+    },
+    {
+      "name": "desktop-1440-company:ready",
+      "status": "pass",
+      "profiles": 1
+    },
+    {
+      "name": "desktop-1440-company:no-horizontal-overflow",
+      "status": "pass",
+      "viewportWidth": 1440,
+      "scrollWidth": 1440,
+      "documentHeight": 900
+    },
+    {
+      "name": "desktop-1440-company:form-demo-alignment",
+      "status": "pass",
+      "form": {
+        "x": 820,
+        "y": 315.90625,
+        "top": 315.90625,
+        "right": 1240,
+        "bottom": 547.5,
+        "left": 820,
+        "width": 420,
+        "height": 231.59375
+      },
+      "demos": {
+        "x": 820,
+        "y": 575.5,
+        "top": 575.5,
+        "right": 1240,
+        "bottom": 702.5,
+        "left": 820,
+        "width": 420,
+        "height": 127
+      },
+      "submit": {
+        "x": 820,
+        "y": 499.5,
+        "top": 499.5,
+        "right": 1240,
+        "bottom": 547.5,
+        "left": 820,
+        "width": 420,
+        "height": 48
+      }
+    },
+    {
+      "name": "desktop-1440-company:photo-alignment",
+      "status": "pass",
+      "photo": {
+        "x": 200,
+        "y": 221.515625,
+        "top": 221.515625,
+        "right": 740,
+        "bottom": 702.5,
+        "left": 200,
+        "width": 540,
+        "height": 480.984375,
+        "display": "block"
+      },
+      "content": {
+        "x": 820,
+        "y": 221.515625,
+        "top": 221.515625,
+        "right": 1240,
+        "bottom": 702.5,
+        "left": 820,
+        "width": 420,
+        "height": 480.984375
+      }
+    },
+    {
+      "name": "desktop-1440-company:profile-layout-and-accessible-details",
+      "status": "pass",
+      "heading": {
+        "text": "Bienvenido.",
+        "fontSize": "36px",
+        "rect": {
+          "x": 820,
+          "y": 248.515625,
+          "top": 248.515625,
+          "right": 1240,
+          "bottom": 289.90625,
+          "left": 820,
+          "width": 420,
+          "height": 41.390625
+        }
+      },
+      "profiles": [
+        {
+          "id": "demo-platform_admin",
+          "rect": {
+            "x": 820,
+            "y": 626.5,
+            "top": 626.5,
+            "right": 1240,
+            "bottom": 674.5,
+            "left": 820,
+            "width": 420,
+            "height": 48
+          },
+          "visibleText": [
+            {
+              "text": "Administración Atlas",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 859,
+                "y": 642.09375,
+                "top": 642.09375,
+                "right": 975.5625,
+                "bottom": 658.09375,
+                "left": 859,
+                "width": 116.5625,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 418,
+          "clientWidth": 418
+        }
+      ]
+    },
+    {
+      "name": "desktop-1440-company:screenshots",
+      "status": "pass",
+      "files": [
+        "desktop-1440-company-viewport.png",
+        "desktop-1440-company-full.png"
+      ]
+    },
+    {
+      "name": "desktop-1440-company:axe",
+      "status": "pass",
+      "version": "4.13.0",
+      "passes": 38,
+      "incomplete": 1,
+      "inapplicable": 50,
+      "violations": 0
+    },
+    {
+      "name": "desktop-1440-company:all-demo-profiles-autofill-without-submit",
+      "status": "pass",
+      "profileIds": [
+        "platform_admin"
+      ],
+      "loginRequests": 0
+    },
+    {
+      "name": "desktop-1440-company:password-toggle",
+      "status": "pass",
+      "valuePreserved": true
+    },
+    {
+      "name": "desktop-1440-company:selection-clears-when-either-input-edited",
+      "status": "pass",
+      "editedInputs": [
+        "email",
+        "password"
+      ]
+    },
+    {
+      "name": "desktop-1440-company:no-runtime-or-unexpected-http-errors",
+      "status": "pass",
+      "pageErrors": 0,
+      "unexpectedHttpErrors": 0,
+      "unexpectedConsoleErrors": 0
+    },
+    {
+      "name": "mobile-390-hospital:ready",
+      "status": "pass",
+      "profiles": 6
+    },
+    {
+      "name": "mobile-390-hospital:no-horizontal-overflow",
+      "status": "pass",
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "documentHeight": 844
+    },
+    {
+      "name": "mobile-390-hospital:form-demo-alignment",
+      "status": "pass",
+      "form": {
+        "x": 20,
+        "y": 185.09375,
+        "top": 185.09375,
+        "right": 370,
+        "bottom": 416.6875,
+        "left": 20,
+        "width": 350,
+        "height": 231.59375
+      },
+      "demos": {
+        "x": 20,
+        "y": 442.6875,
+        "top": 442.6875,
+        "right": 370,
+        "bottom": 688.6875,
+        "left": 20,
+        "width": 350,
+        "height": 246
+      },
+      "submit": {
+        "x": 20,
+        "y": 368.6875,
+        "top": 368.6875,
+        "right": 370,
+        "bottom": 416.6875,
+        "left": 20,
+        "width": 350,
+        "height": 48
+      }
+    },
+    {
+      "name": "mobile-390-hospital:photo-hidden",
+      "status": "pass",
+      "photo": {
+        "x": 0,
+        "y": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0,
+        "width": 0,
+        "height": 0,
+        "display": "none"
+      },
+      "content": {
+        "x": 20,
+        "y": 94,
+        "top": 94,
+        "right": 370,
+        "bottom": 688.6875,
+        "left": 20,
+        "width": 350,
+        "height": 594.6875
+      }
+    },
+    {
+      "name": "mobile-390-hospital:profile-layout-and-accessible-details",
+      "status": "pass",
+      "heading": {
+        "text": "Bienvenido.",
+        "fontSize": "34px",
+        "rect": {
+          "x": 20,
+          "y": 121,
+          "top": 121,
+          "right": 370,
+          "bottom": 160.09375,
+          "left": 20,
+          "width": 350,
+          "height": 39.09375
+        }
+      },
+      "profiles": [
+        {
+          "id": "demo-hospital_admin",
+          "rect": {
+            "x": 20,
+            "y": 492.6875,
+            "top": 492.6875,
+            "right": 190,
+            "bottom": 546.6875,
+            "left": 20,
+            "width": 170,
+            "height": 54
+          },
+          "visibleText": [
+            {
+              "text": "Administración",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 54,
+                "y": 511.28125,
+                "top": 511.28125,
+                "right": 138.734375,
+                "bottom": 527.28125,
+                "left": 54,
+                "width": 84.734375,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 168,
+          "clientWidth": 168
+        },
+        {
+          "id": "demo-billing",
+          "rect": {
+            "x": 200,
+            "y": 492.6875,
+            "top": 492.6875,
+            "right": 370,
+            "bottom": 546.6875,
+            "left": 200,
+            "width": 170,
+            "height": 54
+          },
+          "visibleText": [
+            {
+              "text": "Caja y facturación",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 234,
+                "y": 511.28125,
+                "top": 511.28125,
+                "right": 336.03125,
+                "bottom": 527.28125,
+                "left": 234,
+                "width": 102.03125,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 168,
+          "clientWidth": 168
+        },
+        {
+          "id": "demo-reviewer",
+          "rect": {
+            "x": 20,
+            "y": 549.6875,
+            "top": 549.6875,
+            "right": 190,
+            "bottom": 603.6875,
+            "left": 20,
+            "width": 170,
+            "height": 54
+          },
+          "visibleText": [
+            {
+              "text": "Auditoría",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 54,
+                "y": 568.28125,
+                "top": 568.28125,
+                "right": 104.453125,
+                "bottom": 584.28125,
+                "left": 54,
+                "width": 50.453125,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 168,
+          "clientWidth": 168
+        },
+        {
+          "id": "demo-director",
+          "rect": {
+            "x": 200,
+            "y": 549.6875,
+            "top": 549.6875,
+            "right": 370,
+            "bottom": 603.6875,
+            "left": 200,
+            "width": 170,
+            "height": 54
+          },
+          "visibleText": [
+            {
+              "text": "Dirección",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 234,
+                "y": 568.28125,
+                "top": 568.28125,
+                "right": 287,
+                "bottom": 584.28125,
+                "left": 234,
+                "width": 53,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 168,
+          "clientWidth": 168
+        },
+        {
+          "id": "demo-insurer_demo",
+          "rect": {
+            "x": 20,
+            "y": 606.6875,
+            "top": 606.6875,
+            "right": 190,
+            "bottom": 660.6875,
+            "left": 20,
+            "width": 170,
+            "height": 54
+          },
+          "visibleText": [
+            {
+              "text": "Aseguradora · lectura",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 54,
+                "y": 616.890625,
+                "top": 616.890625,
+                "right": 131.0625,
+                "bottom": 649.6875,
+                "left": 54,
+                "width": 77.0625,
+                "height": 32.796875
+              }
+            }
+          ],
+          "scrollWidth": 168,
+          "clientWidth": 168
+        },
+        {
+          "id": "demo-disabled",
+          "rect": {
+            "x": 200,
+            "y": 606.6875,
+            "top": 606.6875,
+            "right": 370,
+            "bottom": 660.6875,
+            "left": 200,
+            "width": 170,
+            "height": 54
+          },
+          "visibleText": [
+            {
+              "text": "Cuenta desactivada",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 234,
+                "y": 625.28125,
+                "top": 625.28125,
+                "right": 345.578125,
+                "bottom": 641.28125,
+                "left": 234,
+                "width": 111.578125,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 168,
+          "clientWidth": 168
+        }
+      ]
+    },
+    {
+      "name": "mobile-390-hospital:screenshots",
+      "status": "pass",
+      "files": [
+        "mobile-390-hospital-viewport.png",
+        "mobile-390-hospital-full.png"
+      ]
+    },
+    {
+      "name": "mobile-390-hospital:axe",
+      "status": "pass",
+      "version": "4.13.0",
+      "passes": 36,
+      "incomplete": 1,
+      "inapplicable": 52,
+      "violations": 0
+    },
+    {
+      "name": "mobile-390-hospital:all-demo-profiles-autofill-without-submit",
+      "status": "pass",
+      "profileIds": [
+        "hospital_admin",
+        "billing",
+        "reviewer",
+        "director",
+        "insurer_demo",
+        "disabled"
+      ],
+      "loginRequests": 0
+    },
+    {
+      "name": "mobile-390-hospital:password-toggle",
+      "status": "pass",
+      "valuePreserved": true
+    },
+    {
+      "name": "mobile-390-hospital:selection-clears-when-either-input-edited",
+      "status": "pass",
+      "editedInputs": [
+        "email",
+        "password"
+      ]
+    },
+    {
+      "name": "mobile-390-hospital:no-runtime-or-unexpected-http-errors",
+      "status": "pass",
+      "pageErrors": 0,
+      "unexpectedHttpErrors": 0,
+      "unexpectedConsoleErrors": 0
+    },
+    {
+      "name": "mobile-390-company:ready",
+      "status": "pass",
+      "profiles": 1
+    },
+    {
+      "name": "mobile-390-company:no-horizontal-overflow",
+      "status": "pass",
+      "viewportWidth": 390,
+      "scrollWidth": 390,
+      "documentHeight": 844
+    },
+    {
+      "name": "mobile-390-company:form-demo-alignment",
+      "status": "pass",
+      "form": {
+        "x": 20,
+        "y": 185.09375,
+        "top": 185.09375,
+        "right": 370,
+        "bottom": 416.6875,
+        "left": 20,
+        "width": 350,
+        "height": 231.59375
+      },
+      "demos": {
+        "x": 20,
+        "y": 442.6875,
+        "top": 442.6875,
+        "right": 370,
+        "bottom": 574.6875,
+        "left": 20,
+        "width": 350,
+        "height": 132
+      },
+      "submit": {
+        "x": 20,
+        "y": 368.6875,
+        "top": 368.6875,
+        "right": 370,
+        "bottom": 416.6875,
+        "left": 20,
+        "width": 350,
+        "height": 48
+      }
+    },
+    {
+      "name": "mobile-390-company:photo-hidden",
+      "status": "pass",
+      "photo": {
+        "x": 0,
+        "y": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0,
+        "width": 0,
+        "height": 0,
+        "display": "none"
+      },
+      "content": {
+        "x": 20,
+        "y": 94,
+        "top": 94,
+        "right": 370,
+        "bottom": 574.6875,
+        "left": 20,
+        "width": 350,
+        "height": 480.6875
+      }
+    },
+    {
+      "name": "mobile-390-company:profile-layout-and-accessible-details",
+      "status": "pass",
+      "heading": {
+        "text": "Bienvenido.",
+        "fontSize": "34px",
+        "rect": {
+          "x": 20,
+          "y": 121,
+          "top": 121,
+          "right": 370,
+          "bottom": 160.09375,
+          "left": 20,
+          "width": 350,
+          "height": 39.09375
+        }
+      },
+      "profiles": [
+        {
+          "id": "demo-platform_admin",
+          "rect": {
+            "x": 20,
+            "y": 492.6875,
+            "top": 492.6875,
+            "right": 370,
+            "bottom": 546.6875,
+            "left": 20,
+            "width": 350,
+            "height": 54
+          },
+          "visibleText": [
+            {
+              "text": "Administración Atlas",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 54,
+                "y": 511.28125,
+                "top": 511.28125,
+                "right": 170.5625,
+                "bottom": 527.28125,
+                "left": 54,
+                "width": 116.5625,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 348,
+          "clientWidth": 348
+        }
+      ]
+    },
+    {
+      "name": "mobile-390-company:screenshots",
+      "status": "pass",
+      "files": [
+        "mobile-390-company-viewport.png",
+        "mobile-390-company-full.png"
+      ]
+    },
+    {
+      "name": "mobile-390-company:axe",
+      "status": "pass",
+      "version": "4.13.0",
+      "passes": 36,
+      "incomplete": 1,
+      "inapplicable": 52,
+      "violations": 0
+    },
+    {
+      "name": "mobile-390-company:all-demo-profiles-autofill-without-submit",
+      "status": "pass",
+      "profileIds": [
+        "platform_admin"
+      ],
+      "loginRequests": 0
+    },
+    {
+      "name": "mobile-390-company:password-toggle",
+      "status": "pass",
+      "valuePreserved": true
+    },
+    {
+      "name": "mobile-390-company:selection-clears-when-either-input-edited",
+      "status": "pass",
+      "editedInputs": [
+        "email",
+        "password"
+      ]
+    },
+    {
+      "name": "mobile-390-company:no-runtime-or-unexpected-http-errors",
+      "status": "pass",
+      "pageErrors": 0,
+      "unexpectedHttpErrors": 0,
+      "unexpectedConsoleErrors": 0
+    },
+    {
+      "name": "narrow-320-hospital:ready",
+      "status": "pass",
+      "profiles": 6
+    },
+    {
+      "name": "narrow-320-hospital:no-horizontal-overflow",
+      "status": "pass",
+      "viewportWidth": 320,
+      "scrollWidth": 320,
+      "documentHeight": 768
+    },
+    {
+      "name": "narrow-320-hospital:form-demo-alignment",
+      "status": "pass",
+      "form": {
+        "x": 16,
+        "y": 182.796875,
+        "top": 182.796875,
+        "right": 304,
+        "bottom": 414.390625,
+        "left": 16,
+        "width": 288,
+        "height": 231.59375
+      },
+      "demos": {
+        "x": 16,
+        "y": 440.390625,
+        "top": 440.390625,
+        "right": 304,
+        "bottom": 692.390625,
+        "left": 16,
+        "width": 288,
+        "height": 252
+      },
+      "submit": {
+        "x": 16,
+        "y": 366.390625,
+        "top": 366.390625,
+        "right": 304,
+        "bottom": 414.390625,
+        "left": 16,
+        "width": 288,
+        "height": 48
+      }
+    },
+    {
+      "name": "narrow-320-hospital:photo-hidden",
+      "status": "pass",
+      "photo": {
+        "x": 0,
+        "y": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0,
+        "width": 0,
+        "height": 0,
+        "display": "none"
+      },
+      "content": {
+        "x": 16,
+        "y": 94,
+        "top": 94,
+        "right": 304,
+        "bottom": 692.390625,
+        "left": 16,
+        "width": 288,
+        "height": 598.390625
+      }
+    },
+    {
+      "name": "narrow-320-hospital:profile-layout-and-accessible-details",
+      "status": "pass",
+      "heading": {
+        "text": "Bienvenido.",
+        "fontSize": "32px",
+        "rect": {
+          "x": 16,
+          "y": 121,
+          "top": 121,
+          "right": 304,
+          "bottom": 157.796875,
+          "left": 16,
+          "width": 288,
+          "height": 36.796875
+        }
+      },
+      "profiles": [
+        {
+          "id": "demo-hospital_admin",
+          "rect": {
+            "x": 16,
+            "y": 490.390625,
+            "top": 490.390625,
+            "right": 156,
+            "bottom": 546.390625,
+            "left": 16,
+            "width": 140,
+            "height": 56
+          },
+          "visibleText": [
+            {
+              "text": "Administración",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 50,
+                "y": 509.984375,
+                "top": 509.984375,
+                "right": 134.734375,
+                "bottom": 525.984375,
+                "left": 50,
+                "width": 84.734375,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 138,
+          "clientWidth": 138
+        },
+        {
+          "id": "demo-billing",
+          "rect": {
+            "x": 164,
+            "y": 490.390625,
+            "top": 490.390625,
+            "right": 304,
+            "bottom": 546.390625,
+            "left": 164,
+            "width": 140,
+            "height": 56
+          },
+          "visibleText": [
+            {
+              "text": "Caja y facturación",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 198,
+                "y": 509.984375,
+                "top": 509.984375,
+                "right": 300.03125,
+                "bottom": 525.984375,
+                "left": 198,
+                "width": 102.03125,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 138,
+          "clientWidth": 138
+        },
+        {
+          "id": "demo-reviewer",
+          "rect": {
+            "x": 16,
+            "y": 549.390625,
+            "top": 549.390625,
+            "right": 156,
+            "bottom": 605.390625,
+            "left": 16,
+            "width": 140,
+            "height": 56
+          },
+          "visibleText": [
+            {
+              "text": "Auditoría",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 50,
+                "y": 568.984375,
+                "top": 568.984375,
+                "right": 100.453125,
+                "bottom": 584.984375,
+                "left": 50,
+                "width": 50.453125,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 138,
+          "clientWidth": 138
+        },
+        {
+          "id": "demo-director",
+          "rect": {
+            "x": 164,
+            "y": 549.390625,
+            "top": 549.390625,
+            "right": 304,
+            "bottom": 605.390625,
+            "left": 164,
+            "width": 140,
+            "height": 56
+          },
+          "visibleText": [
+            {
+              "text": "Dirección",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 198,
+                "y": 568.984375,
+                "top": 568.984375,
+                "right": 251,
+                "bottom": 584.984375,
+                "left": 198,
+                "width": 53,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 138,
+          "clientWidth": 138
+        },
+        {
+          "id": "demo-insurer_demo",
+          "rect": {
+            "x": 16,
+            "y": 608.390625,
+            "top": 608.390625,
+            "right": 156,
+            "bottom": 664.390625,
+            "left": 16,
+            "width": 140,
+            "height": 56
+          },
+          "visibleText": [
+            {
+              "text": "Aseguradora · lectura",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 50,
+                "y": 619.59375,
+                "top": 619.59375,
+                "right": 127.0625,
+                "bottom": 652.390625,
+                "left": 50,
+                "width": 77.0625,
+                "height": 32.796875
+              }
+            }
+          ],
+          "scrollWidth": 138,
+          "clientWidth": 138
+        },
+        {
+          "id": "demo-disabled",
+          "rect": {
+            "x": 164,
+            "y": 608.390625,
+            "top": 608.390625,
+            "right": 304,
+            "bottom": 664.390625,
+            "left": 164,
+            "width": 140,
+            "height": 56
+          },
+          "visibleText": [
+            {
+              "text": "Cuenta desactivada",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 198,
+                "y": 619.59375,
+                "top": 619.59375,
+                "right": 266.328125,
+                "bottom": 652.390625,
+                "left": 198,
+                "width": 68.328125,
+                "height": 32.796875
+              }
+            }
+          ],
+          "scrollWidth": 138,
+          "clientWidth": 138
+        }
+      ]
+    },
+    {
+      "name": "narrow-320-hospital:screenshots",
+      "status": "pass",
+      "files": [
+        "narrow-320-hospital-viewport.png",
+        "narrow-320-hospital-full.png"
+      ]
+    },
+    {
+      "name": "narrow-320-hospital:axe",
+      "status": "pass",
+      "version": "4.13.0",
+      "passes": 36,
+      "incomplete": 1,
+      "inapplicable": 52,
+      "violations": 0
+    },
+    {
+      "name": "narrow-320-hospital:all-demo-profiles-autofill-without-submit",
+      "status": "pass",
+      "profileIds": [
+        "hospital_admin",
+        "billing",
+        "reviewer",
+        "director",
+        "insurer_demo",
+        "disabled"
+      ],
+      "loginRequests": 0
+    },
+    {
+      "name": "narrow-320-hospital:password-toggle",
+      "status": "pass",
+      "valuePreserved": true
+    },
+    {
+      "name": "narrow-320-hospital:selection-clears-when-either-input-edited",
+      "status": "pass",
+      "editedInputs": [
+        "email",
+        "password"
+      ]
+    },
+    {
+      "name": "narrow-320-hospital:no-runtime-or-unexpected-http-errors",
+      "status": "pass",
+      "pageErrors": 0,
+      "unexpectedHttpErrors": 0,
+      "unexpectedConsoleErrors": 0
+    },
+    {
+      "name": "narrow-320-company:ready",
+      "status": "pass",
+      "profiles": 1
+    },
+    {
+      "name": "narrow-320-company:no-horizontal-overflow",
+      "status": "pass",
+      "viewportWidth": 320,
+      "scrollWidth": 320,
+      "documentHeight": 740
+    },
+    {
+      "name": "narrow-320-company:form-demo-alignment",
+      "status": "pass",
+      "form": {
+        "x": 16,
+        "y": 182.796875,
+        "top": 182.796875,
+        "right": 304,
+        "bottom": 414.390625,
+        "left": 16,
+        "width": 288,
+        "height": 231.59375
+      },
+      "demos": {
+        "x": 16,
+        "y": 440.390625,
+        "top": 440.390625,
+        "right": 304,
+        "bottom": 574.390625,
+        "left": 16,
+        "width": 288,
+        "height": 134
+      },
+      "submit": {
+        "x": 16,
+        "y": 366.390625,
+        "top": 366.390625,
+        "right": 304,
+        "bottom": 414.390625,
+        "left": 16,
+        "width": 288,
+        "height": 48
+      }
+    },
+    {
+      "name": "narrow-320-company:photo-hidden",
+      "status": "pass",
+      "photo": {
+        "x": 0,
+        "y": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0,
+        "width": 0,
+        "height": 0,
+        "display": "none"
+      },
+      "content": {
+        "x": 16,
+        "y": 94,
+        "top": 94,
+        "right": 304,
+        "bottom": 574.390625,
+        "left": 16,
+        "width": 288,
+        "height": 480.390625
+      }
+    },
+    {
+      "name": "narrow-320-company:profile-layout-and-accessible-details",
+      "status": "pass",
+      "heading": {
+        "text": "Bienvenido.",
+        "fontSize": "32px",
+        "rect": {
+          "x": 16,
+          "y": 121,
+          "top": 121,
+          "right": 304,
+          "bottom": 157.796875,
+          "left": 16,
+          "width": 288,
+          "height": 36.796875
+        }
+      },
+      "profiles": [
+        {
+          "id": "demo-platform_admin",
+          "rect": {
+            "x": 16,
+            "y": 490.390625,
+            "top": 490.390625,
+            "right": 304,
+            "bottom": 546.390625,
+            "left": 16,
+            "width": 288,
+            "height": 56
+          },
+          "visibleText": [
+            {
+              "text": "Administración Atlas",
+              "fontSize": "12px",
+              "lineHeight": "16.8px",
+              "rect": {
+                "x": 50,
+                "y": 509.984375,
+                "top": 509.984375,
+                "right": 166.5625,
+                "bottom": 525.984375,
+                "left": 50,
+                "width": 116.5625,
+                "height": 16
+              }
+            }
+          ],
+          "scrollWidth": 286,
+          "clientWidth": 286
+        }
+      ]
+    },
+    {
+      "name": "narrow-320-company:screenshots",
+      "status": "pass",
+      "files": [
+        "narrow-320-company-viewport.png",
+        "narrow-320-company-full.png"
+      ]
+    },
+    {
+      "name": "narrow-320-company:axe",
+      "status": "pass",
+      "version": "4.13.0",
+      "passes": 36,
+      "incomplete": 1,
+      "inapplicable": 52,
+      "violations": 0
+    },
+    {
+      "name": "narrow-320-company:all-demo-profiles-autofill-without-submit",
+      "status": "pass",
+      "profileIds": [
+        "platform_admin"
+      ],
+      "loginRequests": 0
+    },
+    {
+      "name": "narrow-320-company:password-toggle",
+      "status": "pass",
+      "valuePreserved": true
+    },
+    {
+      "name": "narrow-320-company:selection-clears-when-either-input-edited",
+      "status": "pass",
+      "editedInputs": [
+        "email",
+        "password"
+      ]
+    },
+    {
+      "name": "narrow-320-company:no-runtime-or-unexpected-http-errors",
+      "status": "pass",
+      "pageErrors": 0,
+      "unexpectedHttpErrors": 0,
+      "unexpectedConsoleErrors": 0
+    }
+  ],
+  "views": [
+    {
+      "name": "desktop-1366-hospital",
+      "route": "/login",
+      "viewport": {
+        "name": "desktop-1366",
+        "width": 1366,
+        "height": 768,
+        "mobile": false
+      },
+      "metrics": {
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "document": {
+          "width": 1366,
+          "scrollWidth": 1366,
+          "height": 768
+        },
+        "form": {
+          "x": 783,
+          "y": 197.40625,
+          "top": 197.40625,
+          "right": 1203,
+          "bottom": 429,
+          "left": 783,
+          "width": 420,
+          "height": 231.59375
+        },
+        "demos": {
+          "x": 783,
+          "y": 453,
+          "top": 453,
+          "right": 1203,
+          "bottom": 681,
+          "left": 783,
+          "width": 420,
+          "height": 228
+        },
+        "photo": {
+          "x": 163,
+          "y": 107.015625,
+          "top": 107.015625,
+          "right": 703,
+          "bottom": 681,
+          "left": 163,
+          "width": 540,
+          "height": 573.984375,
+          "display": "block"
+        },
+        "content": {
+          "x": 783,
+          "y": 107.015625,
+          "top": 107.015625,
+          "right": 1203,
+          "bottom": 681,
+          "left": 783,
+          "width": 420,
+          "height": 573.984375
+        },
+        "footer": {
+          "x": 163,
+          "y": 724,
+          "top": 724,
+          "right": 1203,
+          "bottom": 768,
+          "left": 163,
+          "width": 1040,
+          "height": 44
+        },
+        "heading": {
+          "text": "Bienvenido.",
+          "fontSize": "36px",
+          "rect": {
+            "x": 783,
+            "y": 134.015625,
+            "top": 134.015625,
+            "right": 1203,
+            "bottom": 175.40625,
+            "left": 783,
+            "width": 420,
+            "height": 41.390625
+          }
+        },
+        "inputs": [
+          {
+            "name": "email",
+            "rect": {
+              "x": 827,
+              "y": 226.203125,
+              "top": 226.203125,
+              "right": 1188,
+              "bottom": 272.203125,
+              "left": 827,
+              "width": 361,
+              "height": 46
+            },
+            "fontSize": "16px"
+          },
+          {
+            "name": "password",
+            "rect": {
+              "x": 827,
+              "y": 318,
+              "top": 318,
+              "right": 1148,
+              "bottom": 364,
+              "left": 827,
+              "width": 321,
+              "height": 46
+            },
+            "fontSize": "16px"
+          }
+        ],
+        "submit": {
+          "x": 783,
+          "y": 381,
+          "top": 381,
+          "right": 1203,
+          "bottom": 429,
+          "left": 783,
+          "width": 420,
+          "height": 48
+        },
+        "buttons": [
+          {
+            "id": "demo-hospital_admin",
+            "rect": {
+              "x": 783,
+              "y": 501,
+              "top": 501,
+              "right": 986,
+              "bottom": 549,
+              "left": 783,
+              "width": 203,
+              "height": 48
+            },
+            "visibleText": [
+              {
+                "text": "Administración",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 822,
+                  "y": 516.59375,
+                  "top": 516.59375,
+                  "right": 906.734375,
+                  "bottom": 532.59375,
+                  "left": 822,
+                  "width": 84.734375,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 201,
+            "clientWidth": 201
+          },
+          {
+            "id": "demo-billing",
+            "rect": {
+              "x": 1000,
+              "y": 501,
+              "top": 501,
+              "right": 1203,
+              "bottom": 549,
+              "left": 1000,
+              "width": 203,
+              "height": 48
+            },
+            "visibleText": [
+              {
+                "text": "Caja y facturación",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 1039,
+                  "y": 516.59375,
+                  "top": 516.59375,
+                  "right": 1141.03125,
+                  "bottom": 532.59375,
+                  "left": 1039,
+                  "width": 102.03125,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 201,
+            "clientWidth": 201
+          },
+          {
+            "id": "demo-reviewer",
+            "rect": {
+              "x": 783,
+              "y": 553,
+              "top": 553,
+              "right": 986,
+              "bottom": 601,
+              "left": 783,
+              "width": 203,
+              "height": 48
+            },
+            "visibleText": [
+              {
+                "text": "Auditoría",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 822,
+                  "y": 568.59375,
+                  "top": 568.59375,
+                  "right": 872.453125,
+                  "bottom": 584.59375,
+                  "left": 822,
+                  "width": 50.453125,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 201,
+            "clientWidth": 201
+          },
+          {
+            "id": "demo-director",
+            "rect": {
+              "x": 1000,
+              "y": 553,
+              "top": 553,
+              "right": 1203,
+              "bottom": 601,
+              "left": 1000,
+              "width": 203,
+              "height": 48
+            },
+            "visibleText": [
+              {
+                "text": "Dirección",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 1039,
+                  "y": 568.59375,
+                  "top": 568.59375,
+                  "right": 1092,
+                  "bottom": 584.59375,
+                  "left": 1039,
+                  "width": 53,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 201,
+            "clientWidth": 201
+          },
+          {
+            "id": "demo-insurer_demo",
+            "rect": {
+              "x": 783,
+              "y": 605,
+              "top": 605,
+              "right": 986,
+              "bottom": 653,
+              "left": 783,
+              "width": 203,
+              "height": 48
+            },
+            "visibleText": [
+              {
+                "text": "Aseguradora · lectura",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 822,
+                  "y": 620.59375,
+                  "top": 620.59375,
+                  "right": 941.421875,
+                  "bottom": 636.59375,
+                  "left": 822,
+                  "width": 119.421875,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 201,
+            "clientWidth": 201
+          },
+          {
+            "id": "demo-disabled",
+            "rect": {
+              "x": 1000,
+              "y": 605,
+              "top": 605,
+              "right": 1203,
+              "bottom": 653,
+              "left": 1000,
+              "width": 203,
+              "height": 48
+            },
+            "visibleText": [
+              {
+                "text": "Cuenta desactivada",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 1039,
+                  "y": 620.59375,
+                  "top": 620.59375,
+                  "right": 1150.578125,
+                  "bottom": 636.59375,
+                  "left": 1039,
+                  "width": 111.578125,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 201,
+            "clientWidth": 201
+          }
+        ]
+      },
+      "violations": [],
+      "axe": {
+        "version": "4.13.0",
+        "passes": 38,
+        "incomplete": 1,
+        "inapplicable": 50
+      }
+    },
+    {
+      "name": "desktop-1366-company",
+      "route": "/admin/login",
+      "viewport": {
+        "name": "desktop-1366",
+        "width": 1366,
+        "height": 768,
+        "mobile": false
+      },
+      "metrics": {
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "document": {
+          "width": 1366,
+          "scrollWidth": 1366,
+          "height": 768
+        },
+        "form": {
+          "x": 783,
+          "y": 249.40625,
+          "top": 249.40625,
+          "right": 1203,
+          "bottom": 481,
+          "left": 783,
+          "width": 420,
+          "height": 231.59375
+        },
+        "demos": {
+          "x": 783,
+          "y": 505,
+          "top": 505,
+          "right": 1203,
+          "bottom": 629,
+          "left": 783,
+          "width": 420,
+          "height": 124
+        },
+        "photo": {
+          "x": 163,
+          "y": 159.015625,
+          "top": 159.015625,
+          "right": 703,
+          "bottom": 629,
+          "left": 163,
+          "width": 540,
+          "height": 469.984375,
+          "display": "block"
+        },
+        "content": {
+          "x": 783,
+          "y": 159.015625,
+          "top": 159.015625,
+          "right": 1203,
+          "bottom": 629,
+          "left": 783,
+          "width": 420,
+          "height": 469.984375
+        },
+        "footer": {
+          "x": 163,
+          "y": 724,
+          "top": 724,
+          "right": 1203,
+          "bottom": 768,
+          "left": 163,
+          "width": 1040,
+          "height": 44
+        },
+        "heading": {
+          "text": "Bienvenido.",
+          "fontSize": "36px",
+          "rect": {
+            "x": 783,
+            "y": 186.015625,
+            "top": 186.015625,
+            "right": 1203,
+            "bottom": 227.40625,
+            "left": 783,
+            "width": 420,
+            "height": 41.390625
+          }
+        },
+        "inputs": [
+          {
+            "name": "email",
+            "rect": {
+              "x": 827,
+              "y": 278.203125,
+              "top": 278.203125,
+              "right": 1188,
+              "bottom": 324.203125,
+              "left": 827,
+              "width": 361,
+              "height": 46
+            },
+            "fontSize": "16px"
+          },
+          {
+            "name": "password",
+            "rect": {
+              "x": 827,
+              "y": 370,
+              "top": 370,
+              "right": 1148,
+              "bottom": 416,
+              "left": 827,
+              "width": 321,
+              "height": 46
+            },
+            "fontSize": "16px"
+          }
+        ],
+        "submit": {
+          "x": 783,
+          "y": 433,
+          "top": 433,
+          "right": 1203,
+          "bottom": 481,
+          "left": 783,
+          "width": 420,
+          "height": 48
+        },
+        "buttons": [
+          {
+            "id": "demo-platform_admin",
+            "rect": {
+              "x": 783,
+              "y": 553,
+              "top": 553,
+              "right": 1203,
+              "bottom": 601,
+              "left": 783,
+              "width": 420,
+              "height": 48
+            },
+            "visibleText": [
+              {
+                "text": "Administración Atlas",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 822,
+                  "y": 568.59375,
+                  "top": 568.59375,
+                  "right": 938.5625,
+                  "bottom": 584.59375,
+                  "left": 822,
+                  "width": 116.5625,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 418,
+            "clientWidth": 418
+          }
+        ]
+      },
+      "violations": [],
+      "axe": {
+        "version": "4.13.0",
+        "passes": 38,
+        "incomplete": 1,
+        "inapplicable": 50
+      }
+    },
+    {
+      "name": "desktop-1440-hospital",
+      "route": "/login",
+      "viewport": {
+        "name": "desktop-1440",
+        "width": 1440,
+        "height": 900,
+        "mobile": false
+      },
+      "metrics": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "document": {
+          "width": 1440,
+          "scrollWidth": 1440,
+          "height": 900
+        },
+        "form": {
+          "x": 820,
+          "y": 263.90625,
+          "top": 263.90625,
+          "right": 1240,
+          "bottom": 495.5,
+          "left": 820,
+          "width": 420,
+          "height": 231.59375
+        },
+        "demos": {
+          "x": 820,
+          "y": 523.5,
+          "top": 523.5,
+          "right": 1240,
+          "bottom": 754.5,
+          "left": 820,
+          "width": 420,
+          "height": 231
+        },
+        "photo": {
+          "x": 200,
+          "y": 169.515625,
+          "top": 169.515625,
+          "right": 740,
+          "bottom": 754.5,
+          "left": 200,
+          "width": 540,
+          "height": 584.984375,
+          "display": "block"
+        },
+        "content": {
+          "x": 820,
+          "y": 169.515625,
+          "top": 169.515625,
+          "right": 1240,
+          "bottom": 754.5,
+          "left": 820,
+          "width": 420,
+          "height": 584.984375
+        },
+        "footer": {
+          "x": 200,
+          "y": 844,
+          "top": 844,
+          "right": 1240,
+          "bottom": 900,
+          "left": 200,
+          "width": 1040,
+          "height": 56
+        },
+        "heading": {
+          "text": "Bienvenido.",
+          "fontSize": "36px",
+          "rect": {
+            "x": 820,
+            "y": 196.515625,
+            "top": 196.515625,
+            "right": 1240,
+            "bottom": 237.90625,
+            "left": 820,
+            "width": 420,
+            "height": 41.390625
+          }
+        },
+        "inputs": [
+          {
+            "name": "email",
+            "rect": {
+              "x": 864,
+              "y": 292.703125,
+              "top": 292.703125,
+              "right": 1225,
+              "bottom": 338.703125,
+              "left": 864,
+              "width": 361,
+              "height": 46
+            },
+            "fontSize": "16px"
+          },
+          {
+            "name": "password",
+            "rect": {
+              "x": 864,
+              "y": 384.5,
+              "top": 384.5,
+              "right": 1185,
+              "bottom": 430.5,
+              "left": 864,
+              "width": 321,
+              "height": 46
+            },
+            "fontSize": "16px"
+          }
+        ],
+        "submit": {
+          "x": 820,
+          "y": 447.5,
+          "top": 447.5,
+          "right": 1240,
+          "bottom": 495.5,
+          "left": 820,
+          "width": 420,
+          "height": 48
+        },
+        "buttons": [
+          {
+            "id": "demo-hospital_admin",
+            "rect": {
+              "x": 820,
+              "y": 574.5,
+              "top": 574.5,
+              "right": 1023,
+              "bottom": 622.5,
+              "left": 820,
+              "width": 203,
+              "height": 48
+            },
+            "visibleText": [
+              {
+                "text": "Administración",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 859,
+                  "y": 590.09375,
+                  "top": 590.09375,
+                  "right": 943.734375,
+                  "bottom": 606.09375,
+                  "left": 859,
+                  "width": 84.734375,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 201,
+            "clientWidth": 201
+          },
+          {
+            "id": "demo-billing",
+            "rect": {
+              "x": 1037,
+              "y": 574.5,
+              "top": 574.5,
+              "right": 1240,
+              "bottom": 622.5,
+              "left": 1037,
+              "width": 203,
+              "height": 48
+            },
+            "visibleText": [
+              {
+                "text": "Caja y facturación",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 1076,
+                  "y": 590.09375,
+                  "top": 590.09375,
+                  "right": 1178.03125,
+                  "bottom": 606.09375,
+                  "left": 1076,
+                  "width": 102.03125,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 201,
+            "clientWidth": 201
+          },
+          {
+            "id": "demo-reviewer",
+            "rect": {
+              "x": 820,
+              "y": 626.5,
+              "top": 626.5,
+              "right": 1023,
+              "bottom": 674.5,
+              "left": 820,
+              "width": 203,
+              "height": 48
+            },
+            "visibleText": [
+              {
+                "text": "Auditoría",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 859,
+                  "y": 642.09375,
+                  "top": 642.09375,
+                  "right": 909.453125,
+                  "bottom": 658.09375,
+                  "left": 859,
+                  "width": 50.453125,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 201,
+            "clientWidth": 201
+          },
+          {
+            "id": "demo-director",
+            "rect": {
+              "x": 1037,
+              "y": 626.5,
+              "top": 626.5,
+              "right": 1240,
+              "bottom": 674.5,
+              "left": 1037,
+              "width": 203,
+              "height": 48
+            },
+            "visibleText": [
+              {
+                "text": "Dirección",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 1076,
+                  "y": 642.09375,
+                  "top": 642.09375,
+                  "right": 1129,
+                  "bottom": 658.09375,
+                  "left": 1076,
+                  "width": 53,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 201,
+            "clientWidth": 201
+          },
+          {
+            "id": "demo-insurer_demo",
+            "rect": {
+              "x": 820,
+              "y": 678.5,
+              "top": 678.5,
+              "right": 1023,
+              "bottom": 726.5,
+              "left": 820,
+              "width": 203,
+              "height": 48
+            },
+            "visibleText": [
+              {
+                "text": "Aseguradora · lectura",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 859,
+                  "y": 694.09375,
+                  "top": 694.09375,
+                  "right": 978.421875,
+                  "bottom": 710.09375,
+                  "left": 859,
+                  "width": 119.421875,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 201,
+            "clientWidth": 201
+          },
+          {
+            "id": "demo-disabled",
+            "rect": {
+              "x": 1037,
+              "y": 678.5,
+              "top": 678.5,
+              "right": 1240,
+              "bottom": 726.5,
+              "left": 1037,
+              "width": 203,
+              "height": 48
+            },
+            "visibleText": [
+              {
+                "text": "Cuenta desactivada",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 1076,
+                  "y": 694.09375,
+                  "top": 694.09375,
+                  "right": 1187.578125,
+                  "bottom": 710.09375,
+                  "left": 1076,
+                  "width": 111.578125,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 201,
+            "clientWidth": 201
+          }
+        ]
+      },
+      "violations": [],
+      "axe": {
+        "version": "4.13.0",
+        "passes": 38,
+        "incomplete": 1,
+        "inapplicable": 50
+      }
+    },
+    {
+      "name": "desktop-1440-company",
+      "route": "/admin/login",
+      "viewport": {
+        "name": "desktop-1440",
+        "width": 1440,
+        "height": 900,
+        "mobile": false
+      },
+      "metrics": {
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "document": {
+          "width": 1440,
+          "scrollWidth": 1440,
+          "height": 900
+        },
+        "form": {
+          "x": 820,
+          "y": 315.90625,
+          "top": 315.90625,
+          "right": 1240,
+          "bottom": 547.5,
+          "left": 820,
+          "width": 420,
+          "height": 231.59375
+        },
+        "demos": {
+          "x": 820,
+          "y": 575.5,
+          "top": 575.5,
+          "right": 1240,
+          "bottom": 702.5,
+          "left": 820,
+          "width": 420,
+          "height": 127
+        },
+        "photo": {
+          "x": 200,
+          "y": 221.515625,
+          "top": 221.515625,
+          "right": 740,
+          "bottom": 702.5,
+          "left": 200,
+          "width": 540,
+          "height": 480.984375,
+          "display": "block"
+        },
+        "content": {
+          "x": 820,
+          "y": 221.515625,
+          "top": 221.515625,
+          "right": 1240,
+          "bottom": 702.5,
+          "left": 820,
+          "width": 420,
+          "height": 480.984375
+        },
+        "footer": {
+          "x": 200,
+          "y": 844,
+          "top": 844,
+          "right": 1240,
+          "bottom": 900,
+          "left": 200,
+          "width": 1040,
+          "height": 56
+        },
+        "heading": {
+          "text": "Bienvenido.",
+          "fontSize": "36px",
+          "rect": {
+            "x": 820,
+            "y": 248.515625,
+            "top": 248.515625,
+            "right": 1240,
+            "bottom": 289.90625,
+            "left": 820,
+            "width": 420,
+            "height": 41.390625
+          }
+        },
+        "inputs": [
+          {
+            "name": "email",
+            "rect": {
+              "x": 864,
+              "y": 344.703125,
+              "top": 344.703125,
+              "right": 1225,
+              "bottom": 390.703125,
+              "left": 864,
+              "width": 361,
+              "height": 46
+            },
+            "fontSize": "16px"
+          },
+          {
+            "name": "password",
+            "rect": {
+              "x": 864,
+              "y": 436.5,
+              "top": 436.5,
+              "right": 1185,
+              "bottom": 482.5,
+              "left": 864,
+              "width": 321,
+              "height": 46
+            },
+            "fontSize": "16px"
+          }
+        ],
+        "submit": {
+          "x": 820,
+          "y": 499.5,
+          "top": 499.5,
+          "right": 1240,
+          "bottom": 547.5,
+          "left": 820,
+          "width": 420,
+          "height": 48
+        },
+        "buttons": [
+          {
+            "id": "demo-platform_admin",
+            "rect": {
+              "x": 820,
+              "y": 626.5,
+              "top": 626.5,
+              "right": 1240,
+              "bottom": 674.5,
+              "left": 820,
+              "width": 420,
+              "height": 48
+            },
+            "visibleText": [
+              {
+                "text": "Administración Atlas",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 859,
+                  "y": 642.09375,
+                  "top": 642.09375,
+                  "right": 975.5625,
+                  "bottom": 658.09375,
+                  "left": 859,
+                  "width": 116.5625,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 418,
+            "clientWidth": 418
+          }
+        ]
+      },
+      "violations": [],
+      "axe": {
+        "version": "4.13.0",
+        "passes": 38,
+        "incomplete": 1,
+        "inapplicable": 50
+      }
+    },
+    {
+      "name": "mobile-390-hospital",
+      "route": "/login",
+      "viewport": {
+        "name": "mobile-390",
+        "width": 390,
+        "height": 844,
+        "mobile": true
+      },
+      "metrics": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "document": {
+          "width": 390,
+          "scrollWidth": 390,
+          "height": 844
+        },
+        "form": {
+          "x": 20,
+          "y": 185.09375,
+          "top": 185.09375,
+          "right": 370,
+          "bottom": 416.6875,
+          "left": 20,
+          "width": 350,
+          "height": 231.59375
+        },
+        "demos": {
+          "x": 20,
+          "y": 442.6875,
+          "top": 442.6875,
+          "right": 370,
+          "bottom": 688.6875,
+          "left": 20,
+          "width": 350,
+          "height": 246
+        },
+        "photo": {
+          "x": 0,
+          "y": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "width": 0,
+          "height": 0,
+          "display": "none"
+        },
+        "content": {
+          "x": 20,
+          "y": 94,
+          "top": 94,
+          "right": 370,
+          "bottom": 688.6875,
+          "left": 20,
+          "width": 350,
+          "height": 594.6875
+        },
+        "footer": {
+          "x": 20,
+          "y": 790,
+          "top": 790,
+          "right": 370,
+          "bottom": 844,
+          "left": 20,
+          "width": 350,
+          "height": 54
+        },
+        "heading": {
+          "text": "Bienvenido.",
+          "fontSize": "34px",
+          "rect": {
+            "x": 20,
+            "y": 121,
+            "top": 121,
+            "right": 370,
+            "bottom": 160.09375,
+            "left": 20,
+            "width": 350,
+            "height": 39.09375
+          }
+        },
+        "inputs": [
+          {
+            "name": "email",
+            "rect": {
+              "x": 64,
+              "y": 213.890625,
+              "top": 213.890625,
+              "right": 355,
+              "bottom": 259.890625,
+              "left": 64,
+              "width": 291,
+              "height": 46
+            },
+            "fontSize": "16px"
+          },
+          {
+            "name": "password",
+            "rect": {
+              "x": 64,
+              "y": 305.6875,
+              "top": 305.6875,
+              "right": 307,
+              "bottom": 351.6875,
+              "left": 64,
+              "width": 243,
+              "height": 46
+            },
+            "fontSize": "16px"
+          }
+        ],
+        "submit": {
+          "x": 20,
+          "y": 368.6875,
+          "top": 368.6875,
+          "right": 370,
+          "bottom": 416.6875,
+          "left": 20,
+          "width": 350,
+          "height": 48
+        },
+        "buttons": [
+          {
+            "id": "demo-hospital_admin",
+            "rect": {
+              "x": 20,
+              "y": 492.6875,
+              "top": 492.6875,
+              "right": 190,
+              "bottom": 546.6875,
+              "left": 20,
+              "width": 170,
+              "height": 54
+            },
+            "visibleText": [
+              {
+                "text": "Administración",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 54,
+                  "y": 511.28125,
+                  "top": 511.28125,
+                  "right": 138.734375,
+                  "bottom": 527.28125,
+                  "left": 54,
+                  "width": 84.734375,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 168,
+            "clientWidth": 168
+          },
+          {
+            "id": "demo-billing",
+            "rect": {
+              "x": 200,
+              "y": 492.6875,
+              "top": 492.6875,
+              "right": 370,
+              "bottom": 546.6875,
+              "left": 200,
+              "width": 170,
+              "height": 54
+            },
+            "visibleText": [
+              {
+                "text": "Caja y facturación",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 234,
+                  "y": 511.28125,
+                  "top": 511.28125,
+                  "right": 336.03125,
+                  "bottom": 527.28125,
+                  "left": 234,
+                  "width": 102.03125,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 168,
+            "clientWidth": 168
+          },
+          {
+            "id": "demo-reviewer",
+            "rect": {
+              "x": 20,
+              "y": 549.6875,
+              "top": 549.6875,
+              "right": 190,
+              "bottom": 603.6875,
+              "left": 20,
+              "width": 170,
+              "height": 54
+            },
+            "visibleText": [
+              {
+                "text": "Auditoría",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 54,
+                  "y": 568.28125,
+                  "top": 568.28125,
+                  "right": 104.453125,
+                  "bottom": 584.28125,
+                  "left": 54,
+                  "width": 50.453125,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 168,
+            "clientWidth": 168
+          },
+          {
+            "id": "demo-director",
+            "rect": {
+              "x": 200,
+              "y": 549.6875,
+              "top": 549.6875,
+              "right": 370,
+              "bottom": 603.6875,
+              "left": 200,
+              "width": 170,
+              "height": 54
+            },
+            "visibleText": [
+              {
+                "text": "Dirección",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 234,
+                  "y": 568.28125,
+                  "top": 568.28125,
+                  "right": 287,
+                  "bottom": 584.28125,
+                  "left": 234,
+                  "width": 53,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 168,
+            "clientWidth": 168
+          },
+          {
+            "id": "demo-insurer_demo",
+            "rect": {
+              "x": 20,
+              "y": 606.6875,
+              "top": 606.6875,
+              "right": 190,
+              "bottom": 660.6875,
+              "left": 20,
+              "width": 170,
+              "height": 54
+            },
+            "visibleText": [
+              {
+                "text": "Aseguradora · lectura",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 54,
+                  "y": 616.890625,
+                  "top": 616.890625,
+                  "right": 131.0625,
+                  "bottom": 649.6875,
+                  "left": 54,
+                  "width": 77.0625,
+                  "height": 32.796875
+                }
+              }
+            ],
+            "scrollWidth": 168,
+            "clientWidth": 168
+          },
+          {
+            "id": "demo-disabled",
+            "rect": {
+              "x": 200,
+              "y": 606.6875,
+              "top": 606.6875,
+              "right": 370,
+              "bottom": 660.6875,
+              "left": 200,
+              "width": 170,
+              "height": 54
+            },
+            "visibleText": [
+              {
+                "text": "Cuenta desactivada",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 234,
+                  "y": 625.28125,
+                  "top": 625.28125,
+                  "right": 345.578125,
+                  "bottom": 641.28125,
+                  "left": 234,
+                  "width": 111.578125,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 168,
+            "clientWidth": 168
+          }
+        ]
+      },
+      "violations": [],
+      "axe": {
+        "version": "4.13.0",
+        "passes": 36,
+        "incomplete": 1,
+        "inapplicable": 52
+      }
+    },
+    {
+      "name": "mobile-390-company",
+      "route": "/admin/login",
+      "viewport": {
+        "name": "mobile-390",
+        "width": 390,
+        "height": 844,
+        "mobile": true
+      },
+      "metrics": {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "document": {
+          "width": 390,
+          "scrollWidth": 390,
+          "height": 844
+        },
+        "form": {
+          "x": 20,
+          "y": 185.09375,
+          "top": 185.09375,
+          "right": 370,
+          "bottom": 416.6875,
+          "left": 20,
+          "width": 350,
+          "height": 231.59375
+        },
+        "demos": {
+          "x": 20,
+          "y": 442.6875,
+          "top": 442.6875,
+          "right": 370,
+          "bottom": 574.6875,
+          "left": 20,
+          "width": 350,
+          "height": 132
+        },
+        "photo": {
+          "x": 0,
+          "y": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "width": 0,
+          "height": 0,
+          "display": "none"
+        },
+        "content": {
+          "x": 20,
+          "y": 94,
+          "top": 94,
+          "right": 370,
+          "bottom": 574.6875,
+          "left": 20,
+          "width": 350,
+          "height": 480.6875
+        },
+        "footer": {
+          "x": 20,
+          "y": 790,
+          "top": 790,
+          "right": 370,
+          "bottom": 844,
+          "left": 20,
+          "width": 350,
+          "height": 54
+        },
+        "heading": {
+          "text": "Bienvenido.",
+          "fontSize": "34px",
+          "rect": {
+            "x": 20,
+            "y": 121,
+            "top": 121,
+            "right": 370,
+            "bottom": 160.09375,
+            "left": 20,
+            "width": 350,
+            "height": 39.09375
+          }
+        },
+        "inputs": [
+          {
+            "name": "email",
+            "rect": {
+              "x": 64,
+              "y": 213.890625,
+              "top": 213.890625,
+              "right": 355,
+              "bottom": 259.890625,
+              "left": 64,
+              "width": 291,
+              "height": 46
+            },
+            "fontSize": "16px"
+          },
+          {
+            "name": "password",
+            "rect": {
+              "x": 64,
+              "y": 305.6875,
+              "top": 305.6875,
+              "right": 307,
+              "bottom": 351.6875,
+              "left": 64,
+              "width": 243,
+              "height": 46
+            },
+            "fontSize": "16px"
+          }
+        ],
+        "submit": {
+          "x": 20,
+          "y": 368.6875,
+          "top": 368.6875,
+          "right": 370,
+          "bottom": 416.6875,
+          "left": 20,
+          "width": 350,
+          "height": 48
+        },
+        "buttons": [
+          {
+            "id": "demo-platform_admin",
+            "rect": {
+              "x": 20,
+              "y": 492.6875,
+              "top": 492.6875,
+              "right": 370,
+              "bottom": 546.6875,
+              "left": 20,
+              "width": 350,
+              "height": 54
+            },
+            "visibleText": [
+              {
+                "text": "Administración Atlas",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 54,
+                  "y": 511.28125,
+                  "top": 511.28125,
+                  "right": 170.5625,
+                  "bottom": 527.28125,
+                  "left": 54,
+                  "width": 116.5625,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 348,
+            "clientWidth": 348
+          }
+        ]
+      },
+      "violations": [],
+      "axe": {
+        "version": "4.13.0",
+        "passes": 36,
+        "incomplete": 1,
+        "inapplicable": 52
+      }
+    },
+    {
+      "name": "narrow-320-hospital",
+      "route": "/login",
+      "viewport": {
+        "name": "narrow-320",
+        "width": 320,
+        "height": 740,
+        "mobile": true
+      },
+      "metrics": {
+        "viewport": {
+          "width": 320,
+          "height": 740
+        },
+        "document": {
+          "width": 320,
+          "scrollWidth": 320,
+          "height": 768
+        },
+        "form": {
+          "x": 16,
+          "y": 182.796875,
+          "top": 182.796875,
+          "right": 304,
+          "bottom": 414.390625,
+          "left": 16,
+          "width": 288,
+          "height": 231.59375
+        },
+        "demos": {
+          "x": 16,
+          "y": 440.390625,
+          "top": 440.390625,
+          "right": 304,
+          "bottom": 692.390625,
+          "left": 16,
+          "width": 288,
+          "height": 252
+        },
+        "photo": {
+          "x": 0,
+          "y": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "width": 0,
+          "height": 0,
+          "display": "none"
+        },
+        "content": {
+          "x": 16,
+          "y": 94,
+          "top": 94,
+          "right": 304,
+          "bottom": 692.390625,
+          "left": 16,
+          "width": 288,
+          "height": 598.390625
+        },
+        "footer": {
+          "x": 16,
+          "y": 714.390625,
+          "top": 714.390625,
+          "right": 304,
+          "bottom": 768.390625,
+          "left": 16,
+          "width": 288,
+          "height": 54
+        },
+        "heading": {
+          "text": "Bienvenido.",
+          "fontSize": "32px",
+          "rect": {
+            "x": 16,
+            "y": 121,
+            "top": 121,
+            "right": 304,
+            "bottom": 157.796875,
+            "left": 16,
+            "width": 288,
+            "height": 36.796875
+          }
+        },
+        "inputs": [
+          {
+            "name": "email",
+            "rect": {
+              "x": 60,
+              "y": 211.59375,
+              "top": 211.59375,
+              "right": 289,
+              "bottom": 257.59375,
+              "left": 60,
+              "width": 229,
+              "height": 46
+            },
+            "fontSize": "16px"
+          },
+          {
+            "name": "password",
+            "rect": {
+              "x": 60,
+              "y": 303.390625,
+              "top": 303.390625,
+              "right": 241,
+              "bottom": 349.390625,
+              "left": 60,
+              "width": 181,
+              "height": 46
+            },
+            "fontSize": "16px"
+          }
+        ],
+        "submit": {
+          "x": 16,
+          "y": 366.390625,
+          "top": 366.390625,
+          "right": 304,
+          "bottom": 414.390625,
+          "left": 16,
+          "width": 288,
+          "height": 48
+        },
+        "buttons": [
+          {
+            "id": "demo-hospital_admin",
+            "rect": {
+              "x": 16,
+              "y": 490.390625,
+              "top": 490.390625,
+              "right": 156,
+              "bottom": 546.390625,
+              "left": 16,
+              "width": 140,
+              "height": 56
+            },
+            "visibleText": [
+              {
+                "text": "Administración",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 50,
+                  "y": 509.984375,
+                  "top": 509.984375,
+                  "right": 134.734375,
+                  "bottom": 525.984375,
+                  "left": 50,
+                  "width": 84.734375,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 138,
+            "clientWidth": 138
+          },
+          {
+            "id": "demo-billing",
+            "rect": {
+              "x": 164,
+              "y": 490.390625,
+              "top": 490.390625,
+              "right": 304,
+              "bottom": 546.390625,
+              "left": 164,
+              "width": 140,
+              "height": 56
+            },
+            "visibleText": [
+              {
+                "text": "Caja y facturación",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 198,
+                  "y": 509.984375,
+                  "top": 509.984375,
+                  "right": 300.03125,
+                  "bottom": 525.984375,
+                  "left": 198,
+                  "width": 102.03125,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 138,
+            "clientWidth": 138
+          },
+          {
+            "id": "demo-reviewer",
+            "rect": {
+              "x": 16,
+              "y": 549.390625,
+              "top": 549.390625,
+              "right": 156,
+              "bottom": 605.390625,
+              "left": 16,
+              "width": 140,
+              "height": 56
+            },
+            "visibleText": [
+              {
+                "text": "Auditoría",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 50,
+                  "y": 568.984375,
+                  "top": 568.984375,
+                  "right": 100.453125,
+                  "bottom": 584.984375,
+                  "left": 50,
+                  "width": 50.453125,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 138,
+            "clientWidth": 138
+          },
+          {
+            "id": "demo-director",
+            "rect": {
+              "x": 164,
+              "y": 549.390625,
+              "top": 549.390625,
+              "right": 304,
+              "bottom": 605.390625,
+              "left": 164,
+              "width": 140,
+              "height": 56
+            },
+            "visibleText": [
+              {
+                "text": "Dirección",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 198,
+                  "y": 568.984375,
+                  "top": 568.984375,
+                  "right": 251,
+                  "bottom": 584.984375,
+                  "left": 198,
+                  "width": 53,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 138,
+            "clientWidth": 138
+          },
+          {
+            "id": "demo-insurer_demo",
+            "rect": {
+              "x": 16,
+              "y": 608.390625,
+              "top": 608.390625,
+              "right": 156,
+              "bottom": 664.390625,
+              "left": 16,
+              "width": 140,
+              "height": 56
+            },
+            "visibleText": [
+              {
+                "text": "Aseguradora · lectura",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 50,
+                  "y": 619.59375,
+                  "top": 619.59375,
+                  "right": 127.0625,
+                  "bottom": 652.390625,
+                  "left": 50,
+                  "width": 77.0625,
+                  "height": 32.796875
+                }
+              }
+            ],
+            "scrollWidth": 138,
+            "clientWidth": 138
+          },
+          {
+            "id": "demo-disabled",
+            "rect": {
+              "x": 164,
+              "y": 608.390625,
+              "top": 608.390625,
+              "right": 304,
+              "bottom": 664.390625,
+              "left": 164,
+              "width": 140,
+              "height": 56
+            },
+            "visibleText": [
+              {
+                "text": "Cuenta desactivada",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 198,
+                  "y": 619.59375,
+                  "top": 619.59375,
+                  "right": 266.328125,
+                  "bottom": 652.390625,
+                  "left": 198,
+                  "width": 68.328125,
+                  "height": 32.796875
+                }
+              }
+            ],
+            "scrollWidth": 138,
+            "clientWidth": 138
+          }
+        ]
+      },
+      "violations": [],
+      "axe": {
+        "version": "4.13.0",
+        "passes": 36,
+        "incomplete": 1,
+        "inapplicable": 52
+      }
+    },
+    {
+      "name": "narrow-320-company",
+      "route": "/admin/login",
+      "viewport": {
+        "name": "narrow-320",
+        "width": 320,
+        "height": 740,
+        "mobile": true
+      },
+      "metrics": {
+        "viewport": {
+          "width": 320,
+          "height": 740
+        },
+        "document": {
+          "width": 320,
+          "scrollWidth": 320,
+          "height": 740
+        },
+        "form": {
+          "x": 16,
+          "y": 182.796875,
+          "top": 182.796875,
+          "right": 304,
+          "bottom": 414.390625,
+          "left": 16,
+          "width": 288,
+          "height": 231.59375
+        },
+        "demos": {
+          "x": 16,
+          "y": 440.390625,
+          "top": 440.390625,
+          "right": 304,
+          "bottom": 574.390625,
+          "left": 16,
+          "width": 288,
+          "height": 134
+        },
+        "photo": {
+          "x": 0,
+          "y": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0,
+          "width": 0,
+          "height": 0,
+          "display": "none"
+        },
+        "content": {
+          "x": 16,
+          "y": 94,
+          "top": 94,
+          "right": 304,
+          "bottom": 574.390625,
+          "left": 16,
+          "width": 288,
+          "height": 480.390625
+        },
+        "footer": {
+          "x": 16,
+          "y": 686,
+          "top": 686,
+          "right": 304,
+          "bottom": 740,
+          "left": 16,
+          "width": 288,
+          "height": 54
+        },
+        "heading": {
+          "text": "Bienvenido.",
+          "fontSize": "32px",
+          "rect": {
+            "x": 16,
+            "y": 121,
+            "top": 121,
+            "right": 304,
+            "bottom": 157.796875,
+            "left": 16,
+            "width": 288,
+            "height": 36.796875
+          }
+        },
+        "inputs": [
+          {
+            "name": "email",
+            "rect": {
+              "x": 60,
+              "y": 211.59375,
+              "top": 211.59375,
+              "right": 289,
+              "bottom": 257.59375,
+              "left": 60,
+              "width": 229,
+              "height": 46
+            },
+            "fontSize": "16px"
+          },
+          {
+            "name": "password",
+            "rect": {
+              "x": 60,
+              "y": 303.390625,
+              "top": 303.390625,
+              "right": 241,
+              "bottom": 349.390625,
+              "left": 60,
+              "width": 181,
+              "height": 46
+            },
+            "fontSize": "16px"
+          }
+        ],
+        "submit": {
+          "x": 16,
+          "y": 366.390625,
+          "top": 366.390625,
+          "right": 304,
+          "bottom": 414.390625,
+          "left": 16,
+          "width": 288,
+          "height": 48
+        },
+        "buttons": [
+          {
+            "id": "demo-platform_admin",
+            "rect": {
+              "x": 16,
+              "y": 490.390625,
+              "top": 490.390625,
+              "right": 304,
+              "bottom": 546.390625,
+              "left": 16,
+              "width": 288,
+              "height": 56
+            },
+            "visibleText": [
+              {
+                "text": "Administración Atlas",
+                "fontSize": "12px",
+                "lineHeight": "16.8px",
+                "rect": {
+                  "x": 50,
+                  "y": 509.984375,
+                  "top": 509.984375,
+                  "right": 166.5625,
+                  "bottom": 525.984375,
+                  "left": 50,
+                  "width": 116.5625,
+                  "height": 16
+                }
+              }
+            ],
+            "scrollWidth": 286,
+            "clientWidth": 286
+          }
+        ]
+      },
+      "violations": [],
+      "axe": {
+        "version": "4.13.0",
+        "passes": 36,
+        "incomplete": 1,
+        "inapplicable": 52
+      }
+    }
+  ],
+  "runtimeErrors": [],
+  "consoleErrors": [
+    {
+      "scenario": "desktop-1366-hospital",
+      "expected": true,
+      "path": "/api/auth/login",
+      "message": "Failed to load resource: the server responded with a status of 401 (Unauthorized)"
+    }
+  ],
+  "httpFailures": [
+    {
+      "scenario": "desktop-1366-hospital",
+      "path": "/api/auth/login",
+      "status": 401,
+      "expected": true
+    }
+  ],
+  "finishedAt": "2026-09-24T18:31:46.492Z",
+  "counts": {
+    "pass": 95,
+    "fail": 0,
+    "skip": 0,
+    "block": 0
+  },
+  "passed": true
+}
